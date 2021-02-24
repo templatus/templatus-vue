@@ -20,3 +20,6 @@ module RailsVue3
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+# Makes sure the TailwindCSS JIT doesn't run forever
+Webpacker::Compiler.env['TAILWIND_MODE'] = 'build'

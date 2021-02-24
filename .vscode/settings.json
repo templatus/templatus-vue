@@ -1,0 +1,24 @@
+{
+  "files.watcherExclude": {
+    "**/tmp/**": true
+  },
+
+  "search.exclude": {
+    "**/tmp": true
+  },
+
+  "vetur.validation.template": false, // Allow eslint / eslint-plugin-vue handle the linting.
+
+  "[javascript]": {
+      "editor.formatOnSave": true,
+  },
+
+  "[vue]": {
+      "editor.formatOnSave": true,
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+}
