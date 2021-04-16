@@ -1,0 +1,69 @@
+name: Continuous integration
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+
+    services:
+      postgres:
+        image: postgres:13-alpine
+        ports: ["5432:5432"]
+        env:
+          POSTGRES_PASSWORD: postgres
+
+    env:
+      DB_HOST: localhost
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      RAILS_ENV: test
+      DISABLE_SPRING: 1
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Get Yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install Yarn packages
+        run: bin/yarn install --frozen-lockfile
+
+      - name: Setup PostgreSQL
+        run: bin/rails db:create
+
+      - name: Compile assets
+        run: bin/rails webpacker:compile
+
+      - name: Run Tests
+        run: bin/rake
+
+  build:
+    runs-on: ubuntu-20.04
+
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags')
+
+    needs: test
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build the production image
+        run: |
+          export COMMIT_TIME=$(git show -s --format=%ci ${GITHUB_SHA})
+          export COMMIT_SHA=${GITHUB_SHA}
+          docker build --build-arg COMMIT_TIME --build-arg COMMIT_SHA -t app .

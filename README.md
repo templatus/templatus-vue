@@ -5,6 +5,7 @@
 - Webpacker 6 (for Webpack 5)
 - Vue 3
 - TailwindCSS 2, HeadlessUI, HeroIcons
+- GitHub Actions
 - Docker
 
 ### Development
