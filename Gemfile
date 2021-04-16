@@ -27,6 +27,9 @@ group :development, :test do
 
   # Rails application preloader (https://github.com/rails/spring)
   gem 'spring'
+
+  # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
+  gem 'dotenv-rails'
 end
 
 group :development do
