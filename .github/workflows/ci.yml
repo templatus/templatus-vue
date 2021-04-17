@@ -50,7 +50,13 @@ jobs:
         run: bin/rails webpacker:compile
 
       - name: Run Tests
-        run: bin/rake
+        run: bin/rspec
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: Screenshots
+          path: tmp/screenshots
 
   build:
     runs-on: ubuntu-20.04

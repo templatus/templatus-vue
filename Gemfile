@@ -30,6 +30,12 @@ group :development, :test do
 
   # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
   gem 'dotenv-rails'
+
+  # rspec command for spring (https://github.com/jonleighton/spring-commands-rspec)
+  gem 'spring-commands-rspec'
+
+  # RSpec for Rails (https://github.com/rspec/rspec-rails)
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -41,9 +47,24 @@ group :development do
 
   # Listen to file modifications (https://github.com/guard/listen)
   gem 'listen', '~> 3.3'
+
+  # Guard gem for RSpec (https://github.com/guard/guard-rspec)
+  gem 'guard-rspec', require: false
 end
 
 group :test do
   # Capybara aims to simplify the process of integration testing Rack applications, such as Rails, Sinatra or Merb (https://github.com/teamcapybara/capybara)
   gem 'capybara', '>= 3.26'
+
+  # Automatically create snapshots when Cucumber steps fail with Capybara and Rails (http://github.com/mattheworiordan/capybara-screenshot)
+  gem 'capybara-screenshot'
+
+  # The next generation developer focused tool for automated testing of webapps (https://github.com/SeleniumHQ/selenium)
+  gem 'selenium-webdriver'
+
+  # Easy download and use of browser drivers. (https://github.com/titusfortner/webdrivers)
+  gem 'webdrivers'
+
+  # Code coverage for Ruby (https://github.com/simplecov-ruby/simplecov)
+  gem 'simplecov', require: false
 end

@@ -6,6 +6,7 @@
 - Vue 3
 - TailwindCSS 2, HeadlessUI, HeroIcons
 - GitHub Actions
+- RSpec
 - Docker
 
 ### Development
