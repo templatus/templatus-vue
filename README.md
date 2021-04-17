@@ -6,7 +6,8 @@
 - Vue 3
 - TailwindCSS 2, HeadlessUI, HeroIcons
 - GitHub Actions
-- RSpec
+- RSpec for Ruby testing
+- Jest for JavaScript testing
 - RuboCop
 - Docker
 
@@ -15,6 +16,20 @@
 ```
 bin/setup
 foreman start
+```
+
+### Test
+
+Run Ruby tests:
+
+```
+bin/rspec
+```
+
+Run JavaScript tests:
+
+```
+bin/yarn test
 ```
 
 ### Build assets for production

@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   env: {
     browser: true,
+    jest: true,
     node: true
   },
   plugins: [],

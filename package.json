@@ -2,6 +2,7 @@
   "name": "rails-vue3",
   "private": true,
   "scripts": {
+    "test": "jest",
     "lint": "eslint --ext .js,.vue ."
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "core-js": "3.10.1",
     "css-loader": "^5.2.2",
     "css-minimizer-webpack-plugin": "^1.3.0",
+    "jest-serializer-vue": "^2.0.2",
     "mini-css-extract-plugin": "^1.4.1",
     "postcss": "^8.2.10",
     "postcss-import": "^14.0.1",
@@ -29,9 +31,12 @@
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/eslint-parser": "^7.13.14",
+    "@vue/test-utils": "2.0.0-rc.4",
     "@webpack-cli/serve": "^1.3.1",
     "eslint": "^7.5.0",
     "eslint-plugin-vue": "^7.9.0",
+    "jest": "^26.4.2",
+    "vue-jest": "^5.0.0-alpha.7",
     "webpack-dev-server": "^3.11.2"
   },
   "babel": {

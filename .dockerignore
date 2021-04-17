@@ -30,3 +30,4 @@ config/environments/test.rb
 config/environments/development.rb
 config/webpack/test.js
 config/webpack/development.js
+jest.config.js
