@@ -1,7 +1,25 @@
 <template>
   <div class="h-screen bg-indigo-800">
     <div class="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+      <div class="flex items-center space-x-10">
+        <img
+          :src="require('images/rails.svg')"
+          alt="Ruby on Rails"
+          class="h-32 bg-indigo-100 rounded p-3"
+        >
+
+        <div class="text-8xl text-indigo-100">
+          &plus;
+        </div>
+
+        <img
+          :src="require('images/vue.svg')"
+          alt="Vue.js 3"
+          class="h-32 bg-indigo-100 rounded p-3"
+        >
+      </div>
+
+      <h1 class="mt-10 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
         Hello {{ name }}!
       </h1>
       <p class="mt-6 text-xl text-indigo-100 max-w-3xl">
