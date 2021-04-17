@@ -7,6 +7,7 @@
 - TailwindCSS 2, HeadlessUI, HeroIcons
 - GitHub Actions
 - RSpec
+- RuboCop
 - Docker
 
 ### Development

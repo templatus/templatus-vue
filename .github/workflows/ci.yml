@@ -27,6 +27,9 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Lint with RuboCop
+        run: bin/rubocop --parallel
+
       - name: Get Yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"

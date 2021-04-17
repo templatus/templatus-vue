@@ -36,6 +36,18 @@ group :development, :test do
 
   # RSpec for Rails (https://github.com/rspec/rspec-rails)
   gem 'rspec-rails'
+
+  # Automatic Ruby code style checking tool. (https://github.com/rubocop/rubocop)
+  gem 'rubocop', require: false
+
+  # Automatic performance checking tool for Ruby code. (https://github.com/rubocop/rubocop-performance)
+  gem 'rubocop-performance', require: false
+
+  # Automatic Rails code style checking tool. (https://github.com/rubocop-hq/rubocop-rails)
+  gem 'rubocop-rails', require: false
+
+  # Code style checking for RSpec files (https://github.com/rubocop-hq/rubocop-rspec)
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
@@ -50,6 +62,9 @@ group :development do
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false
+
+  # RuboCop command for Spring (https://github.com/p0deje/spring-commands-rubocop)
+  gem 'spring-commands-rubocop'
 end
 
 group :test do
