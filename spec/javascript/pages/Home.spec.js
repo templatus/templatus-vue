@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import Home from '@/pages/Home.vue'
 
-describe('HelloWorld', () => {
+describe('Home', () => {
   test('renders name', () => {
-    const wrapper = mount(HelloWorld, {
+    const wrapper = mount(Home, {
       propsData: {
         name: 'World',
       }
@@ -14,7 +14,7 @@ describe('HelloWorld', () => {
   })
 
   test('matches snapshot', () => {
-    const wrapper = mount(HelloWorld, {
+    const wrapper = mount(Home, {
       propsData: {
         name: 'World',
       }
