@@ -36,6 +36,7 @@
       <li>Webpacker 6 (for Webpack 5)</li>
       <li>Vue 3</li>
       <li>Vue Router</li>
+      <li>Vuex State management</li>
       <li>TailwindCSS 2, HeadlessUI, HeroIcons</li>
       <li>GitHub Actions</li>
       <li>RSpec for Ruby testing</li>

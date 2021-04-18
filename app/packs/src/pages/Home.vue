@@ -6,15 +6,25 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa eos harum pariatur asperiores accusantium qui facere eligendi aspernatur! Ea nobis quo quisquam facere. At, itaque. Repellendus eius ut neque?
   </p>
 
-  <custom-dropdown
-    class="mt-10"
-    :items="dropdownItems"
-    name="This is a Dropdown"
-  />
+  <div class="mt-10">
+    <custom-button
+      class="tabular-nums"
+      @click="$store.commit('increment')"
+    >
+      Clicks: {{ $store.state.count }}
+    </custom-button>
+
+    <custom-dropdown
+      class="ml-5"
+      :items="dropdownItems"
+      name="This is a Dropdown"
+    />
+  </div>
 </template>
 
 <script>
 import CustomDropdown from '@/components/CustomDropdown.vue'
+import CustomButton from '@/components/CustomButton.vue'
 
 const dropdownItems = [
   { name: 'My Account', href: '#my-account' },
@@ -27,6 +37,7 @@ export default {
   name: 'Home',
 
   components: {
+    CustomButton,
     CustomDropdown,
   },
 
