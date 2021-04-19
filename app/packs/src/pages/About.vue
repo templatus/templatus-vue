@@ -1,52 +1,124 @@
 <template>
-  <h1 class="mt-10 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+  <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
     About
   </h1>
 
-  <div class="text-indigo-100 max-w-3xl">
-    <p class="mt-6 text-xl">
-      This is a template for using Ruby on Rails with Vue.js
-    </p>
+  <p class="mt-6 text-xl max-w-3xl">
+    This is a template for using Ruby on Rails with Vue.js
+  </p>
 
-    <div class="mt-10 flex items-center space-x-5 sm:space-x-10">
-      <img
-        :src="require('images/rails.svg')"
-        alt="Ruby on Rails"
-        class="h-16 sm:h-32 bg-indigo-100 rounded p-3"
-      >
+  <hr class="my-10 mx-20">
 
-      <div class="text-4xl sm:text-8xl text-indigo-100">
-        &plus;
-      </div>
+  <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 space-y-8 sm:space-y-0 text-xl sm:space-x-10">
+    <div
+      v-for="ingredient in ingredients"
+      :key="ingredient.name"
+    >
+      <h2 class="font-bold">
+        {{ ingredient.name }}
+      </h2>
 
-      <img
-        :src="require('images/vue.svg')"
-        alt="Vue.js 3"
-        class="h-16 sm:h-32 bg-indigo-100 rounded p-3"
-      >
+      <ul class="mt-3 leading-8">
+        <li
+          v-for="item in ingredient.items"
+          :key="item.name"
+        >
+          <a
+            class="hover:underline"
+            :href="item.href"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <h2 class="mt-10 mb-5 font-bold sm:text-3xl lg:text-3xl">
-      Ingredients
-    </h2>
-
-    <ul class="list-disc list-inside text-xl leading-normal">
-      <li>Ruby 3</li>
-      <li>Ruby on Rails 6.1</li>
-      <li>Webpacker 6 (for Webpack 5)</li>
-      <li>Vue 3</li>
-      <li>Vue Router</li>
-      <li>Vuex State management</li>
-      <li>TailwindCSS 2, HeadlessUI, HeroIcons</li>
-      <li>GitHub Actions</li>
-      <li>RSpec for Ruby testing</li>
-      <li>Jest for JavaScript testing</li>
-      <li>RuboCop</li>
-      <li>Docker</li>
-    </ul>
   </div>
 </template>
 
 <script>
-export default {}
+const ingredients = [
+  {
+    name: 'Backend',
+    items: [
+      {
+        name: 'Ruby 3',
+        href:
+          'https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/',
+      },
+      {
+        name: 'Ruby on Rails 6.1',
+        href: 'https://github.com/rails/rails/releases/tag/v6.1.3.1',
+      },
+    ],
+  },
+  {
+    name: 'Frontend',
+    items: [
+      {
+        name: 'Webpacker 6 (for Webpack 5)',
+        href: 'https://github.com/rails/webpacker',
+      },
+      {
+        name: 'Vue 3',
+        href: 'https://github.com/vuejs/vue-next',
+      },
+      {
+        name: 'Vuex (for State management)',
+        href: 'https://github.com/vuejs/vuex',
+      },
+      {
+        name: 'TailwindCSS 2',
+        href: 'https://github.com/tailwindlabs/tailwindcss',
+      },
+      {
+        name: 'HeadlessUI',
+        href: 'https://github.com/tailwindlabs/headlessui',
+      },
+      {
+        name: 'HeroIcons',
+        href: 'https://github.com/tailwindlabs/heroicons',
+      },
+    ],
+  },
+
+  {
+    name: 'Continuous integration',
+    items: [
+      {
+        name: 'GitHub Actions',
+        href: 'https://github.com/features/actions',
+      },
+      {
+        name: 'RSpec (for Ruby testing)',
+        href: 'https://github.com/rspec/rspec-rails',
+      },
+      {
+        name: 'Jest (for JavaScript unit testing)',
+        href: 'https://github.com/facebook/jest',
+      },
+      {
+        name: 'RuboCop',
+        href: 'https://github.com/rubocop/rubocop',
+      },
+      {
+        name: 'ESLint',
+        href: 'https://github.com/eslint/eslint',
+      },
+      {
+        name: 'Docker',
+        href: 'https://www.docker.com/',
+      },
+    ],
+  },
+]
+
+export default {
+  setup() {
+    return {
+      ingredients,
+    }
+  },
+}
 </script>

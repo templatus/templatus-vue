@@ -1,26 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About matches snapshot 1`] = `
-<h1 class="mt-10 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"> About </h1>
-<div class="text-indigo-100 max-w-3xl">
-  <p class="mt-6 text-xl"> This is a template for using Ruby on Rails with Vue.js </p>
-  <div class="mt-10 flex items-center space-x-5 sm:space-x-10"><img src="test-file-stub" alt="Ruby on Rails" class="h-16 sm:h-32 bg-indigo-100 rounded p-3">
-    <div class="text-4xl sm:text-8xl text-indigo-100"> + </div><img src="test-file-stub" alt="Vue.js 3" class="h-16 sm:h-32 bg-indigo-100 rounded p-3">
+<h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"> About </h1>
+<p class="mt-6 text-xl max-w-3xl"> This is a template for using Ruby on Rails with Vue.js </p>
+<hr class="my-10 mx-20">
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-3 space-y-8 sm:space-y-0 text-xl sm:space-x-10">
+  <div>
+    <h2 class="font-bold">Backend</h2>
+    <ul class="mt-3 leading-8">
+      <li><a class="hover:underline" href="https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/" target="_blank" rel="noopener">Ruby 3</a></li>
+      <li><a class="hover:underline" href="https://github.com/rails/rails/releases/tag/v6.1.3.1" target="_blank" rel="noopener">Ruby on Rails 6.1</a></li>
+    </ul>
   </div>
-  <h2 class="mt-10 mb-5 font-bold sm:text-3xl lg:text-3xl"> Ingredients </h2>
-  <ul class="list-disc list-inside text-xl leading-normal">
-    <li>Ruby 3</li>
-    <li>Ruby on Rails 6.1</li>
-    <li>Webpacker 6 (for Webpack 5)</li>
-    <li>Vue 3</li>
-    <li>Vue Router</li>
-    <li>Vuex State management</li>
-    <li>TailwindCSS 2, HeadlessUI, HeroIcons</li>
-    <li>GitHub Actions</li>
-    <li>RSpec for Ruby testing</li>
-    <li>Jest for JavaScript testing</li>
-    <li>RuboCop</li>
-    <li>Docker</li>
-  </ul>
+  <div>
+    <h2 class="font-bold">Frontend</h2>
+    <ul class="mt-3 leading-8">
+      <li><a class="hover:underline" href="https://github.com/rails/webpacker" target="_blank" rel="noopener">Webpacker 6 (for Webpack 5)</a></li>
+      <li><a class="hover:underline" href="https://github.com/vuejs/vue-next" target="_blank" rel="noopener">Vue 3</a></li>
+      <li><a class="hover:underline" href="https://github.com/vuejs/vuex" target="_blank" rel="noopener">Vuex (for State management)</a></li>
+      <li><a class="hover:underline" href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener">TailwindCSS 2</a></li>
+      <li><a class="hover:underline" href="https://github.com/tailwindlabs/headlessui" target="_blank" rel="noopener">HeadlessUI</a></li>
+      <li><a class="hover:underline" href="https://github.com/tailwindlabs/heroicons" target="_blank" rel="noopener">HeroIcons</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="font-bold">Continuous integration</h2>
+    <ul class="mt-3 leading-8">
+      <li><a class="hover:underline" href="https://github.com/features/actions" target="_blank" rel="noopener">GitHub Actions</a></li>
+      <li><a class="hover:underline" href="https://github.com/rspec/rspec-rails" target="_blank" rel="noopener">RSpec (for Ruby testing)</a></li>
+      <li><a class="hover:underline" href="https://github.com/facebook/jest" target="_blank" rel="noopener">Jest (for JavaScript unit testing)</a></li>
+      <li><a class="hover:underline" href="https://github.com/rubocop/rubocop" target="_blank" rel="noopener">RuboCop</a></li>
+      <li><a class="hover:underline" href="https://github.com/eslint/eslint" target="_blank" rel="noopener">ESLint</a></li>
+      <li><a class="hover:underline" href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a></li>
+    </ul>
+  </div>
 </div>
 `;
