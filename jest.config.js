@@ -14,11 +14,14 @@ module.exports = {
   },
   'moduleFileExtensions': [
     'js',
+    'ts',
     'json',
     'vue'
   ],
+  'preset': 'ts-jest',
+  'testMatch': ['**/?(*.)+(spec|test).+(ts|tsx)'],
   'transform': {
-    '^.+\\.js$': 'babel-jest',
+    '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.vue$': 'vue-jest'
   },
   'snapshotSerializers': [

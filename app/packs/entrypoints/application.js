@@ -4,6 +4,6 @@
 // that code so it'll be compiled.
 
 import 'stylesheets/application.css'
-import initVueApp from '@/main.js'
+import initVueApp from '@/main.ts'
 
 initVueApp()

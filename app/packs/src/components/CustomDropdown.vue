@@ -40,11 +40,17 @@
   </Menu>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent, PropType } from 'vue'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 
-export default {
+export interface DropdownItemType {
+  name: string
+  href: string
+}
+
+export default defineComponent({
   components: {
     Menu,
     MenuButton,
@@ -60,9 +66,9 @@ export default {
     },
 
     items: {
-      type: Array,
+      type: Array as PropType<DropdownItemType[]>,
       required: true,
     },
   },
-}
+})
 </script>

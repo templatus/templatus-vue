@@ -1,4 +1,4 @@
-import store from '@/store'
+import { store } from '../../app/packs/src/store'
 
 describe('Store', () => {
   test('increment mutation', () => {

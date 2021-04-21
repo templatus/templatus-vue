@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
-import store from '@/store'
+import { store } from '../../../app/packs/src/store'
 import Home from '@/pages/Home.vue'
 
 describe('Home', () => {
   const wrapper = mount(Home, {
-    propsData: {
+    props: {
       name: 'World',
     },
     global: {
@@ -13,7 +13,7 @@ describe('Home', () => {
   })
 
   test('renders name', () => {
-    const title = wrapper.find('h1').element.textContent.trim()
+    const title = wrapper.find('h1')?.element?.textContent?.trim()
     expect(title).toEqual('Hello World!')
   })
 

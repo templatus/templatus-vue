@@ -8,6 +8,7 @@ module.exports = {
   plugins: [],
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:vue/base',
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
@@ -22,5 +23,10 @@ module.exports = {
     'no-extra-semi': 'error',
     'semi': ['error', 'never'],
     'quotes': ['warn', 'single'],
+  },
+  parserOptions: {
+    parser: '@typescript-eslint/parser', // the typescript-parser for eslint, instead of tslint
+    sourceType: 'module', // allow the use of imports statements
+    ecmaVersion: 2018, // allow the parsing of modern ecmascript
   }
 }

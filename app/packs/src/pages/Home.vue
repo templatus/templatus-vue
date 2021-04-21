@@ -22,18 +22,20 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import CustomDropdown from '@/components/CustomDropdown.vue'
+import { DropdownItemType } from 'src/components/CustomDropdown.vue'
 import CustomButton from '@/components/CustomButton.vue'
 
-const dropdownItems = [
+const dropdownItems:DropdownItemType[] = [
   { name: 'My Account', href: '#' },
   { name: 'Company', href: '#' },
   { name: 'Team Members', href: '#' },
   { name: 'Billing', href: '#' },
 ]
 
-export default {
+export default defineComponent({
   name: 'Home',
 
   components: {
@@ -53,5 +55,5 @@ export default {
       dropdownItems,
     }
   },
-}
+})
 </script>

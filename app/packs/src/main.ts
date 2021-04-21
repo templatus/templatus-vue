@@ -1,13 +1,13 @@
 import { createApp } from 'vue'
 import router from './router'
 import Layout from '@/Layout.vue'
-import store from './store'
+import { store, key } from './store'
 
-export default () => {
+export default ():void => {
   document.addEventListener('DOMContentLoaded', () => {
     const app = createApp(Layout)
     app.use(router)
-    app.use(store)
+    app.use(store, key)
     app.mount('#vue-app')
   })
 }

@@ -1,9 +1,13 @@
 const { webpackConfig, merge } = require('@rails/webpacker')
 const vueConfig = require('./rules/vue')
 const path = require('path')
+const ForkTSCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 const customConfig = {
-  resolve:{
+  plugins: [
+    new ForkTSCheckerWebpackPlugin()
+  ],
+  resolve: {
     alias: {
       '@': path.resolve(__dirname, '..', '..', 'app/packs/src')
     }

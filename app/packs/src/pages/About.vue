@@ -37,7 +37,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
+
 const ingredients = [
   {
     name: 'Backend',
@@ -59,6 +61,10 @@ const ingredients = [
       {
         name: 'Webpacker 6 (for Webpack 5)',
         href: 'https://github.com/rails/webpacker',
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://github.com/microsoft/TypeScript',
       },
       {
         name: 'Vue 3',
@@ -114,11 +120,11 @@ const ingredients = [
   },
 ]
 
-export default {
+export default defineComponent({
   setup() {
     return {
       ingredients,
     }
   },
-}
+})
 </script>

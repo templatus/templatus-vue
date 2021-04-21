@@ -32,7 +32,7 @@
                        'bg-indigo-300 text-indigo-900' :
                        'text-indigo-300 hover:text-indigo-100',
                      'px-3 py-1 font-medium text-lg rounded-md']"
-            :aria-current="tab.current ? 'page' : undefined"
+            :aria-current="tab.href == $route.path ? 'page' : undefined"
           >
             {{ tab.name }}
           </router-link>
@@ -46,16 +46,16 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent, onMounted } from 'vue'
 import confetti from 'canvas-confetti'
-import { onMounted } from 'vue'
 
 const tabs = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
 ]
 
-export default {
+export default defineComponent({
   setup() {
     onMounted(() => {
       var colors = ['#cc0000', '#42b883']
@@ -80,5 +80,5 @@ export default {
       tabs,
     }
   },
-}
+})
 </script>

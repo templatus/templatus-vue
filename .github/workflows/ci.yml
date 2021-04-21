@@ -46,6 +46,12 @@ jobs:
       - name: Install Yarn packages
         run: bin/yarn install --frozen-lockfile
 
+      - name: Run ESLint
+        run: bin/yarn lint
+
+      - name: Check for TypeScript errors
+        run: bin/yarn tsc
+
       - name: Setup PostgreSQL
         run: bin/rails db:create
 
