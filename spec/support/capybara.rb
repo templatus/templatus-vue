@@ -13,7 +13,7 @@ RSpec.configure do |config|
   config.after :each, type: :system, js: true do
     messages = page.driver.browser.manage.logs.get(:browser).map do |log|
       "[#{log.level}] #{log.message}"
-    end.compact
+    end
 
     expect(messages.length).to be_zero, messages.join("\n")
   end
