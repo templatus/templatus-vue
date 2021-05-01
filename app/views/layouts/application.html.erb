@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>RailsVue3</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="description" content="Ruby on Rails template for using Vue.js 3">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RailsVue3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="RailsVue3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
     <meta name="git-commit" content="<%= Rails.configuration.x.git.commit_sha %>">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link rel="manifest" href="/manifest.webmanifest">
 
     <%= stylesheet_pack_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application', defer: true %>

@@ -1,0 +1,8 @@
+{
+  "name": "RailsVue3",
+  "short_name": "RailsVue3",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": []
+}
