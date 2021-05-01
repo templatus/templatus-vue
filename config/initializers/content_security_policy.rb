@@ -36,3 +36,9 @@ end
 # For further information see the following documentation:
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only
 # Rails.application.config.content_security_policy_report_only = true
+
+# Get rid of X-Frame-Options, see hint in Chrome DevTools:
+#
+# The 'X-Frame-Options' header should not be used. A similar effect, with more consistent support and
+# stronger checks, can be achieved with the 'Content-Security-Policy' header and 'frame-ancestors' directive.
+Rails.configuration.action_dispatch.default_headers.delete('X-Frame-Options')
