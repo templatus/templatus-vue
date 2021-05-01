@@ -47,8 +47,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue'
-import confetti from 'canvas-confetti'
+import { defineComponent } from 'vue'
 
 const tabs = [
   { name: 'Home', href: '/' },
@@ -57,25 +56,6 @@ const tabs = [
 
 export default defineComponent({
   setup() {
-    onMounted(() => {
-      var colors = ['#cc0000', '#42b883']
-
-      confetti({
-        particleCount: 100,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 },
-        colors,
-      })
-      confetti({
-        particleCount: 100,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 },
-        colors,
-      })
-    })
-
     return {
       tabs,
     }

@@ -15,7 +15,6 @@
     "@tailwindcss/forms": "^0.3.2",
     "@vue/compiler-sfc": "^3.0.11",
     "autoprefixer": "^10.2.5",
-    "canvas-confetti": "^1.4.0",
     "core-js": "^3.11.1",
     "css-loader": "^5.2.4",
     "css-minimizer-webpack-plugin": "^2.0.0",
@@ -39,7 +38,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@types/canvas-confetti": "^1.4.0",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.1",
     "@typescript-eslint/eslint-plugin": "^4.22.0",

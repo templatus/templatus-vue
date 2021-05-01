@@ -19,9 +19,6 @@ Rails.application.config.content_security_policy do |policy|
     policy.manifest_src :self
     policy.frame_ancestors :none
   end
-  if Rails.env.test? # rubocop:disable Style/IfUnlessModifier
-    policy.worker_src :self, :blob
-  end
   policy.base_uri :self
   policy.form_action :self
 
