@@ -7,7 +7,7 @@
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.13.16",
+    "@babel/core": "^7.14.0",
     "@babel/preset-typescript": "^7.13.0",
     "@headlessui/vue": "^1.1.1",
     "@heroicons/vue": "^1.0.1",
@@ -21,7 +21,7 @@
     "css-minimizer-webpack-plugin": "^2.0.0",
     "fork-ts-checker-webpack-plugin": "^6.2.5",
     "jest-serializer-vue": "^2.0.2",
-    "mini-css-extract-plugin": "^1.5.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-loader": "^5.2.0",
@@ -33,7 +33,7 @@
     "vue-loader": "^16.2.0",
     "vue-router": "4",
     "vuex": "^4.0.0",
-    "webpack": "^5.36.1",
+    "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   },
   "version": "0.1.0",
