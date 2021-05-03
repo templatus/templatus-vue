@@ -50,7 +50,7 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.5",
     "vue-jest": "^5.0.0-alpha.7",
-    "vue-tsc": "^0.0.25",
+    "vue-tsc": "^0.1.0",
     "webpack-dev-server": "^3.11.2"
   },
   "babel": {
