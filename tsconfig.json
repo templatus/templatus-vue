@@ -11,27 +11,18 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "baseUrl": "./app/packs",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/packs/*"]
+      "@/*": ["./app/packs/src/*"],
+      "@test/*": ["./spec/javascript/*"]
     },
-    "types": [
-      "jest",
-      "node"
-    ],
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "types": ["jest", "node"],
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
     "app/packs/**/*.ts",
     "app/packs/**/*.vue",
+    "spec/javascript/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "public"
-  ]
+  "exclude": ["node_modules", "public"]
 }

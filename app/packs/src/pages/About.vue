@@ -7,22 +7,18 @@
     This is a template for using Ruby on Rails with Vue.js
   </p>
 
-  <hr class="my-10 mx-20">
+  <hr class="my-10 mx-20" />
 
-  <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 space-y-8 sm:space-y-0 text-xl sm:space-x-10">
-    <div
-      v-for="ingredient in ingredients"
-      :key="ingredient.name"
-    >
+  <div
+    class="mt-10 grid grid-cols-1 sm:grid-cols-3 space-y-8 sm:space-y-0 text-xl sm:space-x-10"
+  >
+    <div v-for="ingredient in ingredients" :key="ingredient.name">
       <h2 class="font-bold">
         {{ ingredient.name }}
       </h2>
 
       <ul class="mt-3 leading-8">
-        <li
-          v-for="item in ingredient.items"
-          :key="item.name"
-        >
+        <li v-for="item in ingredient.items" :key="item.name">
           <a
             class="hover:underline"
             :href="item.href"
@@ -38,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 const ingredients = [
   {
@@ -118,13 +114,13 @@ const ingredients = [
       },
     ],
   },
-]
+];
 
 export default defineComponent({
   setup() {
     return {
       ingredients,
-    }
+    };
   },
-})
+});
 </script>

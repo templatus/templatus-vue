@@ -3,14 +3,13 @@
     Hello {{ name }}!
   </h1>
   <p class="mt-6 text-xl max-w-3xl">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa eos harum pariatur asperiores accusantium qui facere eligendi aspernatur! Ea nobis quo quisquam facere. At, itaque. Repellendus eius ut neque?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa eos
+    harum pariatur asperiores accusantium qui facere eligendi aspernatur! Ea
+    nobis quo quisquam facere. At, itaque. Repellendus eius ut neque?
   </p>
 
   <div class="mt-10">
-    <custom-button
-      class="tabular-nums"
-      @click="$store.commit('increment')"
-    >
+    <custom-button class="tabular-nums" @click="$store.commit('increment')">
       Clicks: {{ $store.state.count }}
     </custom-button>
 
@@ -23,17 +22,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import CustomDropdown from '@/components/CustomDropdown.vue'
-import { DropdownItemType } from 'src/components/CustomDropdown.vue'
-import CustomButton from '@/components/CustomButton.vue'
+import { defineComponent } from 'vue';
+import CustomDropdown from '@/components/CustomDropdown.vue';
+import { DropdownItemType } from '@/components/CustomDropdown.vue';
+import CustomButton from '@/components/CustomButton.vue';
 
-const dropdownItems:DropdownItemType[] = [
+const dropdownItems: DropdownItemType[] = [
   { name: 'My Account', href: '#' },
   { name: 'Company', href: '#' },
   { name: 'Team Members', href: '#' },
   { name: 'Billing', href: '#' },
-]
+];
 
 export default defineComponent({
   name: 'Home',
@@ -53,7 +52,7 @@ export default defineComponent({
   setup() {
     return {
       dropdownItems,
-    }
+    };
   },
-})
+});
 </script>

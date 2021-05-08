@@ -3,7 +3,7 @@ module.exports = {
   env: {
     browser: true,
     jest: true,
-    node: true
+    node: true,
   },
   plugins: [],
   extends: [
@@ -13,6 +13,8 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
     'plugin:vue/vue3-strongly-recommended',
+    'prettier',
+    'plugin:prettier/recommended',
   ],
   globals: {},
   rules: {
@@ -20,13 +22,10 @@ module.exports = {
     'vue/no-v-html': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-extra-semi': 'error',
-    'semi': ['error', 'never'],
-    'quotes': ['warn', 'single'],
   },
   parserOptions: {
     parser: '@typescript-eslint/parser', // the typescript-parser for eslint, instead of tslint
     sourceType: 'module', // allow the use of imports statements
-    ecmaVersion: 2018, // allow the parsing of modern ecmascript
-  }
-}
+    ecmaVersion: 2020, // allow the parsing of modern ecmascript
+  },
+};

@@ -38,8 +38,8 @@ bin/yarn test
 ### Build assets for production
 
 ```
-RAILS_ENV=production bin/rails webpacker:compile
-
+RAILS_ENV=production bin/rails webpacker:clobber webpacker:compile
+Removed webpack output path directory /Users/ledermann/Projects/rails-vue3/public/packs
 Compiling...
 Compiled all packs in /Users/ledermann/Projects/rails-vue3/public/packs
 
@@ -56,11 +56,11 @@ assets by path media/images/ 4.45 KiB
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 119 KiB
   asset js/283-a2ce7f0cc00727731eeb.js 110 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-4c7d8162b643b3938fab.js 7.49 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/application-d0b49eadacacdd74dccf.js 7.49 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-a280c7f17085bf2b17d3.js 1.27 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-5a003590.css 15.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-93560e5f.css 15.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 134 KiB (953 KiB) = js/runtime-a280c7f17085bf2b17d3.js 1.27 KiB js/283-a2ce7f0cc00727731eeb.js 110 KiB css/application-5a003590.css 15.4 KiB js/application-4c7d8162b643b3938fab.js 7.49 KiB 6 auxiliary assets
+Entrypoint application 134 KiB (953 KiB) = js/runtime-a280c7f17085bf2b17d3.js 1.27 KiB js/283-a2ce7f0cc00727731eeb.js 110 KiB css/application-93560e5f.css 15.4 KiB js/application-d0b49eadacacdd74dccf.js 7.49 KiB 6 auxiliary assets
 orphan modules 166 KiB [orphan] 258 modules
 runtime modules 3.06 KiB 6 modules
 code generated modules 688 KiB (javascript) 2.33 KiB (asset) 23.9 KiB (css/mini-extract) [code generated]
@@ -75,7 +75,7 @@ code generated modules 688 KiB (javascript) 2.33 KiB (asset) 23.9 KiB (css/mini-
     ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
     ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
   css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 23.9 KiB [code generated]
-webpack 5.36.2 compiled successfully in 9065 ms
+webpack 5.36.2 compiled successfully in 7090 ms
 ```
 
 => 119 KB JavaScript (minified, uncompressed)

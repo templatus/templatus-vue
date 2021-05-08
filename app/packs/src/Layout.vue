@@ -7,31 +7,28 @@
             :src="require('images/rails.svg')"
             alt="Ruby on Rails"
             class="h-16 sm:h-32 bg-indigo-100 rounded p-3"
-          >
+          />
 
-          <div class="text-4xl sm:text-8xl text-indigo-100">
-            &plus;
-          </div>
+          <div class="text-4xl sm:text-8xl text-indigo-100">&plus;</div>
 
           <img
             :src="require('images/vue.svg')"
             alt="Vue.js 3"
             class="h-16 sm:h-32 bg-indigo-100 rounded p-3"
-          >
+          />
         </div>
 
-        <nav
-          class="mt-10 flex space-x-4"
-          aria-label="Tabs"
-        >
+        <nav class="mt-10 flex space-x-4" aria-label="Tabs">
           <router-link
             v-for="tab in tabs"
             :key="tab.name"
             :to="tab.href"
-            :class="[tab.href == $route.path ?
-                       'bg-indigo-300 text-indigo-900' :
-                       'text-indigo-300 hover:text-indigo-100',
-                     'px-3 py-1 font-medium text-lg rounded-md']"
+            :class="[
+              tab.href == $route.path
+                ? 'bg-indigo-300 text-indigo-900'
+                : 'text-indigo-300 hover:text-indigo-100',
+              'px-3 py-1 font-medium text-lg rounded-md',
+            ]"
             :aria-current="tab.href == $route.path ? 'page' : undefined"
           >
             {{ tab.name }}
@@ -47,18 +44,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 const tabs = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-]
+];
 
 export default defineComponent({
   setup() {
     return {
       tabs,
-    }
+    };
   },
-})
+});
 </script>
