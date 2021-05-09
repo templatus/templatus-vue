@@ -3,7 +3,16 @@
 // a relevant structure within app/packs and only use these pack files to reference
 // that code so it'll be compiled.
 
-import 'stylesheets/application.css';
-import initVueApp from '@/main';
+import { createApp } from 'vue';
+import { store, key } from '../src/store';
+import router from '../src/router';
+import Layout from '../src/Layout.vue';
 
-initVueApp();
+import 'stylesheets/application.css';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = createApp(Layout);
+  app.use(router);
+  app.use(store, key);
+  app.mount('#vue-app');
+});
