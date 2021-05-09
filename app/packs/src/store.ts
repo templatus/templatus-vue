@@ -1,5 +1,5 @@
 import { InjectionKey } from 'vue';
-import { createStore, useStore as baseUseStore, Store } from 'vuex';
+import { createStore, Store } from 'vuex';
 
 export interface State {
   count: number;
@@ -18,8 +18,3 @@ export const store = createStore<State>({
     },
   },
 });
-
-// define your own `useStore` composition function
-export function useStore(): typeof store {
-  return baseUseStore(key);
-}
