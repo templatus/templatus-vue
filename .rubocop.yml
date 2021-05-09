@@ -1,3 +1,6 @@
+inherit_from:
+  - node_modules/@prettier/plugin-ruby/rubocop.yml
+
 require:
   - rubocop-performance
   - rubocop-rails
@@ -6,12 +9,14 @@ require:
 AllCops:
   TargetRubyVersion: 3.0
   Exclude:
+    - app/packs/**/*
     - bin/**/*
     - coverage/**/*
     - db/schema.rb
     - log/**/*
     - node_modules/**/*
     - public/**/*
+    - spec/javascript/**/*
     - tmp/**/*
     - vendor/**/*
   EnabledByDefault: true
@@ -35,36 +40,16 @@ Bundler/OrderedGems:
 Bundler/GemVersion:
   Enabled: false
 
-### Metrics
-
-Metrics/BlockLength:
-  Max: 100
-
 ### Style
 
 Style/BlockComments:
   Exclude:
-    - "spec/spec_helper.rb"
+    - 'spec/spec_helper.rb'
 
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/SymbolArray:
-  EnforcedStyle: brackets
-
-Style/MixinUsage:
-  Enabled: false
-
 Style/Documentation:
-  Enabled: false
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-
-Style/Lambda:
-  EnforcedStyle: literal
-
-Style/LambdaCall:
   Enabled: false
 
 Style/MethodCallWithArgsParentheses:
@@ -82,47 +67,16 @@ Style/InlineComment:
 Style/StringHashKeys:
   Enabled: false
 
-Style/MethodCalledOnDoEndBlock:
-  Enabled: false
-
 Style/DocumentationMethod:
   Enabled: false
 
-Style/DisableCopsWithinSourceCodeDirective:
+Style/IfUnlessModifier:
   Enabled: false
 
-Style/ConstantVisibility:
-  Enabled: false
+### Metrics
 
-### Layout
-
-Layout/DotPosition:
-  EnforcedStyle: trailing
-
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
-
-Layout/SpaceInsideArrayLiteralBrackets:
-  Enabled: false
-
-Layout/HashAlignment:
-  Enabled: false
-
-Layout/MultilineMethodArgumentLineBreaks:
-  Enabled: false
-
-Layout/MultilineArrayLineBreaks:
-  Enabled: false
-
-Layout/MultilineAssignmentLayout:
-  Enabled: false
-
-Layout/LineLength:
-  Max: 190
-  IgnoredPatterns: ['\A#'] # Allow long comments
-
-Layout/RedundantLineBreak:
-  Enabled: false
+Metrics/BlockLength:
+  Max: 100
 
 # Lint
 

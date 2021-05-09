@@ -8,7 +8,7 @@ jobs:
     services:
       postgres:
         image: postgres:13-alpine
-        ports: ["5432:5432"]
+        ports: ['5432:5432']
         env:
           POSTGRES_PASSWORD: postgres
 
@@ -27,9 +27,6 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Lint with RuboCop
-        run: bin/rubocop --parallel
-
       - name: Get Yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -45,6 +42,9 @@ jobs:
 
       - name: Install Yarn packages
         run: bin/yarn install --frozen-lockfile
+
+      - name: Lint with RuboCop
+        run: bin/rubocop --parallel
 
       - name: Run ESLint
         run: bin/yarn lint

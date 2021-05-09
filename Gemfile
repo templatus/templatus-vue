@@ -19,11 +19,11 @@ gem 'webpacker', '6.0.0.beta.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # Timezone Data for TZInfo (https://tzinfo.github.io)
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
   # Rails application preloader (https://github.com/rails/spring)
   gem 'spring'

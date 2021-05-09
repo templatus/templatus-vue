@@ -1,6 +1,6 @@
 describe 'Rack::Deflater', type: :request do
   it 'compresses with gzip if requested' do
-    [ 'gzip', 'deflate, gzip', 'gzip, deflate' ].each do |compression_method|
+    ['gzip', 'deflate, gzip', 'gzip, deflate'].each do |compression_method|
       get root_path, headers: { HTTP_ACCEPT_ENCODING: compression_method }
 
       expect(response.headers['Content-Encoding']).to eq('gzip')
