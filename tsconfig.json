@@ -14,15 +14,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/packs/src/*"],
-      "@test/*": ["./spec/javascript/*"]
+      "@test/*": ["./spec/packs/src/*"]
     },
     "types": ["jest", "node"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "app/packs/**/*.ts",
-    "app/packs/**/*.vue",
-    "spec/javascript/**/*.ts"
-  ],
+  "include": ["app/packs/**/*.ts", "app/packs/**/*.vue", "spec/packs/**/*.ts"],
   "exclude": ["node_modules", "public"]
 }
