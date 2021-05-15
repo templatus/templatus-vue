@@ -10,7 +10,14 @@
   <hr class="my-10 mx-20" />
 
   <div
-    class="mt-10 grid grid-cols-1 sm:grid-cols-3 space-y-8 sm:space-y-0 text-xl sm:space-x-10"
+    class="
+      mt-10
+      grid grid-cols-1
+      text-xl
+      space-y-8
+      sm:grid-cols-3
+      sm:space-y-0 sm:space-x-10
+    "
   >
     <div v-for="ingredient in ingredients" :key="ingredient.name">
       <h2 class="font-bold">
@@ -42,8 +49,7 @@ const ingredients = [
     items: [
       {
         name: 'Ruby 3',
-        href:
-          'https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/',
+        href: 'https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/',
       },
       {
         name: 'Ruby on Rails 6.1',
