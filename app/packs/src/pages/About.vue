@@ -4,7 +4,8 @@
   </h1>
 
   <p class="mt-6 text-xl max-w-3xl">
-    This is a template for using Ruby on Rails with Vue.js
+    This is an opinionated template for using <b>Ruby on Rails</b> with
+    <b>Vue.js</b>
   </p>
 
   <hr class="my-10 mx-20" />
@@ -15,7 +16,7 @@
       grid grid-cols-1
       text-xl
       space-y-8
-      sm:grid-cols-3
+      sm:grid-cols-4
       sm:space-y-0 sm:space-x-10
     "
   >
@@ -49,11 +50,15 @@ const ingredients = [
     items: [
       {
         name: 'Ruby 3',
-        href: 'https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/',
+        href: 'https://www.ruby-lang.org/',
       },
       {
         name: 'Ruby on Rails 6.1',
-        href: 'https://github.com/rails/rails/releases/tag/v6.1.3.1',
+        href: 'https://rubyonrails.org/',
+      },
+      {
+        name: 'PostgreSQL',
+        href: 'https://www.postgresql.org/',
       },
     ],
   },
@@ -61,32 +66,32 @@ const ingredients = [
     name: 'Frontend',
     items: [
       {
-        name: 'Webpacker 6 (for Webpack 5)',
-        href: 'https://github.com/rails/webpacker',
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://github.com/microsoft/TypeScript',
-      },
-      {
         name: 'Vue 3',
-        href: 'https://github.com/vuejs/vue-next',
-      },
-      {
-        name: 'Vuex (for State management)',
-        href: 'https://github.com/vuejs/vuex',
+        href: 'https://v3.vuejs.org/',
       },
       {
         name: 'TailwindCSS 2',
-        href: 'https://github.com/tailwindlabs/tailwindcss',
+        href: 'https://tailwindcss.com/',
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+      },
+      {
+        name: 'Vuex',
+        href: 'https://vuex.vuejs.org/',
       },
       {
         name: 'HeadlessUI',
-        href: 'https://github.com/tailwindlabs/headlessui',
+        href: 'https://headlessui.dev/',
       },
       {
         name: 'HeroIcons',
-        href: 'https://github.com/tailwindlabs/heroicons',
+        href: 'https://heroicons.com/',
+      },
+      {
+        name: 'Webpack 5',
+        href: 'https://webpack.js.org/',
       },
     ],
   },
@@ -99,21 +104,27 @@ const ingredients = [
         href: 'https://github.com/features/actions',
       },
       {
-        name: 'RSpec (for Ruby testing)',
-        href: 'https://github.com/rspec/rspec-rails',
-      },
-      {
-        name: 'Jest (for JavaScript unit testing)',
-        href: 'https://github.com/facebook/jest',
+        name: 'RSpec',
+        href: 'https://rspec.info/',
       },
       {
         name: 'RuboCop',
-        href: 'https://github.com/rubocop/rubocop',
+        href: 'https://rubocop.org/',
+      },
+      {
+        name: 'Jest',
+        href: 'https://jestjs.io/',
       },
       {
         name: 'ESLint',
-        href: 'https://github.com/eslint/eslint',
+        href: 'https://eslint.org/',
       },
+    ],
+  },
+
+  {
+    name: 'Deployment',
+    items: [
       {
         name: 'Docker',
         href: 'https://www.docker.com/',

@@ -2,7 +2,7 @@
 
 exports[`Home matches snapshot 1`] = `
 <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"> Hello World! </h1>
-<p class="mt-6 text-xl max-w-3xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa eos harum pariatur asperiores accusantium qui facere eligendi aspernatur! Ea nobis quo quisquam facere. At, itaque. Repellendus eius ut neque? </p>
+<p class="mt-6 text-xl max-w-3xl"> This is an opinionated template for using <b>Ruby on Rails</b> with <b>Vue.js</b></p>
 <div class="mt-10"><button type="button" class="inline-flex
       items-center
       px-4

@@ -4,6 +4,6 @@ describe 'Home', type: :system, js: true do
     expect(page).to have_text('Hello Vue!')
 
     click_on 'About'
-    expect(page).to have_text('This is a template')
+    expect(page).to have_text('This is an opinionated template')
   end
 end
