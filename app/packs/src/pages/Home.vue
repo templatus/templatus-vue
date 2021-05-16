@@ -18,10 +18,13 @@
       name="This is a Dropdown"
     />
   </div>
+
+  <git-version class="mt-10"></git-version>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import GitVersion from '@/components/GitVersion.vue';
 
 import CustomDropdown, {
   DropdownItemType,
@@ -41,6 +44,7 @@ export default defineComponent({
   components: {
     CustomButton,
     CustomDropdown,
+    GitVersion,
   },
 
   props: {

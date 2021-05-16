@@ -42,4 +42,5 @@ exports[`Home matches snapshot 1`] = `
     </transition-stub>
   </div>
 </div>
+<div class="mt-10">Version unknown</div>
 `;
