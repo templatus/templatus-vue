@@ -73,10 +73,10 @@ import { defineComponent, PropType } from 'vue';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
 import { ChevronDownIcon } from '@heroicons/vue/solid';
 
-export interface DropdownItemType {
+export type DropdownItemType = {
   name: string;
   href: string;
-}
+};
 
 export default defineComponent({
   components: {

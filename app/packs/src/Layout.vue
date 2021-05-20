@@ -1,6 +1,19 @@
 <template>
   <div class="bg-indigo-50 min-h-screen">
-    <div class="bg-indigo-900">
+    <svg
+      class="absolute inset-0 w-full h-96 filter drop-shadow-xl hidden sm:block"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 100 100"
+    >
+      <polygon
+        fill="currentColor"
+        class="text-indigo-800"
+        points="0,0 0,100 100,0"
+      />
+    </svg>
+
+    <div class="bg-indigo-800 sm:bg-transparent relative">
       <div class="max-w-7xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
         <div class="flex items-center space-x-5 sm:space-x-10">
           <img
@@ -25,8 +38,8 @@
             :to="tab.href"
             :class="[
               tab.href == $route.path
-                ? 'bg-indigo-300 text-indigo-900'
-                : 'text-indigo-300 hover:text-indigo-100',
+                ? 'bg-indigo-200 border border-indigo-200  text-indigo-900'
+                : 'bg-indigo-800 border border-indigo-200  text-indigo-200 hover:bg-indigo-300 hover:text-indigo-800',
               'px-3 py-1 font-medium text-lg rounded-md',
             ]"
             :aria-current="tab.href == $route.path ? 'page' : undefined"
@@ -37,7 +50,20 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <div
+      class="
+        bg-transparent
+        relative
+        max-w-7xl
+        mx-auto
+        py-10
+        px-4
+        sm:py-32
+        sm:px-6
+        lg:px-8
+        lg:py-24
+      "
+    >
       <router-view />
     </div>
   </div>
@@ -46,7 +72,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-const tabs = [
+const tabs: {
+  name: string;
+  href: string;
+}[] = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
 ];
