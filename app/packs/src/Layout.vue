@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-indigo-50 min-h-screen">
+  <div class="bg-indigo-50 min-h-screen flex flex-col">
     <svg
       class="absolute inset-0 w-full h-96 filter drop-shadow-xl hidden sm:block"
       fill="none"
@@ -50,8 +50,9 @@
       </div>
     </div>
 
-    <div
+    <main
       class="
+        flex-grow
         bg-transparent
         relative
         max-w-7xl
@@ -65,12 +66,18 @@
       "
     >
       <router-view />
+    </main>
+
+    <div class="text-white text-center">
+      <p v-if="online" class="bg-green-700 p-1">You are online.</p>
+      <p v-else class="bg-red-700 p-1">You are offline!</p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import useOnlineOffline from './use/online-offline';
 
 const tabs: {
   name: string;
@@ -83,6 +90,7 @@ const tabs: {
 export default defineComponent({
   setup() {
     return {
+      online: useOnlineOffline().online,
       tabs,
     };
   },
