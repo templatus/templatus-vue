@@ -1,49 +1,102 @@
 <template>
-  <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-    Hello {{ name }}!
-  </h1>
-  <p class="mt-6 text-xl max-w-3xl">
-    This is an opinionated template for using <b>Ruby on Rails</b> with
-    <b>Vue.js</b>
-  </p>
+  <div class="flex justify-between flex-wrap">
+    <div class="w-full md:w-1/2">
+      <h1
+        class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+      >
+        Hello {{ name }}!
+      </h1>
 
-  <div class="mt-10">
-    <custom-button class="tabular-nums" @click="$store.commit('increment')">
-      Clicks: {{ $store.state.count }}
-    </custom-button>
+      <p class="mt-6 text-xl max-w-3xl">
+        This is an opinionated template for a web application with
+        <b>Ruby on Rails</b> and <b>Vue.js</b>
+      </p>
 
-    <custom-dropdown
-      class="ml-5"
-      :items="dropdownItems"
-      name="This is a Dropdown"
-    />
+      <git-version class="mt-5"></git-version>
+    </div>
+
+    <div
+      class="
+        flex flex-col
+        w-full
+        mt-5
+        sm:w-56
+        sm:mt-0
+        lg:transform
+        lg:-translate-y-80
+      "
+    >
+      <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
+        <span class="text-5xl">{{
+          receivedClicks.total.toLocaleString()
+        }}</span>
+        <br />
+        <span class="uppercase">Clicks</span>
+      </div>
+
+      <button
+        type="button"
+        class="
+          w-full
+          px-4
+          py-2
+          border border-indigo-200
+          text-sm
+          font-medium
+          rounded-b-md
+          shadow
+          text-indigo-700
+          bg-indigo-100
+          hover:bg-indigo-200
+          focus:outline-none
+          focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+        "
+        @click="sendClick"
+      >
+        Click me!
+      </button>
+
+      <p class="mt-5 text-gray-600 text-sm">
+        Tip: Open two browser windows in parallel and see what happens.
+      </p>
+    </div>
   </div>
 
-  <git-version class="mt-10"></git-version>
+  <div class="w-full">
+    <h2 class="mt-10 text-xl font-medium">Latest clicks</h2>
+    <ul class="text-sm">
+      <li
+        v-for="click in receivedClicks.items.slice(0, 5)"
+        :key="click.id"
+        class="mt-2 p-2 bg-indigo-100 rounded"
+      >
+        <p>
+          <span class="px-1 bg-gray-900 text-indigo-100 rounded font-mono">
+            {{ click.ip }}
+          </span>
+
+          <span class="ml-2 px-1 text-gray-900 font-medium">
+            {{ new Date(Date.parse(click.created_at)).toUTCString() }}
+          </span>
+        </p>
+
+        <p class="text-gray-900 font-extralight">
+          {{ click.user_agent }}
+        </p>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import GitVersion from '@/components/GitVersion.vue';
-
-import CustomDropdown, {
-  DropdownItemType,
-} from '@/components/CustomDropdown.vue';
-import CustomButton from '@/components/CustomButton.vue';
-
-const dropdownItems: DropdownItemType[] = [
-  { name: 'My Account', href: '#' },
-  { name: 'Company', href: '#' },
-  { name: 'Team Members', href: '#' },
-  { name: 'Billing', href: '#' },
-];
+import useClicks from '../use/clicks';
 
 export default defineComponent({
   name: 'Home',
 
   components: {
-    CustomButton,
-    CustomDropdown,
     GitVersion,
   },
 
@@ -55,9 +108,7 @@ export default defineComponent({
   },
 
   setup() {
-    return {
-      dropdownItems,
-    };
+    return useClicks();
   },
 });
 </script>

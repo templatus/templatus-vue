@@ -73,6 +73,9 @@ Style/DocumentationMethod:
 Style/IfUnlessModifier:
   Enabled: false
 
+Style/IpAddresses:
+  Enabled: false
+
 ### Metrics
 
 Metrics/BlockLength:
@@ -98,3 +101,9 @@ RSpec/MultipleExpectations:
 
 RSpec/ExampleLength:
   Max: 20
+
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+
+RSpec/AlignRightLetBrace:
+  Enabled: false

@@ -21,6 +21,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Timezone Data for TZInfo (https://tzinfo.github.io)
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+# A Ruby client library for Redis (https://github.com/redis/redis-rb)
+gem 'redis'
+
 group :development, :test do
   # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -43,10 +46,10 @@ group :development, :test do
   # Automatic performance checking tool for Ruby code. (https://github.com/rubocop/rubocop-performance)
   gem 'rubocop-performance', require: false
 
-  # Automatic Rails code style checking tool. (https://github.com/rubocop-hq/rubocop-rails)
+  # Automatic Rails code style checking tool. (https://github.com/rubocop/rubocop-rails)
   gem 'rubocop-rails', require: false
 
-  # Code style checking for RSpec files (https://github.com/rubocop-hq/rubocop-rspec)
+  # Code style checking for RSpec files (https://github.com/rubocop/rubocop-rspec)
   gem 'rubocop-rspec', require: false
 end
 

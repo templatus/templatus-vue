@@ -57,6 +57,10 @@ const ingredients = [
         href: 'https://rubyonrails.org/',
       },
       {
+        name: 'ActionCable',
+        href: 'https://guides.rubyonrails.org/action_cable_overview.html',
+      },
+      {
         name: 'PostgreSQL',
         href: 'https://www.postgresql.org/',
       },

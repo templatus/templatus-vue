@@ -14,6 +14,7 @@ Rails
                         :unsafe_inline,
                         "https://webpack.#{ENV['APP_HOST']}"
       policy.connect_src :self,
+                         "wss://#{ENV['APP_HOST']}",
                          "https://webpack.#{ENV['APP_HOST']}",
                          "wss://webpack.#{ENV['APP_HOST']}"
     else
@@ -23,7 +24,7 @@ Rails
       policy.object_src :none
       policy.script_src :self
       policy.style_src :self
-      policy.connect_src :self
+      policy.connect_src :self, "wss://#{ENV['APP_HOST']}"
       policy.manifest_src :self
       policy.frame_ancestors :none
     end

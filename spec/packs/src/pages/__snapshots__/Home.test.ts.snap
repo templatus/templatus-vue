@@ -1,46 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home matches snapshot 1`] = `
-<h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"> Hello World! </h1>
-<p class="mt-6 text-xl max-w-3xl"> This is an opinionated template for using <b>Ruby on Rails</b> with <b>Vue.js</b></p>
-<div class="mt-10"><button type="button" class="inline-flex
-      items-center
-      px-4
-      py-2
-      border border-indigo-200
-      text-sm
-      font-medium
-      rounded-md
-      text-indigo-700
-      bg-indigo-100
-      hover:bg-indigo-200
-      focus:outline-none
-      focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 tabular-nums"> Clicks: 0</button>
-  <div class="relative inline-block text-left ml-5">
-    <div><button id="headlessui-menu-button-1" type="button" aria-haspopup="true" class="inline-flex
-          justify-center
+<div class="flex justify-between flex-wrap">
+  <div class="w-full md:w-1/2">
+    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"> Hello World! </h1>
+    <p class="mt-6 text-xl max-w-3xl"> This is an opinionated template for a web application with <b>Ruby on Rails</b> and <b>Vue.js</b></p>
+    <div class="mt-5">Version unknown</div>
+  </div>
+  <div class="
+        flex flex-col
+        w-full
+        mt-5
+        sm:w-56
+        sm:mt-0
+        lg:transform
+        lg:-translate-y-80
+      ">
+    <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t"><span class="text-5xl">42</span><br><span class="uppercase">Clicks</span></div><button type="button" class="
           w-full
-          rounded-md
-          border border-gray-300
-          shadow-sm
           px-4
           py-2
-          bg-white
+          border border-indigo-200
           text-sm
           font-medium
-          text-gray-700
-          hover:bg-gray-50
+          rounded-b-md
+          shadow
+          text-indigo-700
+          bg-indigo-100
+          hover:bg-indigo-200
           focus:outline-none
-          focus:ring-2
-          focus:ring-offset-2
-          focus:ring-offset-gray-100
-          focus:ring-indigo-500">This is a Dropdown <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="-mr-1 ml-2 h-5 w-5">
-          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg></button></div>
-    <transition-stub>
-      <!---->
-    </transition-stub>
+          focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+        "> Click me! </button>
+    <p class="mt-5 text-gray-600 text-sm"> Tip: Open two browser windows in parallel and see what happens. </p>
   </div>
 </div>
-<div class="mt-10">Version unknown</div>
+<div class="w-full">
+  <h2 class="mt-10 text-xl font-medium">Latest clicks</h2>
+  <ul class="text-sm">
+    <li class="py-2">
+      <p><span class="px-1 bg-gray-900 text-indigo-100 rounded font-mono">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 font-medium">Sun, 23 May 2021 09:27:21 GMT</span></p>
+      <p class="text-gray-900 font-extralight">Jest</p>
+    </li>
+  </ul>
+</div>
 `;

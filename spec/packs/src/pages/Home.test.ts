@@ -1,3 +1,26 @@
+import { ref } from 'vue';
+
+const mockSendClick = jest.fn();
+
+jest.mock('@/use/clicks', () => ({
+  __esModule: true,
+  default: () => {
+    return {
+      sendClick: mockSendClick,
+      receivedClicks: ref({
+        total: 42,
+        items: [
+          {
+            created_at: '2021-05-23T09:27:21.497Z',
+            ip: '1.2.3.4',
+            user_agent: 'Jest',
+          },
+        ],
+      }),
+    };
+  },
+}));
+
 import { mount } from '@vue/test-utils';
 import { store } from '@/store';
 import Home from '@/pages/Home.vue';
@@ -21,11 +44,10 @@ describe('Home', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  test('counts button clicks', async () => {
+  test('executes sendClick', () => {
     const button = wrapper.find('button');
-    await button.trigger('click');
-    await button.trigger('click');
+    button.trigger('click');
 
-    expect(button.html()).toContain('Clicks: 2');
+    expect(mockSendClick).toHaveBeenCalled();
   });
 });

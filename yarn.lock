@@ -1224,6 +1224,11 @@
   dependencies:
     prettier ">=1.10"
 
+"@rails/actioncable@^6.0.3-7":
+  version "6.0.3-7"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.3-7.tgz#9993c12bd86e254889c5f401be4df7bb2414d180"
+  integrity sha512-ND+0rRj0NQVrv8SYSLSjKyHaXLcFEB02/9+1hsbz7BgufhJcOr/eJ7Y+a/278nAmzKd7mLDQYusHwZ0Dmn7rRw==
+
 "@rails/webpacker@6.0.0-beta.7":
   version "6.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-6.0.0-beta.7.tgz#5deaadc5bf962c5e031e6d038bbb5d4a591c07a6"
@@ -1533,6 +1538,11 @@
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.2.3.tgz#ef65165aea2924c9359205bf748865b8881753c0"
   integrity sha512-PijRCG/K3s3w1We6ynUKdxEc5AcuuH3NBmMDP8uvKVp6X43UY7NQlTzczakXP3DJR0F4dfNQIGjU2cUeRYs2AA==
+
+"@types/rails__actioncable@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@types/rails__actioncable/-/rails__actioncable-6.1.4.tgz#8c7ad242b27057f6a3914f2cd2a58c48ce4e7b6f"
+  integrity sha512-uDLDhcm2tKtFCxvFzXqBj1NNdnPVZS96+9NfYPeXCJM6x07EuZSecgkk45X85HbnB/XqepCQv8wPT0wDAKV4FA==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.0"

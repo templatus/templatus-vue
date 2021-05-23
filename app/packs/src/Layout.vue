@@ -55,7 +55,8 @@
         flex-grow
         bg-transparent
         relative
-        max-w-7xl
+        w-full
+        max-w-5xl
         mx-auto
         py-10
         px-4
@@ -69,8 +70,8 @@
     </main>
 
     <div class="text-white text-center">
-      <p v-if="online" class="bg-green-700 p-1">You are online.</p>
-      <p v-else class="bg-red-700 p-1">You are offline!</p>
+      <p v-if="online" class="bg-green-700 pt-2 pb-4">You are online.</p>
+      <p v-else class="bg-red-700 pt-2 pb-4">You are offline!</p>
     </div>
   </div>
 </template>
