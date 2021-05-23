@@ -16,10 +16,28 @@
 
 ### Development
 
+Precondition: Install and set up [puma-dev](https://github.com/puma/puma-dev) to use HTTPS for both the application and `webpack-dev-server`. Do this on macOS:
+
+```bash
+brew install puma-dev
+sudo puma-dev -setup
+puma-dev -install
+
+cd rails-vue3
+puma-dev link
+
+# https://github.com/puma/puma-dev#webpack-dev-server
+echo 3035 > ~/.puma-dev/webpack.rails-vue3
 ```
+
+Then setup the application:
+
+```bash
 bin/setup
 foreman start
 ```
+
+Then you can open https://rails-vue3.test in your browser.
 
 ### Test
 

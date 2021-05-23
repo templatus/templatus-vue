@@ -66,5 +66,8 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  config.hosts.clear
+  # Use https for webpack-dev-server (requires puma-dev)
+  config.action_controller.asset_host = "https://webpack.#{ENV['APP_HOST']}"
+
+  Rails.application.config.hosts << ENV['APP_HOST']
 end
