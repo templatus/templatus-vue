@@ -16,6 +16,7 @@
     </div>
 
     <div
+      v-if="receivedClicks.total > 0"
       class="
         flex flex-col
         w-full
@@ -27,10 +28,19 @@
       "
     >
       <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
-        <span class="text-5xl">{{
-          receivedClicks.total.toLocaleString()
-        }}</span>
-        <br />
+        <transition
+          mode="out-in"
+          enter-active-class="transition-transform duration-300 ease-out"
+          enter-from-class="scale-0 transform"
+          enter-to-class="scale-100 transform"
+          leave-active-class="transition-transform duration-200 ease-in"
+          leave-from-class="scale-100 transform"
+          leave-to-class="scale-0 transform"
+        >
+          <div :key="receivedClicks.total" class="text-5xl">
+            {{ receivedClicks.total.toLocaleString() }}
+          </div>
+        </transition>
         <span class="uppercase">Clicks</span>
       </div>
 
@@ -62,9 +72,19 @@
     </div>
   </div>
 
-  <div class="w-full">
+  <div v-if="receivedClicks.items.length" class="w-full">
     <h2 class="mt-10 text-xl font-medium">Latest clicks</h2>
-    <ul class="text-sm">
+    <transition-group
+      tag="ul"
+      class="relative"
+      enter-active-class="transform transition-all duration-500 ease-out"
+      enter-from-class="opacity-0 translate-x-5 scale-y-50"
+      enter-to-class="opacity-100 translate-x-0 scale-y-100"
+      leave-active-class="transform transition-all duration-500 ease-out"
+      leave-from-class="opacity-100 scale-y-100 absolute"
+      leave-to-class="opacity-0 scale-y-0 absolute"
+      move-class="duration-500 ease-out"
+    >
       <li
         v-for="click in receivedClicks.items.slice(0, 5)"
         :key="click.id"
@@ -84,7 +104,7 @@
           {{ click.user_agent }}
         </p>
       </li>
-    </ul>
+    </transition-group>
   </div>
 </template>
 

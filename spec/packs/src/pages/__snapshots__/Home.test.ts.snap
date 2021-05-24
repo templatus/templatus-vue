@@ -16,7 +16,11 @@ exports[`Home matches snapshot 1`] = `
         lg:transform
         lg:-translate-y-80
       ">
-    <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t"><span class="text-5xl">42</span><br><span class="uppercase">Clicks</span></div><button type="button" class="
+    <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
+      <transition-stub>
+        <div class="text-5xl">42</div>
+      </transition-stub><span class="uppercase">Clicks</span>
+    </div><button type="button" class="
           w-full
           px-4
           py-2
@@ -36,11 +40,11 @@ exports[`Home matches snapshot 1`] = `
 </div>
 <div class="w-full">
   <h2 class="mt-10 text-xl font-medium">Latest clicks</h2>
-  <ul class="text-sm">
-    <li class="py-2">
+  <transition-group-stub>
+    <li class="mt-2 p-2 bg-indigo-100 rounded">
       <p><span class="px-1 bg-gray-900 text-indigo-100 rounded font-mono">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 font-medium">Sun, 23 May 2021 09:27:21 GMT</span></p>
       <p class="text-gray-900 font-extralight">Jest</p>
     </li>
-  </ul>
+  </transition-group-stub>
 </div>
 `;
