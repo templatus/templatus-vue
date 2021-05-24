@@ -2,13 +2,20 @@
   <div class="flex justify-between flex-wrap">
     <div class="w-full md:w-1/2">
       <h1
-        class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+        class="
+          text-4xl
+          font-extrabold
+          tracking-tight
+          sm:text-5xl
+          lg:text-6xl
+          text-red-800
+        "
       >
         Hello {{ name }}!
       </h1>
 
       <p class="mt-6 text-xl max-w-3xl">
-        This is an opinionated template for a web application with
+        This is an opinionated template for web applications with
         <b>Ruby on Rails</b> and <b>Vue.js</b>
       </p>
 
@@ -50,16 +57,16 @@
           w-full
           px-4
           py-2
-          border border-indigo-200
+          border border-red-200
           text-sm
           font-medium
           rounded-b-md
           shadow
-          text-indigo-700
-          bg-indigo-100
-          hover:bg-indigo-200
+          text-red-700
+          bg-red-100
+          hover:bg-red-200
           focus:outline-none
-          focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+          focus:ring-2 focus:ring-offset-2 focus:ring-red-500
         "
         @click="sendClick"
       >
@@ -73,7 +80,7 @@
   </div>
 
   <div v-if="receivedClicks.items.length" class="w-full">
-    <h2 class="mt-10 text-xl font-medium">Latest clicks</h2>
+    <h2 class="mt-10 text-xl font-medium text-red-800">Latest clicks</h2>
     <transition-group
       tag="ul"
       class="relative"
@@ -88,10 +95,10 @@
       <li
         v-for="click in receivedClicks.items.slice(0, 5)"
         :key="click.id"
-        class="mt-2 p-2 bg-indigo-100 rounded"
+        class="mt-2 p-2 bg-red-100 rounded"
       >
         <p>
-          <span class="px-1 bg-gray-900 text-indigo-100 rounded font-mono">
+          <span class="px-1 bg-gray-900 text-red-100 rounded font-mono">
             {{ click.ip }}
           </span>
 
