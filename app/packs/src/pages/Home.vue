@@ -23,7 +23,7 @@
     </div>
 
     <div
-      v-if="receivedClicks.total > 0"
+      v-if="receivedClicks.total != -1"
       class="
         flex flex-col
         w-full

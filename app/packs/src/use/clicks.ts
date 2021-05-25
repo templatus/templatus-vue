@@ -43,7 +43,7 @@ export default function useClicks(): {
   sendClick: () => void;
   receivedClicks: Ref<Clicks>;
 } {
-  const receivedClicks = ref<Clicks>({ total: 0, items: [] });
+  const receivedClicks = ref<Clicks>({ total: -1, items: [] });
 
   getClicks().then((clicks) => {
     receivedClicks.value = clicks;
