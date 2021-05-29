@@ -1,4 +1,4 @@
-describe 'Home', js: true do
+describe 'Vue', js: true do
   it 'renders successfully' do
     visit '/'
     expect(page).to have_css('h1', text: 'Hello Vue!')

@@ -1,6 +1,7 @@
-import { createWebHashHistory, createRouter, RouteRecordRaw } from 'vue-router';
+import { createWebHistory, createRouter, RouteRecordRaw } from 'vue-router';
 import Home from '@/pages/Home.vue';
 import About from '@/pages/About.vue';
+import NotFound from '@/pages/NotFound.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -16,10 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'About',
     component: About,
   },
+  { path: '/:pathMatch(.*)', component: NotFound },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 
