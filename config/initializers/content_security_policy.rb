@@ -24,6 +24,7 @@ Rails
       policy.object_src :none
       policy.script_src :self
       policy.style_src :self
+      policy.frame_src :self
       policy.connect_src(
         *[
           :self,
