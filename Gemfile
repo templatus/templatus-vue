@@ -30,6 +30,9 @@ gem 'sentry-ruby'
 # A gem that provides Rails integration for the Sentry error logger (https://github.com/getsentry/sentry-ruby)
 gem 'sentry-rails'
 
+# Tame Rails' multi-line logging into a single line per request (https://github.com/roidrage/lograge)
+gem 'lograge'
+
 group :development, :test do
   # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
