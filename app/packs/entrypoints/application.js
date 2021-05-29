@@ -10,6 +10,19 @@ import Layout from '../src/Layout.vue';
 
 import 'stylesheets/application.css';
 
+import * as Sentry from '@sentry/browser';
+
+const sentry_dsn = document.querySelector('meta[name="sentry-dsn"]').content;
+if (sentry_dsn) {
+  const release = document.querySelector('meta[name="git-commit-sha"]').content;
+
+  Sentry.init({
+    dsn: sentry_dsn,
+    release: release,
+    autoSessionTracking: false,
+  });
+}
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('/sw.js')

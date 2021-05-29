@@ -24,6 +24,12 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # A Ruby client library for Redis (https://github.com/redis/redis-rb)
 gem 'redis'
 
+# A gem that provides a client interface for the Sentry error logger (https://github.com/getsentry/sentry-ruby)
+gem 'sentry-ruby'
+
+# A gem that provides Rails integration for the Sentry error logger (https://github.com/getsentry/sentry-ruby)
+gem 'sentry-rails'
+
 group :development, :test do
   # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

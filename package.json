@@ -13,6 +13,7 @@
     "@heroicons/vue": "^1.0.1",
     "@rails/actioncable": "^6.0.3-7",
     "@rails/webpacker": "6.0.0-beta.7",
+    "@sentry/browser": "^6.4.1",
     "@tailwindcss/forms": "^0.3.2",
     "@types/rails__actioncable": "^6.1.4",
     "@vue/compiler-sfc": "^3.0.11",

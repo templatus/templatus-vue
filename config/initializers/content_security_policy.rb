@@ -24,7 +24,15 @@ Rails
       policy.object_src :none
       policy.script_src :self
       policy.style_src :self
-      policy.connect_src :self, "wss://#{ENV['APP_HOST']}"
+      policy.connect_src(
+        *[
+          :self,
+          "wss://#{ENV['APP_HOST']}",
+          if Rails.configuration.x.sentry.dsn
+            URI.parse(Rails.configuration.x.sentry.dsn).host
+          end,
+        ].compact,
+      )
       policy.manifest_src :self
       policy.frame_ancestors :none
     end
@@ -32,7 +40,9 @@ Rails
     policy.form_action :self
 
     # Specify URI for violation reports
-    # policy.report_uri "/csp-violation-report-endpoint"
+    if Rails.configuration.x.sentry.csp
+      policy.report_uri(Rails.configuration.x.sentry.csp)
+    end
   end
 
 # If you are using UJS then enable automatic nonce generation

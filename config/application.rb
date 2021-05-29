@@ -38,6 +38,9 @@ module RailsVue3
 
     config.x.git.commit_time =
       ENV.fetch('COMMIT_TIME') { `git show -s --format=%cI`.chomp }
+
+    config.x.sentry.dsn = ENV['SENTRY_DSN']
+    config.x.sentry.csp = ENV['SENTRY_CSP']
   end
 end
 
