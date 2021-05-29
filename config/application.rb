@@ -30,6 +30,14 @@ module RailsVue3
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.x.app_host = ENV.fetch('APP_HOST', 'rails-vue3.test')
+
+    config.x.git.commit_sha =
+      (ENV.fetch('COMMIT_SHA') { `git rev-parse HEAD` }).first(7)
+
+    config.x.git.commit_time =
+      ENV.fetch('COMMIT_TIME') { `git show -s --format=%cI`.chomp }
   end
 end
 
