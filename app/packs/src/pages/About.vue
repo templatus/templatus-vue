@@ -1,16 +1,5 @@
 <template>
-  <h1
-    class="
-      text-4xl
-      font-extrabold
-      tracking-tight
-      sm:text-5xl
-      lg:text-6xl
-      text-red-800
-    "
-  >
-    About
-  </h1>
+  <page-title>About</page-title>
 
   <div class="mt-6 mb-20 text-xl max-w-3xl">
     <p>
@@ -80,6 +69,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
+import PageTitle from '@/components/PageTitle.vue';
 
 const features: {
   name: string;
@@ -228,6 +218,7 @@ const features: {
 export default defineComponent({
   components: {
     CheckIcon,
+    PageTitle,
   },
 
   setup() {

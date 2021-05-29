@@ -1,18 +1,7 @@
 <template>
   <div class="flex justify-between flex-wrap">
     <div class="w-full md:w-1/2">
-      <h1
-        class="
-          text-4xl
-          font-extrabold
-          tracking-tight
-          sm:text-5xl
-          lg:text-6xl
-          text-red-800
-        "
-      >
-        Hello {{ name }}!
-      </h1>
+      <page-title>Hello {{ name }}!</page-title>
 
       <p class="mt-6 text-xl max-w-3xl">
         This is an opinionated template for web applications with
@@ -119,12 +108,14 @@
 import { defineComponent } from 'vue';
 import GitVersion from '@/components/GitVersion.vue';
 import useClicks from '../use/clicks';
+import PageTitle from '@/components/PageTitle.vue';
 
 export default defineComponent({
   name: 'Home',
 
   components: {
     GitVersion,
+    PageTitle,
   },
 
   props: {

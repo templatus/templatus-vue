@@ -8,7 +8,7 @@ exports[`About matches snapshot 1`] = `
       sm:text-5xl
       lg:text-6xl
       text-red-800
-    "> About </h1>
+    ">About</h1>
 <div class="mt-6 mb-20 text-xl max-w-3xl">
   <p> This is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js</b></p>
 </div>

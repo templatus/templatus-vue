@@ -1,0 +1,14 @@
+<template>
+  <h1
+    class="
+      text-4xl
+      font-extrabold
+      tracking-tight
+      sm:text-5xl
+      lg:text-6xl
+      text-red-800
+    "
+  >
+    <slot></slot>
+  </h1>
+</template>
