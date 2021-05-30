@@ -4,17 +4,16 @@
 // that code so it'll be compiled.
 
 import { createApp } from 'vue';
-import { store, key } from '../src/store';
-import router from '../src/router';
-import App from '../src/App.vue';
-
+import { store, key } from '@/store';
+import { metaContent } from '@/utils/metaContent';
+import router from '@/router';
+import App from '@/App.vue';
+import * as Sentry from '@sentry/browser';
 import 'stylesheets/application.css';
 
-import * as Sentry from '@sentry/browser';
-
-const sentry_dsn = document.querySelector('meta[name="sentry-dsn"]').content;
+const sentry_dsn = metaContent('sentry-dsn');
 if (sentry_dsn) {
-  const release = document.querySelector('meta[name="git-commit-sha"]').content;
+  const release = metaContent('git-commit-sha');
 
   Sentry.init({
     dsn: sentry_dsn,
