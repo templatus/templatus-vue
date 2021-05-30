@@ -1,7 +1,7 @@
 import { Ref, ref } from 'vue';
 import { createConsumer } from '@rails/actioncable';
 
-type Click = {
+export type Click = {
   id: number;
   created_at: string;
   ip: string;

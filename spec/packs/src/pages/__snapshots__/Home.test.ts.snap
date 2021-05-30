@@ -15,37 +15,37 @@ exports[`Home matches snapshot 1`] = `
     <div class="mt-5">Version unknown</div>
   </div>
   <div class="
-        flex flex-col
-        w-full
-        mt-5
-        sm:w-56
-        sm:mt-0
-        lg:transform
-        lg:-translate-y-80
-      ">
+      flex flex-col
+      w-full
+      mt-5
+      sm:w-56
+      sm:mt-0
+      lg:transform
+      lg:-translate-y-80
+    ">
     <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
       <transition-stub>
         <div class="text-5xl">42</div>
       </transition-stub><span class="uppercase">Clicks</span>
     </div><button type="button" class="
-          w-full
-          px-4
-          py-2
-          border border-red-200
-          text-sm
-          font-medium
-          rounded-b-md
-          shadow
-          text-red-700
-          bg-red-100
-          hover:bg-red-200
-          focus:outline-none
-          focus:ring-2 focus:ring-offset-2 focus:ring-red-500
-        "> Click me! </button>
+        w-full
+        px-4
+        py-2
+        border border-red-200
+        text-sm
+        font-medium
+        rounded-b-md
+        shadow
+        text-red-700
+        bg-red-100
+        hover:bg-red-200
+        focus:outline-none
+        focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+      "> Click me! </button>
     <p class="mt-5 text-gray-600 text-sm"> Tip: Open two browser windows in parallel and see what happens. </p>
   </div>
 </div>
-<div class="w-full">
+<div>
   <h2 class="mt-10 text-xl font-medium text-red-800">Latest clicks</h2>
   <transition-group-stub>
     <li class="mt-2 p-2 bg-red-100 rounded">
