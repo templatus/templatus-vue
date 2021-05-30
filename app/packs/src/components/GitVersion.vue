@@ -2,7 +2,7 @@
   <div v-if="commitSHA && commitTime">
     Version
     <code>{{ commitSHA }}</code
-    >, last commit
+    >, created
     <b><time ref="timeElement" :datetime="commitTime"></time></b>
   </div>
   <div v-else>Version unknown</div>
@@ -10,13 +10,8 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue';
+import { metaContent } from '@/utils/metaContent';
 import * as timeago from 'timeago.js';
-
-const metaContent = (name: string) => {
-  return document
-    .querySelector(`meta[name='${name}']`)
-    ?.getAttribute('content');
-};
 
 export default defineComponent({
   name: 'GitVersion',

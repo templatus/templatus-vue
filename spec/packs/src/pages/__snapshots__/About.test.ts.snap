@@ -32,7 +32,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.ruby-lang.org/" class="hover:underline" target="_blank" rel="noopener">Ruby 3</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.ruby-lang.org/" class="hover:underline" target="_blank" rel="noopener">Ruby undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</dd>
           </div>
@@ -40,7 +40,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://rubyonrails.org/" class="hover:underline" target="_blank" rel="noopener">Ruby on Rails 6.1</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://rubyonrails.org/" class="hover:underline" target="_blank" rel="noopener">Ruby on Rails undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.</dd>
           </div>
@@ -48,15 +48,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://guides.rubyonrails.org/action_cable_overview.html" class="hover:underline" target="_blank" rel="noopener">ActionCable</a></p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-500">Action Cable seamlessly integrates WebSockets with the rest of your Rails application. It allows for real-time features to be written in Ruby in the same style and form as the rest of your Rails application, while still being performant and scalable. It's a full-stack offering that provides both a client-side JavaScript framework and a server-side Ruby framework.</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.postgresql.org/" class="hover:underline" target="_blank" rel="noopener">PostgreSQL</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.postgresql.org/" class="hover:underline" target="_blank" rel="noopener">PostgreSQL undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</dd>
           </div>
@@ -64,7 +56,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener">Redis</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener">Redis undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.</dd>
           </div>
@@ -91,7 +83,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://v3.vuejs.org/" class="hover:underline" target="_blank" rel="noopener">Vue 3</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://v3.vuejs.org/" class="hover:underline" target="_blank" rel="noopener">Vue 3.0.11</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">Vue is a progressive framework for building user interfaces.</dd>
           </div>
@@ -139,7 +131,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://github.com/rails/webpacker" class="hover:underline" target="_blank" rel="noopener">Webpacker</a></p>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://github.com/rails/webpacker" class="hover:underline" target="_blank" rel="noopener">Webpacker undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-500">Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.</dd>
           </div>
@@ -225,9 +217,17 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://alpinelinux.org/" class="hover:underline" target="_blank" rel="noopener">Alpine Linux undefined</a></p>
+            </dt>
+            <dd class="mt-2 ml-9 text-base text-gray-500">Alpine Linux is an independent, non-commercial, general purpose Linux distribution designed for power users who appreciate security, simplicity and resource efficiency.</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
               <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.docker.com/" class="hover:underline" target="_blank" rel="noopener">Docker</a></p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-500">Dockerized using an optimized Alpine base image.</dd>
+            <dd class="mt-2 ml-9 text-base text-gray-500">Dockerized using an optimized base image.</dd>
           </div>
         </dl>
       </div>

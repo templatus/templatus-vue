@@ -12,6 +12,10 @@ jobs:
         env:
           POSTGRES_PASSWORD: postgres
 
+      redis:
+        image: redis:alpine
+        ports: ['6379:6379']
+
     env:
       DB_HOST: localhost
       DB_USER: postgres

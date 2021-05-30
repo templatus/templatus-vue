@@ -67,8 +67,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { version, defineComponent } from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
+import { metaContent } from '@/utils/metaContent';
 import PageTitle from '@/components/PageTitle.vue';
 
 const features: {
@@ -83,31 +84,25 @@ const features: {
     description: 'Data access layer',
     items: [
       {
-        name: 'Ruby 3',
+        name: `Ruby ${metaContent('version-ruby')}`,
         href: 'https://www.ruby-lang.org/',
         description:
           'A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.',
       },
       {
-        name: 'Ruby on Rails 6.1',
+        name: `Ruby on Rails ${metaContent('version-rails')}`,
         href: 'https://rubyonrails.org/',
         description:
           'Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.',
       },
       {
-        name: 'ActionCable',
-        href: 'https://guides.rubyonrails.org/action_cable_overview.html',
-        description:
-          "Action Cable seamlessly integrates WebSockets with the rest of your Rails application. It allows for real-time features to be written in Ruby in the same style and form as the rest of your Rails application, while still being performant and scalable. It's a full-stack offering that provides both a client-side JavaScript framework and a server-side Ruby framework.",
-      },
-      {
-        name: 'PostgreSQL',
+        name: `PostgreSQL ${metaContent('version-postgres')}`,
         href: 'https://www.postgresql.org/',
         description:
           'PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.',
       },
       {
-        name: 'Redis',
+        name: `Redis ${metaContent('version-redis')}`,
         href: 'https://redis.io/',
         description:
           'Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.',
@@ -121,7 +116,7 @@ const features: {
     description: 'Presentation layer',
     items: [
       {
-        name: 'Vue 3',
+        name: `Vue ${version}`,
         href: 'https://v3.vuejs.org/',
         description:
           'Vue is a progressive framework for building user interfaces.',
@@ -157,7 +152,7 @@ const features: {
           'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
       },
       {
-        name: 'Webpacker',
+        name: `Webpacker ${metaContent('version-webpacker')}`,
         href: 'https://github.com/rails/webpacker',
         description:
           'Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.',
@@ -207,9 +202,15 @@ const features: {
     description: 'Running in production',
     items: [
       {
+        name: `Alpine Linux ${metaContent('version-alpine')}`,
+        href: 'https://alpinelinux.org/',
+        description:
+          'Alpine Linux is an independent, non-commercial, general purpose Linux distribution designed for power users who appreciate security, simplicity and resource efficiency.',
+      },
+      {
         name: 'Docker',
         href: 'https://www.docker.com/',
-        description: 'Dockerized using an optimized Alpine base image.',
+        description: 'Dockerized using an optimized base image.',
       },
     ],
   },

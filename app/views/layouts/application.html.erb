@@ -20,6 +20,12 @@
 
     <meta name="sentry-dsn" content="<%= Rails.configuration.x.sentry.dsn %>">
 
+    <% cache do %>
+      <% versions.each do |name, version| %>
+        <%= tag.meta name: "version-#{name}", content: version %>
+      <% end %>
+    <% end %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= action_cable_meta_tag %>
