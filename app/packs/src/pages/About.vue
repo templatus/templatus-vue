@@ -20,7 +20,7 @@
           <p class="mt-2 text-3xl font-extrabold text-gray-900">
             {{ group.name }}
           </p>
-          <p class="mt-4 text-lg text-gray-500">
+          <p class="mt-4 text-lg text-gray-600">
             {{ group.description }}
           </p>
         </div>
@@ -55,7 +55,7 @@
                   </a>
                 </p>
               </dt>
-              <dd class="mt-2 ml-9 text-base text-gray-500">
+              <dd class="mt-2 ml-9 text-base text-gray-600">
                 {{ feature.description }}
               </dd>
             </div>
