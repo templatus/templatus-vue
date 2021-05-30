@@ -6,7 +6,7 @@
 import { createApp } from 'vue';
 import { store, key } from '../src/store';
 import router from '../src/router';
-import Layout from '../src/Layout.vue';
+import App from '../src/App.vue';
 
 import 'stylesheets/application.css';
 
@@ -47,7 +47,7 @@ if ('serviceWorker' in navigator) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = createApp(Layout);
+  const app = createApp(App);
   app.use(router);
   app.use(store, key);
   app.mount('#vue-app');
