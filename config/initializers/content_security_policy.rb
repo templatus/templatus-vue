@@ -19,12 +19,22 @@ Rails
                          "wss://webpack.#{ENV['APP_HOST']}"
     else
       policy.default_src :none
-      policy.font_src :self, :data
-      policy.img_src :self, :data
+      policy.font_src(
+        *[:self, :data, Rails.configuration.asset_host.presence].compact,
+      )
+      policy.img_src(
+        *[:self, :data, Rails.configuration.asset_host.presence].compact,
+      )
       policy.object_src :none
-      policy.script_src :self
-      policy.style_src :self
-      policy.frame_src :self
+      policy.script_src(
+        *[:self, Rails.configuration.asset_host.presence].compact,
+      )
+      policy.style_src(
+        *[:self, Rails.configuration.asset_host.presence].compact,
+      )
+      policy.frame_src(
+        *[:self, Rails.configuration.asset_host.presence].compact,
+      )
       policy.connect_src(
         *[
           :self,
