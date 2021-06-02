@@ -7,8 +7,6 @@
         This is an opinionated template for web applications with
         <b>Ruby on Rails</b> and <b>Vue.js</b>
       </p>
-
-      <git-version class="mt-5"></git-version>
     </div>
 
     <click-button
@@ -18,17 +16,16 @@
     ></click-button>
   </div>
 
-  <div v-if="receivedClicks.items.length">
-    <h2 class="mt-10 text-xl font-medium text-red-800">Latest clicks</h2>
+  <template v-if="receivedClicks.items.length">
+    <h2 class="mt-8 text-xl font-medium text-red-800">Latest clicks</h2>
 
     <click-list :clicks="receivedClicks.items.slice(0, 5)"></click-list>
-  </div>
+  </template>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-import GitVersion from '@/components/GitVersion.vue';
 import PageTitle from '@/components/PageTitle.vue';
 import ClickList from '@/components/ClickList.vue';
 import ClickButton from '@/components/ClickButton.vue';
@@ -39,7 +36,6 @@ export default defineComponent({
   name: 'Home',
 
   components: {
-    GitVersion,
     PageTitle,
     ClickList,
     ClickButton,

@@ -2,7 +2,7 @@
   "name": "rails-vue3",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint --ext .js,.ts,.vue .",
     "tsc": "vue-tsc --noEmit"
   },

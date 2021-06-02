@@ -12,7 +12,6 @@ exports[`Home matches snapshot 1`] = `
       text-red-800
     ">Hello World!</h1>
     <p class="mt-6 text-xl max-w-3xl"> This is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js</b></p>
-    <div class="mt-5">Version unknown</div>
   </div>
   <div class="
       flex flex-col
@@ -45,13 +44,11 @@ exports[`Home matches snapshot 1`] = `
     <p class="mt-5 text-gray-600 text-sm"> Tip: Open two browser windows in parallel and see what happens. </p>
   </div>
 </div>
-<div>
-  <h2 class="mt-10 text-xl font-medium text-red-800">Latest clicks</h2>
-  <transition-group-stub>
-    <li class="mt-2 p-2 bg-red-100 rounded">
-      <p><span class="px-1 bg-gray-900 text-red-100 rounded font-mono">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 font-medium">Sun, 23 May 2021 09:27:21 GMT</span></p>
-      <p class="text-gray-900 font-extralight">Jest</p>
-    </li>
-  </transition-group-stub>
-</div>
+<h2 class="mt-8 text-xl font-medium text-red-800">Latest clicks</h2>
+<transition-group-stub>
+  <li class="mt-2 p-2 bg-red-100 rounded">
+    <p><span class="px-1 bg-gray-900 text-red-100 rounded font-mono">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 font-medium">Sun, 23 May 2021 09:27:21 GMT</span></p>
+    <p class="text-gray-900 font-extralight">Jest</p>
+  </li>
+</transition-group-stub>
 `;
