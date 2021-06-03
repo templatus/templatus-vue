@@ -45,7 +45,11 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+declare let __webpack_public_path__: string | undefined;
+
 document.addEventListener('DOMContentLoaded', () => {
+  __webpack_public_path__ = metaContent('webpack-public-path'); // eslint-disable-line @typescript-eslint/no-unused-vars
+
   const app = createApp(App);
   app.use(router);
   app.use(store, key);

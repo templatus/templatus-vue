@@ -19,6 +19,7 @@
     <meta name="git-commit-time" content="<%= Rails.configuration.x.git.commit_time %>">
 
     <meta name="sentry-dsn" content="<%= Rails.configuration.x.sentry.dsn %>">
+    <meta name="webpack-public-path" content="<%= Rails.configuration.action_controller.asset_host %>/<%= Webpacker.config.public_output_path.basename %>/">
 
     <% cache do %>
       <% versions.each do |name, version| %>
