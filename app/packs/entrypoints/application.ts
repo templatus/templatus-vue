@@ -11,6 +11,9 @@ import App from '@/App.vue';
 import * as Sentry from '@sentry/browser';
 import 'stylesheets/application.css';
 
+// Include all images in webpack manifest
+require.context('../images', true);
+
 const sentry_dsn = metaContent('sentry-dsn');
 if (sentry_dsn) {
   const release = metaContent('git-commit-sha');

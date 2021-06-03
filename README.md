@@ -65,34 +65,35 @@ Compiled all packs in /Users/ledermann/Projects/rails-vue3/public/packs
 warn - You have enabled the JIT engine which is currently in preview.
 warn - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
 
-assets by path media/images/ 4.45 KiB
-  assets by path media/images/*.svg 2.33 KiB 2 assets
-  assets by path media/images/*.gz 1.13 KiB
-    asset media/images/bcb6d75d927347158af5.svg.gz 902 bytes [emitted] [immutable] [compressed]
-    asset media/images/f04dfe30a8ad8eb5c4e0.svg.gz 254 bytes [emitted] [immutable] [compressed]
-  assets by path media/images/*.br 1020 bytes
+assets by path media/images/ 52.6 KiB
+  assets by chunk 47.7 KiB (auxiliary name: application) 9 assets
+  assets by path media/images/*.gz 2.64 KiB 3 assets
+  assets by path media/images/*.br 2.25 KiB
+    asset media/images/ef0c1c6c92c1b5e887fc.ico.br 1.25 KiB [emitted] [immutable] [compressed]
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
-assets by path js/*.js 196 KiB
-  asset js/637-ab14b0f1dafb390450f8.js 179 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-f8ca7dd625d1219e91db.js 15.5 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+assets by path js/*.js 197 KiB
+  asset js/637-ff3de77082f3a335d579.js 179 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-c8a6782770c0b0c48344.js 16.6 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-a245cc4d.css 17.1 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
-asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 213 KiB (296 KiB) = js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB js/637-ab14b0f1dafb390450f8.js 179 KiB css/application-a245cc4d.css 17.1 KiB js/application-f8ca7dd625d1219e91db.js 15.5 KiB 6 auxiliary assets
+asset manifest.json 3.79 KiB [emitted] 2 related assets
+Entrypoint application 214 KiB (342 KiB) = js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB js/637-ff3de77082f3a335d579.js 179 KiB css/application-a245cc4d.css 17.1 KiB js/application-c8a6782770c0b0c48344.js 16.6 KiB 13 auxiliary assets
 orphan modules 473 KiB [orphan] 356 modules
 runtime modules 3.71 KiB 8 modules
-code generated modules 934 KiB (javascript) 2.33 KiB (asset) 26.1 KiB (css/mini-extract) [code generated]
-  modules by path ./node_modules/ 904 KiB
-    modules by path ./node_modules/@vue/ 374 KiB 4 modules
-    modules by path ./node_modules/@sentry/ 304 KiB 4 modules
-  modules by path ./app/packs/ 30 KiB (javascript) 2.33 KiB (asset) 26.1 KiB (css/mini-extract)
-    asset modules 84 bytes (javascript) 2.33 KiB (asset)
+code generated modules 935 KiB (javascript) 47.7 KiB (asset) 26.1 KiB (css/mini-extract) [code generated]
+  javascript modules 934 KiB
+    modules by path ./node_modules/ 904 KiB 8 modules
+    modules by path ./app/packs/ 30.4 KiB
+      ./app/packs/entrypoints/application.ts + 43 modules 30.1 KiB [built] [code generated]
+      ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
+  asset modules 378 bytes (javascript) 47.7 KiB (asset)
+    optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
+    modules by path ./app/packs/images/*.svg 84 bytes (javascript) 2.33 KiB (asset)
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-    ./app/packs/entrypoints/application.ts + 43 modules 29.9 KiB [built] [code generated]
-    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.1 KiB [code generated]
-webpack 5.38.1 compiled successfully in 8673 ms
+  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.1 KiB [code generated]
+webpack 5.38.1 compiled successfully in 9529 ms
 ```
 
-=> 196 KB JavaScript (minified, uncompressed)
+=> 197 KB JavaScript (minified, uncompressed)

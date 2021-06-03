@@ -4,6 +4,8 @@ Rails
   .draw do
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+    get '/manifest.webmanifest', to: 'application#manifest.webmanifest.json.erb'
+
     resources :clicks,
               only: %i[index create],
               constraints: lambda { |request| request.format == :json }
