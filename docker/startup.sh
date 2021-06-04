@@ -22,7 +22,7 @@ echo "PostgreSQL is up and running!"
 
 # Create or migrate database
 echo "Preparing database..."
-bundle exec rails db:prepare
+bin/rails db:prepare
 echo "Database is ready!"
 
 # Start web server
