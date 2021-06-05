@@ -7,9 +7,9 @@ Rails
     resources :clicks, only: %i[index create]
     root to: 'vue#index'
 
-    # Allow webmanifest to render with ERB
-    get '/manifest.webmanifest', to: 'application#manifest.webmanifest.json.erb'
-
+    get '/manifest', format: 'webmanifest', to: 'statics#manifest'
+    get '/apple-touch-icon', format: 'png', to: 'statics#apple_touch_icon'
+    get '/favicon', format: 'ico', to: 'statics#favicon'
 
     # Catch-all route to let Vue.js do the routing
     get '/*path', to: 'vue#index', format: 'html'
