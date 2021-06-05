@@ -7,6 +7,16 @@
         This is an opinionated template for web applications with
         <b>Ruby on Rails</b> and <b>Vue.js</b>
       </p>
+
+      <p class="mt-2">
+        <a
+          class="underline"
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/ledermann/rails-vue3"
+          >Source on GitHub</a
+        >
+      </p>
     </div>
 
     <click-button

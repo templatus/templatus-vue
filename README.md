@@ -1,61 +1,70 @@
 # README
 
+This is an opinionated template for web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
+
+Live demo available at https://rails-vue3.ledermann.dev
+
+## Technology stack
+
 - Ruby 3
 - Ruby on Rails 6.1
-- ActionCable
-- Webpacker 6 (for Webpack 5)
-- TypeScript
-- Vue 3
-- Vue Router
-- Vuex State management
-- TailwindCSS 2, HeadlessUI, HeroIcons
-- GitHub Actions
-- RSpec for Ruby testing
-- Jest for JavaScript testing
-- RuboCop
-- Docker
-- Sentry.io for error tracking (Ruby and JavaScript)
+- Webpacker 6 (still in beta, but this allows using Webpack 5)
+- ActionCable (for WebSocket communication)
+- PostgreSQL (for using as SQL database)
+- Redis (for Caching and ActionCable)
+- Vue 3 (as frontend framework)
+- Vue Router (for frontend routing)
+- Vuex (for frontend state management)
+- Tailwind CSS 2 (to not have to write CSS at all)
+- HeadlessUI (unstyled, fully accessible UI components designed to integrate with Tailwind CSS)
+- HeroIcons (for SVG icons as Vue components)
+- RSpec (for Ruby testing)
+- RuboCop (for Ruby static code analysis)
+- TypeScript (for writing better JavaScript)
+- Jest (for JavaScript testing)
+- Sentry (for error tracking in Ruby and JavaScript)
+- Lograge (for single-line logging)
+- Docker (for production deployment, NOT for development)
+- Puma-dev (for using https in development)
+- Foreman (for starting up the application locally)
+- dotenv (for configuration by using ENV variables)
 
-### Development
+## Features
 
-Precondition: Install and set up [puma-dev](https://github.com/puma/puma-dev) to use HTTPS for both the application and `webpack-dev-server`. Do this on macOS:
+- Deployment using an [optimized Alpine-based Docker image](https://github.com/ledermann/docker-rails-base)
+- Ready for serving assets via CDN like CloudFront
+- Ready for PWA (manifest, service-worker)
+- Gzip compression of HTML using Rack::Deflater
+- JS Code splitting (separate vendor code from own code)
+- Fine-tuned Content Security Policy (CSP)
+- Uses GitHub Actions for testing, linting and building Docker image
+- Visual Studio Code: Autoformat JS and Ruby code using Prettier
 
-```bash
-brew install puma-dev
-sudo puma-dev -setup
-puma-dev -install
+## Metrics
 
-cd rails-vue3
-puma-dev link
+### Lighthouse site performance
 
-# https://github.com/puma/puma-dev#webpack-dev-server
-echo 3035 > ~/.puma-dev/webpack.rails-vue3
-```
+100% in nearly all categories.
 
-Then setup the application:
+![Lighthouse](lighthouse.png)
 
-```bash
-bin/setup
-foreman start
-```
+Why not 100% in "Best practice" category? This is a bug in Lighthouse, because Lighthouse first injects inline styles and then whines about a CSP warning. See https://github.com/GoogleChrome/lighthouse/issues/11862
 
-Then you can open https://rails-vue3.test in your browser.
+### Network transfer
 
-### Test
+Small footprint: Only 75Kb transfer in total for the first visit
 
-Run Ruby tests:
+![Network](network.png)
 
-```
-bin/rspec
-```
+### Secure headers
 
-Run JavaScript tests:
+![Secure headers](secure-headers.png)
 
-```
-bin/yarn test
-```
+https://securityheaders.com/?q=rails-vue3.ledermann.dev&followRedirects=on
 
-### Build assets for production
+### JavaScript size
+
+197 KB of compiled JavaScript (minified, uncompressed)
 
 ```
 RAILS_ENV=production bin/rails webpacker:clobber webpacker:compile
@@ -74,26 +83,110 @@ assets by path media/images/ 52.6 KiB
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 197 KiB
   asset js/637-ff3de77082f3a335d579.js 179 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-c8a6782770c0b0c48344.js 16.6 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/application-58ffc98c676b6e517903.js 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-a245cc4d.css 17.1 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-1e2587f3.css 17.2 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 214 KiB (342 KiB) = js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB js/637-ff3de77082f3a335d579.js 179 KiB css/application-a245cc4d.css 17.1 KiB js/application-c8a6782770c0b0c48344.js 16.6 KiB 13 auxiliary assets
+Entrypoint application 215 KiB (342 KiB) = js/runtime-ff84c7bf06166d5ef8b7.js 1.67 KiB js/637-ff3de77082f3a335d579.js 179 KiB css/application-1e2587f3.css 17.2 KiB js/application-58ffc98c676b6e517903.js 16.8 KiB 13 auxiliary assets
 orphan modules 473 KiB [orphan] 356 modules
 runtime modules 3.71 KiB 8 modules
-code generated modules 935 KiB (javascript) 47.7 KiB (asset) 26.1 KiB (css/mini-extract) [code generated]
+code generated modules 935 KiB (javascript) 47.7 KiB (asset) 26.2 KiB (css/mini-extract) [code generated]
   javascript modules 934 KiB
     modules by path ./node_modules/ 904 KiB 8 modules
-    modules by path ./app/packs/ 30.4 KiB
-      ./app/packs/entrypoints/application.ts + 43 modules 30.1 KiB [built] [code generated]
+    modules by path ./app/packs/ 30.6 KiB
+      ./app/packs/entrypoints/application.ts + 43 modules 30.3 KiB [built] [code generated]
       ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
   asset modules 378 bytes (javascript) 47.7 KiB (asset)
     optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
     modules by path ./app/packs/images/*.svg 84 bytes (javascript) 2.33 KiB (asset)
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.1 KiB [code generated]
-webpack 5.38.1 compiled successfully in 9529 ms
+  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.2 KiB [code generated]
+webpack 5.38.1 compiled successfully in 8893 ms
 ```
 
-=> 197 KB JavaScript (minified, uncompressed)
+### Docker build time
+
+About 2 minutes (on a six-year old Intel iMac)
+
+```
+~/Projects/rails-vue3 on main > docker build .
+[+] Building 120.8s (22/22) FINISHED
+```
+
+### Docker image size
+
+107 MB (uncompressed)
+
+```
+REPOSITORY                     TAG       IMAGE ID       CREATED       SIZE
+ghcr.io/ledermann/rails-vue3   latest    7f5a3f2b63d6   2 hours ago   107MB
+```
+
+## Installation
+
+1. Clone the repo locally:
+
+```bash
+git clone git@github.com:ledermann/rails-vue3.git
+cd rails-vue3
+```
+
+2. Install PostgreSQL, Redis and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
+
+```bash
+brew bundle
+```
+
+3. Install and set up [puma-dev](https://github.com/puma/puma-dev) to use HTTPS for both the application and `webpack-dev-server`. Do this on macOS:
+
+```bash
+sudo puma-dev -setup
+puma-dev -install
+puma-dev link
+
+# Use https in development and load webpack from subdomain
+# https://github.com/puma/puma-dev#webpack-dev-server
+echo 3035 > ~/.puma-dev/webpack.rails-vue3
+```
+
+4. Setup the application to install gems and NPM packages and create the database:
+
+```bash
+bin/setup
+```
+
+5. Start the application (and webpack-dev-server) locally:
+
+```bash
+foreman start
+```
+
+Then you can open https://rails-vue3.test in your browser.
+
+## Test
+
+Run Ruby tests:
+
+```
+bin/rspec
+open coverage/index.html
+```
+
+Run RuboCop:
+
+```
+bin/rubocop
+```
+
+Lint JavaScript:
+
+```
+bin/yarn lint
+```
+
+Run JavaScript tests:
+
+```
+bin/yarn test
+```

@@ -12,6 +12,7 @@ exports[`Home matches snapshot 1`] = `
       text-red-800
     ">Hello World!</h1>
     <p class="mt-6 text-xl max-w-3xl"> This is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js</b></p>
+    <p class="mt-2"><a class="underline" target="_blank" rel="noopener" href="https://github.com/ledermann/rails-vue3">Source on GitHub</a></p>
   </div>
   <div class="
       flex flex-col
