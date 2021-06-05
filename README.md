@@ -1,8 +1,8 @@
 # README
 
-This is an opinionated template for web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
+Templatus is an opinionated template for web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
 
-Live demo available at https://rails-vue3.ledermann.dev
+Live demo available at https://templatus.ledermann.dev
 
 ## Technology stack
 
@@ -60,7 +60,13 @@ Small footprint: Only 75Kb transfer in total for the first visit
 
 ![Secure headers](secure-headers.png)
 
-https://securityheaders.com/?q=rails-vue3.ledermann.dev&followRedirects=on
+https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on
+
+### Mozilla Observatory
+
+![Mozilla Observatory](mozilla-observatory.png)
+
+https://observatory.mozilla.org/analyze/templatus.ledermann.dev
 
 ### JavaScript size
 
@@ -69,7 +75,7 @@ https://securityheaders.com/?q=rails-vue3.ledermann.dev&followRedirects=on
 ```
 RAILS_ENV=production bin/rails webpacker:clobber webpacker:compile
 Compiling...
-Compiled all packs in /Users/ledermann/Projects/rails-vue3/public/packs
+Compiled all packs in /Users/ledermann/Projects/templatus/public/packs
 
 warn - You have enabled the JIT engine which is currently in preview.
 warn - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
@@ -110,7 +116,7 @@ webpack 5.38.1 compiled successfully in 8893 ms
 About 2 minutes (on a six-year old Intel iMac)
 
 ```
-~/Projects/rails-vue3 on main > docker build .
+~/Projects/templatus on main > docker build .
 [+] Building 120.8s (22/22) FINISHED
 ```
 
@@ -120,7 +126,7 @@ About 2 minutes (on a six-year old Intel iMac)
 
 ```
 REPOSITORY                     TAG       IMAGE ID       CREATED       SIZE
-ghcr.io/ledermann/rails-vue3   latest    7f5a3f2b63d6   2 hours ago   107MB
+ghcr.io/ledermann/templatus   latest    7f5a3f2b63d6   2 hours ago   107MB
 ```
 
 ## Installation
@@ -128,8 +134,8 @@ ghcr.io/ledermann/rails-vue3   latest    7f5a3f2b63d6   2 hours ago   107MB
 1. Clone the repo locally:
 
 ```bash
-git clone git@github.com:ledermann/rails-vue3.git
-cd rails-vue3
+git clone git@github.com:ledermann/templatus.git
+cd templatus
 ```
 
 2. Install PostgreSQL, Redis and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
@@ -147,7 +153,7 @@ puma-dev link
 
 # Use https in development and load webpack from subdomain
 # https://github.com/puma/puma-dev#webpack-dev-server
-echo 3035 > ~/.puma-dev/webpack.rails-vue3
+echo 3035 > ~/.puma-dev/webpack.templatus
 ```
 
 4. Setup the application to install gems and NPM packages and create the database:
@@ -162,7 +168,7 @@ bin/setup
 foreman start
 ```
 
-Then you can open https://rails-vue3.test in your browser.
+Then you can open https://templatus.test in your browser.
 
 ## Test
 

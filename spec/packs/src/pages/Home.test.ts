@@ -37,7 +37,7 @@ describe('Home', () => {
 
   test('renders name', () => {
     const title = wrapper.find('h1')?.element?.textContent?.trim();
-    expect(title).toEqual('Hello World!');
+    expect(title).toEqual('Hello, World!');
   });
 
   test('matches snapshot', () => {

@@ -24,7 +24,7 @@ development:
     https: false
     host: localhost
     port: 3035
-    public: webpack.rails-vue3.test
+    public: webpack.templatus.test
     # Inject browserside javascript that required by both HMR and Live(full) reload
     inject_client: true
     # Hot Module Replacement updates modules while the application is running without a full reload

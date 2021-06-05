@@ -18,7 +18,7 @@ require 'rails/test_unit/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module RailsVue3
+module Templatus
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
@@ -32,7 +32,7 @@ module RailsVue3
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.time_zone = ENV.fetch('TIME_ZONE', 'Berlin')
-    config.x.app_host = ENV.fetch('APP_HOST', 'rails-vue3.test')
+    config.x.app_host = ENV.fetch('APP_HOST', 'templatus.test')
 
     config.x.git.commit_sha =
       (ENV.fetch('COMMIT_SHA') { `git rev-parse HEAD` }).first(7)

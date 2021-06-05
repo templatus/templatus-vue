@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-between flex-wrap">
     <div class="w-full md:w-1/2">
-      <page-title>Hello {{ name }}!</page-title>
+      <page-title>Hello, {{ name }}!</page-title>
 
-      <p class="mt-6 text-xl max-w-3xl">
-        This is an opinionated template for web applications with
+      <p class="mt-6 text-xl max-w-4xl">
+        Templatus is an opinionated template for web applications with
         <b>Ruby on Rails</b> and <b>Vue.js</b>
       </p>
 
@@ -13,7 +13,7 @@
           class="underline"
           target="_blank"
           rel="noopener"
-          href="https://github.com/ledermann/rails-vue3"
+          href="https://github.com/ledermann/templatus"
           >Source on GitHub</a
         >
       </p>

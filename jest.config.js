@@ -1,6 +1,6 @@
 module.exports = {
   verbose: true,
-  testURL: 'https://rails-vue3.test/',
+  testURL: 'https://templatus.test/',
   roots: ['spec/packs'],
   moduleDirectories: ['node_modules', 'app/packs'],
   moduleNameMapper: {

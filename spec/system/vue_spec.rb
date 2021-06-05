@@ -1,7 +1,7 @@
 describe 'Vue', js: true do
   it 'renders successfully' do
     visit '/'
-    expect(page).to have_css('h1', text: 'Hello Vue!')
+    expect(page).to have_css('h1', text: 'Hello, Templatus!')
 
     click_on 'Click me!'
     click_on 'Click me!'

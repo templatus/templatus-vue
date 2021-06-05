@@ -1,5 +1,5 @@
 {
-  "name": "rails-vue3",
+  "name": "templatus",
   "private": true,
   "scripts": {
     "test": "jest --coverage",
