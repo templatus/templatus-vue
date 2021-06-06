@@ -12,7 +12,12 @@
 .rubocop.yml
 .vscode
 .yarnclean
+.prettierignore
+.prettierrc.json
+./*.png
 **/*.DS_Store
+Brewfile
+Brewfile.lock.json
 Dockerfile
 Procfile*
 Guardfile
