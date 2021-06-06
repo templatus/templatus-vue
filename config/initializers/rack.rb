@@ -7,3 +7,23 @@ Rack::Mime::MIME_TYPES['.webmanifest'] = 'application/manifest+json'
 
 # Enable gzip compression
 Rails.application.config.middleware.use Rack::Deflater
+
+# Monkey patch ActionDispatch::Static to serve compressed SVG
+# Idea taken from https://stackoverflow.com/a/45992324/57950
+require 'action_dispatch/middleware/static'
+module ActionDispatch
+  Static.class_eval do
+    def initialize(app, path, index: 'index', headers: {})
+      @app = app
+      @file_handler =
+        FileHandler.new(
+          path,
+          index: index,
+          headers: headers,
+          ##### Added "image/svg+xml"
+          compressible_content_types: %r{\A(?:text/|application/javascript|image/svg\+xml)},
+          #####
+        )
+    end
+  end
+end
