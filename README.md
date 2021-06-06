@@ -34,7 +34,7 @@ Live demo available at https://templatus.ledermann.dev
 - Deployment using an [optimized Alpine-based Docker image](https://github.com/ledermann/docker-rails-base)
 - Ready for serving assets via CDN like CloudFront
 - Ready for PWA (manifest, service-worker)
-- Gzip compression of HTML using Rack::Deflater
+- Gzip compression of all dynamic responses using Rack::Deflater
 - JS Code splitting (separate vendor code from own code)
 - Fine-tuned Content Security Policy (CSP)
 - Uses GitHub Actions for testing, linting and building Docker image
@@ -52,7 +52,7 @@ Why not 100% in "Best practice" category? This is a bug in Lighthouse, because L
 
 ### Network transfer
 
-Small footprint: Only 75Kb transfer in total for the first visit
+Small footprint: Only 74Kb transfer in total for the first visit
 
 ![Network](network.png)
 
@@ -70,7 +70,7 @@ https://observatory.mozilla.org/analyze/templatus.ledermann.dev
 
 ### JavaScript size
 
-197 KB of compiled JavaScript (minified, uncompressed)
+197 KB of compiled JavaScript (minified, uncompressed). The biggest parts are Sentry (74KB) and Vue.js (50KB).
 
 ```
 RAILS_ENV=production bin/rails webpacker:clobber webpacker:compile
@@ -113,12 +113,7 @@ webpack 5.38.1 compiled successfully in 11616 ms
 
 ### Docker build time
 
-About 2 minutes (on a six-year old Intel iMac)
-
-```
-~/Projects/templatus on main > docker build .
-[+] Building 120.8s (22/22) FINISHED
-```
+About 1,5 minutes on GitHub Actions (see https://github.com/ledermann/templatus/actions)
 
 ### Docker image size
 
