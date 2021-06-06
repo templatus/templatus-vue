@@ -4,10 +4,8 @@
       flex flex-col
       w-full
       mt-5
-      sm:w-56
-      sm:mt-0
-      lg:transform
-      lg:-translate-y-80
+      sm:w-56 sm:mt-0
+      lg:transform lg:-translate-y-80
     "
   >
     <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
@@ -41,8 +39,7 @@
         text-red-700
         bg-red-100
         hover:bg-red-200
-        focus:outline-none
-        focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500
       "
       @click="$emit('click')"
     >

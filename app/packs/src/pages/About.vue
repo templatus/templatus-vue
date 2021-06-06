@@ -35,9 +35,7 @@
           <dl
             class="
               space-y-10
-              sm:space-y-0
-              sm:grid sm:grid-cols-2
-              sm:gap-x-6 sm:gap-y-10
+              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
               lg:gap-x-8
             "
           >

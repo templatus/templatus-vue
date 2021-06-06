@@ -72,8 +72,7 @@
         pt-10
         pb-20
         px-4
-        sm:py-32
-        sm:px-6
+        sm:py-32 sm:px-6
         lg:py-24
       "
     >
