@@ -1,3 +1,3 @@
 Rails.application.config.session_store :cookie_store,
-                                       key: '_templatus_session',
-                                       secure: Rails.env.production?
+                                       key: '__Host-templatus_session',
+                                       secure: true
