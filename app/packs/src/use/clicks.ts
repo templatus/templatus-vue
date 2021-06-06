@@ -1,5 +1,6 @@
 import { Ref, ref } from 'vue';
 import { createConsumer } from '@rails/actioncable';
+import { metaContent } from '@/utils/metaContent';
 
 export type Click = {
   id: number;
@@ -10,29 +11,19 @@ export type Click = {
 
 type Clicks = { total: number; items: Click[] };
 
-function csrfToken() {
-  return (
-    document
-      .querySelector('meta[name="csrf-token"]')
-      ?.getAttribute('content') || ''
-  );
-}
-
 function sendClick() {
   fetch('/clicks', {
     method: 'POST',
     headers: {
-      'X-CSRF-Token': csrfToken(),
-      Accept: 'application/json',
+      'X-CSRF-Token': metaContent('csrf-token') || '',
     },
   });
 }
 
 async function getClicks() {
-  const response = await fetch('/clicks', {
+  const response = await fetch('/clicks.json', {
     headers: {
       Accept: 'application/json',
-      'Content-Type': 'application/json',
     },
     method: 'GET',
   });
