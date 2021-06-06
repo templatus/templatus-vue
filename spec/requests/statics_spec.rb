@@ -14,9 +14,4 @@ describe 'Static resources', type: :request do
     get '/apple-touch-icon.png'
     expect(response).to redirect_to %r{/packs-test/media/images/.*\.png}
   end
-
-  it 'reponds unknown route as success (so Vue is responsible for routing)' do
-    get '/about'
-    expect(response).to have_http_status(:ok)
-  end
 end

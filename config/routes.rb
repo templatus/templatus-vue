@@ -10,7 +10,4 @@ Rails
     get '/manifest', format: 'webmanifest', to: 'statics#manifest'
     get '/apple-touch-icon', format: 'png', to: 'statics#apple_touch_icon'
     get '/favicon', format: 'ico', to: 'statics#favicon'
-
-    # Catch-all route to let Vue.js do the routing
-    get '/*path', to: 'vue#index', format: 'html'
   end

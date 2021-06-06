@@ -88,12 +88,12 @@ assets by path media/images/ 52.6 KiB
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 197 KiB
-  asset js/637-987e3e07fd7d8043ff47.js 179 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-05c368c031225210d713.js 16.6 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/637-90d1603c4d693b462106.js 179 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-71388d7f98ac323a3eff.js 16.6 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-65623d96786f79cdfa20.js 1.67 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-7bddab06.css 17.2 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 214 KiB (342 KiB) = js/runtime-65623d96786f79cdfa20.js 1.67 KiB js/637-987e3e07fd7d8043ff47.js 179 KiB css/application-7bddab06.css 17.2 KiB js/application-05c368c031225210d713.js 16.6 KiB 13 auxiliary assets
+Entrypoint application 214 KiB (342 KiB) = js/runtime-65623d96786f79cdfa20.js 1.67 KiB js/637-90d1603c4d693b462106.js 179 KiB css/application-7bddab06.css 17.2 KiB js/application-71388d7f98ac323a3eff.js 16.6 KiB 13 auxiliary assets
 orphan modules 473 KiB [orphan] 356 modules
 runtime modules 3.7 KiB 8 modules
 code generated modules 935 KiB (javascript) 47.7 KiB (asset) 26.2 KiB (css/mini-extract) [code generated]
@@ -108,7 +108,7 @@ code generated modules 935 KiB (javascript) 47.7 KiB (asset) 26.2 KiB (css/mini-
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
   css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.2 KiB [code generated]
-webpack 5.38.1 compiled successfully in 8322 ms
+webpack 5.38.1 compiled successfully in 11616 ms
 ```
 
 ### Docker build time
