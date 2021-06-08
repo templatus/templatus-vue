@@ -14,5 +14,7 @@ export default defineComponent({
   components: {
     PageTitle,
   },
+
+  props: {},
 });
 </script>

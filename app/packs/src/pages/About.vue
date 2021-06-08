@@ -238,6 +238,8 @@ export default defineComponent({
     PageTitle,
   },
 
+  props: {},
+
   setup() {
     return {
       features,
