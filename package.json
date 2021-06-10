@@ -7,8 +7,8 @@
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
     "@headlessui/vue": "^1.2.0",
     "@heroicons/vue": "^1.0.1",
     "@rails/actioncable": "^6.0.3-7",
@@ -25,7 +25,7 @@
     "fork-ts-checker-webpack-plugin": "^6.2.10",
     "jest-serializer-vue": "^2.0.2",
     "mini-css-extract-plugin": "^1.6.0",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.1",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^6.7.0",
@@ -42,7 +42,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.4",
+    "@babel/eslint-parser": "^7.14.5",
     "@prettier/plugin-ruby": "^1.5.5",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
