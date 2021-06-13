@@ -20,7 +20,7 @@
     <meta name="sentry-dsn" content="<%= Rails.configuration.x.sentry.dsn %>">
     <meta name="webpack-public-path" content="<%= Rails.configuration.action_controller.asset_host %>/<%= Webpacker.config.public_output_path.basename %>/">
 
-    <% cache do %>
+    <% cache Rails.configuration.x.git.commit_sha do %>
       <% versions.each do |name, version| %>
         <%= tag.meta name: "version-#{name}", content: version %>
       <% end %>

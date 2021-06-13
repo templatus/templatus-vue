@@ -36,6 +36,12 @@ gem 'lograge'
 # Middleware for enabling Cross-Origin Resource Sharing in Rack apps (https://github.com/cyu/rack-cors)
 gem 'rack-cors', require: 'rack/cors'
 
+# Simple, efficient background processing for Ruby (https://sidekiq.org)
+gem 'sidekiq'
+
+# Sidekiq Cron helps to add repeated scheduled jobs (http://github.com/ondrejbartas/sidekiq-cron)
+gem 'sidekiq-cron'
+
 group :development, :test do
   # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
