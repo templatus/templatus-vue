@@ -1,0 +1,91 @@
+version: '3.8'
+
+x-app-base: &app_base
+  image: ghcr.io/ledermann/templatus:latest
+  environment:
+    - APP_HOST
+    - ASSET_HOST
+    - DB_HOST=db
+    - DB_PASSWORD=${POSTGRES_PASSWORD}
+    - DB_USER=postgres
+    - REDIS_HOST=redis
+    - SECRET_KEY_BASE
+    - SENTRY_DSN
+    - SENTRY_CSP
+  networks:
+    - internal
+  links:
+    - db
+    - redis
+
+services:
+  db:
+    hostname: db.${APP_HOST}
+    environment:
+      - POSTGRES_PASSWORD
+    networks:
+      - internal
+    image: postgres:13-alpine
+    restart: always
+    deploy:
+      update_config:
+        order: stop-first
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 10s
+      timeout: 5s
+    volumes:
+      - ${DB_VOLUME_PATH}:/var/lib/postgresql/data
+
+  redis:
+    hostname: redis.${APP_HOST}
+    networks:
+      - internal
+    image: redis:alpine
+    restart: always
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+    deploy:
+      update_config:
+        order: stop-first
+    volumes:
+      - ${REDIS_VOLUME_PATH}:/data
+
+  worker:
+    <<: *app_base
+    hostname: worker.${APP_HOST}
+    deploy:
+      update_config:
+        order: stop-first
+      replicas: 1
+    command: bundle exec sidekiq
+    healthcheck:
+      test: 'ps ax | grep -v grep | grep sidekiq'
+
+  app:
+    <<: *app_base
+    hostname: app.${APP_HOST}
+    deploy:
+      update_config:
+        order: start-first
+        failure_action: rollback
+        delay: 10s
+      rollback_config:
+        parallelism: 0
+        order: stop-first
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      replicas: 1
+    restart: always
+    healthcheck:
+      test: ['CMD-SHELL', 'nc -z 127.0.0.1 3000 || exit 1']
+
+networks:
+  internal:
+    driver_opts:
+      encrypted: ''
