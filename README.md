@@ -32,16 +32,19 @@ Live demo available at https://templatus.ledermann.dev
 
 ## Features
 
-- Deployment using an [optimized Alpine-based Docker image](https://github.com/ledermann/docker-rails-base)
+- Deployment using an optimized Docker image based on Alpine Linux
 - Ready for serving assets via CDN like CloudFront
 - Ready for PWA (manifest, service-worker)
-- Gzip compression of all dynamic responses using Rack::Deflater
-- JS Code splitting (separate vendor code from own code)
+- Gzip compression of all dynamic responses (e.g. JSON) using Rack::Deflater
+- JS Code splitting (separate vendor code from application code)
 - Fine-tuned Content Security Policy (CSP)
 - Uses GitHub Actions for testing, linting and building Docker image
 - Visual Studio Code: Autoformat JS and Ruby code using Prettier
 
 ## Metrics
+
+This template is developed with optimized performance and security in mind. The following benchmarks are
+performed against the demo installation on production. It uses an inexpensive virtual server on the [Hetzner Cloud](https://www.hetzner.com/de/cloud) behind a [Traefik](https://traefik.io/traefik/) setup.
 
 ### Lighthouse site performance
 
@@ -49,13 +52,7 @@ Live demo available at https://templatus.ledermann.dev
 
 ![Lighthouse](lighthouse.png)
 
-Why not 100% in "Best practice" category? This is a bug in Lighthouse, because Lighthouse first injects inline styles and then whines about a CSP warning. See https://github.com/GoogleChrome/lighthouse/issues/11862
-
-### Network transfer
-
-Small footprint: Only 74Kb transfer in total for the first visit
-
-![Network](network.png)
+Why not 100% in _Best practice_ category? This is a [bug in Lighthouse](https://github.com/GoogleChrome/lighthouse/issues/11862), because Lighthouse first injects inline styles and then whines about a CSP warning.
 
 ### Secure headers
 
@@ -63,11 +60,16 @@ Small footprint: Only 74Kb transfer in total for the first visit
 
 https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on
 
+What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the nexts Rails update:
+https://github.com/rails/rails/pull/41994
+
 ### Mozilla Observatory
 
 ![Mozilla Observatory](mozilla-observatory.png)
 
 https://observatory.mozilla.org/analyze/templatus.ledermann.dev
+
+Why is there a failing test? It's about missing [Subresource Integrity](https://infosec.mozilla.org/guidelines/web_security#subresource-integrity), which is currently not supported by Webpacker. There is a [stale issue](https://github.com/rails/webpacker/issues/323) about it, I don't expect a fix in the near future.
 
 ### JavaScript size
 
@@ -112,13 +114,19 @@ code generated modules 918 KiB (javascript) 47.7 KiB (asset) 26.1 KiB (css/mini-
 webpack 5.38.1 compiled successfully in 7748 ms
 ```
 
+### Network transfer
+
+Small footprint: The demo application transfers only 74Kb of data on the first visit.
+
+![Network](network.png)
+
 ### Docker build time
 
-About 1,5 minutes on GitHub Actions (see https://github.com/ledermann/templatus/actions)
+With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/.ledermann/templatus/actions)
 
 ### Docker image size
 
-108 MB (uncompressed disk size)
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently 108 MB uncompressed disk size). It includes just the bare minimal - no unneeded Node.js, just the compiled assets, no tests.
 
 ```
 REPOSITORY                     TAG       IMAGE ID       CREATED       SIZE
