@@ -64,6 +64,14 @@ services:
     healthcheck:
       test: 'ps ax | grep -v grep | grep sidekiq'
 
+  cable:
+    <<: *app_base
+    hostname: cable.${APP_HOST}
+    command: bundle exec puma -p 28080 cable/config.ru
+    restart: always
+    healthcheck:
+      test: ['CMD-SHELL', 'nc -z 127.0.0.1 28080 || exit 1']
+
   app:
     <<: *app_base
     hostname: app.${APP_HOST}
