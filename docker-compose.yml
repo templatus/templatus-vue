@@ -86,6 +86,7 @@ services:
     environment:
       <<: *app_environment
       REDIS_URL: redis://redis:6379/0
+    command: bundle exec puma -C config/puma.rb
     deploy:
       update_config:
         order: start-first
