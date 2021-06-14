@@ -33,7 +33,6 @@ module Templatus
 
     config.time_zone = ENV.fetch('TIME_ZONE', 'Berlin')
     config.x.app_host = ENV.fetch('APP_HOST', 'templatus.test')
-    config.x.redis_host = ENV.fetch('REDIS_HOST', 'localhost')
 
     config.x.git.commit_sha =
       (ENV.fetch('COMMIT_SHA') { `git rev-parse HEAD` }).first(7)

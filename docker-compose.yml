@@ -2,21 +2,21 @@ version: '3.8'
 
 x-app-base: &app_base
   image: ghcr.io/ledermann/templatus:latest
-  environment:
-    - APP_HOST
-    - ASSET_HOST
-    - DB_HOST=db
-    - DB_PASSWORD=${POSTGRES_PASSWORD}
-    - DB_USER=postgres
-    - REDIS_HOST=redis
-    - SECRET_KEY_BASE
-    - SENTRY_DSN
-    - SENTRY_CSP
-  networks:
-    - internal
   links:
     - db
     - redis
+  networks:
+    - public
+    - internal
+  environment: &app_environment
+    APP_HOST: ${APP_HOST}
+    ASSET_HOST: ${ASSET_HOST}
+    DB_HOST: db
+    DB_PASSWORD: ${POSTGRES_PASSWORD}
+    DB_USER: postgres
+    SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+    SENTRY_DSN: ${SENTRY_DSN}
+    SENTRY_CSP: ${SENTRY_CSP}
 
 services:
   db:
@@ -56,6 +56,11 @@ services:
   worker:
     <<: *app_base
     hostname: worker.${APP_HOST}
+    networks:
+      - internal
+    environment:
+      <<: *app_environment
+      REDIS_URL: redis://redis:6379/2
     deploy:
       update_config:
         order: stop-first
@@ -67,6 +72,9 @@ services:
   cable:
     <<: *app_base
     hostname: cable.${APP_HOST}
+    environment:
+      <<: *app_environment
+      REDIS_URL: redis://redis:6379/1
     command: bundle exec puma -p 28080 cable/config.ru
     restart: always
     healthcheck:
@@ -75,6 +83,9 @@ services:
   app:
     <<: *app_base
     hostname: app.${APP_HOST}
+    environment:
+      <<: *app_environment
+      REDIS_URL: redis://redis:6379/0
     deploy:
       update_config:
         order: start-first
@@ -94,6 +105,8 @@ services:
       test: ['CMD-SHELL', 'nc -z 127.0.0.1 3000 || exit 1']
 
 networks:
+  public:
+    external: true
   internal:
     driver_opts:
       encrypted: ''

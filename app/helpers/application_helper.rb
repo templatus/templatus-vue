@@ -34,7 +34,7 @@ module ApplicationHelper
   end
 
   def redis_version
-    Redis.new(host: Rails.application.config.x.redis_host).info['redis_version']
+    Redis.new.info['redis_version']
   end
 
   def sidekiq_version
