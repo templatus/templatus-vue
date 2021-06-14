@@ -1,4 +1,4 @@
-import { Ref, ref } from 'vue';
+import { Ref, ref, onBeforeUnmount } from 'vue';
 import { createConsumer } from '@rails/actioncable';
 import { metaContent } from '@/utils/metaContent';
 
@@ -40,7 +40,7 @@ export default function useClicks(): {
     receivedClicks.value = clicks;
   });
 
-  createConsumer().subscriptions.create(
+  const channel = createConsumer().subscriptions.create(
     {
       channel: 'ClicksChannel',
     },
@@ -51,6 +51,11 @@ export default function useClicks(): {
       },
     },
   );
+
+  onBeforeUnmount(() => {
+    channel.unsubscribe();
+    channel.consumer.disconnect();
+  });
 
   return {
     sendClick,
