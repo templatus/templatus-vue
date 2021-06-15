@@ -76,7 +76,7 @@ Why is there a failing test? It's about missing [Subresource Integrity](https://
 194 KB of compiled JavaScript (minified, uncompressed). The biggest parts are Sentry (74KB) and Vue.js (50KB).
 
 ```
-RAILS_ENV=production bin/rails webpacker:clobber webpacker:compile
+RAILS_ENV=production SECRET_KEY_BASE=temp bin/rails webpacker:clobber webpacker:compile
 Compiling...
 Compiled all packs in /Users/ledermann/Projects/templatus/public/packs
 
@@ -91,13 +91,13 @@ assets by path media/images/ 52.6 KiB
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 194 KiB
-  asset js/355-a9237143c341fda354dd.js 175 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/355-e7e0ff3faf8781650c74.js 175 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-3ac16d444a9b51436e88.js 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-65623d96786f79cdfa20.js 1.67 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-8e7bda08.css 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 211 KiB (338 KiB) = js/runtime-65623d96786f79cdfa20.js 1.67 KiB js/355-a9237143c341fda354dd.js 175 KiB css/application-8e7bda08.css 16.8 KiB js/application-3ac16d444a9b51436e88.js 16.8 KiB 13 auxiliary assets
-orphan modules 433 KiB [orphan] 353 modules
+Entrypoint application 211 KiB (339 KiB) = js/runtime-65623d96786f79cdfa20.js 1.67 KiB js/355-e7e0ff3faf8781650c74.js 175 KiB css/application-8e7bda08.css 16.8 KiB js/application-3ac16d444a9b51436e88.js 16.8 KiB 13 auxiliary assets
+orphan modules 434 KiB [orphan] 353 modules
 runtime modules 3.7 KiB 8 modules
 code generated modules 918 KiB (javascript) 47.7 KiB (asset) 26.1 KiB (css/mini-extract) [code generated]
   javascript modules 918 KiB
@@ -111,7 +111,7 @@ code generated modules 918 KiB (javascript) 47.7 KiB (asset) 26.1 KiB (css/mini-
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
   css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 26.1 KiB [code generated]
-webpack 5.38.1 compiled successfully in 7944 ms
+webpack 5.39.0 compiled successfully in 12452 ms
 ```
 
 ### Network transfer
