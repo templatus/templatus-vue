@@ -71,6 +71,12 @@ https://observatory.mozilla.org/analyze/templatus.ledermann.dev
 
 Why is there a failing test? It's about missing [Subresource Integrity](https://infosec.mozilla.org/guidelines/web_security#subresource-integrity), which is currently not supported by Webpacker. There is a [stale issue](https://github.com/rails/webpacker/issues/323) about it, I don't expect a fix in the near future.
 
+### WebPageTest
+
+![WebPageTest](web-page-test.png)
+
+https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
+
 ### JavaScript size
 
 194 KB of compiled JavaScript (minified, uncompressed). The biggest parts are Sentry (74KB) and Vue.js (50KB).
