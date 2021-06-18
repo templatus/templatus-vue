@@ -1,7 +1,7 @@
 <template>
   <div class="text-base">
     Version
-    <code>{{ commitSha }}</code
+    <code>{{ commitSha.substring(0, 7) }}</code
     >, created
     <b><time ref="timeElement" :datetime="commitTime"></time></b>
   </div>
