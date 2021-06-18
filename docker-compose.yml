@@ -15,8 +15,7 @@ x-app-base: &app_base
     DB_PASSWORD: ${POSTGRES_PASSWORD}
     DB_USER: postgres
     SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-    SENTRY_DSN: ${SENTRY_DSN}
-    SENTRY_CSP: ${SENTRY_CSP}
+    HONEYBADGER_API_KEY: ${HONEYBADGER_API_KEY}
 
 services:
   db:

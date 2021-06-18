@@ -93,19 +93,6 @@ GEM
     erubi (1.10.0)
     et-orbi (1.2.4)
       tzinfo
-    faraday (1.4.2)
-      faraday-em_http (~> 1.0)
-      faraday-em_synchrony (~> 1.0)
-      faraday-excon (~> 1.1)
-      faraday-net_http (~> 1.0)
-      faraday-net_http_persistent (~> 1.1)
-      multipart-post (>= 1.2, < 3)
-      ruby2_keywords (>= 0.0.4)
-    faraday-em_http (1.0.0)
-    faraday-em_synchrony (1.0.0)
-    faraday-excon (1.1.0)
-    faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.1.0)
     ffi (1.15.3)
     formatador (0.3.0)
     fugit (1.5.0)
@@ -127,6 +114,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    honeybadger (4.8.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     launchy (2.5.0)
@@ -151,7 +139,6 @@ GEM
     mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
-    multipart-post (2.1.1)
     nenv (0.3.0)
     nio4r (2.5.7)
     nokogiri (1.11.7)
@@ -260,22 +247,11 @@ GEM
       rubocop (~> 1.0)
       rubocop-ast (>= 1.1.0)
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    sentry-rails (4.5.1)
-      railties (>= 5.0)
-      sentry-ruby-core (~> 4.5.0)
-    sentry-ruby (4.5.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      faraday (>= 1.0)
-      sentry-ruby-core (= 4.5.1)
-    sentry-ruby-core (4.5.1)
-      concurrent-ruby
-      faraday
     shellany (0.0.1)
     sidekiq (6.2.1)
       connection_pool (>= 2.2.2)
@@ -338,6 +314,7 @@ DEPENDENCIES
   capybara-screenshot
   dotenv-rails
   guard-rspec
+  honeybadger
   listen (~> 3.3)
   lograge
   pg (~> 1.1)
@@ -351,8 +328,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   selenium-webdriver
-  sentry-rails
-  sentry-ruby
   sidekiq
   sidekiq-cron
   simplecov

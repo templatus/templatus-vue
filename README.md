@@ -23,7 +23,7 @@ Live demo available at https://templatus.ledermann.dev
 - RuboCop (for Ruby static code analysis)
 - TypeScript (for writing better JavaScript)
 - Jest (for JavaScript testing)
-- Sentry (for error tracking in Ruby and JavaScript)
+- Honeybadger.io (for error tracking in Ruby and JavaScript)
 - Lograge (for single-line logging)
 - Docker (for production deployment, NOT for development)
 - Puma-dev (for using https in development)
@@ -79,7 +79,11 @@ https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
 
 ### JavaScript size
 
-194 KB of compiled JavaScript (minified, uncompressed). The biggest parts are Sentry (74KB) and Vue.js (50KB).
+144 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+
+- Vue.js + Vue Router + Vuex (83 KB)
+- Honeybadger (20 KB)
+- ActionCable (10 KB)
 
 ```
 RAILS_ENV=production SECRET_KEY_BASE=temp bin/rails webpacker:clobber webpacker:compile
@@ -96,33 +100,32 @@ assets by path media/images/ 52.6 KiB
     asset media/images/ef0c1c6c92c1b5e887fc.ico.br 1.25 KiB [emitted] [immutable] [compressed]
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
-assets by path js/*.js 194 KiB
-  asset js/355-c427ecd783fd57124a8f.js 176 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-3ac16d444a9b51436e88.js 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
-  asset js/runtime-65623d96786f79cdfa20.js 1.67 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
+assets by path js/*.js 144 KiB
+  asset js/382-14b24c5b0bf94ad1f889.js 126 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-9de4dad36da514b11426.js 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/runtime-92e429d6a623e6028354.js 1.39 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-872a1114.css 17.5 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 212 KiB (340 KiB) = js/runtime-65623d96786f79cdfa20.js 1.67 KiB js/355-c427ecd783fd57124a8f.js 176 KiB css/application-872a1114.css 17.5 KiB js/application-3ac16d444a9b51436e88.js 16.8 KiB 13 auxiliary assets
-orphan modules 434 KiB [orphan] 353 modules
-runtime modules 3.7 KiB 8 modules
-code generated modules 921 KiB (javascript) 47.7 KiB (asset) 27.2 KiB (css/mini-extract) [code generated]
-  javascript modules 921 KiB
-    modules by path ./node_modules/ 890 KiB 8 modules
-    modules by path ./app/packs/ 30.7 KiB
-      ./app/packs/entrypoints/application.ts + 43 modules 30.3 KiB [built] [code generated]
-      ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
-  asset modules 378 bytes (javascript) 47.7 KiB (asset)
-    optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
-    modules by path ./app/packs/images/*.svg 84 bytes (javascript) 2.33 KiB (asset)
-      ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
-      ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
+Entrypoint application 162 KiB (269 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-14b24c5b0bf94ad1f889.js 126 KiB css/application-872a1114.css 17.5 KiB js/application-9de4dad36da514b11426.js 16.8 KiB 13 auxiliary assets
+orphan modules 182 KiB [orphan] 292 modules
+runtime modules 3.35 KiB 7 modules
+code generated modules 721 KiB (javascript) 47.7 KiB (asset) 27.2 KiB (css/mini-extract) [code generated]
+  cacheable modules 721 KiB (javascript) 47.7 KiB (asset)
+    javascript modules 721 KiB
+      modules by path ./node_modules/@vue/ 402 KiB 4 modules
+    modules by path ./app/packs/images/ 378 bytes (javascript) 47.7 KiB (asset)
+      optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
+      modules by path ./app/packs/images/*.svg 84 bytes (javascript) 2.33 KiB (asset)
+        ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
+        ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
+  ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
   css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.2 KiB [code generated]
-webpack 5.39.1 compiled successfully in 7187 ms
+webpack 5.39.1 compiled successfully in 6809 ms
 ```
 
 ### Network transfer
 
-Small footprint: The demo application transfers only 74Kb of data on the first visit.
+Small footprint: The demo application transfers only 62Kb of data on the first visit.
 
 ![Network](network.png)
 

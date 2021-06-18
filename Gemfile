@@ -24,11 +24,8 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # A Ruby client library for Redis (https://github.com/redis/redis-rb)
 gem 'redis'
 
-# A gem that provides a client interface for the Sentry error logger (https://github.com/getsentry/sentry-ruby)
-gem 'sentry-ruby'
-
-# A gem that provides Rails integration for the Sentry error logger (https://github.com/getsentry/sentry-ruby)
-gem 'sentry-rails'
+# Error reports you can be happy about. (https://github.com/honeybadger-io/honeybadger-ruby)
+gem 'honeybadger'
 
 # Tame Rails' multi-line logging into a single line per request (https://github.com/roidrage/lograge)
 gem 'lograge'
@@ -95,7 +92,7 @@ group :test do
   # Automatically create snapshots when Cucumber steps fail with Capybara and Rails (http://github.com/mattheworiordan/capybara-screenshot)
   gem 'capybara-screenshot'
 
-  # The next generation developer focused tool for automated testing of webapps (https://github.com/SeleniumHQ/selenium)
+  # Selenium is a browser automation tool for automated testing of webapps and more (https://selenium.dev)
   gem 'selenium-webdriver'
 
   # Easy download and use of browser drivers. (https://github.com/titusfortner/webdrivers)

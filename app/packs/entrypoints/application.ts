@@ -8,22 +8,11 @@ import { store, key } from '@/store';
 import { metaContent } from '@/utils/metaContent';
 import router from '@/router';
 import App from '@/App.vue';
-import * as Sentry from '@sentry/browser';
+import HoneybadgerVue from '@/utils/honeybadger';
 import 'stylesheets/application.css';
 
 // Include all images in webpack manifest
 require.context('../images', true);
-
-const sentry_dsn = metaContent('sentry-dsn');
-if (sentry_dsn) {
-  const release = metaContent('git-commit-sha');
-
-  Sentry.init({
-    dsn: sentry_dsn,
-    release: release,
-    autoSessionTracking: false,
-  });
-}
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
@@ -54,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
   __webpack_public_path__ = metaContent('webpack-public-path'); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   const app = createApp(App);
+
+  const honeybadgerApiKey = metaContent('honeybadger-api-key');
+  if (honeybadgerApiKey) {
+    const gitCommitSha = metaContent('git-commit-sha');
+
+    app.use(HoneybadgerVue, {
+      apiKey: honeybadgerApiKey,
+      environment: 'production',
+      revision: gitCommitSha,
+    });
+  }
+
   app.use(router);
   app.use(store, key);
   app.mount('#vue-app');

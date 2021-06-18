@@ -39,9 +39,11 @@ Rails
         *[
           :self,
           "wss://#{ENV['APP_HOST']}",
-          if Rails.configuration.x.sentry.dsn
-            URI.parse(Rails.configuration.x.sentry.dsn).host
-          end,
+          (
+            if Rails.configuration.x.honeybadger.api_key
+              'https://api.honeybadger.io'
+            end
+          ),
         ].compact,
       )
       policy.manifest_src :self
@@ -51,8 +53,10 @@ Rails
     policy.form_action :self
 
     # Specify URI for violation reports
-    if Rails.configuration.x.sentry.csp
-      policy.report_uri(Rails.configuration.x.sentry.csp)
+    if Rails.configuration.x.honeybadger.api_key
+      policy.report_uri(
+        "https://api.honeybadger.io/v1/browser/csp?api_key=#{Rails.configuration.x.honeybadger.api_key}&report_only=true",
+      )
     end
   end
 
