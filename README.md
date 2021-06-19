@@ -79,7 +79,7 @@ https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
 
 ### JavaScript size
 
-144 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+145 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
 - Vue.js + Vue Router + Vuex (83 KB)
 - Honeybadger (20 KB)
@@ -100,18 +100,18 @@ assets by path media/images/ 52.6 KiB
     asset media/images/ef0c1c6c92c1b5e887fc.ico.br 1.25 KiB [emitted] [immutable] [compressed]
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
-assets by path js/*.js 144 KiB
+assets by path js/*.js 145 KiB
   asset js/382-14b24c5b0bf94ad1f889.js 126 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-9de4dad36da514b11426.js 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/application-fcc93243a549f24fbaee.js 17.9 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-92e429d6a623e6028354.js 1.39 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-872a1114.css 17.5 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-9e70b091.css 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 162 KiB (269 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-14b24c5b0bf94ad1f889.js 126 KiB css/application-872a1114.css 17.5 KiB js/application-9de4dad36da514b11426.js 16.8 KiB 13 auxiliary assets
-orphan modules 182 KiB [orphan] 292 modules
+Entrypoint application 163 KiB (271 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-14b24c5b0bf94ad1f889.js 126 KiB css/application-9e70b091.css 17.7 KiB js/application-fcc93243a549f24fbaee.js 17.9 KiB 13 auxiliary assets
+orphan modules 184 KiB [orphan] 293 modules
 runtime modules 3.35 KiB 7 modules
-code generated modules 721 KiB (javascript) 47.7 KiB (asset) 27.2 KiB (css/mini-extract) [code generated]
-  cacheable modules 721 KiB (javascript) 47.7 KiB (asset)
-    javascript modules 721 KiB
+code generated modules 723 KiB (javascript) 47.7 KiB (asset) 27.5 KiB (css/mini-extract) [code generated]
+  cacheable modules 723 KiB (javascript) 47.7 KiB (asset)
+    javascript modules 722 KiB
       modules by path ./node_modules/@vue/ 402 KiB 4 modules
     modules by path ./app/packs/images/ 378 bytes (javascript) 47.7 KiB (asset)
       optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
@@ -119,8 +119,8 @@ code generated modules 721 KiB (javascript) 47.7 KiB (asset) 27.2 KiB (css/mini-
         ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
         ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
   ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
-  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.2 KiB [code generated]
-webpack 5.39.1 compiled successfully in 6809 ms
+  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.5 KiB [code generated]
+webpack 5.39.1 compiled successfully in 6938 ms
 ```
 
 ### Network transfer
