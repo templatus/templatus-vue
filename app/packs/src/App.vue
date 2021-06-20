@@ -24,12 +24,12 @@
       </svg>
 
       <div class="bg-red-800 sm:bg-transparent relative">
-        <div class="max-w-7xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
           <div class="flex items-center space-x-5 sm:space-x-10">
             <img
               :src="require('images/rails.svg')"
               alt="Ruby on Rails"
-              class="h-16 sm:h-32 bg-red-100 rounded p-3"
+              class="h-16 sm:h-24 bg-red-100 rounded p-3"
             />
 
             <div class="text-4xl sm:text-8xl text-red-100">&plus;</div>
@@ -37,7 +37,7 @@
             <img
               :src="require('images/vue.svg')"
               alt="Vue.js 3"
-              class="h-16 sm:h-32 bg-red-100 rounded p-3"
+              class="h-16 sm:h-24 bg-red-100 rounded p-3"
             />
           </div>
 
@@ -50,7 +50,7 @@
                 tab.href == $route.path
                   ? 'bg-red-200 border border-red-200  text-red-900'
                   : 'bg-red-800 border border-red-200  text-red-200 hover:bg-red-300 hover:text-red-800',
-                'px-3 py-1 font-medium text-lg rounded-md',
+                'px-4 py-1 font-medium text-lg rounded-md',
               ]"
               :aria-current="tab.href == $route.path ? 'page' : undefined"
             >
@@ -70,19 +70,53 @@
         max-w-5xl
         mx-auto
         pt-10
-        pb-20
+        pb-24
         px-4
         sm:py-32 sm:px-6
-        lg:py-24
+        lg:px-8 lg:py-24
       "
     >
       <router-view />
     </main>
 
-    <footer v-if="!online" class="text-white text-center fixed bottom-0 w-full">
-      <p class="bg-red-700 pt-2 pb-4 font-bold uppercase tracking-wide">
-        You are offline
-      </p>
+    <footer class="text-white bg-gray-700 fixed bottom-0 w-full py-3">
+      <div class="flex flex-wrap max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="w-full sm:w-1/4 text-center sm:text-left">
+          <a
+            class="underline"
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/ledermann/templatus"
+          >
+            Source on GitHub
+          </a>
+        </div>
+
+        <div class="w-full sm:w-1/4 text-center">
+          <span
+            v-if="!online"
+            class="
+              font-bold
+              uppercase
+              tracking-wide
+              text-red-700
+              bg-white
+              px-1
+              py-px
+              rounded
+            "
+            >You are offline</span
+          >
+        </div>
+
+        <div class="w-full sm:w-1/2 text-center sm:text-right">
+          <git-version
+            v-if="git.commitTime && git.commitSha"
+            :commit-time="git.commitTime"
+            :commit-sha="git.commitSha"
+          ></git-version>
+        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -90,6 +124,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import useOnlineOffline from './use/online-offline';
+import GitVersion from '@/components/GitVersion.vue';
+import { metaContent } from '@/utils/metaContent';
+
+const git: {
+  commitSha?: string;
+  commitTime?: string;
+} = {
+  commitSha: metaContent('git-commit-sha'),
+  commitTime: metaContent('git-commit-time'),
+};
 
 const tabs: {
   name: string;
@@ -100,10 +144,13 @@ const tabs: {
 ];
 
 export default defineComponent({
+  components: { GitVersion },
+
   setup() {
     return {
       online: useOnlineOffline().online,
       tabs,
+      git,
     };
   },
 });

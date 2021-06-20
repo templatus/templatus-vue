@@ -6,13 +6,6 @@
       Templatus is an opinionated template for web applications with
       <b>Ruby on Rails</b> and <b>Vue.js</b>
     </p>
-
-    <git-version
-      v-if="git.commitTime && git.commitSha"
-      class="mt-5"
-      :commit-time="git.commitTime"
-      :commit-sha="git.commitSha"
-    ></git-version>
   </div>
 
   <div class="space-y-24">
@@ -76,16 +69,7 @@ import { version, defineComponent } from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
 import { metaContent } from '@/utils/metaContent';
 
-import GitVersion from '@/components/GitVersion.vue';
 import PageTitle from '@/components/PageTitle.vue';
-
-const git: {
-  commitSha?: string;
-  commitTime?: string;
-} = {
-  commitSha: metaContent('git-commit-sha'),
-  commitTime: metaContent('git-commit-time'),
-};
 
 const features: {
   name: string;
@@ -238,7 +222,6 @@ const features: {
 
 export default defineComponent({
   components: {
-    GitVersion,
     CheckIcon,
     PageTitle,
   },
@@ -248,7 +231,6 @@ export default defineComponent({
   setup() {
     return {
       features,
-      git,
     };
   },
 });

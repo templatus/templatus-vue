@@ -3,8 +3,8 @@
     tag="ul"
     class="relative"
     enter-active-class="transform transition-all duration-500 ease-out"
-    enter-from-class="opacity-0 translate-x-5 scale-y-50"
-    enter-to-class="opacity-100 translate-x-0 scale-y-100"
+    enter-from-class="opacity-0 scale-y-50"
+    enter-to-class="opacity-100 scale-y-100"
     leave-active-class="transform transition-all duration-500 ease-out"
     leave-from-class="opacity-100 scale-y-100 absolute"
     leave-to-class="opacity-0 scale-y-0 absolute"
@@ -20,7 +20,7 @@
           {{ click.ip }}
         </span>
 
-        <span class="ml-2 px-1 text-gray-900 font-medium">
+        <span class="ml-2 px-1 text-gray-900 font-medium text-sm sm:text-base">
           {{ new Date(Date.parse(click.created_at)).toUTCString() }}
         </span>
       </p>

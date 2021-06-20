@@ -5,24 +5,27 @@
       w-full
       mt-5
       sm:w-56 sm:mt-0
-      lg:transform lg:-translate-y-80
+      lg:transform lg:-translate-y-72
     "
   >
     <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
-      <transition
-        mode="out-in"
-        enter-active-class="transition-transform duration-300 ease-out"
-        enter-from-class="scale-0 transform"
-        enter-to-class="scale-100 transform"
-        leave-active-class="transition-transform duration-200 ease-in"
-        leave-from-class="scale-100 transform"
-        leave-to-class="scale-0 transform"
-      >
-        <div :key="count" class="text-5xl">
-          {{ count.toLocaleString() }}
-        </div>
-      </transition>
-      <span class="uppercase">Clicks</span>
+      <template v-if="count >= 0">
+        <transition
+          mode="out-in"
+          enter-active-class="transition-transform duration-300 ease-out"
+          enter-from-class="scale-0 transform"
+          enter-to-class="scale-100 transform"
+          leave-active-class="transition-transform duration-200 ease-in"
+          leave-from-class="scale-100 transform"
+          leave-to-class="scale-0 transform"
+        >
+          <div :key="count" class="text-5xl">
+            {{ count.toLocaleString() }}
+          </div>
+        </transition>
+        <div class="uppercase py-1">Clicks</div>
+      </template>
+      <Spinner v-else class="h-20 w-full"></Spinner>
     </div>
 
     <button
@@ -46,7 +49,7 @@
       Click me!
     </button>
 
-    <p class="mt-5 text-gray-600 text-sm">
+    <p class="mt-5 text-gray-600 text-sm hidden sm:block">
       Tip: Open two browser windows in parallel and see what happens.
     </p>
   </div>
@@ -54,8 +57,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Spinner from '@/components/Spinner.vue';
 
 export default defineComponent({
+  components: { Spinner },
   props: {
     count: {
       type: Number,
