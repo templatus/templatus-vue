@@ -77,6 +77,12 @@ Why is there a failing test? It's about missing [Subresource Integrity](https://
 
 https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
 
+### GTmetrix
+
+![GTmetrix](GTmetrix.png)
+
+https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/
+
 ### JavaScript size
 
 146 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
