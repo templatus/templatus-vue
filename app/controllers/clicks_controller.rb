@@ -1,6 +1,7 @@
 class ClicksController < ApplicationController
   def index
-    return unless stale?(clicks = Click.order(created_at: :desc).limit(5).to_a)
+    clicks = Click.order(created_at: :desc).limit(5).to_a
+    return unless stale?(clicks, template: false)
 
     respond_to do |format|
       format.json { render json: { total: Click.count, items: clicks } }
