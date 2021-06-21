@@ -148,7 +148,7 @@ REPOSITORY                     TAG       IMAGE ID       CREATED       SIZE
 ghcr.io/ledermann/templatus    latest    4a7e6df71220   2 hours ago   108MB
 ```
 
-## Installation
+## Development installation
 
 1. Clone the repo locally:
 
@@ -189,7 +189,7 @@ foreman start
 
 Then you can open https://templatus.test in your browser.
 
-## Test
+## Running tests
 
 Run Ruby tests:
 
@@ -214,4 +214,11 @@ Run JavaScript tests:
 
 ```
 bin/yarn test
+```
+
+## Deployment
+
+```
+docker network create public
+docker-compose up
 ```

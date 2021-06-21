@@ -20,6 +20,7 @@ Brewfile
 Brewfile.lock.json
 Dockerfile
 docker-compose.yml
+docker-volumes
 Procfile*
 Guardfile
 log/*

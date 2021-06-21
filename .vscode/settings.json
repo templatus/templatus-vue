@@ -19,5 +19,8 @@
   "[ruby]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
+  },
+  "files.exclude": {
+    "**/docker-volumes": true
   }
 }

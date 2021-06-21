@@ -1,108 +1,77 @@
 version: '3.8'
 
 x-app-base: &app_base
-  image: ghcr.io/ledermann/templatus:latest
+  build: .
   links:
     - db
     - redis
-  networks:
-    - public
-    - internal
   environment: &app_environment
-    APP_HOST: ${APP_HOST}
-    ASSET_HOST: ${ASSET_HOST}
+    APP_HOST: my-production-domain.com
+    ASSET_HOST: ''
+    FORCE_SSL: 'false'
     DB_HOST: db
-    DB_PASSWORD: ${POSTGRES_PASSWORD}
+    DB_PASSWORD: my-secret-database-password
     DB_USER: postgres
-    SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-    HONEYBADGER_API_KEY: ${HONEYBADGER_API_KEY}
+    SECRET_KEY_BASE: something-long-and-secret
+    HONEYBADGER_API_KEY: ''
 
 services:
   db:
-    hostname: db.${APP_HOST}
     environment:
-      - POSTGRES_PASSWORD
+      POSTGRES_PASSWORD: my-secret-database-password
     networks:
       - internal
     image: postgres:13-alpine
-    restart: always
-    deploy:
-      update_config:
-        order: stop-first
     healthcheck:
       test: ['CMD-SHELL', 'pg_isready -U postgres']
-      interval: 10s
-      timeout: 5s
     volumes:
-      - ${DB_VOLUME_PATH}:/var/lib/postgresql/data
+      - ./docker-volumes/postgresql:/var/lib/postgresql/data
 
   redis:
-    hostname: redis.${APP_HOST}
     networks:
       - internal
     image: redis:alpine
-    restart: always
     healthcheck:
       test: ['CMD', 'redis-cli', 'ping']
-      interval: 10s
-      timeout: 5s
-    deploy:
-      update_config:
-        order: stop-first
     volumes:
-      - ${REDIS_VOLUME_PATH}:/data
+      - ./docker-volumes/redis:/data
 
   worker:
     <<: *app_base
-    hostname: worker.${APP_HOST}
-    networks:
-      - internal
     environment:
       <<: *app_environment
       REDIS_URL: redis://redis:6379/2
-    deploy:
-      update_config:
-        order: stop-first
-      replicas: 1
-    command: bundle exec sidekiq
+    networks:
+      - internal
+    entrypoint: bundle exec sidekiq
     healthcheck:
       test: 'ps ax | grep -v grep | grep sidekiq'
 
   cable:
     <<: *app_base
-    hostname: cable.${APP_HOST}
     environment:
       <<: *app_environment
       REDIS_URL: redis://redis:6379/1
-    command: bundle exec puma -p 28080 cable/config.ru
-    restart: always
+    entrypoint: bundle exec puma -p 28080 cable/config.ru
     healthcheck:
       test: ['CMD-SHELL', 'nc -z 127.0.0.1 28080 || exit 1']
+    networks:
+      - public
+      - internal
 
   app:
     <<: *app_base
-    hostname: app.${APP_HOST}
     environment:
       <<: *app_environment
       REDIS_URL: redis://redis:6379/0
+    ports:
+      - 3000
     command: bundle exec puma -C config/puma.rb
-    deploy:
-      update_config:
-        order: start-first
-        failure_action: rollback
-        delay: 10s
-      rollback_config:
-        parallelism: 0
-        order: stop-first
-      restart_policy:
-        condition: any
-        delay: 5s
-        max_attempts: 3
-        window: 120s
-      replicas: 1
-    restart: always
     healthcheck:
       test: ['CMD-SHELL', 'nc -z 127.0.0.1 3000 || exit 1']
+    networks:
+      - public
+      - internal
 
 networks:
   public:

@@ -39,3 +39,7 @@ yarn-debug.log*
 
 # SimpleCoverage report
 /coverage/*
+
+# Docker volumes
+/docker-volumes
+!/docker-volumes/.keep
