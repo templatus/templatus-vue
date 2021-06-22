@@ -83,6 +83,12 @@ https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
 
 https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/
 
+### Check-your-website
+
+![Check-your-website](check-your-website.png)
+
+https://check-your-website.server-daten.de/?q=templatus.ledermann.dev
+
 ### JavaScript size
 
 146 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
