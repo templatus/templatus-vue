@@ -1,6 +1,8 @@
 class StaticsController < ApplicationController
   # Render /manifest.webmanifest with ERB
   def manifest
+    return unless stale?(Rails.configuration.x.git.commit_sha, public: true)
+
     render content_type: 'application/manifest+json'
   end
 
