@@ -105,34 +105,34 @@ Compiled all packs in /Users/ledermann/Projects/templatus/public/packs
 warn - You have enabled the JIT engine which is currently in preview.
 warn - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
 
-assets by path media/images/ 52.6 KiB
-  assets by chunk 47.7 KiB (auxiliary name: application) 9 assets
-  assets by path media/images/*.gz 2.64 KiB 3 assets
-  assets by path media/images/*.br 2.25 KiB
-    asset media/images/ef0c1c6c92c1b5e887fc.ico.br 1.25 KiB [emitted] [immutable] [compressed]
+assets by path media/images/ 4.45 KiB
+  assets by path media/images/*.svg 2.33 KiB 2 assets
+  assets by path media/images/*.gz 1.13 KiB
+    asset media/images/bcb6d75d927347158af5.svg.gz 902 bytes [emitted] [immutable] [compressed]
+    asset media/images/f04dfe30a8ad8eb5c4e0.svg.gz 254 bytes [emitted] [immutable] [compressed]
+  assets by path media/images/*.br 1020 bytes
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 146 KiB
   asset js/382-3925f39836c3694c7261.js 126 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-9afb94f60781037266b6.js 18.5 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/application-57ca59fa644a84432baf.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-92e429d6a623e6028354.js 1.39 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-bfd2d636.css 17.9 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
-asset manifest.json 3.79 KiB [emitted] 2 related assets
-Entrypoint application 164 KiB (272 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-3925f39836c3694c7261.js 126 KiB css/application-bfd2d636.css 17.9 KiB js/application-9afb94f60781037266b6.js 18.5 KiB 13 auxiliary assets
+asset manifest.json 3.01 KiB [emitted] 2 related assets
+Entrypoint application 163 KiB (226 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-3925f39836c3694c7261.js 126 KiB css/application-bfd2d636.css 17.9 KiB js/application-57ca59fa644a84432baf.js 17.7 KiB 6 auxiliary assets
 orphan modules 186 KiB [orphan] 296 modules
 runtime modules 3.35 KiB 7 modules
-code generated modules 726 KiB (javascript) 47.7 KiB (asset) 27.8 KiB (css/mini-extract) [code generated]
-  cacheable modules 726 KiB (javascript) 47.7 KiB (asset)
-    javascript modules 726 KiB
-      modules by path ./node_modules/@vue/ 403 KiB 4 modules
-    modules by path ./app/packs/images/ 378 bytes (javascript) 47.7 KiB (asset)
-      optional modules 294 bytes (javascript) 45.4 KiB (asset) [optional] 7 modules
-      modules by path ./app/packs/images/*.svg 84 bytes (javascript) 2.33 KiB (asset)
-        ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
-        ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-  ./app/packs/images/ sync ^\.\/.*$ 378 bytes [built] [code generated]
-  css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.8 KiB [code generated]
-webpack 5.40.0 compiled successfully in 6010 ms
+code generated modules 726 KiB (javascript) 2.33 KiB (asset) 27.8 KiB (css/mini-extract) [code generated]
+  modules by path ./node_modules/ 692 KiB
+    modules by path ./node_modules/@vue/ 403 KiB 4 modules
+  modules by path ./app/packs/ 33.8 KiB (javascript) 2.33 KiB (asset) 27.8 KiB (css/mini-extract)
+    cacheable modules 33.6 KiB (javascript) 2.33 KiB (asset)
+      ./app/packs/entrypoints/application.ts + 47 modules 33.6 KiB [built] [code generated]
+      ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
+      ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
+    ./app/packs/images/ sync ^\.\/.*$ 190 bytes [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.8 KiB [code generated]
+webpack 5.40.0 compiled successfully in 6859 ms
 ```
 
 ### Network transfer

@@ -29,11 +29,10 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
 
-    <%= favicon_pack_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180' %>
-    <%= favicon_pack_tag 'favicon-32x32.png', rel: 'icon', type: 'image/png', sizes: '32x32' %>
-    <%= favicon_pack_tag 'favicon-16x16.png', rel: 'icon', type: 'image/png', sizes: '16x16' %>
-
-    <link rel="manifest" href="/manifest.webmanifest">
+    <%= tag :link, href: '/apple-touch-icon.png',    rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180' %>
+    <%= tag :link, href: '/favicon-32x32.png',       rel: 'icon',             type: 'image/png', sizes: '32x32' %>
+    <%= tag :link, href: '/favicon-16x16.png',       rel: 'icon',             type: 'image/png', sizes: '16x16' %>
+    <%= tag :link, href: '/manifest.v1.webmanifest', rel: 'manifest' %>
 
     <%= stylesheet_pack_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application', defer: true %>
