@@ -35,7 +35,7 @@ Live demo available at https://templatus.ledermann.dev
 - Deployment using an optimized Docker image based on Alpine Linux
 - Ready for serving assets via CDN like CloudFront
 - Ready for PWA (manifest, service-worker)
-- Gzip compression of all dynamic responses (e.g. JSON) using Rack::Deflater
+- Gzip and Brotli compression of all dynamic responses (HTML, JSON) using Rack::Deflater and Rack::Brotli
 - JS Code splitting (separate vendor code from application code)
 - Fine-tuned Content Security Policy (CSP)
 - Uses GitHub Actions for testing, linting and building Docker image
@@ -147,11 +147,16 @@ With multi-stage building and using [DockerRailsBase](https://github.com/lederma
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently 108 MB uncompressed disk size). It includes just the bare minimal - no unneeded Node.js, just the compiled assets, no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently 114 MB uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
-REPOSITORY                     TAG       IMAGE ID       CREATED       SIZE
-ghcr.io/ledermann/templatus    latest    4a7e6df71220   2 hours ago   108MB
+$ container-diff analyze ghcr.io/ledermann/templatus
+
+-----Size-----
+
+Analysis for ghcr.io/ledermann/templatus:
+IMAGE                              DIGEST                                                                         SIZE
+ghcr.io/ledermann/templatus        sha256:5528d01b75300ab7781030703d4a059f70716a6e094d0a557b2dadc17fa80c6b        114.4M
 ```
 
 ## Development installation

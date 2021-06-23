@@ -33,6 +33,9 @@ gem 'lograge'
 # Middleware for enabling Cross-Origin Resource Sharing in Rack apps (https://github.com/cyu/rack-cors)
 gem 'rack-cors', require: 'rack/cors'
 
+# Brotli compression for Rack responses (http://github.com/marcotc/rack-brotli/)
+gem 'rack-brotli'
+
 # Simple, efficient background processing for Ruby (https://sidekiq.org)
 gem 'sidekiq'
 

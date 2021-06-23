@@ -5,8 +5,9 @@ Rails.application.config.middleware.delete(Rack::Runtime)
 # list of defaults: https://github.com/rack/rack/blob/master/lib/rack/mime.rb
 Rack::Mime::MIME_TYPES['.webmanifest'] = 'application/manifest+json'
 
-# Enable gzip compression
+# Enable gzip and brotli compression
 Rails.application.config.middleware.use Rack::Deflater
+Rails.application.config.middleware.use Rack::Brotli
 
 # Monkey patch ActionDispatch::Static to serve compressed SVG
 # Idea taken from https://stackoverflow.com/a/45992324/57950
