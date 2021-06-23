@@ -14,7 +14,7 @@
 .yarnclean
 .prettierignore
 .prettierrc.json
-./*.png
+docs
 **/*.DS_Store
 Brewfile
 Brewfile.lock.json

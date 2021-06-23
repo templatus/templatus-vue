@@ -52,13 +52,13 @@ performed against the demo installation on production. It uses an inexpensive vi
 
 100% in nearly all categories.
 
-![Lighthouse](lighthouse.png)
+![Lighthouse](docs/lighthouse.png)
 
 Why not 100% in _Best practice_ category? This is a [bug in Lighthouse](https://github.com/GoogleChrome/lighthouse/issues/11862), because Lighthouse first injects inline styles and then whines about a CSP warning.
 
 ### Secure headers
 
-![Secure headers](secure-headers.png)
+![Secure headers](docs/secure-headers.png)
 
 https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on
 
@@ -67,7 +67,7 @@ https://github.com/rails/rails/pull/41994
 
 ### Mozilla Observatory
 
-![Mozilla Observatory](mozilla-observatory.png)
+![Mozilla Observatory](docs/mozilla-observatory.png)
 
 https://observatory.mozilla.org/analyze/templatus.ledermann.dev
 
@@ -75,19 +75,19 @@ Why is there a failing test? It's about missing [Subresource Integrity](https://
 
 ### WebPageTest
 
-![WebPageTest](web-page-test.png)
+![WebPageTest](docs/web-page-test.png)
 
 https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
 
 ### GTmetrix
 
-![GTmetrix](GTmetrix.png)
+![GTmetrix](docs/GTmetrix.png)
 
 https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/
 
 ### Check-your-website
 
-![Check-your-website](check-your-website.png)
+![Check-your-website](docs/check-your-website.png)
 
 https://check-your-website.server-daten.de/?q=templatus.ledermann.dev
 
@@ -141,7 +141,7 @@ webpack 5.40.0 compiled successfully in 6859 ms
 
 Small footprint: The demo application transfers only 62Kb of data on the first visit.
 
-![Network](network.png)
+![Network](docs/network.png)
 
 ### Docker build time
 
