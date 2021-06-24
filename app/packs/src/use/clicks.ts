@@ -17,7 +17,7 @@ function sendClick() {
     headers: {
       'X-CSRF-Token': metaContent('csrf-token') || '',
     },
-  });
+  }).catch((err) => alert(err));
 }
 
 async function getClicks() {
@@ -36,9 +36,13 @@ export default function useClicks(): {
 } {
   const receivedClicks = ref<Clicks>({ total: -1, items: [] });
 
-  getClicks().then((clicks) => {
-    receivedClicks.value = clicks;
-  });
+  getClicks()
+    .then((clicks) => {
+      receivedClicks.value = clicks;
+    })
+    .catch((err) => {
+      alert(err);
+    });
 
   const channel = createConsumer().subscriptions.create(
     {

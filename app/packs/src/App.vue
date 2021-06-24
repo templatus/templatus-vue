@@ -85,7 +85,7 @@
           <a
             class="underline"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://github.com/ledermann/templatus"
           >
             Source on GitHub

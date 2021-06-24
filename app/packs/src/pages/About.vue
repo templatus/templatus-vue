@@ -47,7 +47,7 @@
                     :href="feature.href"
                     class="hover:underline"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                   >
                     {{ feature.name }}
                   </a>
