@@ -53,9 +53,10 @@
                   </a>
                 </p>
               </dt>
-              <dd class="mt-2 ml-9 text-base text-gray-600">
-                {{ feature.description }}
-              </dd>
+              <dd
+                class="mt-2 ml-9 text-base text-gray-600"
+                v-html="feature.description"
+              ></dd>
             </div>
           </dl>
         </div>
@@ -109,7 +110,9 @@ const features: {
       {
         name: `Sidekiq ${metaContent('version-sidekiq')}`,
         href: 'https://sidekiq.org/',
-        description: 'Simple, efficient background processing for Ruby',
+        description:
+          'Simple, efficient background processing for Ruby' +
+          '<p class="mt-2 text-xs">→ <a class="font-medium uppercase hover:underline" href="/sidekiq">Admin frontend</a></p>',
       },
     ],
   },
