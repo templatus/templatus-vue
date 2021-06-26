@@ -1,9 +1,9 @@
 [![Build Status](https://github.com/ledermann/templatus/workflows/CI/badge.svg)](https://github.com/ledermann/templatus/actions)
 [![DeepSource](https://deepsource.io/gh/ledermann/templatus.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/ledermann/templatus/?ref=repository-badge)
 
-# README
+# Templatus
 
-Templatus is an opinionated template for web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
+Templatus is an opinionated template to build web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
 
 Live demo available at https://templatus.ledermann.dev
 
@@ -15,7 +15,7 @@ Live demo available at https://templatus.ledermann.dev
 - ActionCable (for WebSocket communication)
 - PostgreSQL (for using as SQL database)
 - Sidekiq (for background processing)
-- Redis (for Caching, ActionCable and Sidekiq)
+- Redis (for Caching, ActionCable, and Sidekiq)
 - Vue 3 (as frontend framework)
 - Vue Router (for frontend routing)
 - Vuex (for frontend state management)
@@ -29,7 +29,7 @@ Live demo available at https://templatus.ledermann.dev
 - Honeybadger.io (for error tracking in Ruby and JavaScript)
 - Lograge (for single-line logging)
 - Docker (for production deployment, NOT for development)
-- Puma-dev (for using https in development)
+- Puma-dev (for using HTTPS in development)
 - Foreman (for starting up the application locally)
 - dotenv (for configuration by using ENV variables)
 
@@ -41,7 +41,7 @@ Live demo available at https://templatus.ledermann.dev
 - Gzip and Brotli compression of all dynamic responses (HTML, JSON) using Rack::Deflater and Rack::Brotli
 - JS Code splitting (separate vendor code from application code)
 - Fine-tuned Content Security Policy (CSP)
-- Uses GitHub Actions for testing, linting and building Docker image
+- Uses GitHub Actions for testing, linting, and building Docker image
 - Visual Studio Code: Autoformat JS and Ruby code using Prettier
 
 ## Metrics
@@ -63,7 +63,7 @@ Why not 100% in _Best practice_ category? This is a [bug in Lighthouse](https://
 
 https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on
 
-What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the nexts Rails update:
+What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the next Rails update:
 https://github.com/rails/rails/pull/41994
 
 ### Mozilla Observatory
@@ -72,7 +72,7 @@ https://github.com/rails/rails/pull/41994
 
 https://observatory.mozilla.org/analyze/templatus.ledermann.dev
 
-Why is there a failing test? It's about missing [Subresource Integrity](https://infosec.mozilla.org/guidelines/web_security#subresource-integrity), which is currently not supported by Webpacker. There is a [stale issue](https://github.com/rails/webpacker/issues/323) about it, I don't expect a fix in the near future.
+Why is there a failing test? It's about missing [Subresource Integrity](https://infosec.mozilla.org/guidelines/web_security#subresource-integrity), which is currently not supported by Webpacker. There is a [stale issue](https://github.com/rails/webpacker/issues/323) about it, I don't expect a fix shortly.
 
 ### WebPageTest
 
@@ -146,7 +146,7 @@ Small footprint: The demo application transfers only 62Kb of data on the first v
 
 ### Docker build time
 
-With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/.ledermann/templatus/actions)
+With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/.ledermann/templatus/actions)
 
 ### Docker image size
 
@@ -171,7 +171,7 @@ git clone git@github.com:ledermann/templatus.git
 cd templatus
 ```
 
-2. Install PostgreSQL, Redis and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
+2. Install PostgreSQL, Redis, and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
 
 ```bash
 brew bundle
