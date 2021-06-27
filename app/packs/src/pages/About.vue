@@ -20,9 +20,6 @@
           <p class="mt-2 text-3xl font-extrabold text-gray-900">
             {{ group.name }}
           </p>
-          <p class="mt-4 text-lg text-gray-600">
-            {{ group.description }}
-          </p>
         </div>
         <div class="mt-12 lg:mt-0 lg:col-span-2">
           <dl
@@ -75,13 +72,11 @@ import PageTitle from '@/components/PageTitle.vue';
 const features: {
   name: string;
   slogan: string;
-  description: string;
   items: { name: string; href: string; description: string }[];
 }[] = [
   {
     name: 'The backend',
     slogan: 'Server side',
-    description: 'Data access layer',
     items: [
       {
         name: `Ruby ${metaContent('version-ruby')}`,
@@ -120,7 +115,6 @@ const features: {
   {
     name: 'The frontend',
     slogan: 'Client side',
-    description: 'Presentation layer',
     items: [
       {
         name: `Vue ${version}`,
@@ -170,7 +164,6 @@ const features: {
   {
     name: 'Continuous integration',
     slogan: 'Quality insurance',
-    description: 'All about testing and building',
     items: [
       {
         name: 'GitHub Actions',
@@ -206,7 +199,6 @@ const features: {
   {
     name: 'Deployment',
     slogan: 'Ship it!',
-    description: 'Running in production',
     items: [
       {
         name: `Alpine Linux ${metaContent('version-alpine')}`,

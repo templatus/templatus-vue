@@ -1,5 +1,5 @@
 <template>
-  <div class="text-base">
+  <div>
     Version
     <code>{{ commitSha.substring(0, 7) }}</code
     >, created

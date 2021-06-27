@@ -79,11 +79,11 @@
       <router-view />
     </main>
 
-    <footer class="text-white bg-gray-700 fixed bottom-0 w-full py-3">
+    <footer class="text-white bg-gray-700 fixed bottom-0 w-full py-2 text-sm">
       <div class="flex flex-wrap max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="w-full sm:w-1/4 text-center sm:text-left">
           <a
-            class="underline"
+            class="hover:underline"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/ledermann/templatus"
