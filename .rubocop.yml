@@ -107,3 +107,8 @@ RSpec/AlignLeftLetBrace:
 
 RSpec/AlignRightLetBrace:
   Enabled: false
+
+# Naming
+
+Naming/InclusiveLanguage:
+  Enabled: false

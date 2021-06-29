@@ -125,17 +125,17 @@ asset manifest.json 3.01 KiB [emitted] 2 related assets
 Entrypoint application 163 KiB (226 KiB) = js/runtime-92e429d6a623e6028354.js 1.39 KiB js/382-3925f39836c3694c7261.js 126 KiB css/application-53c4176e.css 17.8 KiB js/application-6c580143be306fc10ee0.js 17.7 KiB 6 auxiliary assets
 orphan modules 185 KiB [orphan] 296 modules
 runtime modules 3.35 KiB 7 modules
-code generated modules 726 KiB (javascript) 2.33 KiB (asset) 27.5 KiB (css/mini-extract) [code generated]
+built modules 726 KiB (javascript) 2.33 KiB (asset) 27.5 KiB (css/mini-extract) [built]
   modules by path ./node_modules/ 692 KiB
     modules by path ./node_modules/@vue/ 403 KiB 4 modules
   modules by path ./app/packs/ 33.4 KiB (javascript) 2.33 KiB (asset) 27.5 KiB (css/mini-extract)
-    cacheable modules 33.2 KiB (javascript) 2.33 KiB (asset)
-      ./app/packs/entrypoints/application.ts + 46 modules 33.2 KiB [built] [code generated]
+    modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset)
+      ./app/packs/images/ sync ^\.\/.*$ 190 bytes [built] [code generated]
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-    ./app/packs/images/ sync ^\.\/.*$ 190 bytes [built] [code generated]
-    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.5 KiB [code generated]
-webpack 5.40.0 compiled successfully in 5737 ms
+    ./app/packs/entrypoints/application.ts + 46 modules 33.2 KiB [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.5 KiB [built] [code generated]
+webpack 5.41.0 compiled successfully in 8584 ms
 ```
 
 ### Network transfer
