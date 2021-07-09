@@ -135,7 +135,7 @@ built modules 732 KiB (javascript) 2.33 KiB (asset) 27.5 KiB (css/mini-extract) 
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 46 modules 33.2 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.5 KiB [built] [code generated]
-webpack 5.42.0 compiled successfully in 8582 ms
+webpack 5.44.0 compiled successfully in 6173 ms
 ```
 
 ### Network transfer
