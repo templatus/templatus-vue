@@ -14,7 +14,8 @@ module.exports = {
   testMatch: ['**/?(*.)+(spec|test).+(ts|tsx)'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.vue$': 'vue3-jest',
   },
+  testEnvironment: 'jsdom',
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
 };
