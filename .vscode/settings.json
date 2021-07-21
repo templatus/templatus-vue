@@ -7,6 +7,9 @@
   "files.watcherExclude": {
     "**/tmp/**": true
   },
+  "files.exclude": {
+    "**/docker-volumes": true
+  },
 
   "search.exclude": {
     "**/tmp": true,
@@ -16,11 +19,14 @@
 
   "eslint.validate": ["javascript", "vue"],
 
+  "ruby.lint": {
+    "rubocop": {
+      "forceExclusion": true
+    }
+  },
+
   "[ruby]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  },
-  "files.exclude": {
-    "**/docker-volumes": true
   }
 }
