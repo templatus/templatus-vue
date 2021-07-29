@@ -127,7 +127,7 @@ import { defineComponent } from 'vue';
 import useOnlineOffline from './use/online-offline';
 import GitVersion from '@/components/GitVersion.vue';
 import { metaContent } from '@/utils/metaContent';
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue';
+import { TabGroup, TabList, Tab } from '@headlessui/vue';
 
 const git: {
   commitSha?: string;
