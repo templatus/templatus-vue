@@ -122,7 +122,7 @@ assets by path js/*.js 146 KiB
   asset js/runtime-476cc9f35402e4fdec05.js 1.42 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-85341581.css 17.1 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 163 KiB (223 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/382-e9c837770321a393e25b.js 127 KiB css/application-85341581.css 17.1 KiB js/application-27c49a8212525865e7cd.js 17.7 KiB 6 auxiliary assets
+Entrypoint application 163 KiB (227 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/382-e9c837770321a393e25b.js 127 KiB css/application-85341581.css 17.1 KiB js/application-27c49a8212525865e7cd.js 17.7 KiB 6 auxiliary assets
 orphan modules 185 KiB [orphan] 296 modules
 runtime modules 3.39 KiB 7 modules
 built modules 733 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract) [built]
@@ -138,7 +138,7 @@ built modules 733 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract) [b
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 46 modules 33.2 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27 KiB [built] [code generated]
-webpack 5.47.0 compiled successfully in 6108 ms
+webpack 5.47.0 compiled successfully in 5896 ms
 ```
 
 ### Network transfer
