@@ -13,7 +13,7 @@
     "@heroicons/vue": "^1.0.3",
     "@honeybadger-io/js": "^3.2.2",
     "@rails/actioncable": "^6.1.4",
-    "@rails/webpacker": "6.0.0-beta.7",
+    "@rails/webpacker": "6.0.0-pre.2",
     "@tailwindcss/forms": "^0.3.3",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.2",
