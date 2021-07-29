@@ -53,6 +53,14 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
+              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://puma.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Puma undefined</a></p>
+            </dt>
+            <dd class="mt-2 ml-9 text-base text-gray-600">Puma is a simple, fast, multi-threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
               <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Redis undefined</a></p>
             </dt>
             <dd class="mt-2 ml-9 text-base text-gray-600">Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.</dd>

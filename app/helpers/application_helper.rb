@@ -4,6 +4,7 @@ module ApplicationHelper
       alpine: alpine_version,
       ruby: ruby_version,
       rails: rails_version,
+      puma: puma_version,
       webpacker: webpacker_version,
       postgres: postgres_version,
       redis: redis_version,
@@ -23,6 +24,10 @@ module ApplicationHelper
 
   def rails_version
     Rails.version
+  end
+
+  def puma_version
+    Puma::Const::PUMA_VERSION
   end
 
   def webpacker_version

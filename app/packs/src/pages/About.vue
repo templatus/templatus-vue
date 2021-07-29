@@ -97,6 +97,12 @@ const features: {
           'PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.',
       },
       {
+        name: `Puma ${metaContent('version-puma')}`,
+        href: 'https://puma.io/',
+        description:
+          'Puma is a simple, fast, multi-threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.',
+      },
+      {
         name: `Redis ${metaContent('version-redis')}`,
         href: 'https://redis.io/',
         description:
