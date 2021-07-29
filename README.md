@@ -42,6 +42,7 @@ Live demo available at https://templatus.ledermann.dev
 - JS Code splitting (separate vendor code from application code)
 - Fine-tuned Content Security Policy (CSP)
 - Uses GitHub Actions for testing, linting, and building Docker image
+- Dependabot configuration for updating dependencies (with auto-merge)
 - Visual Studio Code: Autoformat JS and Ruby code using Prettier
 
 ## Metrics
