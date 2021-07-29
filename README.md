@@ -94,10 +94,11 @@ https://check-your-website.server-daten.de/?q=templatus.ledermann.dev
 
 ### JavaScript size
 
-146 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+174 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
-- Vue.js + Vue Router + Vuex (83 KB)
-- Honeybadger (20 KB)
+- Vue.js + Vue Router + Vuex (89 KB)
+- Headless UI (26 KB)
+- Honeybadger (21 KB)
 - ActionCable (10 KB)
 
 ```
@@ -116,53 +117,53 @@ assets by path media/images/ 4.45 KiB
   assets by path media/images/*.br 1020 bytes
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
-assets by path js/*.js 146 KiB
-  asset js/382-e9c837770321a393e25b.js 127 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-27c49a8212525865e7cd.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+assets by path js/*.js 174 KiB
+  asset js/295-d8d93317aef93f98e54b.js 155 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-642070042d9e55a69f3a.js 17.9 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-476cc9f35402e4fdec05.js 1.42 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-85341581.css 17.1 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 163 KiB (227 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/382-e9c837770321a393e25b.js 127 KiB css/application-85341581.css 17.1 KiB js/application-27c49a8212525865e7cd.js 17.7 KiB 6 auxiliary assets
-orphan modules 185 KiB [orphan] 296 modules
+Entrypoint application 191 KiB (269 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/295-d8d93317aef93f98e54b.js 155 KiB css/application-85341581.css 17.1 KiB js/application-642070042d9e55a69f3a.js 17.9 KiB 6 auxiliary assets
+orphan modules 186 KiB [orphan] 296 modules
 runtime modules 3.39 KiB 7 modules
-built modules 733 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract) [built]
-  modules by path ./node_modules/ 700 KiB
+built modules 881 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract) [built]
+  modules by path ./node_modules/ 847 KiB
     modules by path ./node_modules/@vue/ 410 KiB
       modules by path ./node_modules/@vue/runtime-core/ 341 KiB 2 modules
       ./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js 50 KiB [built] [code generated]
       ./node_modules/@vue/shared/dist/shared.esm-bundler.js 19.3 KiB [built] [code generated]
-  modules by path ./app/packs/ 33.4 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract)
+  modules by path ./app/packs/ 33.8 KiB (javascript) 2.33 KiB (asset) 27 KiB (css/mini-extract)
     modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset)
       ./app/packs/images/ sync ^\.\/.*$ 190 bytes [built] [code generated]
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-    ./app/packs/entrypoints/application.ts + 46 modules 33.2 KiB [built] [code generated]
+    ./app/packs/entrypoints/application.ts + 46 modules 33.5 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27 KiB [built] [code generated]
-webpack 5.47.0 compiled successfully in 5896 ms
+webpack 5.47.0 compiled successfully in 6841 ms
 ```
 
 ### Network transfer
 
-Small footprint: The demo application transfers only 62Kb of data on the first visit.
+Small footprint: The demo application transfers only 69Kb of data on the first visit.
 
 ![Network](docs/network.png)
 
 ### Docker build time
 
-With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/.ledermann/templatus/actions)
+With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/ledermann/templatus/actions)
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently 114 MB uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently 115 MB uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
-$ container-diff analyze ghcr.io/ledermann/templatus
+$ container-diff analyze ghcr.io/ledermann/templatus -n
 
 -----Size-----
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST                                                                         SIZE
-ghcr.io/ledermann/templatus        sha256:5528d01b75300ab7781030703d4a059f70716a6e094d0a557b2dadc17fa80c6b        114.4M
+ghcr.io/ledermann/templatus        sha256:87490622276b8d67959ff0614d882bb051db36c4444f4bdd6f3a3879f9d5c640        115.2M
 ```
 
 ## Development installation

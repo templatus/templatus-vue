@@ -41,22 +41,23 @@
             />
           </div>
 
-          <nav class="mt-10 flex space-x-4" aria-label="Tabs">
-            <router-link
-              v-for="tab in tabs"
-              :key="tab.name"
-              :to="tab.href"
-              :class="[
-                tab.href == $route.path
-                  ? 'bg-red-200 border border-red-200  text-red-900'
-                  : 'bg-red-800 border border-red-200  text-red-200 hover:bg-red-300 hover:text-red-800',
-                'px-4 py-1 font-medium text-lg rounded-md',
-              ]"
-              :aria-current="tab.href == $route.path ? 'page' : undefined"
-            >
-              {{ tab.name }}
-            </router-link>
-          </nav>
+          <TabGroup class="mt-10">
+            <TabList class="flex space-x-4" as="nav">
+              <Tab v-for="tab in tabs" :key="tab.name" as="template">
+                <router-link
+                  :to="tab.href"
+                  :class="[
+                    tab.href == $route.path
+                      ? 'bg-red-200 border border-red-200  text-red-900'
+                      : 'bg-red-800 border border-red-200  text-red-200 hover:bg-red-300 hover:text-red-800',
+                    'px-4 py-1 font-medium text-lg rounded-md',
+                  ]"
+                >
+                  {{ tab.name }}
+                </router-link>
+              </Tab>
+            </TabList>
+          </TabGroup>
         </div>
       </div>
     </header>
@@ -126,6 +127,7 @@ import { defineComponent } from 'vue';
 import useOnlineOffline from './use/online-offline';
 import GitVersion from '@/components/GitVersion.vue';
 import { metaContent } from '@/utils/metaContent';
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue';
 
 const git: {
   commitSha?: string;
@@ -144,7 +146,7 @@ const tabs: {
 ];
 
 export default defineComponent({
-  components: { GitVersion },
+  components: { GitVersion, TabGroup, TabList, Tab },
 
   setup() {
     return {
