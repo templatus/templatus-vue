@@ -1,6 +1,7 @@
 export function metaContent(name: string): string | undefined {
-  return (
-    document.querySelector(`meta[name='${name}']`)?.getAttribute('content') ||
-    undefined
+  const element: HTMLMetaElement | null = document.head.querySelector(
+    `meta[name="${name}"]`,
   );
+
+  if (element) return element.content;
 }
