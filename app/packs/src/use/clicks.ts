@@ -1,6 +1,6 @@
 import { Ref, ref, onBeforeUnmount } from 'vue';
 import { createConsumer } from '@rails/actioncable';
-import { metaContent } from '@/utils/metaContent';
+import { get, post } from '@rails/request.js';
 
 export type Click = {
   id: number;
@@ -11,23 +11,15 @@ export type Click = {
 
 type Clicks = { total: number; items: Click[] };
 
-function sendClick() {
-  fetch('/clicks', {
-    method: 'POST',
-    headers: {
-      'X-CSRF-Token': metaContent('csrf-token') || '',
-    },
-  }).catch((err) => alert(err));
+function sendClick(): void {
+  post('/clicks').catch((err: Error) => alert(err));
 }
 
-async function getClicks() {
-  const response = await fetch('/clicks.json', {
-    headers: {
-      Accept: 'application/json',
-    },
-    method: 'GET',
+async function getClicks(): Promise<Clicks> {
+  const response = await get('/clicks.json', {
+    responseKind: 'json',
   });
-  return await response.json();
+  return await response.json;
 }
 
 export default function useClicks(): {
@@ -37,10 +29,10 @@ export default function useClicks(): {
   const receivedClicks = ref<Clicks>({ total: -1, items: [] });
 
   getClicks()
-    .then((clicks) => {
+    .then((clicks: Clicks) => {
       receivedClicks.value = clicks;
     })
-    .catch((err) => {
+    .catch((err: Error) => {
       alert(err);
     });
 
