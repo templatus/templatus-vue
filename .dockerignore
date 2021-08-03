@@ -37,3 +37,4 @@ config/webpack/test.js
 config/webpack/development.js
 jest.config.js
 spec
+README.md
