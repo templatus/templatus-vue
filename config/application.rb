@@ -32,9 +32,8 @@ module Templatus
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.time_zone = ENV.fetch('TIME_ZONE', 'Berlin')
+
     config.x.app_host = ENV.fetch('APP_HOST', 'templatus.test')
-    config.x.force_ssl =
-      ActiveModel::Type::Boolean.new.cast ENV.fetch('FORCE_SSL', true)
 
     config.x.git.commit_sha =
       (ENV.fetch('COMMIT_SHA') { `git rev-parse HEAD`.chomp })
