@@ -2,7 +2,7 @@
   "entries": {
     "brew": {
       "puma-dev": {
-        "version": "0.16.1",
+        "version": "0.16.2",
         "bottle": false
       },
       "postgresql": {
@@ -78,9 +78,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.2.5-17-g689c1fd",
+        "HOMEBREW_VERSION": "3.2.6-28-g0fc7762",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a0c3ee40ff1996ab1738b537833c90b333d31371",
+        "Homebrew/homebrew-core": "b1b49b7721236b3f7015d03c97d9f2d0e4df93ae",
         "CLT": "12.5.0.22.9",
         "Xcode": "12.5.1",
         "macOS": "11.5.1"
