@@ -48,6 +48,24 @@
                   >
                     {{ feature.name }}
                   </a>
+
+                  <span
+                    v-if="feature.version"
+                    class="
+                      inline-flex
+                      items-center
+                      px-2.5
+                      py-0.5
+                      rounded-full
+                      text-xs
+                      font-medium
+                      bg-red-200
+                      text-red-900
+                      ml-2
+                    "
+                  >
+                    {{ feature.version }}
+                  </span>
                 </p>
               </dt>
               <dd
@@ -72,44 +90,55 @@ import PageTitle from '@/components/PageTitle.vue';
 const features: {
   name: string;
   slogan: string;
-  items: { name: string; href: string; description: string }[];
+  items: {
+    name: string;
+    version?: string;
+    href: string;
+    description: string;
+  }[];
 }[] = [
   {
     name: 'The backend',
     slogan: 'Server side',
     items: [
       {
-        name: `Ruby ${metaContent('version-ruby')}`,
+        name: 'Ruby',
+        version: metaContent('version-ruby'),
         href: 'https://www.ruby-lang.org/',
         description:
           'A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.',
       },
       {
-        name: `Ruby on Rails ${metaContent('version-rails')}`,
+        name: 'Ruby on Rails',
+        version: metaContent('version-rails'),
         href: 'https://rubyonrails.org/',
         description:
           'Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.',
       },
       {
-        name: `PostgreSQL ${metaContent('version-postgres')}`,
+        name: 'PostgreSQL',
+        version: metaContent('version-postgres'),
         href: 'https://www.postgresql.org/',
         description:
           'PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.',
       },
       {
-        name: `Puma ${metaContent('version-puma')}`,
+        name: 'Puma',
+        version: metaContent('version-puma'),
         href: 'https://puma.io/',
         description:
           'Puma is a simple, fast, multi-threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.',
       },
       {
-        name: `Redis ${metaContent('version-redis')}`,
+        name: 'Redis',
+        version: metaContent('version-redis'),
         href: 'https://redis.io/',
         description:
           'Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.',
       },
       {
-        name: `Sidekiq ${metaContent('version-sidekiq')}`,
+        name: 'Sidekiq',
+        version: metaContent('version-sidekiq'),
         href: 'https://sidekiq.org/',
         description:
           'Simple, efficient background processing for Ruby' +
@@ -123,7 +152,8 @@ const features: {
     slogan: 'Client side',
     items: [
       {
-        name: `Vue ${version}`,
+        name: 'Vue',
+        version: version,
         href: 'https://v3.vuejs.org/',
         description:
           'Vue is a progressive framework for building user interfaces.',
@@ -159,7 +189,8 @@ const features: {
           'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
       },
       {
-        name: `Webpacker ${metaContent('version-webpacker')}`,
+        name: 'Webpacker',
+        version: metaContent('version-webpacker'),
         href: 'https://github.com/rails/webpacker',
         description:
           'Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.',
@@ -207,7 +238,8 @@ const features: {
     slogan: 'Ship it!',
     items: [
       {
-        name: `Alpine Linux ${metaContent('version-alpine')}`,
+        name: 'Alpine Linux',
+        version: metaContent('version-alpine'),
         href: 'https://alpinelinux.org/',
         description:
           'Alpine Linux is an independent, non-commercial, general purpose Linux distribution designed for power users who appreciate security, simplicity and resource efficiency.',
