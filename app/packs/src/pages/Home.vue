@@ -34,33 +34,18 @@
   </template>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
+<script setup="props" lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
 import ClickList from '@/components/ClickList.vue';
 import ClickButton from '@/components/ClickButton.vue';
-
 import useClicks from '../use/clicks';
 
-export default defineComponent({
-  name: 'Home',
-
-  components: {
-    PageTitle,
-    ClickList,
-    ClickButton,
-  },
-
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-  },
-
-  setup() {
-    return useClicks();
+defineProps({
+  name: {
+    type: String,
+    required: true,
   },
 });
+
+const { receivedClicks, sendClick } = useClicks();
 </script>

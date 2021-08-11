@@ -32,16 +32,14 @@
   </transition-group>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue';
+<script setup lang="ts">
+import { PropType } from 'vue';
 import { Click } from '../use/clicks';
 
-export default defineComponent({
-  props: {
-    clicks: {
-      type: Array as PropType<Array<Click>>,
-      required: true,
-    },
+defineProps({
+  clicks: {
+    type: Array as PropType<Array<Click>>,
+    required: true,
   },
 });
 </script>

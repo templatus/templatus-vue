@@ -17,10 +17,16 @@ module.exports = {
     'prettier',
     'plugin:prettier/recommended',
   ],
-  globals: {},
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+  },
   rules: {
     'vue/no-unused-vars': 'error',
     'vue/no-v-html': 'off',
+    'vue/script-setup-uses-vars': 'error',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },

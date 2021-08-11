@@ -55,19 +55,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 import Spinner from '@/components/Spinner.vue';
 
-export default defineComponent({
-  components: { Spinner },
-  props: {
-    count: {
-      type: Number,
-      required: true,
-    },
+defineProps({
+  count: {
+    type: Number,
+    required: true,
   },
-
-  emits: ['click'],
 });
+
+defineEmits(['click']);
 </script>

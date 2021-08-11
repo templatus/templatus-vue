@@ -80,8 +80,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import { version, defineComponent } from 'vue';
+<script setup lang="ts">
+import { version } from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
 import { metaContent } from '@/utils/metaContent';
 
@@ -252,19 +252,4 @@ const features: {
     ],
   },
 ];
-
-export default defineComponent({
-  components: {
-    CheckIcon,
-    PageTitle,
-  },
-
-  props: {},
-
-  setup() {
-    return {
-      features,
-    };
-  },
-});
 </script>

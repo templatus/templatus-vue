@@ -6,15 +6,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
-
-export default defineComponent({
-  components: {
-    PageTitle,
-  },
-
-  props: {},
-});
 </script>

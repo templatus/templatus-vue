@@ -122,12 +122,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import useOnlineOffline from './use/online-offline';
+<script setup lang="ts">
+import { TabGroup, TabList, Tab } from '@headlessui/vue';
 import GitVersion from '@/components/GitVersion.vue';
 import { metaContent } from '@/utils/metaContent';
-import { TabGroup, TabList, Tab } from '@headlessui/vue';
+import useOnlineOffline from './use/online-offline';
 
 const git: {
   commitSha?: string;
@@ -145,15 +144,5 @@ const tabs: {
   { name: 'About', href: '/about' },
 ];
 
-export default defineComponent({
-  components: { GitVersion, TabGroup, TabList, Tab },
-
-  setup() {
-    return {
-      online: useOnlineOffline().online,
-      tabs,
-      git,
-    };
-  },
-});
+const { online } = useOnlineOffline();
 </script>
