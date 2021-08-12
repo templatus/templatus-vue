@@ -81,7 +81,7 @@
 </template>
 
 <script setup lang="ts">
-import { version } from 'vue';
+import * as Vue from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
 import { metaContent } from '@/utils/metaContent';
 
@@ -153,7 +153,7 @@ const features: {
     items: [
       {
         name: 'Vue',
-        version: version,
+        version: Vue.version,
         href: 'https://v3.vuejs.org/',
         description:
           'Vue is a progressive framework for building user interfaces.',
