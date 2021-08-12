@@ -989,10 +989,10 @@
   resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.3.tgz#8e8948972df7f42f00a09f68d26fbfd16bb18692"
   integrity sha512-pj1foeBadGwRDT3ldEQ3t+C6p8Yw7LDoINvemJpH3j6Xdpm0iO4014OL288nueBnPKY7/xrHSJwy0dZIum1Eyw==
 
-"@honeybadger-io/js@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/js/-/js-3.2.2.tgz#9cbe3a42a500fe468b45e8283af580a51555041b"
-  integrity sha512-2QiacZdlnuLoOELIcDjjQAWzoAhXrrpxUNJ96ZsxaU+mHlcrkCjcOAGoU8nDG0rPxQ+ihzqchjvCwaM4muiNIQ==
+"@honeybadger-io/js@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/js/-/js-3.2.3.tgz#7cdb7bd0c124ca3191edd48d86f91a5d8200afa0"
+  integrity sha512-pNZ1WO0HC98FKBTYKFOjb8vj97OFMw+VvPULW3vnY6xWRCUs35XVPMQnDoHAGW6sMjJfpc6QK9a1mHsouC3imA==
   dependencies:
     "@types/express" "^4.17.13"
     stacktrace-parser "^0.1.10"
