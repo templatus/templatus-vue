@@ -120,12 +120,12 @@ assets by path media/images/ 4.45 KiB
     asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 180 KiB
-  asset js/472-08671442655500ee294b.js 161 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/472-fad4d1f1f17456e52ff9.js 161 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-452e73d07b8e2dbeab47.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-476cc9f35402e4fdec05.js 1.42 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-04901a15.css 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 198 KiB (272 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/472-08671442655500ee294b.js 161 KiB css/application-04901a15.css 17.3 KiB js/application-452e73d07b8e2dbeab47.js 17.7 KiB 6 auxiliary assets
+Entrypoint application 198 KiB (272 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/472-fad4d1f1f17456e52ff9.js 161 KiB css/application-04901a15.css 17.3 KiB js/application-452e73d07b8e2dbeab47.js 17.7 KiB 6 auxiliary assets
 orphan modules 191 KiB [orphan] 287 modules
 runtime modules 3.39 KiB 7 modules
 built modules 914 KiB (javascript) 2.33 KiB (asset) 27.4 KiB (css/mini-extract) [built]
@@ -146,7 +146,7 @@ webpack 5.50.0 compiled successfully in 7820 ms
 
 ### Network transfer
 
-Small footprint: The demo application transfers only 69Kb of data on the first visit.
+Small footprint: The demo application transfers only 70Kb of data on the first visit.
 
 ![Network](docs/network.png)
 
@@ -165,7 +165,7 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST                                                                         SIZE
-ghcr.io/ledermann/templatus        sha256:0b0756ab6dfbc1e8d17177720b6197bcaa1ab55912f0cd4491aa2b8d1cc83fdb        117M
+ghcr.io/ledermann/templatus        sha256:fb80c5b398f1d18d2a85a6f5eeb72af59b291f2ab9372e56dc16a85981d68437        117M
 ```
 
 ## Development installation
