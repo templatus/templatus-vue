@@ -45,7 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "@vue/test-utils": "2.0.0-rc.4",
-    "@webpack-cli/serve": "^1.5.1",
+    "@webpack-cli/serve": "^1.5.2",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.2.0",
