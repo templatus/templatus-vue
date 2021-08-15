@@ -35,7 +35,7 @@
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2",
     "webpack": "^5.50.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.8.0"
   },
   "version": "0.1.0",
   "devDependencies": {
