@@ -96,7 +96,7 @@ GEM
       tzinfo
     ffi (1.15.3)
     formatador (0.3.0)
-    fugit (1.5.0)
+    fugit (1.5.1)
       et-orbi (~> 1.1, >= 1.1.8)
       raabro (~> 1.4)
     globalid (0.5.2)
