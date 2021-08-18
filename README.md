@@ -11,7 +11,7 @@ Live demo available at https://templatus.ledermann.dev
 
 - Ruby 3
 - Ruby on Rails 6.1
-- Webpacker 6 (still in beta, but this allows using Webpack 5)
+- Webpacker 6 (still RC1, but this allows using Webpack 5)
 - ActionCable (for WebSocket communication)
 - [Rails Request.JS](https://github.com/rails/request.js) (for AJAX requests)
 - PostgreSQL (for using as SQL database)
@@ -111,21 +111,21 @@ Compiled all packs in /Users/ledermann/Projects/templatus/public/packs
 warn - You have enabled the JIT engine which is currently in preview.
 warn - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
 
-assets by path media/images/ 4.45 KiB
-  assets by path media/images/*.svg 2.33 KiB 2 assets
-  assets by path media/images/*.gz 1.13 KiB
-    asset media/images/bcb6d75d927347158af5.svg.gz 902 bytes [emitted] [immutable] [compressed]
-    asset media/images/f04dfe30a8ad8eb5c4e0.svg.gz 254 bytes [emitted] [immutable] [compressed]
-  assets by path media/images/*.br 1020 bytes
-    asset media/images/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
-    asset media/images/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
+assets by path static/ 4.45 KiB
+  assets by path static/*.svg 2.33 KiB 2 assets
+  assets by path static/*.gz 1.13 KiB
+    asset static/bcb6d75d927347158af5.svg.gz 902 bytes [emitted] [immutable] [compressed]
+    asset static/f04dfe30a8ad8eb5c4e0.svg.gz 254 bytes [emitted] [immutable] [compressed]
+  assets by path static/*.br 1020 bytes
+    asset static/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
+    asset static/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 180 KiB
   asset js/472-4b0dd22af9c7923c9755.js 161 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-452e73d07b8e2dbeab47.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/application-c70bfd903a41ff4b4dae.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-476cc9f35402e4fdec05.js 1.42 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-04901a15.css 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
-asset manifest.json 3.01 KiB [emitted] 2 related assets
-Entrypoint application 198 KiB (272 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/472-4b0dd22af9c7923c9755.js 161 KiB css/application-04901a15.css 17.3 KiB js/application-452e73d07b8e2dbeab47.js 17.7 KiB 6 auxiliary assets
+asset manifest.json 2.94 KiB [emitted] 2 related assets
+Entrypoint application 198 KiB (272 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/472-4b0dd22af9c7923c9755.js 161 KiB css/application-04901a15.css 17.3 KiB js/application-c70bfd903a41ff4b4dae.js 17.7 KiB 6 auxiliary assets
 orphan modules 191 KiB [orphan] 287 modules
 runtime modules 3.39 KiB 7 modules
 built modules 915 KiB (javascript) 2.33 KiB (asset) 27.4 KiB (css/mini-extract) [built]
@@ -141,7 +141,7 @@ built modules 915 KiB (javascript) 2.33 KiB (asset) 27.4 KiB (css/mini-extract) 
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 33 modules 32.2 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.4 KiB [built] [code generated]
-webpack 5.50.0 compiled successfully in 6747 ms
+webpack 5.50.0 compiled successfully in 7391 ms
 ```
 
 ### Network transfer
