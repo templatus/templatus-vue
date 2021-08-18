@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import PageTitle from '@/components/PageTitle.vue';
+</script>
+
 <template>
   <page-title>Page not found</page-title>
 
@@ -5,7 +9,3 @@
     <p>Something has gone wrong...</p>
   </div>
 </template>
-
-<script setup lang="ts">
-import PageTitle from '@/components/PageTitle.vue';
-</script>

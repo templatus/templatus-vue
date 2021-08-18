@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { PropType } from 'vue';
+import { Click } from '../use/clicks';
+
+defineProps({
+  clicks: {
+    type: Array as PropType<Array<Click>>,
+    required: true,
+  },
+});
+</script>
+
 <template>
   <transition-group
     tag="ul"
@@ -31,15 +43,3 @@
     </li>
   </transition-group>
 </template>
-
-<script setup lang="ts">
-import { PropType } from 'vue';
-import { Click } from '../use/clicks';
-
-defineProps({
-  clicks: {
-    type: Array as PropType<Array<Click>>,
-    required: true,
-  },
-});
-</script>

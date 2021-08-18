@@ -1,85 +1,3 @@
-<template>
-  <page-title>About</page-title>
-
-  <div class="mt-6 mb-20 text-xl max-w-4xl">
-    <p>
-      Templatus is an opinionated template for web applications with
-      <b>Ruby on Rails</b> and <b>Vue.js</b>
-    </p>
-  </div>
-
-  <div class="space-y-24">
-    <div v-for="group in features" :key="group.name">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
-        <div>
-          <h2
-            class="text-base font-semibold text-red-800 uppercase tracking-wide"
-          >
-            {{ group.slogan }}
-          </h2>
-          <p class="mt-2 text-3xl font-extrabold text-gray-900">
-            {{ group.name }}
-          </p>
-        </div>
-        <div class="mt-12 lg:mt-0 lg:col-span-2">
-          <dl
-            class="
-              space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
-              lg:gap-x-8
-            "
-          >
-            <div
-              v-for="feature in group.items"
-              :key="feature.name"
-              class="relative"
-            >
-              <dt>
-                <CheckIcon
-                  class="absolute h-6 w-6 text-green-500"
-                  aria-hidden="true"
-                />
-                <p class="ml-9 text-lg leading-6 font-medium text-red-800">
-                  <a
-                    :href="feature.href"
-                    class="hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {{ feature.name }}
-                  </a>
-
-                  <span
-                    v-if="feature.version"
-                    class="
-                      inline-flex
-                      items-center
-                      px-2.5
-                      py-0.5
-                      rounded-full
-                      text-xs
-                      font-medium
-                      bg-red-200
-                      text-red-900
-                      ml-2
-                    "
-                  >
-                    {{ feature.version }}
-                  </span>
-                </p>
-              </dt>
-              <dd
-                class="mt-2 ml-9 text-base text-gray-600"
-                v-html="feature.description"
-              ></dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import * as Vue from 'vue';
 import { CheckIcon } from '@heroicons/vue/outline';
@@ -253,3 +171,85 @@ const features: {
   },
 ];
 </script>
+
+<template>
+  <page-title>About</page-title>
+
+  <div class="mt-6 mb-20 text-xl max-w-4xl">
+    <p>
+      Templatus is an opinionated template for web applications with
+      <b>Ruby on Rails</b> and <b>Vue.js</b>
+    </p>
+  </div>
+
+  <div class="space-y-24">
+    <div v-for="group in features" :key="group.name">
+      <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div>
+          <h2
+            class="text-base font-semibold text-red-800 uppercase tracking-wide"
+          >
+            {{ group.slogan }}
+          </h2>
+          <p class="mt-2 text-3xl font-extrabold text-gray-900">
+            {{ group.name }}
+          </p>
+        </div>
+        <div class="mt-12 lg:mt-0 lg:col-span-2">
+          <dl
+            class="
+              space-y-10
+              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
+              lg:gap-x-8
+            "
+          >
+            <div
+              v-for="feature in group.items"
+              :key="feature.name"
+              class="relative"
+            >
+              <dt>
+                <CheckIcon
+                  class="absolute h-6 w-6 text-green-500"
+                  aria-hidden="true"
+                />
+                <p class="ml-9 text-lg leading-6 font-medium text-red-800">
+                  <a
+                    :href="feature.href"
+                    class="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {{ feature.name }}
+                  </a>
+
+                  <span
+                    v-if="feature.version"
+                    class="
+                      inline-flex
+                      items-center
+                      px-2.5
+                      py-0.5
+                      rounded-full
+                      text-xs
+                      font-medium
+                      bg-red-200
+                      text-red-900
+                      ml-2
+                    "
+                  >
+                    {{ feature.version }}
+                  </span>
+                </p>
+              </dt>
+              <dd
+                class="mt-2 ml-9 text-base text-gray-600"
+                v-html="feature.description"
+              ></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

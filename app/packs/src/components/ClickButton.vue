@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import Spinner from '@/components/Spinner.vue';
+
+defineProps({
+  count: {
+    type: Number,
+    required: true,
+  },
+});
+
+defineEmits(['click']);
+</script>
+
 <template>
   <div
     class="
@@ -54,16 +67,3 @@
     </p>
   </div>
 </template>
-
-<script setup lang="ts">
-import Spinner from '@/components/Spinner.vue';
-
-defineProps({
-  count: {
-    type: Number,
-    required: true,
-  },
-});
-
-defineEmits(['click']);
-</script>

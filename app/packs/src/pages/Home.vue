@@ -1,3 +1,19 @@
+<script setup="props" lang="ts">
+import PageTitle from '@/components/PageTitle.vue';
+import ClickList from '@/components/ClickList.vue';
+import ClickButton from '@/components/ClickButton.vue';
+import useClicks from '../use/clicks';
+
+defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+});
+
+const { receivedClicks, sendClick } = useClicks();
+</script>
+
 <template>
   <div class="flex justify-between flex-wrap">
     <div class="w-full md:w-1/2">
@@ -33,19 +49,3 @@
     <click-list :clicks="receivedClicks.items.slice(0, 5)"></click-list>
   </template>
 </template>
-
-<script setup="props" lang="ts">
-import PageTitle from '@/components/PageTitle.vue';
-import ClickList from '@/components/ClickList.vue';
-import ClickButton from '@/components/ClickButton.vue';
-import useClicks from '../use/clicks';
-
-defineProps({
-  name: {
-    type: String,
-    required: true,
-  },
-});
-
-const { receivedClicks, sendClick } = useClicks();
-</script>

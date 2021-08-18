@@ -1,12 +1,3 @@
-<template>
-  <div>
-    Version
-    <code>{{ commitSha.substring(0, 7) }}</code
-    >, created
-    <b><time ref="timeElement" :datetime="commitTime"></time></b>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import * as timeago from 'timeago.js';
@@ -33,3 +24,12 @@ onBeforeUnmount(() => {
   timeago.cancel();
 });
 </script>
+
+<template>
+  <div>
+    Version
+    <code>{{ commitSha.substring(0, 7) }}</code
+    >, created
+    <b><time ref="timeElement" :datetime="commitTime"></time></b>
+  </div>
+</template>

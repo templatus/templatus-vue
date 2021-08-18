@@ -1,3 +1,28 @@
+<script setup lang="ts">
+import { TabGroup, TabList, Tab } from '@headlessui/vue';
+import GitVersion from '@/components/GitVersion.vue';
+import { metaContent } from '@/utils/metaContent';
+import useOnlineOffline from './use/online-offline';
+
+const git: {
+  commitSha?: string;
+  commitTime?: string;
+} = {
+  commitSha: metaContent('git-commit-sha'),
+  commitTime: metaContent('git-commit-time'),
+};
+
+const tabs: {
+  name: string;
+  href: string;
+}[] = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+];
+
+const { online } = useOnlineOffline();
+</script>
+
 <template>
   <div class="bg-red-50 min-h-screen flex flex-col">
     <header>
@@ -121,28 +146,3 @@
     </footer>
   </div>
 </template>
-
-<script setup lang="ts">
-import { TabGroup, TabList, Tab } from '@headlessui/vue';
-import GitVersion from '@/components/GitVersion.vue';
-import { metaContent } from '@/utils/metaContent';
-import useOnlineOffline from './use/online-offline';
-
-const git: {
-  commitSha?: string;
-  commitTime?: string;
-} = {
-  commitSha: metaContent('git-commit-sha'),
-  commitTime: metaContent('git-commit-time'),
-};
-
-const tabs: {
-  name: string;
-  href: string;
-}[] = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-];
-
-const { online } = useOnlineOffline();
-</script>
