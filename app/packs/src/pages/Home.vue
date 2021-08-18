@@ -21,7 +21,7 @@ const { receivedClicks, sendClick } = useClicks();
 
       <p class="mt-6 text-base lg:text-xl max-w-4xl">
         Templatus is an opinionated template for web applications with
-        <b>Ruby on Rails</b> and <b>Vue.js</b>
+        <b>Ruby on Rails</b> and <b>Vue.js 3</b>
       </p>
     </div>
 

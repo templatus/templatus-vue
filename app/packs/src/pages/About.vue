@@ -178,7 +178,7 @@ const features: {
   <div class="mt-6 mb-20 text-xl max-w-4xl">
     <p>
       Templatus is an opinionated template for web applications with
-      <b>Ruby on Rails</b> and <b>Vue.js</b>
+      <b>Ruby on Rails</b> and <b>Vue.js 3</b>
     </p>
   </div>
 

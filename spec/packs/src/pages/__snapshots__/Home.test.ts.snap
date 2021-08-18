@@ -11,7 +11,7 @@ exports[`Home matches snapshot 1`] = `
       lg:text-6xl
       text-red-800
     ">Hello, World!</h1>
-    <p class="mt-6 text-base lg:text-xl max-w-4xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js</b></p>
+    <p class="mt-6 text-base lg:text-xl max-w-4xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
   </div>
   <div class="
       flex flex-col

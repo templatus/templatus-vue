@@ -3,7 +3,7 @@
 
 # Templatus
 
-Templatus is an opinionated template to build web applications with Ruby on Rails using Vue.js on the frontend. It simplifies the process of setting up a new application while following best practices.
+Templatus is an opinionated template to build web applications with Ruby on Rails using Vue.js 3 on the frontend. It simplifies the process of setting up a new application while following best practices.
 
 Live demo available at https://templatus.ledermann.dev
 
