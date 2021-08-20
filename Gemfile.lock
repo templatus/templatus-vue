@@ -325,7 +325,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-brotli
   rack-cors
-  rails (~> 6.1.4)
+  rails (~> 6.1.4, >= 6.1.4.1)
   redis
   rspec-rails
   rubocop

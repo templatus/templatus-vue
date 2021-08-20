@@ -12,7 +12,7 @@
     "@headlessui/vue": "^1.4.0",
     "@heroicons/vue": "^1.0.4",
     "@honeybadger-io/js": "^3.2.3",
-    "@rails/actioncable": "^6.1.4",
+    "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
     "@rails/webpacker": "^6.0.0-rc.1",
     "@tailwindcss/forms": "^0.3.3",

@@ -122,12 +122,12 @@ assets by path static/ 4.45 KiB
 assets by path js/*.js 180 KiB
   asset js/472-4b0dd22af9c7923c9755.js 161 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-783cb1b6a28eeb2421c0.js 17.7 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
-  asset js/runtime-476cc9f35402e4fdec05.js 1.42 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
+  asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-6979c735.css 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 198 KiB (272 KiB) = js/runtime-476cc9f35402e4fdec05.js 1.42 KiB js/472-4b0dd22af9c7923c9755.js 161 KiB css/application-6979c735.css 17.3 KiB js/application-783cb1b6a28eeb2421c0.js 17.7 KiB 6 auxiliary assets
+Entrypoint application 198 KiB (273 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/472-4b0dd22af9c7923c9755.js 161 KiB css/application-6979c735.css 17.3 KiB js/application-783cb1b6a28eeb2421c0.js 17.7 KiB 6 auxiliary assets
 orphan modules 191 KiB [orphan] 287 modules
-runtime modules 3.39 KiB 7 modules
+runtime modules 3.47 KiB 7 modules
 built modules 915 KiB (javascript) 2.33 KiB (asset) 27.4 KiB (css/mini-extract) [built]
   modules by path ./node_modules/ 882 KiB
     modules by path ./node_modules/@vue/ 437 KiB 4 modules
@@ -141,7 +141,7 @@ built modules 915 KiB (javascript) 2.33 KiB (asset) 27.4 KiB (css/mini-extract) 
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 33 modules 32.2 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.4 KiB [built] [code generated]
-webpack 5.50.0 compiled successfully in 6352 ms
+webpack 5.51.1 compiled successfully in 7233 ms
 ```
 
 ### Network transfer
