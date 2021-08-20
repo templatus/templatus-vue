@@ -14,7 +14,7 @@
     "@honeybadger-io/js": "^3.2.3",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
-    "@rails/webpacker": "^6.0.0-rc.1",
+    "@rails/webpacker": "https://github.com/t27duck/webpacker.git#webpack-dev-server-update",
     "@tailwindcss/forms": "^0.3.3",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.2",
@@ -58,7 +58,7 @@
     "ts-jest": "^27.0.5",
     "vue-tsc": "^0.2.3",
     "vue3-jest": "^27.0.0-alpha.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.0.0"
   },
   "babel": {
     "presets": [
