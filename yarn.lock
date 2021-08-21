@@ -1236,7 +1236,7 @@
 
 "@rails/webpacker@https://github.com/t27duck/webpacker.git#webpack-dev-server-update":
   version "6.0.0-rc.1"
-  resolved "https://github.com/t27duck/webpacker.git#31d0fbe3f40672b95910ccea8e1c37473bad3bd1"
+  resolved "https://github.com/t27duck/webpacker.git#f2af237c054e3ac2da7d76c0ab4621693f83440e"
   dependencies:
     "@babel/core" "^7.15.0"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
