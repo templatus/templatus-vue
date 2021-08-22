@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/t27duck/webpacker.git
-  revision: f2af237c054e3ac2da7d76c0ab4621693f83440e
+  revision: c5dc692a5c6da47832cdc8e4bf76660af48a79de
   branch: webpack-dev-server-update
   specs:
     webpacker (6.0.0.rc.1)
