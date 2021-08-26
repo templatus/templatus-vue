@@ -13,7 +13,7 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 
 # Use webpack to manage app-like JavaScript modules in Rails (https://github.com/rails/webpacker)
-gem 'webpacker', '>= 6.0.0.rc.1', git: 'https://github.com/t27duck/webpacker.git', branch: 'webpack-dev-server-update'
+gem 'webpacker', '>= 6.0.0.rc.5'
 
 # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
 gem 'bootsnap', '>= 1.4.4', require: false

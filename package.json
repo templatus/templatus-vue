@@ -14,7 +14,7 @@
     "@honeybadger-io/js": "^3.2.3",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
-    "@rails/webpacker": "https://github.com/t27duck/webpacker.git#webpack-dev-server-update",
+    "@rails/webpacker": "^6.0.0-rc.5",
     "@tailwindcss/forms": "^0.3.3",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.2",
