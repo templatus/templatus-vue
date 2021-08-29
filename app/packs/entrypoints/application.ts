@@ -10,32 +10,37 @@ import router from '@/router';
 import App from '@/App.vue';
 import HoneybadgerVue from '@/utils/honeybadger';
 import 'stylesheets/application.css';
+import { register } from 'register-service-worker';
 
 // Include all images in webpack manifest
 require.context('../images', true);
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/sw.js')
-    // .then((registration) => {
-    //   console.log('Service worker registered successfully.', registration);
-
-    //   var serviceWorker;
-    //   if (registration.installing) {
-    //     serviceWorker = registration.installing;
-    //     console.log('Service worker installing.', serviceWorker);
-    //   } else if (registration.waiting) {
-    //     serviceWorker = registration.waiting;
-    //     console.log('Service worker installed & waiting.', serviceWorker);
-    //   } else if (registration.active) {
-    //     serviceWorker = registration.active;
-    //     console.log('Service worker active.', serviceWorker);
-    //   }
-    // })
-    .catch(() => {
-      alert('Service worker registration failed.');
-    });
-}
+register('/sw.js', {
+  registrationOptions: { scope: './' },
+  ready(_registration: ServiceWorkerRegistration) {
+    console.log('Service worker is active.');
+  },
+  registered(_registration: ServiceWorkerRegistration) {
+    console.log('Service worker has been registered.');
+  },
+  cached(_registration: ServiceWorkerRegistration) {
+    console.log('Content has been cached for offline use.');
+  },
+  updatefound(_registration: ServiceWorkerRegistration) {
+    console.log('New content is downloading.');
+  },
+  updated(_registration: ServiceWorkerRegistration) {
+    console.log('New content is available; please refresh.');
+  },
+  offline() {
+    console.log(
+      'No internet connection found. App is running in offline mode.',
+    );
+  },
+  error(error) {
+    console.error('Error during service worker registration:', error);
+  },
+});
 
 declare let __webpack_public_path__: string | undefined;
 

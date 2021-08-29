@@ -24,7 +24,12 @@ module.exports = {
     withDefaults: 'readonly',
   },
   rules: {
-    'vue/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
     'vue/no-v-html': 'off',
     'vue/script-setup-uses-vars': 'error',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
