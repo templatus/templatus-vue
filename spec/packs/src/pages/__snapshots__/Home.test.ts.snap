@@ -1,59 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home matches snapshot 1`] = `
-<div class="flex justify-between flex-wrap">
+<div class="flex flex-wrap justify-between">
   <div class="w-full md:w-1/2">
     <h1 class="
-      text-4xl
+      text-red-800 text-4xl
       font-extrabold
       tracking-tight
       sm:text-5xl
       lg:text-6xl
-      text-red-800
     ">Hello, World!</h1>
-    <p class="mt-6 text-base lg:text-xl max-w-4xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
+    <p class="mt-6 max-w-4xl text-base lg:text-xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
   </div>
   <div class="
       flex flex-col
-      w-full
       mt-5
-      sm:w-56 sm:mt-0
+      w-full
+      sm:mt-0 sm:w-56
       lg:transform lg:-translate-y-72
     ">
-    <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
+    <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <transition-stub>
         <div class="text-5xl">42</div>
       </transition-stub>
-      <div class="uppercase py-1">Clicks</div>
+      <div class="py-1 uppercase">Clicks</div>
     </div><button type="button" class="
-        w-full
         px-4
         py-2
-        border border-red-200
-        text-sm
+        w-full
+        text-red-700 text-sm
         font-medium
-        rounded-b-md
-        shadow
-        text-red-700
         bg-red-100
         hover:bg-red-200
-        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+        border border-red-200
+        rounded-b-md
+        focus:outline-none
+        shadow
+        focus:ring-2 focus:ring-red-500 focus:ring-offset-2
       "> Click me! </button>
-    <p class="mt-5 text-gray-600 text-sm hidden sm:block"> Tip: Open two browser windows in parallel and see what happens. </p>
+    <p class="hidden mt-5 text-gray-600 text-sm sm:block"> Tip: Open two browser windows in parallel and see what happens. </p>
   </div>
 </div>
 <h2 class="
         mt-8
-        text-xl
+        text-center text-red-800 text-xl
         font-medium
-        text-red-800 text-center
-        sm:text-left
-        uppercase
         tracking-wide
+        uppercase
+        sm:text-left
       "> Latest clicks </h2>
 <transition-group-stub>
   <li class="mt-2 p-2 bg-red-100 rounded">
-    <p><span class="px-1 bg-gray-900 text-red-100 rounded font-mono">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 font-medium text-sm sm:text-base">Sun, 23 May 2021 09:27:21 GMT</span></p>
+    <p><span class="px-1 text-red-100 font-mono bg-gray-900 rounded">1.2.3.4</span><span class="ml-2 px-1 text-gray-900 text-sm font-medium sm:text-base">Sun, 23 May 2021 09:27:21 GMT</span></p>
     <p class="text-gray-900 font-extralight">Jest</p>
   </li>
 </transition-group-stub>

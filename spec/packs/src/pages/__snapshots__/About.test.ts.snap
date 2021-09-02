@@ -2,88 +2,87 @@
 
 exports[`About matches snapshot 1`] = `
 <h1 class="
-      text-4xl
+      text-red-800 text-4xl
       font-extrabold
       tracking-tight
       sm:text-5xl
       lg:text-6xl
-      text-red-800
     ">About</h1>
-<div class="mt-6 mb-20 text-xl max-w-4xl">
+<div class="mb-20 mt-6 max-w-4xl text-xl">
   <p> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
 </div>
 <div class="space-y-24">
   <div>
-    <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
       <div>
-        <h2 class="text-base font-semibold text-red-800 uppercase tracking-wide">Server side</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900">The backend</p>
+        <h2 class="text-red-800 text-base font-semibold tracking-wide uppercase">Server side</h2>
+        <p class="mt-2 text-gray-900 text-3xl font-extrabold">The backend</p>
       </div>
-      <div class="mt-12 lg:mt-0 lg:col-span-2">
+      <div class="mt-12 lg:col-span-2 lg:mt-0">
         <dl class="
               space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
+              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
               lg:gap-x-8
             ">
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.ruby-lang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://www.ruby-lang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://rubyonrails.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby on Rails</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://rubyonrails.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby on Rails</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.postgresql.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">PostgreSQL</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://www.postgresql.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">PostgreSQL</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://puma.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Puma</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://puma.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Puma</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Puma is a simple, fast, multi-threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Puma is a simple, fast, multi-threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Redis</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Redis</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Redis is an open source, in-memory data structure store, used as a database, cache, and message broker.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://sidekiq.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Sidekiq</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://sidekiq.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Sidekiq</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Simple, efficient background processing for Ruby<p class="mt-2 text-xs">→ <a class="font-medium uppercase hover:underline" href="/sidekiq">Admin frontend</a></p>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Simple, efficient background processing for Ruby<p class="mt-2 text-xs">→ <a class="font-medium uppercase hover:underline" href="/sidekiq">Admin frontend</a></p>
             </dd>
           </div>
         </dl>
@@ -91,197 +90,196 @@ exports[`About matches snapshot 1`] = `
     </div>
   </div>
   <div>
-    <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
       <div>
-        <h2 class="text-base font-semibold text-red-800 uppercase tracking-wide">Client side</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900">The frontend</p>
+        <h2 class="text-red-800 text-base font-semibold tracking-wide uppercase">Client side</h2>
+        <p class="mt-2 text-gray-900 text-3xl font-extrabold">The frontend</p>
       </div>
-      <div class="mt-12 lg:mt-0 lg:col-span-2">
+      <div class="mt-12 lg:col-span-2 lg:mt-0">
         <dl class="
               space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
+              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
               lg:gap-x-8
             ">
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://v3.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vue</a><span class="
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://v3.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vue</a><span class="
                       inline-flex
                       items-center
+                      ml-2
                       px-2.5
                       py-0.5
-                      rounded-full
-                      text-xs
+                      text-red-900 text-xs
                       font-medium
                       bg-red-200
-                      text-red-900
-                      ml-2
+                      rounded-full
                     ">3.x.y</span></p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Vue is a progressive framework for building user interfaces.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Vue is a progressive framework for building user interfaces.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://tailwindcss.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">TailwindCSS 2</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://tailwindcss.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">TailwindCSS 2</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.typescriptlang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">TypeScript</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://www.typescriptlang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">TypeScript</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://vuex.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vuex</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://vuex.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vuex</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://headlessui.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeadlessUI</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://headlessui.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeadlessUI</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeroIcons</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeroIcons</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://github.com/rails/webpacker" class="hover:underline" target="_blank" rel="noopener noreferrer">Webpacker</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://github.com/rails/webpacker" class="hover:underline" target="_blank" rel="noopener noreferrer">Webpacker</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
-      <div>
-        <h2 class="text-base font-semibold text-red-800 uppercase tracking-wide">Quality insurance</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900">Continuous integration</p>
-      </div>
-      <div class="mt-12 lg:mt-0 lg:col-span-2">
-        <dl class="
-              space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
-              lg:gap-x-8
-            ">
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://github.com/features/actions" class="hover:underline" target="_blank" rel="noopener noreferrer">GitHub Actions</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Test, build and deliver on every push to GitHub</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://rspec.info/" class="hover:underline" target="_blank" rel="noopener noreferrer">RSpec</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Behaviour Driven Development for Ruby. Making TDD Productive and Fun.</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://rubocop.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">RuboCop</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">The Ruby Linter/Formatter that Serves and Protects</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://jestjs.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Jest</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Jest is a delightful JavaScript Testing Framework with a focus on simplicity</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://eslint.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">ESLint</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">ESLint statically analyzes your code to quickly find problems</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.</dd>
           </div>
         </dl>
       </div>
     </div>
   </div>
   <div>
-    <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
       <div>
-        <h2 class="text-base font-semibold text-red-800 uppercase tracking-wide">Ship it!</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900">Deployment</p>
+        <h2 class="text-red-800 text-base font-semibold tracking-wide uppercase">Quality insurance</h2>
+        <p class="mt-2 text-gray-900 text-3xl font-extrabold">Continuous integration</p>
       </div>
-      <div class="mt-12 lg:mt-0 lg:col-span-2">
+      <div class="mt-12 lg:col-span-2 lg:mt-0">
         <dl class="
               space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
+              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
               lg:gap-x-8
             ">
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://alpinelinux.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Alpine Linux</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://github.com/features/actions" class="hover:underline" target="_blank" rel="noopener noreferrer">GitHub Actions</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Alpine Linux is an independent, non-commercial, general purpose Linux distribution designed for power users who appreciate security, simplicity and resource efficiency.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Test, build and deliver on every push to GitHub</dd>
           </div>
           <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 w-6 text-green-500">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg leading-6 font-medium text-red-800"><a href="https://www.docker.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Docker</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://rspec.info/" class="hover:underline" target="_blank" rel="noopener noreferrer">RSpec</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Dockerized using an optimized base image.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Behaviour Driven Development for Ruby. Making TDD Productive and Fun.</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://rubocop.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">RuboCop</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">The Ruby Linter/Formatter that Serves and Protects</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://jestjs.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Jest</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Jest is a delightful JavaScript Testing Framework with a focus on simplicity</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://eslint.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">ESLint</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">ESLint statically analyzes your code to quickly find problems</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
+      <div>
+        <h2 class="text-red-800 text-base font-semibold tracking-wide uppercase">Ship it!</h2>
+        <p class="mt-2 text-gray-900 text-3xl font-extrabold">Deployment</p>
+      </div>
+      <div class="mt-12 lg:col-span-2 lg:mt-0">
+        <dl class="
+              space-y-10
+              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
+              lg:gap-x-8
+            ">
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://alpinelinux.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Alpine Linux</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Alpine Linux is an independent, non-commercial, general purpose Linux distribution designed for power users who appreciate security, simplicity and resource efficiency.</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://www.docker.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Docker</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Dockerized using an optimized base image.</dd>
           </div>
         </dl>
       </div>

@@ -24,17 +24,17 @@ const { online } = useOnlineOffline();
 </script>
 
 <template>
-  <div class="bg-red-50 min-h-screen flex flex-col">
+  <div class="flex flex-col min-h-screen bg-red-50">
     <header>
       <svg
         class="
           absolute
           inset-0
+          hidden
           w-full
           h-96
-          filter
           drop-shadow-xl
-          hidden
+          filter
           sm:block
         "
         fill="none"
@@ -48,21 +48,21 @@ const { online } = useOnlineOffline();
         />
       </svg>
 
-      <div class="bg-red-800 sm:bg-transparent relative">
-        <div class="max-w-5xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
+      <div class="relative bg-red-800 sm:bg-transparent">
+        <div class="mx-auto px-4 py-8 max-w-5xl sm:px-6 sm:py-10 lg:px-8">
           <div class="flex items-center space-x-5 sm:space-x-10">
             <img
               :src="require('images/rails.svg')"
               alt="Ruby on Rails"
-              class="h-16 sm:h-24 bg-red-100 rounded p-3"
+              class="p-3 h-16 bg-red-100 rounded sm:h-24"
             />
 
-            <div class="text-4xl sm:text-8xl text-red-100">&plus;</div>
+            <div class="text-red-100 text-4xl sm:text-8xl">&plus;</div>
 
             <img
               :src="require('images/vue.svg')"
               alt="Vue.js 3"
-              class="h-16 sm:h-24 bg-red-100 rounded p-3"
+              class="p-3 h-16 bg-red-100 rounded sm:h-24"
             />
           </div>
 
@@ -89,25 +89,25 @@ const { online } = useOnlineOffline();
 
     <main
       class="
-        flex-grow
-        bg-transparent
         relative
+        flex-grow
+        mx-auto
+        pb-24
+        pt-10
+        px-4
         w-full
         max-w-5xl
-        mx-auto
-        pt-10
-        pb-24
-        px-4
-        sm:py-32 sm:px-6
+        bg-transparent
+        sm:px-6 sm:py-32
         lg:px-8 lg:py-24
       "
     >
       <router-view />
     </main>
 
-    <footer class="text-white bg-gray-700 fixed bottom-0 w-full py-2 text-sm">
-      <div class="flex flex-wrap max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="w-full sm:w-1/4 text-center sm:text-left">
+    <footer class="fixed bottom-0 py-2 w-full text-white text-sm bg-gray-700">
+      <div class="flex flex-wrap mx-auto px-4 max-w-5xl sm:px-6 lg:px-8">
+        <div class="w-full text-center sm:w-1/4 sm:text-left">
           <a
             class="hover:underline"
             target="_blank"
@@ -118,24 +118,24 @@ const { online } = useOnlineOffline();
           </a>
         </div>
 
-        <div class="w-full sm:w-1/4 text-center">
+        <div class="w-full text-center sm:w-1/4">
           <span
             v-if="!online"
             class="
-              font-bold
-              uppercase
-              tracking-wide
-              text-red-700
-              bg-white
               px-1
               py-px
+              text-red-700
+              font-bold
+              tracking-wide
+              bg-white
               rounded
+              uppercase
             "
             >You are offline</span
           >
         </div>
 
-        <div class="w-full sm:w-1/2 text-center sm:text-right">
+        <div class="w-full text-center sm:w-1/2 sm:text-right">
           <git-version
             v-if="git.commitTime && git.commitSha"
             :commit-time="git.commitTime"

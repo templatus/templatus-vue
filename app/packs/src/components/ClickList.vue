@@ -28,11 +28,11 @@ defineProps({
       class="mt-2 p-2 bg-red-100 rounded"
     >
       <p>
-        <span class="px-1 bg-gray-900 text-red-100 rounded font-mono">
+        <span class="px-1 text-red-100 font-mono bg-gray-900 rounded">
           {{ click.ip }}
         </span>
 
-        <span class="ml-2 px-1 text-gray-900 font-medium text-sm sm:text-base">
+        <span class="ml-2 px-1 text-gray-900 text-sm font-medium sm:text-base">
           {{ new Date(Date.parse(click.created_at)).toUTCString() }}
         </span>
       </p>

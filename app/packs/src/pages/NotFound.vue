@@ -5,7 +5,7 @@ import PageTitle from '@/components/PageTitle.vue';
 <template>
   <page-title>Page not found</page-title>
 
-  <div class="mt-6 mb-20 text-xl max-w-3xl">
+  <div class="mb-20 mt-6 max-w-3xl text-xl">
     <p>Something has gone wrong...</p>
   </div>
 </template>

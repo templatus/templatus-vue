@@ -15,13 +15,13 @@ defineEmits(['click']);
   <div
     class="
       flex flex-col
-      w-full
       mt-5
-      sm:w-56 sm:mt-0
+      w-full
+      sm:mt-0 sm:w-56
       lg:transform lg:-translate-y-72
     "
   >
-    <div class="p-2 lg:p-5 text-center shadow bg-white rounded-t">
+    <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <template v-if="count >= 0">
         <transition
           mode="out-in"
@@ -36,33 +36,33 @@ defineEmits(['click']);
             {{ count.toLocaleString() }}
           </div>
         </transition>
-        <div class="uppercase py-1">Clicks</div>
+        <div class="py-1 uppercase">Clicks</div>
       </template>
-      <Spinner v-else class="h-20 w-full"></Spinner>
+      <Spinner v-else class="w-full h-20"></Spinner>
     </div>
 
     <button
       type="button"
       class="
-        w-full
         px-4
         py-2
-        border border-red-200
-        text-sm
+        w-full
+        text-red-700 text-sm
         font-medium
-        rounded-b-md
-        shadow
-        text-red-700
         bg-red-100
         hover:bg-red-200
-        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+        border border-red-200
+        rounded-b-md
+        focus:outline-none
+        shadow
+        focus:ring-2 focus:ring-red-500 focus:ring-offset-2
       "
       @click="$emit('click')"
     >
       Click me!
     </button>
 
-    <p class="mt-5 text-gray-600 text-sm hidden sm:block">
+    <p class="hidden mt-5 text-gray-600 text-sm sm:block">
       Tip: Open two browser windows in parallel and see what happens.
     </p>
   </div>

@@ -2,14 +2,13 @@
 
 exports[`NotFound matches snapshot 1`] = `
 <h1 class="
-      text-4xl
+      text-red-800 text-4xl
       font-extrabold
       tracking-tight
       sm:text-5xl
       lg:text-6xl
-      text-red-800
     ">Page not found</h1>
-<div class="mt-6 mb-20 text-xl max-w-3xl">
+<div class="mb-20 mt-6 max-w-3xl text-xl">
   <p>Something has gone wrong...</p>
 </div>
 `;

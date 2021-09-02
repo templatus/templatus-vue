@@ -15,11 +15,11 @@ const { receivedClicks, sendClick } = useClicks();
 </script>
 
 <template>
-  <div class="flex justify-between flex-wrap">
+  <div class="flex flex-wrap justify-between">
     <div class="w-full md:w-1/2">
       <page-title>Hello, {{ name }}!</page-title>
 
-      <p class="mt-6 text-base lg:text-xl max-w-4xl">
+      <p class="mt-6 max-w-4xl text-base lg:text-xl">
         Templatus is an opinionated template for web applications with
         <b>Ruby on Rails</b> and <b>Vue.js 3</b>
       </p>
@@ -35,12 +35,11 @@ const { receivedClicks, sendClick } = useClicks();
     <h2
       class="
         mt-8
-        text-xl
+        text-center text-red-800 text-xl
         font-medium
-        text-red-800 text-center
-        sm:text-left
-        uppercase
         tracking-wide
+        uppercase
+        sm:text-left
       "
     >
       Latest clicks

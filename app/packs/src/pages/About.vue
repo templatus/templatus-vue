@@ -175,7 +175,7 @@ const features: {
 <template>
   <page-title>About</page-title>
 
-  <div class="mt-6 mb-20 text-xl max-w-4xl">
+  <div class="mb-20 mt-6 max-w-4xl text-xl">
     <p>
       Templatus is an opinionated template for web applications with
       <b>Ruby on Rails</b> and <b>Vue.js 3</b>
@@ -184,22 +184,22 @@ const features: {
 
   <div class="space-y-24">
     <div v-for="group in features" :key="group.name">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+      <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
         <div>
           <h2
-            class="text-base font-semibold text-red-800 uppercase tracking-wide"
+            class="text-red-800 text-base font-semibold tracking-wide uppercase"
           >
             {{ group.slogan }}
           </h2>
-          <p class="mt-2 text-3xl font-extrabold text-gray-900">
+          <p class="mt-2 text-gray-900 text-3xl font-extrabold">
             {{ group.name }}
           </p>
         </div>
-        <div class="mt-12 lg:mt-0 lg:col-span-2">
+        <div class="mt-12 lg:col-span-2 lg:mt-0">
           <dl
             class="
               space-y-10
-              sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10
+              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
               lg:gap-x-8
             "
           >
@@ -210,10 +210,10 @@ const features: {
             >
               <dt>
                 <CheckIcon
-                  class="absolute h-6 w-6 text-green-500"
+                  class="absolute w-6 h-6 text-green-500"
                   aria-hidden="true"
                 />
-                <p class="ml-9 text-lg leading-6 font-medium text-red-800">
+                <p class="ml-9 text-red-800 text-lg font-medium leading-6">
                   <a
                     :href="feature.href"
                     class="hover:underline"
@@ -228,14 +228,13 @@ const features: {
                     class="
                       inline-flex
                       items-center
+                      ml-2
                       px-2.5
                       py-0.5
-                      rounded-full
-                      text-xs
+                      text-red-900 text-xs
                       font-medium
                       bg-red-200
-                      text-red-900
-                      ml-2
+                      rounded-full
                     "
                   >
                     {{ feature.version }}
@@ -243,7 +242,7 @@ const features: {
                 </p>
               </dt>
               <dd
-                class="mt-2 ml-9 text-base text-gray-600"
+                class="ml-9 mt-2 text-gray-600 text-base"
                 v-html="feature.description"
               ></dd>
             </div>
