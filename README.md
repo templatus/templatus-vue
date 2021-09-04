@@ -53,11 +53,9 @@ performed against the demo installation on production. It uses an inexpensive vi
 
 ### Lighthouse site performance
 
-100% in nearly all categories.
+100% in all categories.
 
 ![Lighthouse](docs/lighthouse.png)
-
-Why not 100% in _Best practice_ category? This is a [bug in Lighthouse](https://github.com/GoogleChrome/lighthouse/issues/11862), because Lighthouse first injects inline styles and then whines about a CSP warning.
 
 ### Secure headers
 
