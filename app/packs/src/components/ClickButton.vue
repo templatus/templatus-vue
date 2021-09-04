@@ -8,7 +8,11 @@ defineProps({
   },
 });
 
-defineEmits(['click']);
+const emit = defineEmits(['click']);
+
+function onClick() {
+  emit('click');
+}
 </script>
 
 <template>
@@ -57,7 +61,7 @@ defineEmits(['click']);
         shadow
         focus:ring-2 focus:ring-red-500 focus:ring-offset-2
       "
-      @click="$emit('click')"
+      @click="onClick()"
     >
       Click me!
     </button>
