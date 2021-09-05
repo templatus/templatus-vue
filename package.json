@@ -32,7 +32,7 @@
     "tailwindcss": "^2.2.9",
     "timeago.js": "^4.0.2",
     "typescript": "^4.4.2",
-    "vue": "^3.2.8",
+    "vue": "^3.2.9",
     "vue-loader": "^16.5.0",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2",
