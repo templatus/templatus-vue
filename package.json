@@ -18,7 +18,7 @@
     "@tailwindcss/forms": "^0.3.3",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.2",
-    "@vue/compiler-sfc": "^3.2.8",
+    "@vue/compiler-sfc": "^3.2.9",
     "autoprefixer": "^10.3.4",
     "css-loader": "^6.2.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
