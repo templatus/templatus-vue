@@ -11,7 +11,7 @@ Live demo available at https://templatus.ledermann.dev
 
 - Ruby 3
 - Ruby on Rails 6.1
-- Webpacker 6 (still RC1, but this allows using Webpack 5)
+- Webpacker 6 (still not released, but this allows using Webpack v5 and webpack-dev-server v4)
 - ActionCable (for WebSocket communication)
 - [Rails Request.JS](https://github.com/rails/request.js) (for AJAX requests)
 - PostgreSQL (for using as SQL database)
@@ -121,9 +121,9 @@ assets by path js/*.js 183 KiB
   asset js/595-0138f68eee02a320dd22.js 163 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-e6577b8dc999f5259800.js 18.2 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-2773cd33.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-82c9e63c.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 201 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-0138f68eee02a320dd22.js 163 KiB css/application-2773cd33.css 17.4 KiB js/application-e6577b8dc999f5259800.js 18.2 KiB 6 auxiliary assets
+Entrypoint application 201 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-0138f68eee02a320dd22.js 163 KiB css/application-82c9e63c.css 17.4 KiB js/application-e6577b8dc999f5259800.js 18.2 KiB 6 auxiliary assets
 orphan modules 191 KiB [orphan] 287 modules
 runtime modules 3.47 KiB 7 modules
 built modules 922 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
@@ -139,7 +139,7 @@ built modules 922 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) 
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 33 modules 32.4 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.7 KiB [built] [code generated]
-webpack 5.52.0 compiled successfully in 6903 ms
+webpack 5.52.0 compiled successfully in 6454 ms
 ```
 
 ### Network transfer
