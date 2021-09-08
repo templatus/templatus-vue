@@ -94,7 +94,7 @@ https://check-your-website.server-daten.de/?q=templatus.ledermann.dev
 
 ### JavaScript size
 
-183 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+182 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
 - Vue.js + Vue Router + Vuex (89 KB)
 - Headless UI (26 KB)
@@ -117,29 +117,29 @@ assets by path static/ 4.45 KiB
   assets by path static/*.br 1020 bytes
     asset static/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset static/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
-assets by path js/*.js 183 KiB
-  asset js/595-0138f68eee02a320dd22.js 163 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-e6577b8dc999f5259800.js 18.2 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+assets by path js/*.js 182 KiB
+  asset js/595-440553f65cb11b78078b.js 163 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-8468c0da4418cc214ca6.js 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-82c9e63c.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-6f647266.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 201 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-0138f68eee02a320dd22.js 163 KiB css/application-82c9e63c.css 17.4 KiB js/application-e6577b8dc999f5259800.js 18.2 KiB 6 auxiliary assets
-orphan modules 191 KiB [orphan] 287 modules
+Entrypoint application 200 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-440553f65cb11b78078b.js 163 KiB css/application-6f647266.css 17.4 KiB js/application-8468c0da4418cc214ca6.js 17.3 KiB 6 auxiliary assets
+orphan modules 190 KiB [orphan] 287 modules
 runtime modules 3.47 KiB 7 modules
-built modules 922 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
+built modules 921 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
   modules by path ./node_modules/ 889 KiB
-    modules by path ./node_modules/@vue/ 437 KiB 4 modules
+    modules by path ./node_modules/@vue/ 436 KiB 4 modules
     modules by path ./node_modules/@rails/ 26 KiB
       ./node_modules/@rails/actioncable/app/assets/javascripts/action_cable.js 18.6 KiB [built] [code generated]
       ./node_modules/@rails/request.js/src/verbs.js + 4 modules 7.38 KiB [built] [code generated]
-  modules by path ./app/packs/ 32.7 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract)
+  modules by path ./app/packs/ 31.8 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract)
     modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset)
       ./app/packs/images/ sync ^\.\/.*$ 190 bytes [built] [code generated]
       ./app/packs/images/rails.svg 42 bytes (javascript) 1.96 KiB (asset) [built] [code generated]
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
-    ./app/packs/entrypoints/application.ts + 33 modules 32.4 KiB [built] [code generated]
+    ./app/packs/entrypoints/application.ts + 33 modules 31.5 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.7 KiB [built] [code generated]
-webpack 5.52.0 compiled successfully in 6454 ms
+webpack 5.52.0 compiled successfully in 7502 ms
 ```
 
 ### Network transfer
