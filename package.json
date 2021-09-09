@@ -60,7 +60,7 @@
     "ts-jest": "^27.0.5",
     "vue-tsc": "^0.3.0",
     "vue3-jest": "^27.0.0-alpha.2",
-    "webpack-dev-server": "^4.1.1"
+    "webpack-dev-server": "^4.2.0"
   },
   "babel": {
     "presets": [
