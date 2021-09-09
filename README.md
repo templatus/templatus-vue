@@ -118,12 +118,12 @@ assets by path static/ 4.45 KiB
     asset static/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset static/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 182 KiB
-  asset js/595-440553f65cb11b78078b.js 163 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/595-265026533dd74b119292.js 163 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-8468c0da4418cc214ca6.js 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-6f647266.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-a4f11cd3.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 200 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-440553f65cb11b78078b.js 163 KiB css/application-6f647266.css 17.4 KiB js/application-8468c0da4418cc214ca6.js 17.3 KiB 6 auxiliary assets
+Entrypoint application 200 KiB (276 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/595-265026533dd74b119292.js 163 KiB css/application-a4f11cd3.css 17.4 KiB js/application-8468c0da4418cc214ca6.js 17.3 KiB 6 auxiliary assets
 orphan modules 190 KiB [orphan] 287 modules
 runtime modules 3.47 KiB 7 modules
 built modules 921 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
@@ -139,7 +139,7 @@ built modules 921 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) 
       ./app/packs/images/vue.svg 42 bytes (javascript) 375 bytes (asset) [built] [code generated]
     ./app/packs/entrypoints/application.ts + 33 modules 31.5 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.7 KiB [built] [code generated]
-webpack 5.52.0 compiled successfully in 7502 ms
+webpack 5.52.0 compiled successfully in 6840 ms
 ```
 
 ### Network transfer
