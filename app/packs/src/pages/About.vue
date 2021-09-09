@@ -89,10 +89,10 @@ const features: {
           'TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.',
       },
       {
-        name: 'Vuex',
-        href: 'https://vuex.vuejs.org/',
+        name: 'Pinia',
+        href: 'https://pinia.esm.dev/',
         description:
-          'Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.',
+          'Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support',
       },
       {
         name: 'HeadlessUI',

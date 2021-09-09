@@ -1,28 +1,30 @@
-import { ref } from 'vue';
-
 const mockSendClick = jest.fn();
+const mockUnsubscribe = jest.fn();
+const mockGetClicks = jest.fn();
+const mockSubscribe = jest.fn();
 
-jest.mock('@/use/clicks', () => ({
-  __esModule: true,
-  default: () => {
-    return {
+jest.mock('@/stores/click', () => {
+  return {
+    __esModule: true,
+    useClickStore: () => ({
+      loaded: true,
+      total: 42,
+      items: [
+        {
+          created_at: '2021-05-23T09:27:21.497Z',
+          ip: '1.2.3.4',
+          user_agent: 'Jest',
+        },
+      ],
+      getClicks: mockGetClicks,
+      subscribe: mockSubscribe,
+      unsubscribe: mockUnsubscribe,
       sendClick: mockSendClick,
-      receivedClicks: ref({
-        total: 42,
-        items: [
-          {
-            created_at: '2021-05-23T09:27:21.497Z',
-            ip: '1.2.3.4',
-            user_agent: 'Jest',
-          },
-        ],
-      }),
-    };
-  },
-}));
+    }),
+  };
+});
 
 import { mount } from '@vue/test-utils';
-import { store } from '@/store';
 import Home from '@/pages/Home.vue';
 
 describe('Home', () => {
@@ -30,9 +32,11 @@ describe('Home', () => {
     props: {
       name: 'World',
     },
-    global: {
-      plugins: [store],
-    },
+  });
+
+  test('load clicks and subscribes', () => {
+    expect(mockSubscribe).toHaveBeenCalled();
+    expect(mockGetClicks).toHaveBeenCalled();
   });
 
   test('renders name', () => {
@@ -49,5 +53,10 @@ describe('Home', () => {
     button.trigger('click');
 
     expect(mockSendClick).toHaveBeenCalled();
+  });
+
+  test('unsubscribes on unmount', () => {
+    wrapper.unmount();
+    expect(mockUnsubscribe).toHaveBeenCalled();
   });
 });

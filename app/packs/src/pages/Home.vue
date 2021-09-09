@@ -1,8 +1,9 @@
 <script setup="props" lang="ts">
+import { onMounted, onBeforeUnmount } from 'vue';
 import PageTitle from '@/components/PageTitle.vue';
 import ClickList from '@/components/ClickList.vue';
 import ClickButton from '@/components/ClickButton.vue';
-import useClicks from '../use/clicks';
+import { useClickStore } from '@/stores/click';
 
 defineProps({
   name: {
@@ -11,7 +12,15 @@ defineProps({
   },
 });
 
-const { receivedClicks, sendClick } = useClicks();
+const store = useClickStore();
+onMounted(() => {
+  store.getClicks();
+  store.subscribe();
+});
+
+onBeforeUnmount(() => {
+  store.unsubscribe();
+});
 </script>
 
 <template>
@@ -26,12 +35,13 @@ const { receivedClicks, sendClick } = useClicks();
     </div>
 
     <click-button
-      :count="receivedClicks.total"
-      @click="sendClick()"
+      :count="store.total"
+      :enabled="store.loaded"
+      @click="store.sendClick()"
     ></click-button>
   </div>
 
-  <template v-if="receivedClicks.items.length">
+  <template v-if="store.items.length">
     <h2
       class="
         mt-8
@@ -45,6 +55,6 @@ const { receivedClicks, sendClick } = useClicks();
       Latest clicks
     </h2>
 
-    <click-list :clicks="receivedClicks.items.slice(0, 5)"></click-list>
+    <click-list :clicks="store.items.slice(0, 5)"></click-list>
   </template>
 </template>

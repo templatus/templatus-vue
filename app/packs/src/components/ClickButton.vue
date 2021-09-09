@@ -2,6 +2,10 @@
 import Spinner from '@/components/Spinner.vue';
 
 defineProps({
+  enabled: {
+    type: Boolean,
+    required: true,
+  },
   count: {
     type: Number,
     required: true,
@@ -26,7 +30,7 @@ function onClick() {
     "
   >
     <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
-      <template v-if="count >= 0">
+      <template v-if="enabled">
         <transition
           mode="out-in"
           enter-active-class="transition-transform duration-300 ease-out"

@@ -4,7 +4,7 @@
 // that code so it'll be compiled.
 
 import { createApp } from 'vue';
-import { store, key } from '@/store';
+import { createPinia } from 'pinia';
 import { metaContent } from '@/utils/metaContent';
 import router from '@/router';
 import App from '@/App.vue';
@@ -61,6 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   app.use(router);
-  app.use(store, key);
+  app.use(createPinia());
   app.mount('#vue-app');
 });

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PropType } from 'vue';
-import { Click } from '../use/clicks';
+import { Click } from '@/stores/click';
 
 defineProps({
   clicks: {

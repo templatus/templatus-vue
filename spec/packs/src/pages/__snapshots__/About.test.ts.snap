@@ -119,11 +119,11 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://vuex.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vuex</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://pinia.esm.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">Pinia</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="ml-9 mt-2 text-gray-600 text-base">Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.</dd>
+            <dd class="ml-9 mt-2 text-gray-600 text-base">Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support</dd>
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
