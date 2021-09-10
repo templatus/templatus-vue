@@ -5,7 +5,9 @@
 
   "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
-    "**/tmp/**": true
+    "**/tmp/**": true,
+    "**/public/packs": true,
+    "**/public/packs-test": true
   },
   "files.exclude": {
     "**/docker-volumes": true
@@ -13,7 +15,8 @@
 
   "search.exclude": {
     "**/tmp": true,
-    "**/public": true,
+    "**/public/packs": true,
+    "**/public/packs-test": true,
     "**/node_modules": true
   },
 
