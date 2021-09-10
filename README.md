@@ -3,48 +3,63 @@
 
 # Templatus
 
-Templatus is an opinionated template to build web applications with Ruby on Rails using Vue.js 3 on the frontend. It simplifies the process of setting up a new application while following best practices.
+Templatus is an opinionated template to build web applications with Ruby on Rails and Vue.js 3. It simplifies the process of setting up a new application while following best practices.
 
 Live demo available at https://templatus.ledermann.dev
 
-## Technology stack
+## Features / Technology stack
 
-- Ruby 3
-- Ruby on Rails 6.1
-- Webpacker 6 (still not released, but this allows using Webpack v5 and webpack-dev-server v4)
-- ActionCable (for WebSocket communication)
-- [Rails Request.JS](https://github.com/rails/request.js) (for AJAX requests)
-- PostgreSQL (for using as SQL database)
-- Sidekiq (for background processing)
-- Redis (for Caching, ActionCable, and Sidekiq)
-- Vue 3 (as frontend framework)
-- Vue Router (for frontend routing)
-- Pinia (for frontend state management)
-- Tailwind CSS 2 (to not have to write CSS at all)
-- HeadlessUI (unstyled, fully accessible UI components designed to integrate with Tailwind CSS)
-- HeroIcons (for SVG icons as Vue components)
-- RSpec (for Ruby testing)
-- RuboCop (for Ruby static code analysis)
-- TypeScript (for writing better JavaScript)
-- Jest (for JavaScript testing)
-- Honeybadger.io (for error tracking in Ruby and JavaScript)
-- Lograge (for single-line logging)
-- Docker (for production deployment, NOT for development)
-- Puma-dev (for using HTTPS in development)
-- Foreman (for starting up the application locally)
-- dotenv (for configuration by using ENV variables)
+### Backend
 
-## Features
+- [Ruby](https://www.ruby-lang.org/de/) 3
+- [Ruby on Rails](https://rubyonrails.org/) 6.1
+- [ActionCable](https://guides.rubyonrails.org/action_cable_overview.html) for WebSocket communication
+- [PostgreSQL](https://www.postgresql.org/) for using as SQL database
+- [Sidekiq](https://sidekiq.org/) for background processing
+- [Redis](https://redis.io/) for Caching, ActionCable, and Sidekiq
 
-- Deployment using an optimized Docker image based on Alpine Linux
+### Frontend
+
+- [Webpacker](https://github.com/rails/webpacker) 6 (still not released, but this allows using Webpack v5 and webpack-dev-server v4)
+- [Vue 3](https://v3.vuejs.org/) as frontend framework
+- [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
+- [Pinia](https://pinia.esm.dev/) for frontend state management
+- [Tailwind CSS 2](https://tailwindcss.com/) to not have to write CSS at all
+- [HeadlessUI](https://headlessui.dev/) unstyled, fully accessible UI components designed to integrate with Tailwind CSS
+- [Heroicons](https://heroicons.com/) for SVG icons as Vue components
+- [Rails Request.JS](https://github.com/rails/request.js) for AJAX requests with default headers
+
+### Development
+
+- [Puma-dev](https://github.com/puma/puma-dev) for using .test-domain and HTTPS in development
+- [Foreman](https://github.com/ddollar/foreman) for starting up the application locally
+- [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
+- [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
+- [Prettier](https://prettier.io/) for auto-formatting JavaScript and Ruby code in Visual Studio Code
+
+### Linting and testing
+
+- [RSpec](https://rspec.info/) for Ruby testing
+- [RuboCop](https://rubocop.org/) for Ruby static code analysis
+- [Jest](https://jestjs.io/) for JavaScript testing
+- [ESLint](https://eslint.org/) for JavaScript static code analysis
+
+### Deployment
+
+- [Docker](https://www.docker.com/) for production deployment, NOT for development
+- [DockerRailsBase](https://github.com/ledermann/docker-rails-base) for fast building an optimized Docker image based on Alpine Linux
+- [GitHub Actions](https://docs.github.com/en/actions) for testing, linting, and building Docker image
+- [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) configuration for updating dependencies (with auto-merge)
 - Ready for serving assets via CDN like CloudFront
-- Ready for PWA (manifest, service-worker)
-- Gzip and Brotli compression of all dynamic responses (HTML, JSON) using Rack::Deflater and Rack::Brotli
-- JS Code splitting (separate vendor code from application code)
+- [Honeybadger](https://www.honeybadger.io/) for error tracking in Ruby and JavaScript
+
+### Production
+
+- [Lograge](https://github.com/roidrage/lograge) for single-line logging
+- Gzip and Brotli compression of all dynamic responses (HTML, JSON) using [Rack::Deflater](https://github.com/rack/rack/blob/master/lib/rack/deflater.rb) and [Rack::Brotli](https://github.com/marcotc/rack-brotli)
+- JavaScript Code splitting (separate vendor code from application code)
 - Fine-tuned Content Security Policy (CSP)
-- Uses GitHub Actions for testing, linting, and building Docker image
-- Dependabot configuration for updating dependencies (with auto-merge)
-- Visual Studio Code: Autoformat JS and Ruby code using Prettier
+- Ready for PWA (manifest, service-worker)
 
 ## Metrics
 
@@ -145,7 +160,7 @@ webpack 5.52.0 compiled successfully in 6728 ms
 
 ### Network transfer
 
-Small footprint: The demo application transfers only 70Kb of data on the first visit.
+Small footprint: The demo application transfers only **71 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
@@ -155,7 +170,7 @@ With multi-stage building and using [DockerRailsBase](https://github.com/lederma
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently 117 MB uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently **117 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
 $ container-diff analyze ghcr.io/ledermann/templatus -n
@@ -164,10 +179,12 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST                                                                         SIZE
-ghcr.io/ledermann/templatus        sha256:fb80c5b398f1d18d2a85a6f5eeb72af59b291f2ab9372e56dc16a85981d68437        117M
+ghcr.io/ledermann/templatus        sha256:...   117M
 ```
 
-## Development installation
+## Getting
+
+### Development installation
 
 1. Clone the repo locally:
 
@@ -206,11 +223,11 @@ bin/setup
 foreman start
 ```
 
-Then you can open https://templatus.test in your browser.
+Then open https://templatus.test in your browser.
 
-## Running tests
+### Running tests locally
 
-Run Ruby tests:
+Run Ruby tests with code coverage:
 
 ```
 bin/rspec
@@ -229,13 +246,19 @@ Lint JavaScript:
 bin/yarn lint
 ```
 
-Run JavaScript tests:
+Run TypeScript compiler for type checking:
+
+```
+bin/yarn tsc
+```
+
+Run JavaScript tests with code coverage:
 
 ```
 bin/yarn test
 ```
 
-## Deployment
+### Test deployment locally
 
 ```
 docker network create public
