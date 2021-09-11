@@ -101,7 +101,7 @@ const features: {
           'Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.',
       },
       {
-        name: 'HeroIcons',
+        name: 'Heroicons',
         href: 'https://heroicons.com/',
         description:
           'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',

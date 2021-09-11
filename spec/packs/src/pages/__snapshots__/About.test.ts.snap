@@ -139,7 +139,7 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeroIcons</a>
+              <p class="ml-9 text-red-800 text-lg font-medium leading-6"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Heroicons</a>
                 <!--v-if-->
               </p>
             </dt>
