@@ -8,7 +8,7 @@ import { createPinia } from 'pinia';
 import { metaContent } from '@/utils/metaContent';
 import router from '@/router';
 import App from '@/App.vue';
-import HoneybadgerVue from '@/utils/honeybadger';
+import HoneybadgerVue from '@honeybadger-io/vue';
 import 'stylesheets/application.css';
 import { register } from 'register-service-worker';
 

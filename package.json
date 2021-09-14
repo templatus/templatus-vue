@@ -11,7 +11,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@headlessui/vue": "^1.4.1",
     "@heroicons/vue": "^1.0.4",
-    "@honeybadger-io/js": "^3.2.4",
+    "@honeybadger-io/vue": "^3.0.0",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
     "@rails/webpacker": "^6.0.0-rc.5",
