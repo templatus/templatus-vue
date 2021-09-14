@@ -163,7 +163,7 @@ GEM
     raabro (1.4.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-brotli (1.1.0)
+    rack-brotli (1.2.0)
       brotli (>= 0.1.7)
       rack (>= 1.4)
     rack-cors (1.1.1)
