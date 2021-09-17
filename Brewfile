@@ -1,3 +1,3 @@
-brew 'puma-dev'
+brew 'puma/puma/puma-dev'
 brew 'postgresql'
 brew 'redis'
