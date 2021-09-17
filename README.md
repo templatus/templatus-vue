@@ -218,7 +218,7 @@ bin/setup
 5. Start the application (and webpack-dev-server) locally:
 
 ```bash
-foreman start
+bin/dev
 ```
 
 Then open https://templatus.test in your browser.
