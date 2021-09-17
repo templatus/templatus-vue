@@ -5,12 +5,13 @@
       "label": "Development server",
       "command": "bin/dev",
       "args": [],
-      "isBackground": true
+      "isBackground": true,
+      "problemMatcher": []
     },
     {
       "label": "guard-rspec",
-      "command": "rbenv",
-      "args": ["exec", "bundle", "exec", "guard"],
+      "command": "bundle",
+      "args": ["exec", "guard"],
       "isBackground": true,
       "problemMatcher": {
         "applyTo": "allDocuments",
