@@ -92,7 +92,7 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
-    et-orbi (1.2.4)
+    et-orbi (1.2.5)
       tzinfo
     ffi (1.15.4)
     formatador (0.3.0)
