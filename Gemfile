@@ -83,9 +83,6 @@ group :development do
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false
-
-  # RuboCop command for Spring (https://github.com/p0deje/spring-commands-rubocop)
-  gem 'spring-commands-rubocop'
 end
 
 group :test do

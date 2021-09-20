@@ -235,7 +235,7 @@ open coverage/index.html
 Run RuboCop:
 
 ```
-bin/rubocop
+bundle exec rubocop
 ```
 
 Lint JavaScript:
