@@ -70,6 +70,12 @@ Rails.application.configure do
   config.force_ssl =
     ActiveModel::Type::Boolean.new.cast ENV.fetch('FORCE_SSL', true)
 
+  if config.force_ssl
+    # Ensure that http://localhost:3000 redirects to https://{APP_HOST},
+    # because there is no https://localhost:3000
+    config.ssl_options = { redirect: { host: ENV['APP_HOST'], port: 80 } }
+  end
+
   # Use https for webpack-dev-server (requires puma-dev)
   config.action_controller.asset_host = "https://webpack.#{ENV['APP_HOST']}"
 
