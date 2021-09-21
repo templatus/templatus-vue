@@ -28,7 +28,7 @@
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
     "register-service-worker": "^1.7.2",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.0",
     "tailwindcss": "^2.2.15",
     "timeago.js": "^4.0.2",
     "typescript": "^4.4.3",
