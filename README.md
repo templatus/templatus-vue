@@ -91,7 +91,7 @@ Why is there a failing test? It's about missing [Subresource Integrity](https://
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/BfWVNIIb/)
 
 ### Check-your-website
 
