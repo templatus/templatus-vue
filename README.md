@@ -74,38 +74,28 @@ performed against the demo installation on production. It uses an inexpensive vi
 
 ### Secure headers
 
-![Secure headers](docs/secure-headers.png)
-
-https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on
+[![Secure headers](docs/secure-headers.png)](https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on)
 
 What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the next Rails update:
 https://github.com/rails/rails/pull/41994
 
 ### Mozilla Observatory
 
-![Mozilla Observatory](docs/mozilla-observatory.png)
-
-https://observatory.mozilla.org/analyze/templatus.ledermann.dev
+[![Mozilla Observatory](docs/mozilla-observatory.png)](https://observatory.mozilla.org/analyze/templatus.ledermann.dev)
 
 Why is there a failing test? It's about missing [Subresource Integrity](https://infosec.mozilla.org/guidelines/web_security#subresource-integrity), which is currently not supported by Webpacker. There is a [stale issue](https://github.com/rails/webpacker/issues/323) about it, I don't expect a fix shortly.
 
 ### WebPageTest
 
-![WebPageTest](docs/web-page-test.png)
-
-https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/
+[![WebPageTest](docs/web-page-test.png)](https://webpagetest.org/result/210617_BiDcHH_d4cdb2af33ac2a7a9e4b66908ee3002f/)
 
 ### GTmetrix
 
-![GTmetrix](docs/GTmetrix.png)
-
-https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/PR4PpigG/)
 
 ### Check-your-website
 
-![Check-your-website](docs/check-your-website.png)
-
-https://check-your-website.server-daten.de/?q=templatus.ledermann.dev
+[![Check-your-website](docs/check-your-website.png)](https://check-your-website.server-daten.de/?q=templatus.ledermann.dev)
 
 ### JavaScript size
 
