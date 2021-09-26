@@ -124,12 +124,12 @@ assets by path static/ 4.45 KiB
     asset static/bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset static/f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 177 KiB
-  asset js/280-d907013a445776d0f2be.js 158 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/280-3de6eb4c6aad3387a512.js 158 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-f12d5b6936aae7e23038.js 16.9 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
 asset css/application-73be0b53.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 194 KiB (266 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/280-d907013a445776d0f2be.js 158 KiB css/application-73be0b53.css 17.4 KiB js/application-f12d5b6936aae7e23038.js 16.9 KiB 6 auxiliary assets
+Entrypoint application 194 KiB (266 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/280-3de6eb4c6aad3387a512.js 158 KiB css/application-73be0b53.css 17.4 KiB js/application-f12d5b6936aae7e23038.js 16.9 KiB 6 auxiliary assets
 orphan modules 194 KiB [orphan] 288 modules
 runtime modules 3.47 KiB 7 modules
 built modules 933 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
@@ -143,7 +143,7 @@ built modules 933 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) 
     modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset) 3 modules
     ./app/packs/entrypoints/application.ts + 31 modules 30.9 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.7 KiB [built] [code generated]
-webpack 5.54.0 compiled successfully in 6396 ms
+webpack 5.54.0 compiled successfully in 6530 ms
 ```
 
 ### Network transfer
