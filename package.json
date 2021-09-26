@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "test": "jest --coverage",
-    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint": "eslint --ext .js,.ts,.vue --cache .",
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
