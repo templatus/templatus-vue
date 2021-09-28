@@ -15,7 +15,7 @@
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
     "@rails/webpacker": "^6.0.0-rc.5",
-    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/forms": "^0.3.4",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.2",
     "@vue/compiler-sfc": "^3.2.12",
