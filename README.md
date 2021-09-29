@@ -127,9 +127,9 @@ assets by path js/*.js 177 KiB
   asset js/280-3de6eb4c6aad3387a512.js 158 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
   asset js/application-f12d5b6936aae7e23038.js 16.9 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-888f7120.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-33765605.css 17.4 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
-Entrypoint application 194 KiB (266 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/280-3de6eb4c6aad3387a512.js 158 KiB css/application-888f7120.css 17.4 KiB js/application-f12d5b6936aae7e23038.js 16.9 KiB 6 auxiliary assets
+Entrypoint application 194 KiB (266 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/280-3de6eb4c6aad3387a512.js 158 KiB css/application-33765605.css 17.4 KiB js/application-f12d5b6936aae7e23038.js 16.9 KiB 6 auxiliary assets
 orphan modules 194 KiB [orphan] 288 modules
 runtime modules 3.47 KiB 7 modules
 built modules 933 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) [built]
@@ -143,7 +143,7 @@ built modules 933 KiB (javascript) 2.33 KiB (asset) 27.7 KiB (css/mini-extract) 
     modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset) 3 modules
     ./app/packs/entrypoints/application.ts + 31 modules 30.9 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.7 KiB [built] [code generated]
-webpack 5.54.0 compiled successfully in 6905 ms
+webpack 5.55.0 compiled successfully in 7392 ms
 ```
 
 ### Network transfer
