@@ -1,7 +1,7 @@
 #! /bin/sh
 
 echo "Starting ..."
-echo "Git commit: $COMMIT_SHA - $COMMIT_TIME"
+echo "Git commit: $COMMIT_VERSION - $COMMIT_TIME"
 echo "----------------"
 
 # Wait for Redis

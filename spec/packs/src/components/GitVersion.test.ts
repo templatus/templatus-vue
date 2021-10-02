@@ -5,7 +5,7 @@ describe('GitVersion', () => {
   test('matches snapshot', () => {
     const wrapper = mount(GitVersion, {
       props: {
-        commitSha: '1234567',
+        commitVersion: 'v0.0.1-123-7654321',
         commitTime: '2021-06-01T12:00:00+02:00',
       },
     });

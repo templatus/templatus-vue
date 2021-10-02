@@ -5,10 +5,10 @@ import { metaContent } from '@/utils/metaContent';
 import useOnlineOffline from './use/online-offline';
 
 const git: {
-  commitSha?: string;
+  commitVersion?: string;
   commitTime?: string;
 } = {
-  commitSha: metaContent('git-commit-sha'),
+  commitVersion: metaContent('git-commit-version'),
   commitTime: metaContent('git-commit-time'),
 };
 
@@ -137,9 +137,9 @@ const { online } = useOnlineOffline();
 
         <div class="w-full text-center sm:w-1/2 sm:text-right">
           <git-version
-            v-if="git.commitTime && git.commitSha"
+            v-if="git.commitTime && git.commitVersion"
             :commit-time="git.commitTime"
-            :commit-sha="git.commitSha"
+            :commit-version="git.commitVersion"
           ></git-version>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 import * as timeago from 'timeago.js';
 
 defineProps({
-  commitSha: {
+  commitVersion: {
     type: String,
     required: true,
   },
@@ -27,9 +27,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div>
-    Version
-    <code>{{ commitSha.substring(0, 7) }}</code
-    >, created
-    <b><time ref="timeElement" :datetime="commitTime"></time></b>
+    <code>{{ commitVersion }}</code>
+    <b class="ml-3"><time ref="timeElement" :datetime="commitTime"></time></b>
   </div>
 </template>

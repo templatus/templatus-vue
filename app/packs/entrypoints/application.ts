@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const honeybadgerApiKey = metaContent('honeybadger-api-key');
   if (honeybadgerApiKey) {
-    const gitCommitSha = metaContent('git-commit-sha');
+    const gitCommitVersion = metaContent('git-commit-version');
 
     app.use(HoneybadgerVue, {
       apiKey: honeybadgerApiKey,
       environment: 'production',
-      revision: gitCommitSha,
+      revision: gitCommitVersion,
     });
   }
 

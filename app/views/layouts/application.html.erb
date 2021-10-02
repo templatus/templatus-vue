@@ -15,13 +15,13 @@
     <meta name="apple-mobile-web-app-title" content="Templatus">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <meta name="git-commit-sha" content="<%= Rails.configuration.x.git.commit_sha %>">
+    <meta name="git-commit-version" content="<%= Rails.configuration.x.git.commit_version %>">
     <meta name="git-commit-time" content="<%= Rails.configuration.x.git.commit_time %>">
 
     <meta name="honeybadger-api-key" content="<%= Rails.configuration.x.honeybadger.api_key %>">
     <meta name="webpack-public-path" content="<%= Rails.configuration.action_controller.asset_host %>/<%= Webpacker.config.public_output_path.basename %>/">
 
-    <% cache Rails.configuration.x.git.commit_sha do %>
+    <% cache Rails.configuration.x.git.commit_version do %>
       <% versions.each do |name, version| %>
         <%= tag.meta name: "version-#{name}", content: version %>
       <% end %>
