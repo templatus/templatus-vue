@@ -105,7 +105,9 @@ const { online } = useOnlineOffline();
       <router-view />
     </main>
 
-    <footer class="fixed bottom-0 py-2 w-full text-white text-sm bg-gray-700">
+    <footer
+      class="fixed bottom-0 pb-4 pt-2 w-full text-white text-sm bg-gray-700"
+    >
       <div class="flex flex-wrap mx-auto px-4 max-w-5xl sm:px-6 lg:px-8">
         <div class="w-full text-center sm:w-1/4 sm:text-left">
           <a
