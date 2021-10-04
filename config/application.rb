@@ -36,7 +36,7 @@ module Templatus
     config.x.app_host = ENV.fetch('APP_HOST', 'templatus.test')
 
     config.x.git.commit_version =
-      ENV.fetch('COMMIT_VERSION') { `git describe`.chomp }
+      ENV.fetch('COMMIT_VERSION') { `git describe --always`.chomp }
 
     config.x.git.commit_time =
       ENV.fetch('COMMIT_TIME') { `git show -s --format=%cI`.chomp }
