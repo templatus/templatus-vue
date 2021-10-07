@@ -5546,10 +5546,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
-pinia@^2.0.0-rc.11:
-  version "2.0.0-rc.11"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.11.tgz#bd65bc62bcf69995f8f37c2a439be3fb15b31847"
-  integrity sha512-JJinfdMn52Id5/+rOJXP4zRszuiOlunEoVt8gYMneAZ8IyXKPvw9/Cu+HztB+53dHyNM7GdjX+uhjKBNs31tvQ==
+pinia@^2.0.0-rc.12:
+  version "2.0.0-rc.12"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.12.tgz#2be8b49330b768d278ce84a0812d796188fcef65"
+  integrity sha512-1MqXgyiju5fcJBfNO+aU5GP24ZxoaC5bjosSTVnb13fJYu8CfFxCZ/XWwMoD1QnZFq6JGbYigZNCaJDL2tmzQg==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.18"
     vue-demi "*"
