@@ -1721,7 +1721,7 @@
     "@vue/compiler-dom" "3.2.20"
     "@vue/shared" "3.2.20"
 
-"@vue/devtools-api@^6.0.0-beta.14", "@vue/devtools-api@^6.0.0-beta.18":
+"@vue/devtools-api@^6.0.0-beta.14", "@vue/devtools-api@^6.0.0-beta.19":
   version "6.0.0-beta.19"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.19.tgz#f8e88059daa424515992426a0c7ea5cde07e99bf"
   integrity sha512-ObzQhgkoVeoyKv+e8+tB/jQBL2smtk/NmC9OmFK8UqdDpoOdv/Kf9pyDWL+IFyM7qLD2C75rszJujvGSPSpGlw==
@@ -5603,12 +5603,12 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
-pinia@^2.0.0-rc.12:
-  version "2.0.0-rc.12"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.12.tgz#2be8b49330b768d278ce84a0812d796188fcef65"
-  integrity sha512-1MqXgyiju5fcJBfNO+aU5GP24ZxoaC5bjosSTVnb13fJYu8CfFxCZ/XWwMoD1QnZFq6JGbYigZNCaJDL2tmzQg==
+pinia@^2.0.0-rc.13:
+  version "2.0.0-rc.13"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.13.tgz#b9f858da278130469ed8dd89f8348de54f216541"
+  integrity sha512-NLOqK+tCIx1a4qZByqLZVdAK7ilTxkG6Opmj1O8hTjxpu4VSO2+eL2pPcO3JE/4ifZ6FBx87X2DU7NTY36z7Bw==
   dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.18"
+    "@vue/devtools-api" "^6.0.0-beta.19"
     vue-demi "*"
 
 pirates@^4.0.1:
