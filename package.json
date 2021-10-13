@@ -26,7 +26,7 @@
     "mini-css-extract-plugin": "^2.4.2",
     "pinia": "^2.0.0-rc.13",
     "postcss": "^8.3.9",
-    "postcss-loader": "^6.1.1",
+    "postcss-loader": "^6.2.0",
     "register-service-worker": "^1.7.2",
     "style-loader": "^3.3.0",
     "tailwindcss": "^2.2.17",
