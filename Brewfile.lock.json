@@ -78,9 +78,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.2.15-2-g4d5af40",
+        "HOMEBREW_VERSION": "3.2.16-23-g13e2e7b",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "381d190e2a51468ac18db46ff1c39d1a3a887c60",
+        "Homebrew/homebrew-core": "a5f1b789f75d5a3e9a51ea2649ead9045e0ad9c3",
         "CLT": "13.0.0.0.1.1630607135",
         "Xcode": "13.0",
         "macOS": "11.6"
