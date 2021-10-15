@@ -41,7 +41,7 @@ module Templatus
     config.x.git.commit_time =
       ENV.fetch('COMMIT_TIME') { `git show -s --format=%cI`.chomp }
 
-    config.x.honeybadger.api_key = ENV['HONEYBADGER_API_KEY']
+    config.x.honeybadger.api_key = ENV['HONEYBADGER_API_KEY'].presence
   end
 end
 
