@@ -5541,10 +5541,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
-pinia@^2.0.0-rc.13:
-  version "2.0.0-rc.13"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.13.tgz#b9f858da278130469ed8dd89f8348de54f216541"
-  integrity sha512-NLOqK+tCIx1a4qZByqLZVdAK7ilTxkG6Opmj1O8hTjxpu4VSO2+eL2pPcO3JE/4ifZ6FBx87X2DU7NTY36z7Bw==
+pinia@^2.0.0-rc.14:
+  version "2.0.0-rc.14"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.14.tgz#c5c004c60b56806f465cae1bacce3922cf3163ac"
+  integrity sha512-vM8vYMsFdFDK1ND6j4+f7TC4hKB8moAjyn9HcHKqdOf1bHN4fL5g9Mz/8t8U0pEqnUwR2AU8yxD0gr+uU18x3g==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.19"
     vue-demi "*"
