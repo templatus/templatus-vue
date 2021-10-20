@@ -143,7 +143,7 @@ built modules 935 KiB (javascript) 2.33 KiB (asset) 27.8 KiB (css/mini-extract) 
     modules by path ./app/packs/images/ 274 bytes (javascript) 2.33 KiB (asset) 3 modules
     ./app/packs/entrypoints/application.ts + 31 modules 30.8 KiB [built] [code generated]
     css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/packs/stylesheets/application.css 27.8 KiB [built] [code generated]
-webpack 5.58.2 compiled successfully in 7509 ms
+webpack 5.59.0 compiled successfully in 7066 ms
 ```
 
 ### Network transfer
