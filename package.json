@@ -10,7 +10,7 @@
     "@babel/core": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
     "@headlessui/vue": "^1.4.1",
-    "@heroicons/vue": "^1.0.4",
+    "@heroicons/vue": "^1.0.5",
     "@honeybadger-io/vue": "^3.0.0",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
