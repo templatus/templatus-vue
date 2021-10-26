@@ -83,8 +83,9 @@ Rails.application.configure do
     }
   end
 
-  # Use https for webpack-dev-server (requires puma-dev)
-  config.action_controller.asset_host = "https://webpack.#{ENV['APP_HOST']}"
+  # Use subdomain for webpack-dev-server (requires puma-dev)
+  # https://github.com/puma/puma-dev#webpack-dev-server
+  config.action_controller.asset_host = "//webpack.#{ENV['APP_HOST']}"
 
   Rails.application.config.hosts << ENV['APP_HOST']
 end
