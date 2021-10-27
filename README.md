@@ -130,7 +130,7 @@ assets by path js/*.js 169 KiB
 asset css/application-48a54853.css 17.3 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.94 KiB [emitted] 2 related assets
 Entrypoint application 186 KiB (258 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/763-cd0efd8367f52ff3d7c3.js 152 KiB css/application-48a54853.css 17.3 KiB js/application-c49261bd4512d01f4e14.js 15.7 KiB 6 auxiliary assets
-orphan modules 253 KiB (javascript) 997 bytes (runtime) [orphan] 300 modules
+orphan modules 242 KiB (javascript) 997 bytes (runtime) [orphan] 300 modules
 runtime modules 3.47 KiB 7 modules
 built modules 910 KiB (javascript) 2.33 KiB (asset) 27.6 KiB (css/mini-extract) [built]
   modules by path ./node_modules/ 880 KiB
