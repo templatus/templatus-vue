@@ -20,13 +20,11 @@ const mockGet = jest.fn().mockResolvedValue({
 
 const mockPost = jest.fn().mockResolvedValue(43);
 
-jest.mock('@rails/request.js', () => {
-  return {
-    __esModule: true,
-    get: mockGet,
-    post: mockPost,
-  };
-});
+jest.mock('@rails/request.js', () => ({
+  __esModule: true,
+  get: mockGet,
+  post: mockPost,
+}));
 
 import { setActivePinia, createPinia } from 'pinia';
 import { useClickStore } from '@/stores/click';

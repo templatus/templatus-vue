@@ -3,26 +3,24 @@ const mockUnsubscribe = jest.fn();
 const mockGetClicks = jest.fn();
 const mockSubscribe = jest.fn();
 
-jest.mock('@/stores/click', () => {
-  return {
-    __esModule: true,
-    useClickStore: () => ({
-      loaded: true,
-      total: 42,
-      items: [
-        {
-          created_at: '2021-05-23T09:27:21.497Z',
-          ip: '1.2.3.4',
-          user_agent: 'Jest',
-        },
-      ],
-      getClicks: mockGetClicks,
-      subscribe: mockSubscribe,
-      unsubscribe: mockUnsubscribe,
-      sendClick: mockSendClick,
-    }),
-  };
-});
+jest.mock('@/stores/click', () => ({
+  __esModule: true,
+  useClickStore: () => ({
+    loaded: true,
+    total: 42,
+    items: [
+      {
+        created_at: '2021-05-23T09:27:21.497Z',
+        ip: '1.2.3.4',
+        user_agent: 'Jest',
+      },
+    ],
+    getClicks: mockGetClicks,
+    subscribe: mockSubscribe,
+    unsubscribe: mockUnsubscribe,
+    sendClick: mockSendClick,
+  }),
+}));
 
 import { mount } from '@vue/test-utils';
 import Home from '@/pages/Home.vue';
