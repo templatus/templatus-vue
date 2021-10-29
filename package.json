@@ -35,7 +35,7 @@
     "vue": "^3.2.20",
     "vue-loader": "^16.8.2",
     "vue-router": "^4.0.12",
-    "webpack": "^5.60.0",
+    "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   },
   "version": "0.1.0",
