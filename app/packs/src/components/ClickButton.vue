@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Spinner from '@/components/Spinner.vue';
+import LoadingAnimation from '@/components/LoadingAnimation.vue';
 
 defineProps({
   enabled: {
@@ -46,7 +46,7 @@ function onClick() {
         </transition>
         <div class="py-1 uppercase">Clicks</div>
       </template>
-      <Spinner v-else class="w-full h-20"></Spinner>
+      <LoadingAnimation v-else class="w-full h-20"></LoadingAnimation>
     </div>
 
     <button
