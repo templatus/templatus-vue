@@ -3,6 +3,8 @@ class ClicksController < ApplicationController
     clicks = Click.order(created_at: :desc).limit(5).to_a
     return unless stale?(clicks, template: false, public: true)
 
+    expires_in 0, must_revalidate: true
+
     respond_to do |format|
       format.json { render json: { total: Click.count, items: clicks } }
     end
