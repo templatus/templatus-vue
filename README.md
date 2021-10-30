@@ -148,7 +148,7 @@ webpack 5.61.0 compiled successfully in 7751 ms
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **71 KB** of data on the first visit.
+Small footprint: The demo application transfers only **69 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
@@ -158,7 +158,7 @@ With multi-stage building and using [DockerRailsBase](https://github.com/lederma
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently **117 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently **115 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
 $ container-diff analyze ghcr.io/ledermann/templatus -n
@@ -166,8 +166,8 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 -----Size-----
 
 Analysis for ghcr.io/ledermann/templatus:
-IMAGE                              DIGEST                                                                         SIZE
-ghcr.io/ledermann/templatus        sha256:...   117M
+IMAGE                              DIGEST         SIZE
+ghcr.io/ledermann/templatus        sha256:...   114.9M
 ```
 
 ## Getting
