@@ -9,7 +9,7 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/] (https://github.com/ged/ruby-pg)
 gem 'pg', '~> 1.1'
 
-# Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
+# Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
 gem 'puma', '~> 5.0'
 
 # Use webpack to manage app-like JavaScript modules in Rails (https://github.com/rails/webpacker)
@@ -92,7 +92,7 @@ group :test do
   # Automatically create snapshots when Cucumber steps fail with Capybara and Rails (http://github.com/mattheworiordan/capybara-screenshot)
   gem 'capybara-screenshot'
 
-  # The next generation developer focused tool for automated testing of webapps (https://github.com/SeleniumHQ/selenium)
+  # Selenium is a browser automation tool for automated testing of webapps and more (https://selenium.dev)
   gem 'selenium-webdriver'
 
   # Easy download and use of browser drivers. (https://github.com/titusfortner/webdrivers)
