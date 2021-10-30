@@ -30,9 +30,9 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
 
-    <%= tag :link, href: '/apple-touch-icon.png',    rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180' %>
-    <%= tag :link, href: '/favicon-32x32.png',       rel: 'icon',             type: 'image/png', sizes: '32x32' %>
-    <%= tag :link, href: '/favicon-16x16.png',       rel: 'icon',             type: 'image/png', sizes: '16x16' %>
+    <%= tag :link, href: "#{compute_asset_host}/apple-touch-icon.png",    rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180' %>
+    <%= tag :link, href: "#{compute_asset_host}/favicon-32x32.png",       rel: 'icon',             type: 'image/png', sizes: '32x32' %>
+    <%= tag :link, href: "#{compute_asset_host}/favicon-16x16.png",       rel: 'icon',             type: 'image/png', sizes: '16x16' %>
     <%= tag :link, href: '/manifest.v1.webmanifest', rel: 'manifest' %>
 
     <%= stylesheet_pack_tag 'application', media: 'all' %>
