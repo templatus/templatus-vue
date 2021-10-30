@@ -33,6 +33,9 @@ gem 'lograge'
 # Middleware for enabling Cross-Origin Resource Sharing in Rack apps (https://github.com/cyu/rack-cors)
 gem 'rack-cors', require: 'rack/cors'
 
+# Rack middleware for defining a canonical host name. (http://github.com/tylerhunt/rack-canonical-host)
+gem 'rack-canonical-host'
+
 # Brotli compression for Rack responses (http://github.com/marcotc/rack-brotli/)
 gem 'rack-brotli'
 
