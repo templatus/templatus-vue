@@ -25,7 +25,7 @@ export const useClickStore = defineStore('click', {
     },
 
     async getClicks() {
-      const response = await get('/clicks.json', {
+      const response = await get('/clicks', {
         responseKind: 'json',
       });
       const json = await response.json;
