@@ -40,7 +40,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.8",
+    "@babel/eslint-parser": "^7.16.0",
     "@prettier/plugin-ruby": "^2.0.0",
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
