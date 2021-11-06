@@ -7,7 +7,7 @@ const customConfig = {
   plugins: [new ForkTSCheckerWebpackPlugin()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '..', '..', 'app/packs/src'),
+      '@': path.resolve(__dirname, '..', '..', 'app/javascript/src'),
     },
   },
 };

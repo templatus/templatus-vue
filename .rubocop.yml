@@ -9,14 +9,14 @@ require:
 AllCops:
   TargetRubyVersion: 3.0
   Exclude:
-    - app/packs/**/*
+    - app/javascript/**/*
     - bin/**/*
     - coverage/**/*
     - db/schema.rb
     - log/**/*
     - node_modules/**/*
     - public/**/*
-    - spec/packs/**/*
+    - spec/javascript/**/*
     - tmp/**/*
     - vendor/**/*
   EnabledByDefault: true

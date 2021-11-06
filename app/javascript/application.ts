@@ -1,6 +1,6 @@
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/packs and only use these pack files to reference
+// a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
 import { createApp } from 'vue';
@@ -13,7 +13,7 @@ import 'stylesheets/application.css';
 import { register } from 'register-service-worker';
 
 // Include all images in webpack manifest
-require.context('../images', true);
+require.context('./images', true);
 
 register('/sw.js', {
   registrationOptions: { scope: './' },

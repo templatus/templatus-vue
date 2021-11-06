@@ -14,7 +14,7 @@
     "@honeybadger-io/vue": "^3.0.0",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/request.js": "^0.0.5",
-    "@rails/webpacker": "^6.0.0-rc.5",
+    "@rails/webpacker": "^6.0.0-rc.6",
     "@tailwindcss/forms": "^0.3.4",
     "@types/rails__actioncable": "^6.1.5",
     "@types/webpack-env": "^1.16.3",
@@ -35,8 +35,7 @@
     "vue": "^3.2.21",
     "vue-loader": "^16.8.3",
     "vue-router": "^4.0.12",
-    "webpack": "^5.61.0",
-    "webpack-cli": "^4.9.1"
+    "webpack": "^5.62.1"
   },
   "version": "0.1.0",
   "devDependencies": {
@@ -46,7 +45,6 @@
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
     "@vue/test-utils": "2.0.0-rc.4",
-    "@webpack-cli/serve": "^1.6.0",
     "babel-jest": "^27.3.1",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.2.0",

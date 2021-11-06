@@ -1,11 +1,11 @@
 module.exports = {
   verbose: true,
   testURL: 'https://templatus.test/',
-  roots: ['spec/packs'],
-  moduleDirectories: ['node_modules', 'app/packs'],
+  roots: ['spec/javascript'],
+  moduleDirectories: ['node_modules', 'app/javascript'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/app/packs/src/$1',
-    '^@test/(.*)$': '<rootDir>/spec/packs/src/$1',
+    '^@/(.*)$': '<rootDir>/app/javascript/src/$1',
+    '^@test/(.*)$': '<rootDir>/spec/javascript/src/$1',
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       'jest-transform-stub',
   },
