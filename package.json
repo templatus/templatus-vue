@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
-    "@headlessui/vue": "^1.4.1",
+    "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "^1.0.5",
     "@honeybadger-io/vue": "^3.0.0",
     "@rails/actioncable": "^6.1.4-1",
