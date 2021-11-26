@@ -21,13 +21,7 @@ function onClick() {
 
 <template>
   <div
-    class="
-      flex flex-col
-      mt-5
-      w-full
-      sm:mt-0 sm:w-56
-      lg:transform lg:-translate-y-72
-    "
+    class="flex flex-col mt-5 w-full sm:mt-0 sm:w-56 lg:transform lg:-translate-y-72"
   >
     <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <template v-if="enabled">
@@ -51,20 +45,7 @@ function onClick() {
 
     <button
       type="button"
-      class="
-        px-4
-        py-2
-        w-full
-        text-red-700 text-sm
-        font-medium
-        bg-red-100
-        hover:bg-red-200
-        border border-red-200
-        rounded-b-md
-        focus:outline-none
-        shadow
-        focus:ring-2 focus:ring-red-500 focus:ring-offset-2
-      "
+      class="px-4 py-2 w-full text-red-700 text-sm font-medium bg-red-100 hover:bg-red-200 border border-red-200 rounded-b-md focus:outline-none shadow focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
       @click="onClick()"
     >
       Click me!
