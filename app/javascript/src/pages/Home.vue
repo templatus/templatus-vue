@@ -43,14 +43,7 @@ onBeforeUnmount(() => {
 
   <template v-if="store.items.length">
     <h2
-      class="
-        mt-8
-        text-center text-red-800 text-xl
-        font-medium
-        tracking-wide
-        uppercase
-        sm:text-left
-      "
+      class="mt-8 text-center text-red-800 text-xl font-medium tracking-wide uppercase sm:text-left"
     >
       Latest clicks
     </h2>

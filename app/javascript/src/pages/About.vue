@@ -197,11 +197,7 @@ const features: {
         </div>
         <div class="mt-12 lg:col-span-2 lg:mt-0">
           <dl
-            class="
-              space-y-10
-              sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0
-              lg:gap-x-8
-            "
+            class="space-y-10 sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0 lg:gap-x-8"
           >
             <div
               v-for="feature in group.items"
@@ -225,17 +221,7 @@ const features: {
 
                   <span
                     v-if="feature.version"
-                    class="
-                      inline-flex
-                      items-center
-                      ml-2
-                      px-2.5
-                      py-0.5
-                      text-red-900 text-xs
-                      font-medium
-                      bg-red-200
-                      rounded-full
-                    "
+                    class="inline-flex items-center ml-2 px-2.5 py-0.5 text-red-900 text-xs font-medium bg-red-200 rounded-full"
                   >
                     {{ feature.version }}
                   </span>

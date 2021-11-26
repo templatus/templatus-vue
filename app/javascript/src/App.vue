@@ -27,16 +27,7 @@ const { online } = useOnlineOffline();
   <div class="flex flex-col min-h-screen bg-red-50">
     <header>
       <svg
-        class="
-          absolute
-          inset-0
-          hidden
-          w-full
-          h-96
-          drop-shadow-xl
-          filter
-          sm:block
-        "
+        class="absolute inset-0 hidden w-full h-96 drop-shadow-xl filter sm:block"
         fill="none"
         preserveAspectRatio="none"
         viewBox="0 0 100 100"
@@ -88,19 +79,7 @@ const { online } = useOnlineOffline();
     </header>
 
     <main
-      class="
-        relative
-        flex-grow
-        mx-auto
-        pb-24
-        pt-10
-        px-4
-        w-full
-        max-w-5xl
-        bg-transparent
-        sm:px-6 sm:py-32
-        lg:px-8 lg:py-24
-      "
+      class="relative flex-grow mx-auto pb-24 pt-10 px-4 w-full max-w-5xl bg-transparent sm:px-6 sm:py-32 lg:px-8 lg:py-24"
     >
       <router-view />
     </main>
@@ -123,16 +102,7 @@ const { online } = useOnlineOffline();
         <div class="w-full text-center sm:w-1/4">
           <span
             v-if="!online"
-            class="
-              px-1
-              py-px
-              text-red-700
-              font-bold
-              tracking-wide
-              bg-white
-              rounded
-              uppercase
-            "
+            class="px-1 py-px text-red-700 font-bold tracking-wide bg-white rounded uppercase"
             >You are offline</span
           >
         </div>
