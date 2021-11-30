@@ -58,7 +58,7 @@
     "prettier": "^2.5.0",
     "prettier-plugin-tailwind": "^2.2.12",
     "ts-jest": "^27.0.7",
-    "vue-tsc": "^0.29.7",
+    "vue-tsc": "^0.29.8",
     "webpack-dev-server": "^4.6.0"
   },
   "babel": {
