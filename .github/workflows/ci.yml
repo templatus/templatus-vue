@@ -63,6 +63,8 @@ jobs:
 
       - name: End-to-end tests
         run: bin/rake cypress:run
+        env:
+          CYPRESS_RAILS_CYPRESS_OPTS: --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - uses: actions/upload-artifact@v2
         if: failure()
