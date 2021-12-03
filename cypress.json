@@ -1,0 +1,7 @@
+{
+  "projectId": "5d6bqs",
+  "baseUrl": "https://templatus.test",
+  "screenshotsFolder": "tmp/cypress_screenshots",
+  "trashAssetsBeforeRuns": false,
+  "videosFolder": "tmp/cypress_videos"
+}

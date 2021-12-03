@@ -23,7 +23,7 @@ function onClick() {
   <div
     class="flex flex-col mt-5 w-full sm:mt-0 sm:w-56 lg:transform lg:-translate-y-72"
   >
-    <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
+    <div id="counter" class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <template v-if="enabled">
         <transition
           mode="out-in"

@@ -61,6 +61,9 @@ jobs:
       - name: Run JavaScript tests
         run: bin/yarn test
 
+      - name: End-to-end tests
+        run: bin/rake cypress:run
+
       - uses: actions/upload-artifact@v2
         if: failure()
         with:

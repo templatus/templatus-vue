@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
     node: true,
   },
-  plugins: [],
+  plugins: ['cypress'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -16,6 +16,7 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:cypress/recommended',
   ],
   globals: {
     defineProps: 'readonly',
