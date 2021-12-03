@@ -81,7 +81,6 @@ GEM
     capybara-screenshot (1.0.25)
       capybara (>= 1.0, < 4)
       launchy
-    childprocess (4.1.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
@@ -258,11 +257,6 @@ GEM
     rubocop-rspec (2.6.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
-    rubyzip (2.3.2)
-    selenium-webdriver (4.1.0)
-      childprocess (>= 0.5, < 5.0)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
     shellany (0.0.1)
     sidekiq (6.3.1)
@@ -297,10 +291,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (5.0.0)
-      nokogiri (~> 1.6)
-      rubyzip (>= 1.3.0)
-      selenium-webdriver (~> 4.0)
     webpacker (6.0.0.rc.6)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -340,7 +330,6 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  selenium-webdriver
   sidekiq
   sidekiq-cron
   simplecov
@@ -348,7 +337,6 @@ DEPENDENCIES
   spring-commands-rspec
   tzinfo-data
   web-console (>= 4.1.0)
-  webdrivers
   webpacker (>= 6.0.0.rc.5)
 
 RUBY VERSION
