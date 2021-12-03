@@ -41,4 +41,13 @@ module.exports = {
     sourceType: 'module', // allow the use of imports statements
     ecmaVersion: 2020, // allow the parsing of modern ecmascript
   },
+
+  overrides: [
+    {
+      files: ['cypress/**/*.js'],
+      rules: {
+        'jest/expect-expect': 'off',
+      },
+    },
+  ],
 };

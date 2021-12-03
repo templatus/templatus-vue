@@ -15,7 +15,9 @@ CypressRails.hooks.after_transaction_start do
   # After each transaction, add this click (will be rolled back on reset)
 end
 
-CypressRails.hooks.after_state_reset {}
+CypressRails.hooks.after_state_reset do
+  # After state reset
+end
 
 CypressRails.hooks.before_server_stop do
   # Purge and reload the test database so we don't leave our fixtures in there
