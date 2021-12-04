@@ -242,10 +242,16 @@ Run TypeScript compiler for type checking:
 bin/yarn tsc
 ```
 
-Run JavaScript tests with code coverage:
+Run JavaScript unit tests with code coverage:
 
 ```
 bin/yarn test
+```
+
+Run E2E tests with Cypress:
+
+```
+bin/rails cypress:run
 ```
 
 ### Test deployment locally
