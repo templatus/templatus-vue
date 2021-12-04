@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
     node: true,
   },
-  plugins: ['cypress'],
+  plugins: [],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -16,7 +16,6 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     'prettier',
     'plugin:prettier/recommended',
-    'plugin:cypress/recommended',
   ],
   globals: {
     defineProps: 'readonly',
@@ -41,13 +40,4 @@ module.exports = {
     sourceType: 'module', // allow the use of imports statements
     ecmaVersion: 2020, // allow the parsing of modern ecmascript
   },
-
-  overrides: [
-    {
-      files: ['spec/cypress/**/*.js'],
-      rules: {
-        'jest/expect-expect': 'off',
-      },
-    },
-  ],
 };
