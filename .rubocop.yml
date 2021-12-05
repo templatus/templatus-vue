@@ -32,6 +32,9 @@ Rails/SaveBang:
 Rails/FilePath:
   EnforcedStyle: arguments
 
+Rails/ApplicationController:
+  Enabled: false
+
 ### Bundler
 
 Bundler/OrderedGems:

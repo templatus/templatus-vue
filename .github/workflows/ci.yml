@@ -61,6 +61,19 @@ jobs:
       - name: Run JavaScript tests
         run: bin/yarn test
 
+      - name: End-to-end tests
+        uses: cypress-io/github-action@v2
+        with:
+          start: bundle exec rails server
+          wait-on: http://localhost:3000
+          browser: chrome
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CYPRESS_BASE_URL: http://localhost:3000
+          CYPRESS: true
+
       - uses: actions/upload-artifact@v2
         if: failure()
         with:

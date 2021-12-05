@@ -148,6 +148,12 @@ const features: {
         description:
           'ESLint statically analyzes your code to quickly find problems',
       },
+      {
+        name: 'Cypress',
+        href: 'https://cypress.io/',
+        description:
+          'Fast, easy and reliable testing for anything that runs in a browser.',
+      },
     ],
   },
 

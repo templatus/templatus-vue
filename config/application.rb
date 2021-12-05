@@ -42,6 +42,10 @@ module Templatus
       ENV.fetch('COMMIT_TIME') { `git show -s --format=%cI`.chomp }
 
     config.x.honeybadger.api_key = ENV['HONEYBADGER_API_KEY'].presence
+
+    config.x.cypress =
+      (Rails.env.development? || Rails.env.test?) &&
+        ActiveModel::Type::Boolean.new.cast(ENV.fetch('CYPRESS', false))
   end
 end
 

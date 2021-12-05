@@ -7,7 +7,7 @@ exports[`Home matches snapshot 1`] = `
     <p class="mt-6 max-w-4xl text-base lg:text-xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
   </div>
   <div class="flex flex-col mt-5 w-full sm:mt-0 sm:w-56 lg:transform lg:-translate-y-72">
-    <div class="p-2 text-center bg-white rounded-t shadow lg:p-5">
+    <div id="counter" class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <transition-stub>
         <div class="text-5xl">42</div>
       </transition-stub>

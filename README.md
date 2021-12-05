@@ -1,4 +1,5 @@
 [![Build Status](https://github.com/ledermann/templatus/workflows/CI/badge.svg)](https://github.com/ledermann/templatus/actions)
+[![Cypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/5d6bqs&style=flat-square&logo=cypress)](https://dashboard.cypress.io/projects/5d6bqs/runs)
 [![DeepSource](https://deepsource.io/gh/ledermann/templatus.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/ledermann/templatus/?ref=repository-badge)
 
 # Templatus
@@ -39,10 +40,11 @@ Live demo available at https://templatus.ledermann.dev
 
 ### Linting and testing
 
-- [RSpec](https://rspec.info/) for Ruby testing
 - [RuboCop](https://rubocop.org/) for Ruby static code analysis
-- [Jest](https://jestjs.io/) for JavaScript testing
 - [ESLint](https://eslint.org/) for JavaScript static code analysis
+- [RSpec](https://rspec.info/) for Ruby testing
+- [Jest](https://jestjs.io/) for JavaScript unit testing
+- [Cypress](https://www.cypress.io/) for E2E testing
 
 ### Deployment
 
@@ -213,38 +215,48 @@ bin/dev
 
 Then open https://templatus.test in your browser.
 
+### Running linters
+
+RuboCop:
+
+```
+bin/rubocop
+```
+
+ESLint:
+
+```
+bin/yarn lint
+```
+
+TypeScript compiler:
+
+```
+bin/yarn tsc
+```
+
 ### Running tests locally
 
-Run Ruby tests with code coverage:
+Ruby tests:
 
 ```
 bin/rspec
 open coverage/index.html
 ```
 
-Run RuboCop:
-
-```
-bin/rubocop
-```
-
-Lint JavaScript:
-
-```
-bin/yarn lint
-```
-
-Run TypeScript compiler for type checking:
-
-```
-bin/yarn tsc
-```
-
-Run JavaScript tests with code coverage:
+JavaScript unit tests:
 
 ```
 bin/yarn test
 ```
+
+E2E tests with Cypress:
+
+```
+bin/cypress
+```
+
+Opens Cypress application and starts Rails in `development` environment, but with `CYPRESS=true`, so the `test` database is used. This allows code editing without class reloading and recompiling assets.
 
 ### Test deployment locally
 
