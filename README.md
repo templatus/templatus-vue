@@ -253,8 +253,10 @@ bin/yarn test
 E2E tests with Cypress:
 
 ```
-bin/rails cypress:run
+bin/cypress
 ```
+
+Opens Cypress application and starts Rails in `development` environment, but with `CYPRESS=true`, so the `test` database is used. This allows code editing without class reloading and recompiling assets.
 
 ### Test deployment locally
 

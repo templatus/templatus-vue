@@ -1,1 +1,2 @@
 frontend: bin/webpack-dev-server
+cypress: bin/yarn cypress open

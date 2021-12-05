@@ -73,9 +73,6 @@ GEM
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     crass (1.0.6)
-    cypress-rails (0.5.3)
-      puma (>= 3.8.0)
-      railties (>= 5.2.0)
     diff-lcs (1.4.4)
     docile (1.4.0)
     dotenv (2.7.6)
@@ -293,7 +290,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  cypress-rails
   dotenv-rails
   guard-rspec
   honeybadger

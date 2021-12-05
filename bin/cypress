@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Use puma-dev in `development` environment (not `test` !) to run Cypress tests. This allows
+# editing the code while writing Cypress tests.
+grep -qxF 'CYPRESS=true' .env || echo 'CYPRESS=true' >> .env
+bin/rails restart
+
+foreman start -f Procfile.cypress

@@ -25,5 +25,5 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('resetDatabase', () => {
-  cy.request('GET', '/cypress_rails_reset_state');
+  cy.request('DELETE', '/cypress/cleanup');
 });

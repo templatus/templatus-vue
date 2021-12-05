@@ -72,9 +72,6 @@ group :development, :test do
 
   # Code style checking for RSpec files (https://github.com/rubocop/rubocop-rspec)
   gem 'rubocop-rspec', require: false
-
-  # Helps you write Cypress tests of your Rails app (https://github.com/testdouble/cypress-rails)
-  gem 'cypress-rails'
 end
 
 group :development do
