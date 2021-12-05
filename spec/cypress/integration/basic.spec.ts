@@ -1,6 +1,5 @@
 describe('Basic tests', () => {
   beforeEach(() => {
-    cy.request('/cypress_rails_reset_state');
     cy.visit('/');
   });
 
