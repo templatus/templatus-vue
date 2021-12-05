@@ -215,40 +215,42 @@ bin/dev
 
 Then open https://templatus.test in your browser.
 
+### Running linters
+
+RuboCop:
+
+```
+bin/rubocop
+```
+
+ESLint:
+
+```
+bin/yarn lint
+```
+
+TypeScript compiler:
+
+```
+bin/yarn tsc
+```
+
 ### Running tests locally
 
-Run Ruby tests with code coverage:
+Ruby tests:
 
 ```
 bin/rspec
 open coverage/index.html
 ```
 
-Run RuboCop:
-
-```
-bin/rubocop
-```
-
-Lint JavaScript:
-
-```
-bin/yarn lint
-```
-
-Run TypeScript compiler for type checking:
-
-```
-bin/yarn tsc
-```
-
-Run JavaScript unit tests with code coverage:
+JavaScript unit tests:
 
 ```
 bin/yarn test
 ```
 
-Run E2E tests with Cypress:
+E2E tests with Cypress:
 
 ```
 bin/rails cypress:run
