@@ -45,7 +45,9 @@ const { online } = useOnlineOffline();
             <img
               :src="require('images/rails.svg')"
               alt="Ruby on Rails"
-              class="p-3 h-16 bg-red-100 rounded sm:h-24"
+              class="p-3 bg-red-100 rounded"
+              width="191"
+              height="72"
             />
 
             <div class="text-red-100 text-4xl sm:text-8xl">&plus;</div>
@@ -53,7 +55,9 @@ const { online } = useOnlineOffline();
             <img
               :src="require('images/vue.svg')"
               alt="Vue.js 3"
-              class="p-3 h-16 bg-red-100 rounded sm:h-24"
+              class="p-3 bg-red-100 rounded"
+              width="83"
+              height="72"
             />
           </div>
 
