@@ -22,6 +22,13 @@ class ClicksController < ApplicationController
   private
 
   def anonymize(ip)
-    ip.sub(/\.\d+$/, '.0')
+    addr = IPAddr.new(ip.to_s)
+    if addr.ipv4?
+      # set last octet to 0
+      addr.mask(24)
+    else
+      # set last 80 bits to zeros
+      addr.mask(48)
+    end
   end
 end
