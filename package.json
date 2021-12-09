@@ -59,7 +59,7 @@
     "jest-transform-stub": "^2.0.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwind": "^2.2.12",
-    "ts-jest": "^27.1.0",
+    "ts-jest": "^27.1.1",
     "vue-tsc": "^0.29.8",
     "webpack-dev-server": "^4.6.0"
   },
