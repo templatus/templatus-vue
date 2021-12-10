@@ -25,19 +25,19 @@ defineProps({
     <li
       v-for="click in clicks"
       :key="click.id"
-      class="mt-2 p-2 bg-red-100 rounded"
+      class="p-2 mt-2 bg-red-100 rounded"
     >
       <p>
-        <span class="px-1 text-red-100 font-mono bg-gray-900 rounded">
+        <span class="px-1 font-mono text-red-100 bg-gray-900 rounded">
           {{ click.ip }}
         </span>
 
-        <span class="ml-2 px-1 text-gray-900 text-sm font-medium sm:text-base">
+        <span class="px-1 ml-2 text-sm sm:text-base font-medium text-gray-900">
           {{ new Date(Date.parse(click.created_at)).toUTCString() }}
         </span>
       </p>
 
-      <p class="text-gray-900 font-extralight">
+      <p class="font-extralight text-gray-900">
         {{ click.user_agent }}
       </p>
     </li>

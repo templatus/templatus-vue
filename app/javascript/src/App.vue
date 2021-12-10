@@ -27,7 +27,7 @@ const { online } = useOnlineOffline();
   <div class="flex flex-col min-h-screen bg-red-50">
     <header>
       <svg
-        class="absolute inset-0 hidden w-full h-96 drop-shadow-xl filter sm:block"
+        class="hidden sm:block absolute inset-0 w-full h-96 filter drop-shadow-xl"
         fill="none"
         preserveAspectRatio="none"
         viewBox="0 0 100 100"
@@ -40,7 +40,7 @@ const { online } = useOnlineOffline();
       </svg>
 
       <div class="relative bg-red-800 sm:bg-transparent">
-        <div class="mx-auto px-4 py-8 max-w-5xl sm:px-6 sm:py-10 lg:px-8">
+        <div class="py-8 sm:py-10 px-4 sm:px-6 lg:px-8 mx-auto max-w-5xl">
           <div class="flex items-center space-x-5 sm:space-x-10">
             <img
               :src="require('images/rails.svg')"
@@ -50,7 +50,7 @@ const { online } = useOnlineOffline();
               height="72"
             />
 
-            <div class="text-red-100 text-4xl sm:text-8xl">&plus;</div>
+            <div class="text-4xl sm:text-8xl text-red-100">&plus;</div>
 
             <img
               :src="require('images/vue.svg')"
@@ -83,16 +83,16 @@ const { online } = useOnlineOffline();
     </header>
 
     <main
-      class="relative flex-grow mx-auto pb-24 pt-10 px-4 w-full max-w-5xl bg-transparent sm:px-6 sm:py-32 lg:px-8 lg:py-24"
+      class="relative flex-grow sm:py-32 lg:py-24 px-4 sm:px-6 lg:px-8 pt-10 pb-24 mx-auto w-full max-w-5xl bg-transparent"
     >
       <router-view />
     </main>
 
     <footer
-      class="fixed bottom-0 pb-4 pt-2 w-full text-white text-sm bg-gray-700"
+      class="fixed bottom-0 pt-2 pb-4 w-full text-sm text-white bg-gray-700"
     >
-      <div class="flex flex-wrap mx-auto px-4 max-w-5xl sm:px-6 lg:px-8">
-        <div class="w-full text-center sm:w-1/4 sm:text-left">
+      <div class="flex flex-wrap px-4 sm:px-6 lg:px-8 mx-auto max-w-5xl">
+        <div class="w-full sm:w-1/4 text-center sm:text-left">
           <a
             class="hover:underline"
             target="_blank"
@@ -103,15 +103,15 @@ const { online } = useOnlineOffline();
           </a>
         </div>
 
-        <div class="w-full text-center sm:w-1/4">
+        <div class="w-full sm:w-1/4 text-center">
           <span
             v-if="!online"
-            class="px-1 py-px text-red-700 font-bold tracking-wide bg-white rounded uppercase"
+            class="py-px px-1 font-bold tracking-wide text-red-700 uppercase bg-white rounded"
             >You are offline</span
           >
         </div>
 
-        <div class="w-full text-center sm:w-1/2 sm:text-right">
+        <div class="w-full sm:w-1/2 text-center sm:text-right">
           <git-version
             v-if="git.commitTime && git.commitVersion"
             :commit-time="git.commitTime"

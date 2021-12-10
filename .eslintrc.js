@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
     node: true,
   },
-  plugins: [],
+  plugins: ['tailwindcss'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -16,6 +16,7 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   globals: {
     defineProps: 'readonly',
@@ -34,6 +35,7 @@ module.exports = {
     'vue/script-setup-uses-vars': 'error',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'tailwindcss/no-custom-classname': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser', // the typescript-parser for eslint, instead of tslint

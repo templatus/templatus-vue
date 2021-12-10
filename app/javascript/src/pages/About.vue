@@ -181,7 +181,7 @@ const features: {
 <template>
   <page-title>About</page-title>
 
-  <div class="mb-20 mt-6 max-w-4xl text-xl">
+  <div class="mt-6 mb-20 max-w-4xl text-xl">
     <p>
       Templatus is an opinionated template for web applications with
       <b>Ruby on Rails</b> and <b>Vue.js 3</b>
@@ -190,20 +190,20 @@ const features: {
 
   <div class="space-y-24">
     <div v-for="group in features" :key="group.name">
-      <div class="lg:grid lg:gap-x-8 lg:grid-cols-3">
+      <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
           <h2
-            class="text-red-800 text-base font-semibold tracking-wide uppercase"
+            class="text-base font-semibold tracking-wide text-red-800 uppercase"
           >
             {{ group.slogan }}
           </h2>
-          <p class="mt-2 text-gray-900 text-3xl font-extrabold">
+          <p class="mt-2 text-3xl font-extrabold text-gray-900">
             {{ group.name }}
           </p>
         </div>
-        <div class="mt-12 lg:col-span-2 lg:mt-0">
+        <div class="lg:col-span-2 mt-12 lg:mt-0">
           <dl
-            class="space-y-10 sm:grid sm:gap-x-6 sm:gap-y-10 sm:grid-cols-2 sm:space-y-0 lg:gap-x-8"
+            class="sm:grid sm:grid-cols-2 sm:gap-x-6 lg:gap-x-8 sm:gap-y-10 space-y-10 sm:space-y-0"
           >
             <div
               v-for="feature in group.items"
@@ -215,7 +215,7 @@ const features: {
                   class="absolute w-6 h-6 text-green-500"
                   aria-hidden="true"
                 />
-                <p class="ml-9 text-red-800 text-lg font-medium leading-6">
+                <p class="ml-9 text-lg font-medium leading-6 text-red-800">
                   <a
                     :href="feature.href"
                     class="hover:underline"
@@ -227,14 +227,14 @@ const features: {
 
                   <span
                     v-if="feature.version"
-                    class="inline-flex items-center ml-2 px-2.5 py-0.5 text-red-900 text-xs font-medium bg-red-200 rounded-full"
+                    class="inline-flex items-center py-0.5 px-2.5 ml-2 text-xs font-medium text-red-900 bg-red-200 rounded-full"
                   >
                     {{ feature.version }}
                   </span>
                 </p>
               </dt>
               <dd
-                class="ml-9 mt-2 text-gray-600 text-base"
+                class="mt-2 ml-9 text-base text-gray-600"
                 v-html="feature.description"
               ></dd>
             </div>
