@@ -1,13 +1,8 @@
 module.exports = {
-  mode: 'jit', // https://tailwindcss.com/docs/just-in-time-mode
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
-  purge: [
+  content: [
     './app/**/*.html',
     './app/**/*.html.erb',
     './app/**/*.rb',

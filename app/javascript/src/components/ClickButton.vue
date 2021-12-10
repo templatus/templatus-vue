@@ -20,19 +20,17 @@ function onClick() {
 </script>
 
 <template>
-  <div
-    class="flex flex-col mt-5 sm:mt-0 w-full sm:w-56 lg:transform lg:-translate-y-72"
-  >
+  <div class="flex flex-col mt-5 sm:mt-0 w-full sm:w-56 lg:-translate-y-72">
     <div id="counter" class="p-2 lg:p-5 text-center bg-white rounded-t shadow">
       <template v-if="enabled">
         <transition
           mode="out-in"
           enter-active-class="transition-transform duration-300 ease-out"
-          enter-from-class="scale-0 transform"
-          enter-to-class="scale-100 transform"
+          enter-from-class="scale-0"
+          enter-to-class="scale-100"
           leave-active-class="transition-transform duration-200 ease-in"
-          leave-from-class="scale-100 transform"
-          leave-to-class="scale-0 transform"
+          leave-from-class="scale-100"
+          leave-to-class="scale-0"
         >
           <div :key="count" class="text-5xl">
             {{ count.toLocaleString() }}

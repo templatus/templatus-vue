@@ -14,10 +14,10 @@ defineProps({
   <transition-group
     tag="ul"
     class="relative"
-    enter-active-class="transform transition-all duration-500 ease-out"
+    enter-active-class="transition-all duration-500 ease-out"
     enter-from-class="opacity-0 scale-y-50"
     enter-to-class="opacity-100 scale-y-100"
-    leave-active-class="transform transition-all duration-500 ease-out"
+    leave-active-class="transition-all duration-500 ease-out"
     leave-from-class="opacity-100 scale-y-100 absolute"
     leave-to-class="opacity-0 scale-y-0 absolute"
     move-class="duration-500 ease-out"

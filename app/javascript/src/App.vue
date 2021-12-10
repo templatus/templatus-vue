@@ -27,7 +27,7 @@ const { online } = useOnlineOffline();
   <div class="flex flex-col min-h-screen bg-red-50">
     <header>
       <svg
-        class="hidden sm:block absolute inset-0 w-full h-96 filter drop-shadow-xl"
+        class="hidden sm:block absolute inset-0 w-full h-96 drop-shadow-xl"
         fill="none"
         preserveAspectRatio="none"
         viewBox="0 0 100 100"
