@@ -2,7 +2,7 @@
 
 exports[`App matches snapshot 1`] = `
 <div class="flex flex-col min-h-screen bg-red-50">
-  <header><svg class="hidden sm:block absolute inset-0 w-full h-96 filter drop-shadow-xl" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">
+  <header><svg class="hidden sm:block absolute inset-0 w-full h-96 drop-shadow-xl" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">
       <polygon fill="currentColor" class="text-red-800" points="0,0 0,100 100,0"></polygon>
     </svg>
     <div class="relative bg-red-800 sm:bg-transparent">

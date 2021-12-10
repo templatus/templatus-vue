@@ -77,7 +77,7 @@ const features: {
           'Vue is a progressive framework for building user interfaces.',
       },
       {
-        name: 'TailwindCSS 2',
+        name: 'Tailwind CSS 3',
         href: 'https://tailwindcss.com/',
         description:
           'A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.',
