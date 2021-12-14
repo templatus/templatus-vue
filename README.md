@@ -122,26 +122,26 @@ assets by path static/ 4.45 KiB
     asset static/rails-bcb6d75d927347158af5.svg.br 796 bytes [emitted] [immutable] [compressed]
     asset static/vue-f04dfe30a8ad8eb5c4e0.svg.br 224 bytes [emitted] [immutable] [compressed]
 assets by path js/*.js 150 KiB
-  asset js/395-b227a3cb720709516a53.js 133 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
-  asset js/application-152600e4c361ce30cc75.js 15.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+  asset js/395-2a53827180836245b36f.js 133 KiB [emitted] [immutable] [minimized] (id hint: vendors) 4 related assets
+  asset js/application-6c1b006fea43463407dc.js 15.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
   asset js/runtime-218550da3001279e7e74.js 1.46 KiB [emitted] [immutable] [minimized] (name: runtime) 3 related assets
-asset css/application-1857ea4a.css 17 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
+asset css/application-b4a794d6.css 16.8 KiB [emitted] [immutable] [minimized] (name: application) 3 related assets
 asset manifest.json 2.99 KiB [emitted] 2 related assets
-Entrypoint application 167 KiB (229 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/395-b227a3cb720709516a53.js 133 KiB css/application-1857ea4a.css 17 KiB js/application-152600e4c361ce30cc75.js 15.8 KiB 6 auxiliary assets
-orphan modules 391 KiB (javascript) 997 bytes (runtime) [orphan] 333 modules
+Entrypoint application 167 KiB (229 KiB) = js/runtime-218550da3001279e7e74.js 1.46 KiB js/395-2a53827180836245b36f.js 133 KiB css/application-b4a794d6.css 16.8 KiB js/application-6c1b006fea43463407dc.js 15.8 KiB 6 auxiliary assets
+orphan modules 390 KiB (javascript) 997 bytes (runtime) [orphan] 333 modules
 runtime modules 3.47 KiB 7 modules
-built modules 788 KiB (javascript) 2.33 KiB (asset) 25.1 KiB (css/mini-extract) [built]
-  modules by path ./node_modules/ 759 KiB
-    modules by path ./node_modules/@vue/ 424 KiB 4 modules
+built modules 790 KiB (javascript) 2.33 KiB (asset) 24.5 KiB (css/mini-extract) [built]
+  modules by path ./node_modules/ 760 KiB
+    modules by path ./node_modules/@vue/ 426 KiB 4 modules
     modules by path ./node_modules/@honeybadger-io/ 62.6 KiB 2 modules
     modules by path ./node_modules/@rails/ 26.1 KiB
       ./node_modules/@rails/actioncable/app/assets/javascripts/action_cable.js 18.6 KiB [built] [code generated]
       ./node_modules/@rails/request.js/src/verbs.js + 4 modules 7.52 KiB [built] [code generated]
-  modules by path ./app/javascript/ 29.4 KiB (javascript) 2.33 KiB (asset) 25.1 KiB (css/mini-extract)
+  modules by path ./app/javascript/ 29.3 KiB (javascript) 2.33 KiB (asset) 24.5 KiB (css/mini-extract)
     modules by path ./app/javascript/images/ 274 bytes (javascript) 2.33 KiB (asset) 3 modules
     ./app/javascript/application.ts + 31 modules 29.1 KiB [built] [code generated]
-    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/javascript/stylesheets/application.css 25.1 KiB [built] [code generated]
-webpack 5.65.0 compiled successfully in 6455 ms
+    css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./app/javascript/stylesheets/application.css 24.5 KiB [built] [code generated]
+webpack 5.65.0 compiled successfully in 9255 ms
 ```
 
 ### Network transfer
