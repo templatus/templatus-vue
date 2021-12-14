@@ -55,7 +55,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-tailwindcss": "^1.17.2",
     "eslint-plugin-vue": "^8.2.0",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
     "prettier": "^2.5.1",
