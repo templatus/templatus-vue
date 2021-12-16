@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.3'
 
 # Full-stack web application framework. (https://rubyonrails.org)
-gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
+gem 'rails', '~> 7.0.0'
 
 # Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/] (https://github.com/ged/ruby-pg)
 gem 'pg', '~> 1.1'
@@ -46,11 +46,11 @@ gem 'sidekiq'
 gem 'sidekiq-cron'
 
 group :development, :test do
-  # Ruby fast debugger - base + CLI (https://github.com/deivid-rodriguez/byebug)
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
   # Rails application preloader (https://github.com/rails/spring)
   gem 'spring'
+  # Debugging functionality for Ruby (https://github.com/ruby/debug)
+  gem 'debug', '>= 1.0.0', platforms: %i[ mri mingw x64_mingw ]
 
   # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
   gem 'dotenv-rails'
