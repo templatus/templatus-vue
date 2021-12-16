@@ -46,17 +46,11 @@ gem 'sidekiq'
 gem 'sidekiq-cron'
 
 group :development, :test do
-
-  # Rails application preloader (https://github.com/rails/spring)
-  gem 'spring'
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', '>= 1.0.0', platforms: %i[ mri mingw x64_mingw ]
 
   # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
   gem 'dotenv-rails'
-
-  # rspec command for spring (https://github.com/jonleighton/spring-commands-rspec)
-  gem 'spring-commands-rspec'
 
   # RSpec for Rails (https://github.com/rspec/rspec-rails)
   gem 'rspec-rails'
