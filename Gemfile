@@ -16,7 +16,7 @@ gem 'puma', '~> 5.0'
 gem 'webpacker', '>= 6.0.0.rc.5'
 
 # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
-gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bootsnap', require: false
 
 # Timezone Data for TZInfo (https://tzinfo.github.io)
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
@@ -47,7 +47,7 @@ gem 'sidekiq-cron'
 
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
-  gem 'debug', '>= 1.0.0', platforms: %i[ mri mingw x64_mingw ]
+  gem 'debug', platforms: %i[ mri mingw x64_mingw ]
 
   # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
   gem 'dotenv-rails'
@@ -70,13 +70,10 @@ end
 
 group :development do
   # A debugging tool for your Ruby on Rails applications. (https://github.com/rails/web-console)
-  gem 'web-console', '>= 4.1.0'
+  gem 'web-console'
 
   # Profiles loading speed for rack applications. (https://miniprofiler.com)
-  # gem 'rack-mini-profiler', '~> 2.0'
-
-  # Listen to file modifications (https://github.com/guard/listen)
-  gem 'listen', '~> 3.3'
+  # gem 'rack-mini-profiler'
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false

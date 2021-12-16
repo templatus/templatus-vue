@@ -285,12 +285,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootsnap (>= 1.4.4)
-  debug (>= 1.0.0)
+  bootsnap
+  debug
   dotenv-rails
   guard-rspec
   honeybadger
-  listen (~> 3.3)
   lograge
   pg (~> 1.1)
   puma (~> 5.0)
@@ -308,7 +307,7 @@ DEPENDENCIES
   sidekiq-cron
   simplecov
   tzinfo-data
-  web-console (>= 4.1.0)
+  web-console
   webpacker (>= 6.0.0.rc.5)
 
 RUBY VERSION
