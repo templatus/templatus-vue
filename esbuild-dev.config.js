@@ -42,9 +42,9 @@ async function builder() {
       "./app/javascript/**/*.vue",
       "./app/views/**/*.html.erb",
       "./app/assets/stylesheets/*.css"
-    ]).on('all', (_event, path) => {
+    ]).on('change', async (path) => {
       if (path.includes("javascript")) {
-        result.rebuild();
+        await result.rebuild();
       }
       clients.forEach((res) => res.write('data: update\n\n'));
       clients.length = 0;
