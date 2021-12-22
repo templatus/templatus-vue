@@ -149,11 +149,11 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="absolute w-6 h-6 text-green-500">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 text-lg font-medium leading-6 text-red-800"><a href="https://github.com/rails/webpacker" class="hover:underline" target="_blank" rel="noopener noreferrer">Webpacker</a>
+              <p class="ml-9 text-lg font-medium leading-6 text-red-800"><a href="https://esbuild.github.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">esbuild</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.</dd>
+            <dd class="mt-2 ml-9 text-base text-gray-600">An extremely fast JavaScript and CSS bundler and minifier</dd>
           </div>
         </dl>
       </div>

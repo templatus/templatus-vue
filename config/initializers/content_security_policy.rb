@@ -7,14 +7,10 @@
 Rails.application.configure do
   config.content_security_policy do |policy|
     if Rails.env.development?
-      policy.script_src :self,
-                        :unsafe_eval,
-                        :unsafe_inline,
-                        "https://webpack.#{ENV['APP_HOST']}"
+      policy.script_src :self, :unsafe_eval, :unsafe_inline
       policy.connect_src :self,
                          "wss://#{ENV['APP_HOST']}",
-                         "https://webpack.#{ENV['APP_HOST']}",
-                         "wss://webpack.#{ENV['APP_HOST']}"
+                         'http://localhost:8082'
     else
       policy.default_src :none
       policy.font_src(
