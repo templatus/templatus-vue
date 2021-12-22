@@ -1,5 +1,5 @@
 const esbuild = require('esbuild');
-const pluginVue = require('esbuild-plugin-vue-next');
+const pluginVue = require('esbuild-plugin-vue3');
 const path = require('path');
 
 (async () => {

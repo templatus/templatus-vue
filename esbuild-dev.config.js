@@ -4,7 +4,7 @@
 const path = require('path');
 const chokidar = require('chokidar');
 const http = require('http');
-const pluginVue = require('esbuild-plugin-vue-next');
+const pluginVue = require('esbuild-plugin-vue3');
 
 const clients = [];
 
