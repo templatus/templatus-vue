@@ -13,7 +13,7 @@ describe CloudfrontDenier do
   it 'accepts request for asset from CloudFront' do
     code, =
       middleware.call env_for(
-                        'http://example.com/packs/example.js',
+                        'http://example.com/assets/example.js',
                         'HTTP_USER_AGENT' => 'Amazon CloudFront',
                       )
 

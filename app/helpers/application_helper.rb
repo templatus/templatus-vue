@@ -5,7 +5,6 @@ module ApplicationHelper
       ruby: ruby_version,
       rails: rails_version,
       puma: puma_version,
-      webpacker: webpacker_version,
       postgres: postgres_version,
       redis: redis_version,
       sidekiq: sidekiq_version,
@@ -28,10 +27,6 @@ module ApplicationHelper
 
   def puma_version
     Puma::Const::PUMA_VERSION
-  end
-
-  def webpacker_version
-    Gem.loaded_specs['webpacker'].version.to_s
   end
 
   def postgres_version

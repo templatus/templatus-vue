@@ -1,19 +1,10 @@
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import { metaContent } from '@/utils/metaContent';
 import router from '@/router';
 import App from '@/App.vue';
 import HoneybadgerVue from '@honeybadger-io/vue';
-import 'stylesheets/application.css';
 import { register } from 'register-service-worker';
-
-// Include all images in webpack manifest
-require.context('./images', true);
 
 register('/sw.js', {
   registrationOptions: { scope: './' },
@@ -42,11 +33,7 @@ register('/sw.js', {
   },
 });
 
-declare let __webpack_public_path__: string | undefined;
-
 document.addEventListener('DOMContentLoaded', () => {
-  __webpack_public_path__ = metaContent('webpack-public-path'); // eslint-disable-line @typescript-eslint/no-unused-vars
-
   const app = createApp(App);
 
   const honeybadgerApiKey = metaContent('honeybadger-api-key');

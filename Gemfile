@@ -6,14 +6,23 @@ ruby '3.0.3'
 # Full-stack web application framework. (https://rubyonrails.org)
 gem 'rails', '~> 7.0.0'
 
+# Sprockets Rails integration (https://github.com/rails/sprockets-rails)
+gem 'sprockets-rails'
+
+# Adds multiple exporters to Sprockets (https://github.com/hansottowirtz/sprockets-exporters_pack)
+gem 'sprockets-exporters_pack'
+
+# Bundle and transpile JavaScript in Rails with esbuild, rollup.js, or Webpack. (https://github.com/rails/jsbundling-rails)
+gem 'jsbundling-rails'
+
+# Bundle and process CSS with Tailwind, Bootstrap, PostCSS, Sass in Rails via Node.js. (https://github.com/rails/cssbundling-rails)
+gem 'cssbundling-rails'
+
 # Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/] (https://github.com/ged/ruby-pg)
 gem 'pg', '~> 1.1'
 
 # Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
 gem 'puma', '~> 5.0'
-
-# Use webpack to manage app-like JavaScript modules in Rails (https://github.com/rails/webpacker)
-gem 'webpacker', '>= 6.0.0.rc.5'
 
 # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
 gem 'bootsnap', require: false

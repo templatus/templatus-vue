@@ -107,11 +107,10 @@ const features: {
           'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
       },
       {
-        name: 'Webpacker',
-        version: metaContent('version-webpacker'),
-        href: 'https://github.com/rails/webpacker',
+        name: 'esbuild',
+        href: 'https://esbuild.github.io/',
         description:
-          'Webpacker makes it easy to use the JavaScript pre-processor and bundler Webpack v5 to manage application-like JavaScript in Rails.',
+          'An extremely fast JavaScript and CSS bundler and minifier',
       },
     ],
   },
