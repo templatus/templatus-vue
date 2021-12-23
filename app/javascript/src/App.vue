@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { TabGroup, TabList, Tab } from '@headlessui/vue';
 import GitVersion from '@/components/GitVersion.vue';
-import { metaContent } from '@/utils/metaContent';
+import { metaContent, assetUrl } from '@/utils/metaContent';
 import useOnlineOffline from './use/online-offline';
-const logoRailsPath = require('../images/rails.svg') as string;
-const logoVuePath = require('../images/vue.svg') as string;
+
+const logoRailsPath = assetUrl(require('../images/rails.svg'));
+const logoVuePath = assetUrl(require('../images/vue.svg'));
 
 const git: {
   commitVersion?: string;

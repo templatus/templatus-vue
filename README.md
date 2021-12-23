@@ -111,7 +111,7 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       151.9kb  100.0%
+  ../assets/builds/application.js                                                                                       152.0kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.5kb   24.7%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.6%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.1kb   13.9%
@@ -124,7 +124,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.8kb    1.9%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=template                            2.4kb    1.6%
    ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.4%
-   ├ ../../node_modules/register-service-worker/index.js                                                                  1.7kb    1.2%
+   ├ ../../node_modules/register-service-worker/index.js                                                                  1.7kb    1.1%
    ├ ../../node_modules/@headlessui/vue/dist/utils/render.esm.js                                                          1.7kb    1.1%
    ├ ../../node_modules/@headlessui/vue/dist/utils/focus-management.esm.js                                                1.6kb    1.1%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=template                    1.5kb    1.0%
@@ -141,7 +141,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.3%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    403b     0.3%
    ├ ../../node_modules/@headlessui/vue/dist/utils/match.esm.js                                                           396b     0.3%
-   ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                381b     0.2%
+   ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                389b     0.2%
    ├ ../../node_modules/@headlessui/vue/dist/hooks/use-resolve-button-type.esm.js                                         373b     0.2%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                         286b     0.2%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             282b     0.2%
@@ -157,12 +157,12 @@ $ node esbuild.config.js
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               164b     0.1%
    ├ ../../node_modules/timeago.js/esm/utils/dom.js                                                                       158b     0.1%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=template           158b     0.1%
+   ├ src/utils/metaContent.ts                                                                                             138b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=script                     136b     0.1%
    ├ ../../node_modules/@rails/request.js/src/request_interceptor.js                                                      129b     0.1%
    ├ ../../node_modules/@rails/request.js/src/verbs.js                                                                    117b     0.1%
    ├ ../../node_modules/vue-demi/lib/index.mjs                                                                            114b     0.1%
    ├ src/components/LoadingAnimation.vue                                                                                   96b     0.1%
-   ├ src/utils/metaContent.ts                                                                                              92b     0.1%
    ├ src/components/PageTitle.vue                                                                                          89b     0.1%
    ├ ../../node_modules/@headlessui/vue/dist/utils/dom.esm.js                                                              88b     0.1%
    ├ src/components/ClickButton.vue                                                                                        81b     0.1%
@@ -184,7 +184,7 @@ $ node esbuild.config.js
   ../assets/builds/vue-676GIDSW.svg                                                                                       375b   100.0%
    └ images/vue.svg                                                                                                       375b   100.0%
 
-✨  Done in 0.74s.
+✨  Done in 0.62s.
 ```
 
 ### Network transfer
