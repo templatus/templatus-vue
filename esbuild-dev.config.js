@@ -4,6 +4,7 @@
 const path = require('path');
 const chokidar = require('chokidar');
 const http = require('http');
+const rails = require('esbuild-rails');
 const pluginVue = require('esbuild-plugin-vue3');
 
 const clients = [];
@@ -26,7 +27,7 @@ async function builder() {
     outdir: path.join(process.cwd(), "app/assets/builds"),
     absWorkingDir: path.join(process.cwd(), "app/javascript"),
     incremental: true,
-    plugins: [pluginVue()],
+    plugins: [rails(), pluginVue()],
     banner: {
       js: ' (() => new EventSource("http://localhost:8082").onmessage = () => location.reload())();',
     },
