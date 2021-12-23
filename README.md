@@ -21,6 +21,7 @@ Live demo available at https://templatus.ledermann.dev
 
 ### Frontend
 
+- [esbuild](https://esbuild.github.io/) for bundling JavaScript
 - [Vue 3](https://v3.vuejs.org/) as frontend framework
 - [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
 - [Pinia](https://pinia.esm.dev/) for frontend state management
@@ -28,7 +29,6 @@ Live demo available at https://templatus.ledermann.dev
 - [HeadlessUI](https://headlessui.dev/) unstyled, fully accessible UI components designed to integrate with Tailwind CSS
 - [Heroicons](https://heroicons.com/) for SVG icons as Vue components
 - [Rails Request.JS](https://github.com/rails/request.js) for AJAX requests with default headers
-- [esbuild](https://esbuild.github.io/) for bundling JavaScript
 
 ### Development
 
@@ -58,14 +58,14 @@ Live demo available at https://templatus.ledermann.dev
 ### Production
 
 - [Lograge](https://github.com/roidrage/lograge) for single-line logging
-- Gzip and Brotli compression of all dynamic responses (HTML, JSON) using [Rack::Deflater](https://github.com/rack/rack/blob/master/lib/rack/deflater.rb) and [Rack::Brotli](https://github.com/marcotc/rack-brotli)
+- Gzip and Brotli compression of all responses (HTML, JSON, assets) using [Rack::Deflater](https://github.com/rack/rack/blob/master/lib/rack/deflater.rb), [Rack::Brotli](https://github.com/marcotc/rack-brotli) and [Sprockets::ExportersPack](https://github.com/hansottowirtz/sprockets-exporters_pack)
 - Fine-tuned Content Security Policy (CSP)
 - Ready for PWA (manifest, service-worker)
 
 ## Metrics
 
 This template is developed with optimized performance and security in mind. The following benchmarks are
-performed against the demo installation on production. It uses an inexpensive virtual server on the [Hetzner Cloud](https://www.hetzner.com/de/cloud) behind a [Traefik](https://traefik.io/traefik/) setup.
+performed against the demo installation which is deployed as Docker container to an inexpensive virtual server on [Hetzner Cloud](https://www.hetzner.com/de/cloud) behind a [Traefik](https://traefik.io/traefik/) setup.
 
 ### Lighthouse site performance
 
@@ -73,9 +73,9 @@ performed against the demo installation on production. It uses an inexpensive vi
 
 ![Lighthouse](docs/lighthouse.png)
 
-### Secure headers
+### Security headers
 
-[![Secure headers](docs/secure-headers.png)](https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on)
+[![Secure headers](docs/security-headers.png)](https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on)
 
 What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the next Rails update:
 https://github.com/rails/rails/pull/41994
@@ -90,7 +90,7 @@ https://github.com/rails/rails/pull/41994
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/0tAiViV6/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/e5RxS9Iq/)
 
 ### Check-your-website
 
@@ -199,7 +199,7 @@ With multi-stage building and using [DockerRailsBase](https://github.com/lederma
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently **115 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently **116 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
 $ container-diff analyze ghcr.io/ledermann/templatus -n
@@ -208,7 +208,7 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST         SIZE
-ghcr.io/ledermann/templatus        sha256:...   114.9M
+ghcr.io/ledermann/templatus        sha256:...   116.3M
 ```
 
 ## Getting
