@@ -100,7 +100,7 @@ https://github.com/rails/rails/pull/41994
 
 152 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
-- Vue.js + Vue Router (77 KB)
+- Vue.js + Vue Router (80 KB)
 - Headless UI (10 KB)
 - Honeybadger (22 KB)
 - Pinia (6 KB)
@@ -189,7 +189,7 @@ $ node esbuild.config.js
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **65 KB** of data on the first visit.
+Small footprint: The demo application transfers only **72 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
