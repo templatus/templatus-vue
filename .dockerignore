@@ -25,7 +25,7 @@ Procfile*
 Guardfile
 log/*
 node_modules
-public/assets/*
+public/assets
 tmp/*
 !/tmp/pids/
 !/tmp/pids/.keep
@@ -33,5 +33,6 @@ yarn-error.log
 config/environments/test.rb
 config/environments/development.rb
 jest.config.js
+cypress.json
 spec
 README.md
