@@ -8,7 +8,7 @@ else
   echo ".env does NOT contain CYPRESS=true, so add it and restart Rails"
 
   grep -qxF 'CYPRESS=true' .env || echo 'CYPRESS=true' >> .env
-  touch tmp/restart
+  touch tmp/restart.txt
 fi
 
 # Redirect arguments to cypress binary
