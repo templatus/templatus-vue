@@ -7,8 +7,8 @@ exports[`App matches snapshot 1`] = `
     </svg>
     <div class="relative bg-red-800 sm:bg-transparent">
       <div class="py-8 sm:py-10 px-4 sm:px-6 lg:px-8 mx-auto max-w-5xl">
-        <div class="flex items-center space-x-5 sm:space-x-10"><img src="[object Object]" alt="Ruby on Rails" class="p-3 bg-red-100 rounded" width="191" height="72">
-          <div class="text-4xl sm:text-8xl text-red-100">+</div><img src="[object Object]" alt="Vue.js 3" class="p-3 bg-red-100 rounded" width="83" height="72">
+        <div class="flex items-center space-x-5 sm:space-x-10"><img src="/images/rails.svg" alt="Ruby on Rails" class="p-3 bg-red-100 rounded" width="191" height="72">
+          <div class="text-4xl sm:text-8xl text-red-100">+</div><img src="/images/vue.svg" alt="Vue.js 3" class="p-3 bg-red-100 rounded" width="83" height="72">
         </div>
         <nav role="tablist" aria-orientation="horizontal" class="flex space-x-4 mt-10"><a href="/" class="router-link-active router-link-exact-active bg-red-200 border border-red-200  text-red-900 px-4 py-1 font-medium text-lg rounded-md" id="headlessui-tabs-tab-1" role="tab" aria-selected="true" tabindex="0" aria-current="page">Home</a><a href="/about" class="bg-red-800 border border-red-200  text-red-200 hover:bg-red-300 hover:text-red-800 px-4 py-1 font-medium text-lg rounded-md" id="headlessui-tabs-tab-2" role="tab" aria-selected="false" tabindex="-1">About</a></nav>
       </div>

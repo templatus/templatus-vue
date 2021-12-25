@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { TabGroup, TabList, Tab } from '@headlessui/vue';
 import GitVersion from '@/components/GitVersion.vue';
-import { metaContent, assetUrl } from '@/utils/metaContent';
+import { metaContent } from '@/utils/metaContent';
 import useOnlineOffline from './use/online-offline';
-
-const logoRailsPath = assetUrl(require('../images/rails.svg'));
-const logoVuePath = assetUrl(require('../images/vue.svg'));
 
 const git: {
   commitVersion?: string;
@@ -46,7 +43,7 @@ const { online } = useOnlineOffline();
         <div class="py-8 sm:py-10 px-4 sm:px-6 lg:px-8 mx-auto max-w-5xl">
           <div class="flex items-center space-x-5 sm:space-x-10">
             <img
-              :src="logoRailsPath"
+              src="/images/rails.svg"
               alt="Ruby on Rails"
               class="p-3 bg-red-100 rounded"
               width="191"
@@ -56,7 +53,7 @@ const { online } = useOnlineOffline();
             <div class="text-4xl sm:text-8xl text-red-100">&plus;</div>
 
             <img
-              :src="logoVuePath"
+              src="/images/vue.svg"
               alt="Vue.js 3"
               class="p-3 bg-red-100 rounded"
               width="83"

@@ -5,9 +5,3 @@ export function metaContent(name: string): string | undefined {
 
   if (element) return element.content;
 }
-
-export function assetUrl(name: string): string {
-  const assetHost = metaContent('asset-host') || '';
-
-  return assetHost + name;
-}
