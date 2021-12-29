@@ -2313,14 +2313,14 @@ eslint-plugin-prettier@^4.0.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-tailwindcss@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.0.0.tgz#68211298921ddbae52e6472c1d08343a2fe1cda5"
-  integrity sha512-GJgFgLV/41QPQqiiqymsiQHy4zVdS1tzMrH2YKxdavFlBGm9uLrHoiOb0ulFCw2Fd+9jTzlL2EtHbdGUMarKDg==
+eslint-plugin-tailwindcss@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.0.1.tgz#c0e8750e6d2a1f753d37d0d24dcedeb6cc57bac3"
+  integrity sha512-ddzqWKf8WkfwKIT/6GX5lwgx9Y7rJ5hdiknp0UYYG3s3WFnBUCZl7IEBjeuSfIuIANNYwZs8kOTjw31gML7AoA==
   dependencies:
     fast-glob "^3.2.5"
     postcss "^8.4.4"
-    tailwindcss "^3.0.0"
+    tailwindcss "^3.0.7"
 
 eslint-plugin-vue@^8.2.0:
   version "8.2.0"
@@ -4840,7 +4840,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tailwindcss@^3.0.0, tailwindcss@^3.0.8:
+tailwindcss@^3.0.7, tailwindcss@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.8.tgz#6c751c3d2ee8e1fa18b108303b73f44a5e868992"
   integrity sha512-Yww1eRYO1AxITJmW/KduZPxNvYdHuedeKwPju9Oakp7MdiixRi5xkpLhirsc81QCxHL0eoce6qKmxXwYGt4Cjw==
