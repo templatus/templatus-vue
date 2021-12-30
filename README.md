@@ -8,6 +8,9 @@ Templatus is an opinionated template to build web applications with Ruby on Rail
 
 Live demo available at https://templatus.ledermann.dev
 
+There is a sister repository that uses Hotwire instead of Vue.js:
+https://github.com/ledermann/templatus-hotwire/
+
 ## Features / Technology stack
 
 ### Backend
