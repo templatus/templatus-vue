@@ -45,7 +45,7 @@
     "chokidar": "^3.5.2",
     "cypress": "^9.2.0",
     "esbuild-plugin-vue3": "^0.3.0",
-    "eslint": "^8.5.0",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jest": "^25.3.3",
