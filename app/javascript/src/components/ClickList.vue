@@ -32,7 +32,7 @@ defineProps({
           {{ click.ip }}
         </span>
 
-        <span class="px-1 ml-2 text-sm sm:text-base font-medium text-gray-900">
+        <span class="px-1 ml-2 text-sm font-medium text-gray-900 sm:text-base">
           {{ new Date(Date.parse(click.created_at)).toUTCString() }}
         </span>
       </p>

@@ -200,9 +200,9 @@ const features: {
             {{ group.name }}
           </p>
         </div>
-        <div class="lg:col-span-2 mt-12 lg:mt-0">
+        <div class="mt-12 lg:col-span-2 lg:mt-0">
           <dl
-            class="sm:grid sm:grid-cols-2 sm:gap-x-6 lg:gap-x-8 sm:gap-y-10 space-y-10 sm:space-y-0"
+            class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8"
           >
             <div
               v-for="feature in group.items"

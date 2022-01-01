@@ -20,8 +20,8 @@ function onClick() {
 </script>
 
 <template>
-  <div class="flex flex-col mt-5 sm:mt-0 w-full sm:w-56 lg:-translate-y-72">
-    <div id="counter" class="p-2 lg:p-5 text-center bg-white rounded-t shadow">
+  <div class="flex flex-col mt-5 w-full sm:mt-0 sm:w-56 lg:-translate-y-72">
+    <div id="counter" class="p-2 text-center bg-white rounded-t shadow lg:p-5">
       <template v-if="enabled">
         <transition
           mode="out-in"
@@ -43,13 +43,13 @@ function onClick() {
 
     <button
       type="button"
-      class="py-2 px-4 w-full text-sm font-medium text-red-700 bg-red-100 hover:bg-red-200 rounded-b-md border border-red-200 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow focus:outline-none"
+      class="py-2 px-4 w-full text-sm font-medium text-red-700 bg-red-100 hover:bg-red-200 rounded-b-md border border-red-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow"
       @click="onClick()"
     >
       Click me!
     </button>
 
-    <p class="hidden sm:block mt-5 text-sm text-gray-600">
+    <p class="hidden mt-5 text-sm text-gray-600 sm:block">
       Tip: Open two browser windows in parallel and see what happens.
     </p>
   </div>
