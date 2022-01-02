@@ -1,124 +1,25 @@
 <script setup lang="ts">
-import { TabGroup, TabList, Tab } from '@headlessui/vue';
-import GitVersion from '@/components/GitVersion.vue';
-import { metaContent } from '@/utils/metaContent';
-import useOnlineOffline from './use/online-offline';
-
-const git: {
-  commitVersion?: string;
-  commitTime?: string;
-} = {
-  commitVersion: metaContent('git-commit-version'),
-  commitTime: metaContent('git-commit-time'),
-};
-
-const tabs: {
-  name: string;
-  href: string;
-}[] = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-];
-
-const { online } = useOnlineOffline();
+import AppBackground from '@/components/AppBackground.vue';
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen bg-red-50">
-    <header>
-      <svg
-        class="hidden absolute inset-0 w-full h-96 drop-shadow-xl sm:block"
-        fill="none"
-        preserveAspectRatio="none"
-        viewBox="0 0 100 100"
-      >
-        <polygon
-          fill="currentColor"
-          class="text-red-800"
-          points="0,0 0,100 100,0"
-        />
-      </svg>
+  <div
+    class="flex flex-col min-h-screen bg-gradient-to-br from-rails-dark to-rails-light lg:bg-rose lg:from-inherit lg:to-inherit"
+  >
+    <app-background />
 
-      <div class="relative bg-red-800 sm:bg-transparent">
-        <div class="py-8 px-4 mx-auto max-w-5xl sm:py-10 sm:px-6 lg:px-8">
-          <div class="flex items-center space-x-5 sm:space-x-10">
-            <img
-              src="/images/rails.svg"
-              alt="Ruby on Rails"
-              class="p-3 bg-red-100 rounded"
-              width="191"
-              height="72"
-            />
-
-            <div class="text-4xl text-red-100 sm:text-8xl">&plus;</div>
-
-            <img
-              src="/images/vue.svg"
-              alt="Vue.js 3"
-              class="p-3 bg-red-100 rounded"
-              width="83"
-              height="72"
-            />
-          </div>
-
-          <TabGroup class="mt-10">
-            <TabList class="flex space-x-4" as="nav">
-              <Tab v-for="tab in tabs" :key="tab.name" as="template">
-                <router-link
-                  :to="tab.href"
-                  :class="[
-                    tab.href == $route.path
-                      ? 'bg-red-200 border border-red-200  text-red-900'
-                      : 'bg-red-800 border border-red-200  text-red-200 hover:bg-red-300 hover:text-red-800',
-                    'px-4 py-1 font-medium text-lg rounded-md',
-                  ]"
-                >
-                  {{ tab.name }}
-                </router-link>
-              </Tab>
-            </TabList>
-          </TabGroup>
-        </div>
-      </div>
-    </header>
+    <app-header class="lg:fixed lg:top-10 lg:left-10" />
 
     <main
-      class="relative grow px-4 pt-10 pb-24 mx-auto w-full max-w-5xl bg-transparent sm:py-32 sm:px-6 lg:py-24 lg:px-8"
+      class="relative flex-1 py-5 px-4 bg-white shadow-md sm:px-6 lg:px-8 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl"
     >
       <router-view />
     </main>
 
-    <footer
-      class="fixed bottom-0 pt-2 pb-4 w-full text-sm text-white bg-gray-700"
-    >
-      <div class="flex flex-wrap px-4 mx-auto max-w-5xl sm:px-6 lg:px-8">
-        <div class="w-full text-center sm:w-1/4 sm:text-left">
-          <a
-            class="hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/ledermann/templatus"
-          >
-            Source on GitHub
-          </a>
-        </div>
-
-        <div class="w-full text-center sm:w-1/4">
-          <span
-            v-if="!online"
-            class="py-px px-1 font-bold tracking-wide text-red-700 uppercase bg-white rounded"
-            >You are offline</span
-          >
-        </div>
-
-        <div class="w-full text-center sm:w-1/2 sm:text-right">
-          <git-version
-            v-if="git.commitTime && git.commitVersion"
-            :commit-time="git.commitTime"
-            :commit-version="git.commitVersion"
-          ></git-version>
-        </div>
-      </div>
-    </footer>
+    <app-footer
+      class="relative mt-2 mb-6 lg:px-0 lg:mr-16 lg:ml-96 lg:max-w-5xl"
+    />
   </div>
 </template>

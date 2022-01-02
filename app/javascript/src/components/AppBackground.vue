@@ -1,0 +1,35 @@
+<template>
+  <svg
+    class="hidden fixed inset-0 w-full h-96 drop-shadow-xl lg:block"
+    fill="none"
+    preserveAspectRatio="none"
+    viewBox="0 0 100 100"
+  >
+    <defs>
+      <linearGradient id="grad1" x1="0" y1="0" x2="100%" y2="0">
+        <stop offset="0%" class="gradient__rails-dark" />
+        <stop offset="30%" class="gradient__rails-light" />
+        <stop offset="100%" class="gradient__rails-dark" />
+      </linearGradient>
+    </defs>
+
+    <polygon fill="url(#grad1)" points="0,0 0,100 100,40 100,0" />
+  </svg>
+
+  <svg
+    class="hidden fixed bottom-0 w-full h-96 drop-shadow-xl lg:block"
+    fill="none"
+    preserveAspectRatio="none"
+    viewBox="0 0 100 100"
+  >
+    <defs>
+      <linearGradient id="grad2" x1="0" y1="0" x2="100%" y2="0">
+        <stop offset="0%" class="gradient__rails-dark" />
+        <stop offset="60%" class="gradient__rails-light" />
+        <stop offset="100%" class="gradient__rails-dark" />
+      </linearGradient>
+    </defs>
+
+    <polygon fill="url(#grad2)" points="0,80 0,100 100,100 100,50" />
+  </svg>
+</template>

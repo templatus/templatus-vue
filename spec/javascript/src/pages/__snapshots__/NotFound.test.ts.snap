@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound matches snapshot 1`] = `
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-red-800">Page not found</h1>
-<div class="mt-6 mb-20 max-w-3xl text-xl">
-  <p>Something has gone wrong...</p>
+<h1 class="text-4xl font-extrabold tracking-tight text-rails-dark break-words sm:text-5xl lg:text-6xl">Error 404</h1>
+<div class="inline-block p-5 mt-6 mb-20 text-3xl bg-yellow-200 rounded">
+  <p>Page not found</p>
 </div>
 `;

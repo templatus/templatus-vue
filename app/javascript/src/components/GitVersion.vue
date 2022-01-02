@@ -27,7 +27,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div>
-    <code>{{ commitVersion }}</code>
+    <code class="text-sm">{{ commitVersion }}</code>
     <b class="ml-3"><time ref="timeElement" :datetime="commitTime"></time></b>
   </div>
 </template>

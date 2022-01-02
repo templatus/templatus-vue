@@ -13,7 +13,7 @@ defineProps({
 <template>
   <transition-group
     tag="ul"
-    class="relative"
+    class="text-sm md:text-base"
     enter-active-class="transition-all duration-500 ease-out"
     enter-from-class="opacity-0 scale-y-50"
     enter-to-class="opacity-100 scale-y-100"
@@ -22,24 +22,20 @@ defineProps({
     leave-to-class="opacity-0 scale-y-0 absolute"
     move-class="duration-500 ease-out"
   >
-    <li
-      v-for="click in clicks"
-      :key="click.id"
-      class="p-2 mt-2 bg-red-100 rounded"
-    >
+    <li v-for="click in clicks" :key="click.id" class="py-4">
       <p>
-        <span class="px-1 font-mono text-red-100 bg-gray-900 rounded">
+        <span class="py-1 px-2 font-mono text-rose bg-gray-900 rounded">
           {{ click.ip }}
         </span>
 
-        <span class="px-1 ml-2 text-sm font-medium text-gray-900 sm:text-base">
+        <span class="px-1 ml-2 font-medium text-gray-900">
           {{ new Date(Date.parse(click.created_at)).toUTCString() }}
         </span>
       </p>
 
-      <p class="font-extralight text-gray-900">
+      <code class="block mt-4 font-extralight text-gray-500">
         {{ click.user_agent }}
-      </p>
+      </code>
     </li>
   </transition-group>
 </template>

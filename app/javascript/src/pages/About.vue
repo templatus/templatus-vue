@@ -180,19 +180,17 @@ const features: {
 <template>
   <page-title>About</page-title>
 
-  <div class="mt-6 mb-20 max-w-4xl text-xl">
-    <p>
-      Templatus is an opinionated template for web applications with
-      <b>Ruby on Rails</b> and <b>Vue.js 3</b>
-    </p>
-  </div>
+  <p class="mt-6 max-w-4xl text-base lg:text-xl">
+    Templatus is an opinionated template for web applications with
+    <b>Ruby on Rails</b> and <b>Vue.js 3</b>
+  </p>
 
-  <div class="space-y-24">
+  <div class="mt-20 space-y-24">
     <div v-for="group in features" :key="group.name">
       <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
           <h2
-            class="text-base font-semibold tracking-wide text-red-800 uppercase"
+            class="text-base font-semibold tracking-wide text-rails-dark uppercase"
           >
             {{ group.slogan }}
           </h2>
@@ -211,10 +209,12 @@ const features: {
             >
               <dt>
                 <CheckIcon
-                  class="absolute w-6 h-6 text-green-500"
+                  class="absolute w-6 h-6 text-vue"
                   aria-hidden="true"
                 />
-                <p class="ml-9 text-lg font-medium leading-6 text-red-800">
+                <p
+                  class="flex items-center ml-9 text-lg font-medium leading-6 text-rails-dark"
+                >
                   <a
                     :href="feature.href"
                     class="hover:underline"
@@ -226,7 +226,7 @@ const features: {
 
                   <span
                     v-if="feature.version"
-                    class="inline-flex items-center py-0.5 px-2.5 ml-2 text-xs font-medium text-red-900 bg-red-200 rounded-full"
+                    class="inline-flex items-center py-0.5 px-2.5 ml-2 text-xs font-medium text-black bg-rose rounded-full"
                   >
                     {{ feature.version }}
                   </span>

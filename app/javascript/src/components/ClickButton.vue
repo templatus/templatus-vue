@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useClickStore } from '@/stores/click';
 import LoadingAnimation from '@/components/LoadingAnimation.vue';
+
+const store = useClickStore();
 
 defineProps({
   enabled: {
@@ -11,17 +14,11 @@ defineProps({
     required: true,
   },
 });
-
-const emit = defineEmits(['click']);
-
-function onClick() {
-  emit('click');
-}
 </script>
 
 <template>
-  <div class="flex flex-col mt-5 w-full sm:mt-0 sm:w-56 lg:-translate-y-72">
-    <div id="counter" class="p-2 text-center bg-white rounded-t shadow lg:p-5">
+  <div class="flex flex-col">
+    <div id="counter" class="text-center">
       <template v-if="enabled">
         <transition
           mode="out-in"
@@ -32,7 +29,7 @@ function onClick() {
           leave-from-class="scale-100"
           leave-to-class="scale-0"
         >
-          <div :key="count" class="text-5xl">
+          <div :key="count" class="text-5xl font-bold">
             {{ count.toLocaleString() }}
           </div>
         </transition>
@@ -43,13 +40,13 @@ function onClick() {
 
     <button
       type="button"
-      class="py-2 px-4 w-full text-sm font-medium text-red-700 bg-red-100 hover:bg-red-200 rounded-b-md border border-red-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow"
-      @click="onClick()"
+      class="py-2 mt-3 w-full font-medium text-black hover:text-white bg-rose hover:bg-rails-light rounded active:outline-none active:ring-2 active:ring-rails-light active:ring-offset-1"
+      @click="store.sendClick()"
     >
       Click me!
     </button>
 
-    <p class="hidden mt-5 text-sm text-gray-600 sm:block">
+    <p class="hidden mt-3 text-xs text-center text-gray-600 sm:block">
       Tip: Open two browser windows in parallel and see what happens.
     </p>
   </div>
