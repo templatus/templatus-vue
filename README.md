@@ -2,7 +2,7 @@
 [![Cypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/5d6bqs&style=flat-square&logo=cypress)](https://dashboard.cypress.io/projects/5d6bqs/runs)
 [![DeepSource](https://deepsource.io/gh/ledermann/templatus.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/ledermann/templatus/?ref=repository-badge)
 
-# Templatus
+# Templatus (Vue edition)
 
 Templatus is an opinionated template to build web applications with Ruby on Rails and Vue.js 3. It simplifies the process of setting up a new application while following best practices.
 
