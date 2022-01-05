@@ -41,7 +41,7 @@
     "@typescript-eslint/parser": "^5.9.0",
     "@vue/test-utils": "2.0.0-rc.4",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
-    "babel-jest": "^27.4.5",
+    "babel-jest": "^27.4.6",
     "chokidar": "^3.5.2",
     "cypress": "^9.2.0",
     "esbuild-plugin-vue3": "^0.3.0",
