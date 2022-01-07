@@ -113,7 +113,7 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       154.4kb  100.0%
+  ../assets/builds/application.js                                                                                       154.2kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.6kb   24.3%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.4%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.1kb   13.7%
@@ -133,10 +133,10 @@ $ node esbuild.config.js
    ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.9%
    ├ ../../node_modules/@headlessui/vue/dist/_virtual/_rollupPluginBabelHelpers.js                                        1.2kb    0.8%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=template         1.0kb    0.7%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.0kb    0.7%
    ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   973b     0.6%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     960b     0.6%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           950b     0.6%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           972b     0.6%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       969b     0.6%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     869b     0.6%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=template           839b     0.5%
    ├ application.ts                                                                                                       772b     0.5%
    ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      667b     0.4%
@@ -175,9 +175,9 @@ $ node esbuild.config.js
    ├ ../../node_modules/@headlessui/vue/dist/utils/dom.esm.js                                                              88b     0.1%
    ├ src/components/ClickButton.vue                                                                                        81b     0.1%
    ├ src/components/GitVersion.vue                                                                                         80b     0.1%
-   ├ src/components/AppFooter.vue                                                                                          79b     0.0%
-   ├ src/components/AppHeader.vue                                                                                          79b     0.0%
-   ├ src/components/ClickList.vue                                                                                          79b     0.0%
+   ├ src/components/AppFooter.vue                                                                                          79b     0.1%
+   ├ src/components/AppHeader.vue                                                                                          79b     0.1%
+   ├ src/components/ClickList.vue                                                                                          79b     0.1%
    ├ ../../node_modules/timeago.js/esm/register.js                                                                         75b     0.0%
    ├ src/pages/NotFound.vue                                                                                                73b     0.0%
    ├ src/pages/About.vue                                                                                                   70b     0.0%
