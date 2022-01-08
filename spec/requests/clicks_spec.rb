@@ -43,7 +43,7 @@ describe 'Clicks' do
   describe 'GET /index' do
     around { |example| freeze_time(&example) }
 
-    before { Click.create! ip: ip, user_agent: user_agent }
+    before { Click.create! ip:, user_agent: }
 
     it 'save click and returns http success' do
       get '/clicks', headers: { ACCEPT: 'application/json' }

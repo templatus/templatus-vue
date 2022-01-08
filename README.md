@@ -15,7 +15,7 @@ https://github.com/ledermann/templatus-hotwire/
 
 ### Backend
 
-- [Ruby](https://www.ruby-lang.org/de/) 3
+- [Ruby](https://www.ruby-lang.org/de/) 3.1
 - [Ruby on Rails](https://rubyonrails.org/) 7.0
 - [ActionCable](https://guides.rubyonrails.org/action_cable_overview.html) for WebSocket communication
 - [PostgreSQL](https://www.postgresql.org/) for using as SQL database
