@@ -113,7 +113,7 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       154.2kb  100.0%
+  ../assets/builds/application.js                                                                                       154.3kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.6kb   24.3%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.4%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.1kb   13.7%
