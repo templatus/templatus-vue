@@ -6,7 +6,6 @@
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
     "build": "node esbuild.config.js",
     "lint": "eslint --ext .js,.ts,.vue --cache .",
-    "start": "node esbuild-dev.config.js",
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
