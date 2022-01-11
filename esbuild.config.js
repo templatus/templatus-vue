@@ -22,11 +22,11 @@ const path = require('path');
 const clients = [];
 const entryPoints = ['application.ts'];
 const watchDirectories = [
-  "./app/javascript/**/*.js",
-  "./app/javascript/**/*.ts",
-  "./app/javascript/**/*.vue",
-  "./app/views/**/*.html.erb",
-  "./app/assets/builds/**/*.css",
+  './app/javascript/**/*.js',
+  './app/javascript/**/*.ts',
+  './app/javascript/**/*.vue',
+  './app/views/**/*.html.erb',
+  './app/assets/builds/**/*.css',
 ];
 const config = {
   absWorkingDir: path.join(process.cwd(), 'app/javascript'),
@@ -36,7 +36,7 @@ const config = {
   plugins: [rails(), pluginVue()],
   sourcemap: process.env.RAILS_ENV != 'production',
   loader: {
-    ".svg": "file"
+    '.svg': 'file',
   },
   publicPath: '/assets/',
 };
@@ -70,7 +70,7 @@ async function buildAndReload() {
   });
 
   chokidar.watch(watchDirectories).on('all', (_event, path) => {
-    if (path.includes("javascript")) {
+    if (path.includes('javascript')) {
       result.rebuild();
     }
     clients.forEach((res) => res.write('data: update\n\n'));
