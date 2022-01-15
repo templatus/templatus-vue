@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@headlessui/vue": "^1.4.2",
+    "@headlessui/vue": "^1.4.3",
     "@heroicons/vue": "^1.0.5",
     "@honeybadger-io/vue": "^3.0.0",
     "@rails/actioncable": "^7.0.1",
