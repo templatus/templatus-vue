@@ -36,7 +36,7 @@
     "@babel/eslint-parser": "^7.16.5",
     "@prettier/plugin-ruby": "^2.0.0",
     "@types/jest": "^27.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "@vue/test-utils": "2.0.0-rc.4",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
