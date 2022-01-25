@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="hidden fixed inset-0 w-full h-96 drop-shadow-xl lg:block"
+    class="fixed inset-0 hidden h-96 w-full drop-shadow-xl lg:block"
     fill="none"
     preserveAspectRatio="none"
     viewBox="0 0 100 100"
@@ -17,7 +17,7 @@
   </svg>
 
   <svg
-    class="hidden fixed bottom-0 w-full h-96 drop-shadow-xl lg:block"
+    class="fixed bottom-0 hidden h-96 w-full drop-shadow-xl lg:block"
     fill="none"
     preserveAspectRatio="none"
     viewBox="0 0 100 100"

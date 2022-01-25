@@ -35,18 +35,18 @@ defineProps({
         </transition>
         <div class="py-1 uppercase">Clicks</div>
       </template>
-      <LoadingAnimation v-else class="w-full h-20"></LoadingAnimation>
+      <LoadingAnimation v-else class="h-20 w-full"></LoadingAnimation>
     </div>
 
     <button
       type="button"
-      class="py-2 mt-3 w-full font-medium text-black hover:text-white bg-rose hover:bg-rails-light rounded active:outline-none active:ring-2 active:ring-rails-light active:ring-offset-1"
+      class="mt-3 w-full rounded bg-rose py-2 font-medium text-black hover:bg-rails-light hover:text-white active:outline-none active:ring-2 active:ring-rails-light active:ring-offset-1"
       @click="store.sendClick()"
     >
       Click me!
     </button>
 
-    <p class="hidden mt-3 text-xs text-center text-gray-600 sm:block">
+    <p class="mt-3 hidden text-center text-xs text-gray-600 sm:block">
       Tip: Open two browser windows in parallel and see what happens.
     </p>
   </div>

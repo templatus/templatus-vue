@@ -5,7 +5,7 @@ import PageTitle from '@/components/PageTitle.vue';
 <template>
   <page-title>Error 404</page-title>
 
-  <div class="inline-block p-5 mt-6 mb-20 text-3xl bg-yellow-200 rounded">
+  <div class="mt-6 mb-20 inline-block rounded bg-yellow-200 p-5 text-3xl">
     <p>Page not found</p>
   </div>
 </template>
