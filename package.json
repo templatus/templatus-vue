@@ -20,7 +20,7 @@
     "@types/rails__actioncable": "^6.1.6",
     "@vue/compiler-sfc": "^3.2.28",
     "autoprefixer": "^10.4.2",
-    "esbuild": "^0.14.19",
+    "esbuild": "^0.14.20",
     "esbuild-rails": "^1.0.3",
     "pinia": "^2.0.11",
     "postcss": "^8.4.6",
