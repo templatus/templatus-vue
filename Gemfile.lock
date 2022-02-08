@@ -91,13 +91,8 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
-    et-orbi (1.2.6)
-      tzinfo
     ffi (1.15.5)
     formatador (1.1.0)
-    fugit (1.5.2)
-      et-orbi (~> 1.1, >= 1.1.8)
-      raabro (~> 1.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     guard (2.18.0)
@@ -178,7 +173,6 @@ GEM
     public_suffix (4.0.6)
     puma (5.6.1)
       nio4r (~> 2.0)
-    raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.3)
     rack-brotli (1.2.0)
@@ -276,9 +270,6 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
-    sidekiq-cron (1.2.0)
-      fugit (~> 1.1)
-      sidekiq (>= 4.2.1)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -337,7 +328,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   sidekiq
-  sidekiq-cron
   simplecov
   sprockets-exporters_pack
   sprockets-rails
