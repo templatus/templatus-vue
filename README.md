@@ -112,14 +112,14 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-   ../assets/builds/application.js                                                                                       154.8kb  100.0%
+   ../assets/builds/application.js                                                                                       154.6kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.6kb   24.3%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.4%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.1kb   13.6%
-   ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    6.0%
+   ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    5.9%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    5.8%
    ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    5.6%
-   ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    3.7%
+   ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    3.8%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        4.0kb    2.6%
    ├ ../../node_modules/@headlessui/vue/dist/components/tabs/tabs.esm.js                                                  3.9kb    2.5%
    ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.8kb    1.8%
@@ -132,19 +132,19 @@ $ node esbuild.config.js
    ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.9%
    ├ ../../node_modules/@headlessui/vue/dist/_virtual/_rollupPluginBabelHelpers.js                                        1.2kb    0.7%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=template         1.0kb    0.7%
-   ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   973b     0.6%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           972b     0.6%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       969b     0.6%
+   ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   955b     0.6%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     869b     0.5%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=template           839b     0.5%
    ├ application.ts                                                                                                       772b     0.5%
-   ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      667b     0.4%
+   ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      676b     0.4%
    ├ ../../node_modules/@rails/request.js/src/lib/utils.js                                                                577b     0.4%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=template                            514b     0.3%
    ├ src/stores/click.ts                                                                                                  506b     0.3%
    ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.3%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    403b     0.3%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/match.esm.js                                                           396b     0.2%
+   ├ ../../node_modules/@headlessui/vue/dist/utils/match.esm.js                                                           396b     0.3%
    ├ ../../node_modules/@headlessui/vue/dist/hooks/use-resolve-button-type.esm.js                                         373b     0.2%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                         286b     0.2%
    ├ src/use/online-offline.ts                                                                                            279b     0.2%
