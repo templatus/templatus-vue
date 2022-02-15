@@ -112,14 +112,14 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-   ../assets/builds/application.js                                                                                       154.6kb  100.0%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.6kb   24.3%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.4%
+   ../assets/builds/application.js                                                                                       154.8kb  100.0%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               37.7kb   24.4%
+   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   14.3%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.1kb   13.6%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    5.9%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    5.8%
    ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    5.6%
-   ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    3.8%
+   ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    3.7%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        4.0kb    2.6%
    ├ ../../node_modules/@headlessui/vue/dist/components/tabs/tabs.esm.js                                                  3.9kb    2.5%
    ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.8kb    1.8%
@@ -144,7 +144,7 @@ $ node esbuild.config.js
    ├ src/stores/click.ts                                                                                                  506b     0.3%
    ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.3%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    403b     0.3%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/match.esm.js                                                           396b     0.3%
+   ├ ../../node_modules/@headlessui/vue/dist/utils/match.esm.js                                                           396b     0.2%
    ├ ../../node_modules/@headlessui/vue/dist/hooks/use-resolve-button-type.esm.js                                         373b     0.2%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                         286b     0.2%
    ├ src/use/online-offline.ts                                                                                            279b     0.2%
@@ -200,7 +200,7 @@ With multi-stage building and using [DockerRailsBase](https://github.com/lederma
 
 ### Docker image size
 
-The Docker image is based on Alpine Linux and is optimized for minimal size (currently **116 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
+The Docker image is based on Alpine Linux and is optimized for minimal size (currently **113 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
 $ container-diff analyze ghcr.io/ledermann/templatus -n
@@ -208,8 +208,8 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 -----Size-----
 
 Analysis for ghcr.io/ledermann/templatus:
-IMAGE                              DIGEST         SIZE
-ghcr.io/ledermann/templatus        sha256:...   116.3M
+IMAGE                              DIGEST     SIZE
+ghcr.io/ledermann/templatus        sha256:... 113M
 ```
 
 ## Getting started
