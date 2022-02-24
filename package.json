@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@prettier/plugin-ruby": "^2.0.0",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vue/test-utils": "2.0.0-rc.17",
