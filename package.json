@@ -42,7 +42,7 @@
     "@vue/vue3-jest": "^27.0.0-alpha.4",
     "babel-jest": "^27.5.1",
     "chokidar": "^3.5.3",
-    "cypress": "^9.5.0",
+    "cypress": "^9.5.1",
     "esbuild-plugin-vue3": "^0.3.0",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.4.0",
