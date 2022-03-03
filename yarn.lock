@@ -446,10 +446,10 @@
   resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.5.0.tgz#8cd4877d3d344e482073a04ae8e3b7f987bb267c"
   integrity sha512-jAp6XYpqdEv32xhszaj5ejvjaX5qhu20sCbxu7lplePEfZL+4ffabivJBBTZAiPWczqAXmnZWNWG5DOyqjRa4w==
 
-"@heroicons/vue@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.5.tgz#ccef02a9a75e47129a0b8faf5d1d93bd90723264"
-  integrity sha512-idWtp20Fjr7mqnD7EdGDUDi83oWHnx3SwyuQY6GZyF33OApzpBOLxz7xa4t6rPOddGz9tI5RGnndLk+ake7ijQ==
+"@heroicons/vue@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.6.tgz#d8b90734b436eb5a87f40cc300b64a0fb0031f7f"
+  integrity sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==
 
 "@honeybadger-io/js@^3.2.3":
   version "3.2.8"
