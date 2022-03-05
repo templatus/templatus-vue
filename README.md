@@ -112,10 +112,10 @@ $ yarn build
 yarn run v1.22.17
 $ node esbuild.config.js
 
-   ../assets/builds/application.js                                                                                       207.8kb  100.0%
-   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.8kb   29.2%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               39.5kb   19.0%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.2kb   10.7%
+   ../assets/builds/application.js                                                                                       207.5kb  100.0%
+   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   29.1%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               39.4kb   19.0%
+   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.3kb   10.7%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   10.2%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    4.4%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.3%
@@ -129,31 +129,31 @@ $ node esbuild.config.js
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=template                    1.5kb    0.7%
    ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.7%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=template         1.1kb    0.5%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           973b     0.5%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           979b     0.5%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       969b     0.5%
    ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   955b     0.4%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     874b     0.4%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=template           843b     0.4%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     879b     0.4%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=template           847b     0.4%
    ├ application.ts                                                                                                       772b     0.4%
    ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      676b     0.3%
    ├ ../../node_modules/@rails/request.js/src/lib/utils.js                                                                577b     0.3%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=template                            515b     0.2%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=template                            520b     0.2%
    ├ src/stores/click.ts                                                                                                  506b     0.2%
    ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.2%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    405b     0.2%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    406b     0.2%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                         285b     0.1%
    ├ src/use/online-offline.ts                                                                                            278b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=script              268b     0.1%
-   ├ ../../node_modules/@heroicons/vue/outline/esm/CheckIcon.js                                                           252b     0.1%
+   ├ ../../node_modules/@heroicons/vue/outline/esm/CheckIcon.js                                                           255b     0.1%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=template                 245b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=script               243b     0.1%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=template                 243b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             228b     0.1%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=template          224b     0.1%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=template          225b     0.1%
    ├ ../../node_modules/timeago.js/esm/lang/zh_CN.js                                                                      220b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               211b     0.1%
    ├ ../../node_modules/timeago.js/esm/lang/en_US.js                                                                      197b     0.1%
    ├ src/router.ts                                                                                                        188b     0.1%
-   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=template           173b     0.1%
+   ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=template           174b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                165b     0.1%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               163b     0.1%
    ├ ../../node_modules/timeago.js/esm/utils/dom.js                                                                       158b     0.1%
