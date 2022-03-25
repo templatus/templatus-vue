@@ -440,10 +440,10 @@
     "@types/express" "^4.17.13"
     stacktrace-parser "^0.1.10"
 
-"@honeybadger-io/vue@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-3.0.0.tgz#08d024b9a230254b0ad1f8d8c9a83ec9a51445bd"
-  integrity sha512-5zurC8LMMRAlHCb8luNWFya2HTujzW8FQnfl8G6dJtA5EaorpvmkVjKAFOhE8HNP0FCTZZ04/rRRgbqISFQxQw==
+"@honeybadger-io/vue@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-3.0.1.tgz#3044c720247ab5e036dc871951221c6ad10ac736"
+  integrity sha512-H6RwjWBL6695f9KD9K6mZ0XKpYkkl9ySCS6YHr2kQs35HrTvvBt38iUR4cJtM05MPevBa2xiqEqAXrSSC7WiwA==
   dependencies:
     "@honeybadger-io/js" "^3.2.3"
 
