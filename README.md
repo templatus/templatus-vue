@@ -109,20 +109,21 @@ https://github.com/rails/rails/pull/41994
 
 ```
 $ yarn build
-yarn run v1.22.17
+yarn run v1.22.18
 $ node esbuild.config.js
 
-   ../assets/builds/application.js                                                                                       207.5kb  100.0%
-   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   29.1%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               39.4kb   19.0%
+  ../assets/builds/application.js                                                                                       208.6kb  100.0%
+   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   29.0%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               39.4kb   18.9%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.3kb   10.7%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   10.2%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    4.4%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.3%
-   ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.2%
+   ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.1%
    ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    2.8%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        4.0kb    1.9%
    ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.8kb    1.4%
+   ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   2.1kb    1.0%
    ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.0%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=template           2.0kb    0.9%
    ├ ../../node_modules/register-service-worker/index.js                                                                  1.7kb    0.8%
@@ -131,7 +132,6 @@ $ node esbuild.config.js
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=template         1.1kb    0.5%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=template           979b     0.5%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       969b     0.5%
-   ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   955b     0.4%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=template                     879b     0.4%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=template           847b     0.4%
    ├ application.ts                                                                                                       772b     0.4%
@@ -177,7 +177,7 @@ $ node esbuild.config.js
    ├ src/App.vue                                                                                                           62b     0.0%
    └ ../../node_modules/timeago.js/esm/index.js                                                                            30b     0.0%
 
-✨  Done in 0.64s.
+✨  Done in 0.68s.
 ```
 
 ### Network transfer
@@ -201,7 +201,7 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST     SIZE
-ghcr.io/ledermann/templatus        sha256:... 113M
+ghcr.io/ledermann/templatus        sha256:... 114.4M
 ```
 
 ## Getting started
