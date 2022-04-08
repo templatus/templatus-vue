@@ -39,6 +39,10 @@ const config = {
     '.svg': 'file',
   },
   publicPath: '/assets/',
+  define: {
+    __VUE_OPTIONS_API__: false,
+    __VUE_PROD_DEVTOOLS__: false,
+  },
 };
 
 // Build and watch (by chokidar) with reload (for development)
