@@ -16,7 +16,7 @@
 
 const esbuild = require('esbuild');
 const rails = require('esbuild-rails');
-const pluginVue = require('esbuild-plugin-vue3');
+const pluginVue = require('esbuild-plugin-vue-next');
 const path = require('path');
 
 const clients = [];
