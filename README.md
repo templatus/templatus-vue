@@ -99,7 +99,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-208 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+207 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (80 KB)
 - Headless UI (61 KB)
@@ -112,17 +112,17 @@ $ yarn build
 yarn run v1.22.18
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       208.6kb  100.0%
-   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   29.0%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               39.4kb   18.9%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        22.3kb   10.7%
-   ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   10.2%
+  ../assets/builds/application.js                                                                                       206.9kb  100.0%
+   ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   29.2%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               38.7kb   18.7%
+   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   10.4%
+   ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.3kb   10.3%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    4.4%
-   ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.3%
-   ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.1%
+   ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.4%
+   ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.2%
    ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    2.8%
    ├ sfc-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        4.0kb    1.9%
-   ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.8kb    1.4%
+   ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.5kb    1.2%
    ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   2.1kb    1.0%
    ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.0%
    ├ sfc-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=template           2.0kb    0.9%
@@ -177,7 +177,7 @@ $ node esbuild.config.js
    ├ src/App.vue                                                                                                           62b     0.0%
    └ ../../node_modules/timeago.js/esm/index.js                                                                            30b     0.0%
 
-✨  Done in 0.68s.
+✨  Done in 0.66s.
 ```
 
 ### Network transfer
@@ -201,7 +201,7 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST     SIZE
-ghcr.io/ledermann/templatus        sha256:... 114.4M
+ghcr.io/ledermann/templatus        sha256:... 114.5M
 ```
 
 ## Getting started
@@ -221,7 +221,7 @@ cd templatus
 brew bundle
 ```
 
-3. Install and set up [puma-dev](https://github.com/puma/puma-dev) to use HTTPS for development. Do this on macOS:
+3. Set up [puma-dev](https://github.com/puma/puma-dev) to use HTTPS for development. Do this on macOS:
 
 ```bash
 sudo puma-dev -setup
