@@ -5,3 +5,7 @@ declare module '*.vue' {
 }
 
 declare module '@rails/request.js';
+
+declare module '*.svg' {
+  export default '' as string;
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TabGroup, TabList, Tab } from '@headlessui/vue';
+import logoPath from '../../images/logo.svg';
 
 const tabs: {
   name: string;
@@ -15,7 +16,7 @@ const tabs: {
     class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-y-36 lg:space-x-0 lg:p-0"
   >
     <img
-      src="/images/logo.svg"
+      :src="logoPath"
       alt="Logo"
       class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56"
       width="150"

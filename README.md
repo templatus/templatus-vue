@@ -130,7 +130,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.7%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             1.2kb    0.6%
    ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.2kb    0.6%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               1.1kb    0.5%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               1.0kb    0.5%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                        1017b     0.5%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               888b     0.4%
    ├ application.ts                                                                                                       772b     0.4%
@@ -154,6 +154,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/vue-demi/lib/index.mjs                                                                            114b     0.1%
    ├ src/utils/metaContent.ts                                                                                              92b     0.0%
    ├ ../../node_modules/timeago.js/esm/register.js                                                                         75b     0.0%
+   ├ images/logo.svg                                                                                                       35b     0.0%
    ├ ../../node_modules/timeago.js/esm/index.js                                                                            30b     0.0%
    ├ src/components/AppBackground.vue                                                                                      23b     0.0%
    ├ src/components/LoadingAnimation.vue                                                                                   23b     0.0%
@@ -171,7 +172,10 @@ $ node esbuild.config.js
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=script         10b     0.0%
    └ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=script                10b     0.0%
 
-✨  Done in 0.59s.
+  ../assets/builds/logo-Z4NQXJEZ.digested.svg                                                                             495b   100.0%
+   └ images/logo.svg                                                                                                      495b   100.0%
+
+✨  Done in 0.61s.
 ```
 
 ### Network transfer

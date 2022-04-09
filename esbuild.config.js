@@ -37,8 +37,11 @@ const config = {
   sourcemap: process.env.RAILS_ENV != 'production',
   loader: {
     '.svg': 'file',
+    '.png': 'file',
+    '.jpg': 'file',
   },
-  publicPath: '/assets/',
+  publicPath: '/assets',
+  assetNames: '[name]-[hash].digested',
   define: {
     __VUE_OPTIONS_API__: false,
     __VUE_PROD_DEVTOOLS__: false,
