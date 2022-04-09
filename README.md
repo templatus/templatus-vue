@@ -34,18 +34,18 @@ https://github.com/ledermann/templatus-hotwire/
 
 ### Development
 
-- [Puma-dev](https://github.com/puma/puma-dev) for using .test-domain and HTTPS in development
+- [Puma-dev](https://github.com/puma/puma-dev) for using `.test` TLD and `https` in development
 - [Foreman](https://github.com/ddollar/foreman) for starting up the application locally
 - [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
 - [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
-- [Prettier](https://prettier.io/) for auto-formatting JavaScript and Ruby code in Visual Studio Code
+- [Prettier](https://prettier.io/) for auto-formatting TypeScript and Ruby code in Visual Studio Code
 
 ### Linting and testing
 
 - [RuboCop](https://rubocop.org/) for Ruby static code analysis
-- [ESLint](https://eslint.org/) for JavaScript static code analysis
 - [RSpec](https://rspec.info/) for Ruby testing
-- [Jest](https://jestjs.io/) for JavaScript unit testing
+- [ESLint](https://eslint.org/) for TypeScript static code analysis
+- [Jest](https://jestjs.io/) for TypeScript unit testing
 - [Cypress](https://www.cypress.io/) for E2E testing
 
 ### Deployment
@@ -55,7 +55,7 @@ https://github.com/ledermann/templatus-hotwire/
 - [GitHub Actions](https://docs.github.com/en/actions) for testing, linting, and building Docker image
 - [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) configuration for updating dependencies (with auto-merge)
 - Ready for serving assets via CDN like CloudFront
-- [Honeybadger](https://www.honeybadger.io/) for error tracking in Ruby and JavaScript
+- [Honeybadger](https://www.honeybadger.io/) for error tracking in Ruby and TypeScript
 
 ### Production
 
@@ -91,7 +91,7 @@ https://github.com/rails/rails/pull/41994
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/e5RxS9Iq/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/44CRVSqF/)
 
 ### Check-your-website
 
@@ -180,7 +180,7 @@ $ node esbuild.config.js
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **82 KB** of data on the first visit.
+Small footprint: The demo application transfers only **80 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
