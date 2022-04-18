@@ -99,7 +99,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-201 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
+202 KB of compiled JavaScript (minified, uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (80 KB)
 - Headless UI (61 KB)
@@ -112,17 +112,17 @@ $ yarn build
 yarn run v1.22.18
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       201.4kb  100.0%
+  ../assets/builds/application.js                                                                                       201.6kb  100.0%
    ├ ../../node_modules/@headlessui/vue/dist/headlessui.esm.js                                                           60.4kb   30.0%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               34.6kb   17.2%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               34.8kb   17.3%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   10.7%
-   ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.3kb   10.6%
+   ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.3kb   10.5%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    4.6%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.5%
    ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.3%
    ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    2.9%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        5.4kb    2.7%
-   ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.5kb    1.3%
+   ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.5kb    1.2%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=script               2.2kb    1.1%
    ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   2.1kb    1.0%
    ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.0%
