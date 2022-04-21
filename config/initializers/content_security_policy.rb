@@ -10,7 +10,7 @@ Rails.application.configure do
       policy.style_src :self
       policy.script_src :self, :unsafe_eval, :unsafe_inline
       policy.connect_src :self,
-                         "wss://#{ENV['APP_HOST']}",
+                         "wss://#{ENV.fetch('APP_HOST', nil)}",
                          'https://esbuild.templatus.test'
     else
       policy.default_src :none
@@ -33,7 +33,7 @@ Rails.application.configure do
       policy.connect_src(
         *[
           :self,
-          "wss://#{ENV['APP_HOST']}",
+          "wss://#{ENV.fetch('APP_HOST', nil)}",
           (
             if Rails.configuration.x.honeybadger.api_key
               'https://api.honeybadger.io'
