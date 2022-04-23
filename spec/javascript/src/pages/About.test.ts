@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import About from '@/pages/About.vue';
+import AboutPage from '@/pages/AboutPage.vue';
 import * as Vue from 'vue';
 
 describe('About', () => {
@@ -20,7 +20,7 @@ describe('About', () => {
   });
 
   test('matches snapshot', () => {
-    const wrapper = mount(About, {});
+    const wrapper = mount(AboutPage, {});
 
     expect(wrapper.html()).toMatchSnapshot();
   });

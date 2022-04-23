@@ -1,13 +1,13 @@
 import { createWebHashHistory, createRouter, RouteRecordRaw } from 'vue-router';
-import Home from '@/pages/Home.vue';
-import About from '@/pages/About.vue';
+import HomePage from '@/pages/HomePage.vue';
+import AboutPage from '@/pages/AboutPage.vue';
 import NotFound from '@/pages/NotFound.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: HomePage,
     props: {
       name: 'Templatus',
     },
@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: AboutPage,
   },
   { path: '/:pathMatch(.*)', component: NotFound },
 ];
