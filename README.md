@@ -121,7 +121,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    4.5%
    ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    4.3%
    ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.8kb    2.9%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/About.vue?type=script                        5.4kb    2.7%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/AboutPage.vue?type=script                    5.4kb    2.7%
    ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.5kb    1.2%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=script               2.2kb    1.1%
    ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   2.1kb    1.0%
@@ -131,7 +131,7 @@ $ node esbuild.config.js
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             1.2kb    0.6%
    ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.2kb    0.6%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               1.0kb    0.5%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/Home.vue?type=script                        1017b     0.5%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/HomePage.vue?type=script                    1017b     0.5%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               888b     0.4%
    ├ application.ts                                                                                                       772b     0.4%
    ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      676b     0.3%
@@ -165,8 +165,8 @@ $ node esbuild.config.js
    ├ src/components/ClickButton.vue                                                                                        10b     0.0%
    ├ src/components/ClickList.vue                                                                                          10b     0.0%
    ├ src/components/GitVersion.vue                                                                                         10b     0.0%
-   ├ src/pages/About.vue                                                                                                   10b     0.0%
-   ├ src/pages/Home.vue                                                                                                    10b     0.0%
+   ├ src/pages/AboutPage.vue                                                                                               10b     0.0%
+   ├ src/pages/HomePage.vue                                                                                                10b     0.0%
    ├ src/pages/NotFound.vue                                                                                                10b     0.0%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=script            10b     0.0%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=script         10b     0.0%

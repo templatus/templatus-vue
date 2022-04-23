@@ -23,7 +23,7 @@ jest.mock('@/stores/click', () => ({
 }));
 
 import { mount } from '@vue/test-utils';
-import Home from '@/pages/Home.vue';
+import Home from '@/pages/HomePage.vue';
 
 describe('Home', () => {
   const wrapper = mount(Home, {
