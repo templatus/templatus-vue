@@ -9,7 +9,7 @@
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.17.9",
+    "@babel/core": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
     "@headlessui/vue": "^1.6.0",
     "@heroicons/vue": "^1.0.6",
