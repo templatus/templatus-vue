@@ -112,9 +112,9 @@ $ yarn build
 yarn run v1.22.18
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       148.8kb  100.0%
+  ../assets/builds/application.js                                                                                       148.9kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               33.1kb   22.2%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.5kb   14.5%
+   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   14.5%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   14.2%
    ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    6.2%
    ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    6.1%
@@ -184,7 +184,7 @@ $ node esbuild.config.js
   ../assets/builds/logo-Z4NQXJEZ.digested.svg                                                                             495b   100.0%
    └ images/logo.svg                                                                                                      495b   100.0%
 
-✨  Done in 0.24s.
+✨  Done in 0.26s.
 ```
 
 ### Network transfer
