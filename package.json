@@ -6,6 +6,7 @@
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
     "build": "node esbuild.config.js",
     "lint": "eslint --ext .js,.ts,.vue --cache .",
+    "size": "yarn run size-limit",
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@prettier/plugin-ruby": "^2.1.0",
+    "@size-limit/file": "^7.0.8",
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
@@ -55,9 +57,16 @@
     "jest-transform-stub": "^2.0.0",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.10",
+    "size-limit": "^7.0.8",
     "ts-jest": "^27.1.4",
     "vue-tsc": "^0.34.13"
   },
+  "size-limit": [
+    {
+      "limit": "65 kB",
+      "path": "app/assets/builds/application.js"
+    }
+  ],
   "browserslist": [
     "defaults",
     "not IE 11"
