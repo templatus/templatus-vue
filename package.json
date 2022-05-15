@@ -59,7 +59,7 @@
     "prettier-plugin-tailwindcss": "^0.1.10",
     "size-limit": "^7.0.8",
     "ts-jest": "^27.1.4",
-    "vue-tsc": "^0.34.13"
+    "vue-tsc": "^0.34.15"
   },
   "size-limit": [
     {
