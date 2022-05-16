@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.17.12",
-    "@babel/preset-typescript": "^7.16.7",
+    "@babel/preset-typescript": "^7.17.12",
     "@headlessui/vue": "^1.6.1",
     "@heroicons/vue": "^1.0.6",
     "@honeybadger-io/vue": "^3.0.1",
