@@ -83,6 +83,20 @@ group :development do
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false
+
+  ############# Used by prettier-ruby
+  # A drop-in replacement for the prettyprint gem with more functionality. (https://github.com/ruby-syntax-tree/prettier_print)
+  gem 'prettier_print'
+
+  # A parser based on ripper (https://github.com/kddnewton/syntax_tree)
+  gem 'syntax_tree'
+
+  # Syntax Tree support for Haml (https://github.com/ruby-syntax-tree/syntax_tree-haml)
+  gem 'syntax_tree-haml'
+
+  # Syntax Tree support for RBS (https://github.com/ruby-syntax-tree/syntax_tree-rbs)
+  gem 'syntax_tree-rbs'
+  ##################################
 end
 
 group :test do
