@@ -2,7 +2,6 @@ module.exports = {
   verbose: true,
   testURL: 'https://templatus.test/',
   roots: ['spec/javascript'],
-  moduleDirectories: ['node_modules', 'app/javascript'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/app/javascript/src/$1',
     '^@test/(.*)$': '<rootDir>/spec/javascript/src/$1',
