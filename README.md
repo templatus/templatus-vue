@@ -99,7 +99,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-149 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
+150 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (75 KB)
 - Headless UI (10 KB)
@@ -112,12 +112,12 @@ $ yarn build
 yarn run v1.22.18
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       148.9kb  100.0%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               33.1kb   22.2%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   14.5%
+  ../assets/builds/application.js                                                                                       149.6kb  100.0%
+   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               33.2kb   22.2%
+   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   14.4%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   14.2%
-   ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.2kb    6.2%
-   ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.0kb    6.1%
+   ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.3kb    6.2%
+   ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.1kb    6.1%
    ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    5.8%
    ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.9kb    3.9%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/AboutPage.vue?type=script                    5.4kb    3.6%
@@ -133,21 +133,21 @@ $ node esbuild.config.js
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             1.2kb    0.8%
    ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.2kb    0.8%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               1.0kb    0.7%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/HomePage.vue?type=script                    1013b     0.7%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               885b     0.6%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/HomePage.vue?type=script                     1.0kb    0.7%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               902b     0.6%
    ├ application.ts                                                                                                       772b     0.5%
    ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      676b     0.4%
    ├ ../../node_modules/@rails/request.js/src/lib/utils.js                                                                577b     0.4%
+   ├ ../../node_modules/@headlessui/vue/dist/internal/hidden.js                                                           554b     0.4%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                508b     0.3%
    ├ src/stores/click.ts                                                                                                  506b     0.3%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                497b     0.3%
    ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    463b     0.3%
    ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.3%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=script              368b     0.2%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=script              386b     0.3%
+   ├ ../../node_modules/@headlessui/vue/dist/internal/focus-sentinel.js                                                   372b     0.2%
    ├ ../../node_modules/@headlessui/vue/dist/hooks/use-resolve-button-type.js                                             355b     0.2%
-   ├ ../../node_modules/@headlessui/vue/dist/internal/focus-sentinel.js                                                   350b     0.2%
-   ├ ../../node_modules/@headlessui/vue/dist/internal/visually-hidden.js                                                  344b     0.2%
+   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=script                     303b     0.2%
    ├ ../../node_modules/@headlessui/vue/dist/utils/match.js                                                               294b     0.2%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=script                     287b     0.2%
    ├ ../../node_modules/@headlessui/vue/dist/keyboard.js                                                                  284b     0.2%
    ├ src/use/online-offline.ts                                                                                            279b     0.2%
    ├ ../../node_modules/@heroicons/vue/outline/esm/CheckIcon.js                                                           255b     0.2%
