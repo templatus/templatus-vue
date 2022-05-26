@@ -34,7 +34,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.2",
     "@prettier/plugin-ruby": "^3.1.2",
     "@size-limit/file": "^7.0.8",
     "@types/jest": "^27.5.1",
