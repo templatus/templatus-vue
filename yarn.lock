@@ -425,10 +425,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@headlessui/vue@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.2.tgz#7f00d1f1042636ee00beed8eecb873ead65174d3"
-  integrity sha512-xKNPfQya1uKUWaz75klSlg/dqDFNn8/wbY1Kzj0RxEM5t85SiGzs8CG7E8hvsq0Fdx1KRCagCTi6vmGHmK51Dw==
+"@headlessui/vue@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.3.tgz#c1fe5d088a903eaac2e9929cfe126f095ccc43eb"
+  integrity sha512-9wVPPKS0f5ue26/cml+/ZlyHFPna3eJL/gEuWib8e1IBRhh2jUUKr7urmgIB87G1A2sRAK7GiF0VDdZoLEtFQw==
 
 "@heroicons/vue@^1.0.6":
   version "1.0.6"
