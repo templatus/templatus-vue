@@ -112,7 +112,7 @@ $ yarn build
 yarn run v1.22.18
 $ node esbuild.config.js
 
-  ../assets/builds/application.js                                                                                       149.6kb  100.0%
+  ../assets/builds/application.js                                                                                       149.7kb  100.0%
    ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               33.2kb   22.2%
    ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   14.4%
    ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   14.2%
@@ -128,7 +128,7 @@ $ node esbuild.config.js
    ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.4%
    ├ ../../node_modules/@headlessui/vue/dist/utils/focus-management.js                                                    1.8kb    1.2%
    ├ ../../node_modules/register-service-worker/index.js                                                                  1.7kb    1.2%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/render.js                                                              1.4kb    1.0%
+   ├ ../../node_modules/@headlessui/vue/dist/utils/render.js                                                              1.5kb    1.0%
    ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.9%
    ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             1.2kb    0.8%
    ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.2kb    0.8%
@@ -184,7 +184,7 @@ $ node esbuild.config.js
   ../assets/builds/logo-Z4NQXJEZ.digested.svg                                                                             495b   100.0%
    └ images/logo.svg                                                                                                      495b   100.0%
 
-✨  Done in 0.26s.
+✨  Done in 0.24s.
 ```
 
 ### Network transfer
