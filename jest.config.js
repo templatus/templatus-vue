@@ -1,6 +1,5 @@
 module.exports = {
   verbose: true,
-  testURL: 'https://templatus.test/',
   roots: ['spec/javascript'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/app/javascript/src/$1',
@@ -16,5 +15,9 @@ module.exports = {
     '^.+\\.vue$': '@vue/vue3-jest',
   },
   testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    url: 'https://templatus.test/',
+    customExportConditions: ['node', 'node-addons'],
+  },
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
 };
