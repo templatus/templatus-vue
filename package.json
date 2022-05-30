@@ -4,7 +4,6 @@
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint --ext .js,.ts,.vue --cache .",
-    "size": "yarn run size-limit",
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
