@@ -16,11 +16,9 @@ module.exports = {
     },
   },
   content: [
-    './app/**/*.html',
+    './app/**/*.{html,rb}',
     './app/**/*.html.erb',
-    './app/**/*.rb',
-    './app/javascript/**/*.vue',
-    './app/javascript/**/*.js',
+    './app/javascript/**/*.{vue,js,ts}',
   ],
   plugins: [require('@tailwindcss/forms')],
 };
