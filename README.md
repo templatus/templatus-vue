@@ -60,7 +60,7 @@ https://github.com/ledermann/templatus-hotwire/
 ### Production
 
 - [Lograge](https://github.com/roidrage/lograge) for single-line logging
-- Gzip and Brotli compression of all responses (HTML, JSON, assets) using [Rack::Deflater](https://github.com/rack/rack/blob/master/lib/rack/deflater.rb), [Rack::Brotli](https://github.com/marcotc/rack-brotli) and [Sprockets::ExportersPack](https://github.com/hansottowirtz/sprockets-exporters_pack)
+- Gzip and Brotli compression of all responses (HTML, JSON, assets) using [Rack::Deflater](https://github.com/rack/rack/blob/master/lib/rack/deflater.rb), [Rack::Brotli](https://github.com/marcotc/rack-brotli)
 - Fine-tuned Content Security Policy (CSP)
 - Ready for PWA (manifest, service-worker)
 
