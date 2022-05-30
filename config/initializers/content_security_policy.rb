@@ -7,11 +7,18 @@
 Rails.application.configure do
   config.content_security_policy do |policy|
     if Rails.env.development?
-      policy.style_src :self
-      policy.script_src :self, :unsafe_eval, :unsafe_inline
+      policy.style_src :self,
+                       # Allow @vite/client to hot reload style changes
+                       :unsafe_inline
+
+      policy.script_src :self,
+                        :unsafe_inline,
+                        # Allow @vite/client to hot reload JavaScript changes
+                        "https://#{ViteRuby.config.host}"
+
       policy.connect_src :self,
-                         "wss://#{ENV.fetch('APP_HOST', nil)}",
-                         'https://esbuild.templatus.test'
+                         # Allow @vite/client to hot reload CSS changes
+                         "wss://#{ViteRuby.config.host}"
     else
       policy.default_src :none
       policy.font_src(

@@ -40,8 +40,9 @@
     <%= tag :link, href: asset_path('/safari-pinned-tab.svg'),rel: 'mask-icon',        color: '#d30001' %>
     <%= tag :link, href: webmanifest_path, rel: 'manifest' %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_include_tag 'application', integrity: true, crossorigin: 'anonymous', defer: true %>
+    <%= vite_client_tag %>
+    <%= vite_typescript_tag 'application' %>
+    <%= vite_stylesheet_tag 'application' %>
   </head>
 
   <body>

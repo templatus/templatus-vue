@@ -23,7 +23,7 @@ https://github.com/ledermann/templatus-hotwire/
 
 ### Frontend
 
-- [esbuild](https://esbuild.github.io/) for bundling JavaScript
+- [Vite](https://vitejs.dev/) for bundling JavaScript and CSS with Hot Module Replacement (HMR) in development
 - [Vue 3](https://v3.vuejs.org/) as frontend framework
 - [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
 - [Pinia](https://pinia.esm.dev/) for frontend state management
@@ -34,7 +34,7 @@ https://github.com/ledermann/templatus-hotwire/
 
 ### Development
 
-- [Puma-dev](https://github.com/puma/puma-dev) for using `.test` TLD and `https` in development
+- [Puma-dev](https://github.com/puma/puma-dev) for using `.test` TLD (instead of `localhost:3000`) and `https` in development
 - [Foreman](https://github.com/ddollar/foreman) for starting up the application locally
 - [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
 - [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
@@ -87,11 +87,11 @@ https://github.com/rails/rails/pull/41994
 
 ### WebPageTest
 
-[![WebPageTest](docs/web-page-test.png)](https://webpagetest.org/result/211031_BiDcEW_766a9f225f0ae81c9bc42bdff4f726c3/)
+[![WebPageTest](docs/web-page-test.png)](https://www.webpagetest.org/result/220530_BiDcQQ_83b754931114d99469b521e72731eb4d/)
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/44CRVSqF/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/OsUlXu9V/)
 
 ### Check-your-website
 
@@ -108,88 +108,28 @@ https://github.com/rails/rails/pull/41994
 - Pinia (6 KB)
 
 ```
-$ yarn build
-yarn run v1.22.18
-$ node esbuild.config.js
-
-  ../assets/builds/application.js                                                                                       149.7kb  100.0%
-   ├ ../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js                                               33.2kb   22.2%
-   ├ ../../node_modules/vue-router/dist/vue-router.esm-bundler.js                                                        21.6kb   14.4%
-   ├ ../../node_modules/@honeybadger-io/js/dist/browser/honeybadger.js                                                   21.2kb   14.2%
-   ├ ../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js                                                    9.3kb    6.2%
-   ├ ../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js                                                  9.1kb    6.1%
-   ├ ../../node_modules/@rails/actioncable/app/assets/javascripts/actioncable.esm.js                                      8.7kb    5.8%
-   ├ ../../node_modules/pinia/dist/pinia.esm-browser.js                                                                   5.9kb    3.9%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/AboutPage.vue?type=script                    5.4kb    3.6%
-   ├ ../../node_modules/@headlessui/vue/dist/components/tabs/tabs.js                                                      4.5kb    3.0%
-   ├ ../../node_modules/@vue/shared/dist/shared.esm-bundler.js                                                            2.5kb    1.7%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppFooter.vue?type=script               2.2kb    1.5%
-   ├ ../../node_modules/@honeybadger-io/vue/dist/honeybadger-vue.umd.js                                                   2.1kb    1.4%
-   ├ ../../node_modules/@rails/request.js/src/fetch_request.js                                                            2.1kb    1.4%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/focus-management.js                                                    1.8kb    1.2%
-   ├ ../../node_modules/register-service-worker/index.js                                                                  1.7kb    1.2%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/render.js                                                              1.5kb    1.0%
-   ├ ../../node_modules/@rails/request.js/src/fetch_response.js                                                           1.4kb    0.9%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickButton.vue?type=script             1.2kb    0.8%
-   ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=template       1.2kb    0.8%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppHeader.vue?type=script               1.0kb    0.7%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/HomePage.vue?type=script                     1.0kb    0.7%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/ClickList.vue?type=script               902b     0.6%
-   ├ application.ts                                                                                                       772b     0.5%
-   ├ ../../node_modules/timeago.js/esm/utils/date.js                                                                      676b     0.4%
-   ├ ../../node_modules/@rails/request.js/src/lib/utils.js                                                                577b     0.4%
-   ├ ../../node_modules/@headlessui/vue/dist/internal/hidden.js                                                           554b     0.4%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/App.vue?type=script                                508b     0.3%
-   ├ src/stores/click.ts                                                                                                  506b     0.3%
-   ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=template    463b     0.3%
-   ├ ../../node_modules/timeago.js/esm/realtime.js                                                                        409b     0.3%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/GitVersion.vue?type=script              386b     0.3%
-   ├ ../../node_modules/@headlessui/vue/dist/internal/focus-sentinel.js                                                   372b     0.2%
-   ├ ../../node_modules/@headlessui/vue/dist/hooks/use-resolve-button-type.js                                             355b     0.2%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/pages/NotFound.vue?type=script                     303b     0.2%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/match.js                                                               294b     0.2%
-   ├ ../../node_modules/@headlessui/vue/dist/keyboard.js                                                                  284b     0.2%
-   ├ src/use/online-offline.ts                                                                                            279b     0.2%
-   ├ ../../node_modules/@heroicons/vue/outline/esm/CheckIcon.js                                                           255b     0.2%
-   ├ ../../node_modules/timeago.js/esm/lang/zh_CN.js                                                                      220b     0.1%
-   ├ ../../node_modules/timeago.js/esm/lang/en_US.js                                                                      197b     0.1%
-   ├ src/router.ts                                                                                                        188b     0.1%
-   ├ vue-template:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=template           174b     0.1%
-   ├ ../../node_modules/timeago.js/esm/utils/dom.js                                                                       158b     0.1%
-   ├ ../../node_modules/@rails/request.js/src/request_interceptor.js                                                      129b     0.1%
-   ├ ../../node_modules/@rails/request.js/src/verbs.js                                                                    117b     0.1%
-   ├ ../../node_modules/vue-demi/lib/index.mjs                                                                            114b     0.1%
-   ├ src/utils/metaContent.ts                                                                                              92b     0.1%
-   ├ ../../node_modules/@headlessui/vue/dist/utils/dom.js                                                                  86b     0.1%
-   ├ ../../node_modules/timeago.js/esm/register.js                                                                         75b     0.0%
-   ├ ../../node_modules/@headlessui/vue/dist/hooks/use-id.js                                                               60b     0.0%
-   ├ images/logo.svg                                                                                                       35b     0.0%
-   ├ ../../node_modules/timeago.js/esm/index.js                                                                            30b     0.0%
-   ├ src/components/AppBackground.vue                                                                                      23b     0.0%
-   ├ src/components/LoadingAnimation.vue                                                                                   23b     0.0%
-   ├ src/components/PageTitle.vue                                                                                          23b     0.0%
-   ├ src/App.vue                                                                                                           10b     0.0%
-   ├ src/components/AppFooter.vue                                                                                          10b     0.0%
-   ├ src/components/AppHeader.vue                                                                                          10b     0.0%
-   ├ src/components/ClickButton.vue                                                                                        10b     0.0%
-   ├ src/components/ClickList.vue                                                                                          10b     0.0%
-   ├ src/components/GitVersion.vue                                                                                         10b     0.0%
-   ├ src/pages/AboutPage.vue                                                                                               10b     0.0%
-   ├ src/pages/HomePage.vue                                                                                                10b     0.0%
-   ├ src/pages/NotFound.vue                                                                                                10b     0.0%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/AppBackground.vue?type=script            10b     0.0%
-   ├ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/LoadingAnimation.vue?type=script         10b     0.0%
-   └ vue-script:/Users/ledermann/Projects/templatus/app/javascript/src/components/PageTitle.vue?type=script                10b     0.0%
-
-  ../assets/builds/logo-Z4NQXJEZ.digested.svg                                                                             495b   100.0%
-   └ images/logo.svg                                                                                                      495b   100.0%
-
-✨  Done in 0.24s.
+$ RAILS_ENV=production bin/rails assets:precompile
+yarn install v1.22.19
+[1/5] 🔍  Resolving packages...
+success Already up-to-date.
+✨  Done in 0.12s.
+Building with Vite ⚡️
+vite v2.9.9 building for production...
+transforming...
+✓ 334 modules transformed.
+rendering chunks...
+../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
+../../public/vite/manifest-assets.json              0.22 KiB
+../../public/vite/manifest.json                     0.20 KiB
+../../public/vite/assets/application.ab5cb427.css   20.16 KiB / gzip: 4.70 KiB
+../../public/vite/assets/application.1990fd78.js    149.92 KiB / gzip: 56.15 KiB
+../../public/vite/assets/application.1990fd78.js.map 994.81 KiB
+Build with Vite complete: /Users/ledermann/Projects/templatus/public/vite
 ```
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **70 KB** of data on the first visit.
+Small footprint: The demo application transfers only **65 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
@@ -208,7 +148,7 @@ $ container-diff analyze ghcr.io/ledermann/templatus -n
 
 Analysis for ghcr.io/ledermann/templatus:
 IMAGE                              DIGEST     SIZE
-ghcr.io/ledermann/templatus        sha256:... 114.5M
+ghcr.io/ledermann/templatus        sha256:... 114.9M
 ```
 
 ## Getting started
@@ -222,7 +162,7 @@ git clone git@github.com:ledermann/templatus.git
 cd templatus
 ```
 
-2. Install PostgreSQL, Redis, and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
+2. Install PostgreSQL, Redis, and puma-dev (if not already present). On a Mac with Homebrew, run this to install from the `Brewfile`:
 
 ```bash
 brew bundle
@@ -235,9 +175,9 @@ sudo puma-dev -setup
 puma-dev -install
 puma-dev link
 
-# Auto-reload esbuild via puma-dev proxy
-# https://github.com/puma/puma-dev#webpack-dev-server
-echo 8082 > ~/.puma-dev/esbuild.templatus
+# Use Vite via puma-dev proxy
+# Adopted from https://github.com/puma/puma-dev#webpack-dev-server
+echo 3036 > ~/.puma-dev/vite.templatus
 ```
 
 4. Setup the application to install gems and NPM packages and create the database:

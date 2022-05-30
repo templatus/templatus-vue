@@ -45,7 +45,6 @@ yarn-debug.log*
 /docker-volumes
 !/docker-volumes/.keep
 
-/app/assets/builds/*
-!/app/assets/builds/.keep
+/public/vite*
 
 Brewfile.lock.json

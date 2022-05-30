@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import GitVersion from '@/components/GitVersion.vue';
 import { metaContent } from '@/utils/metaContent';
-import useOnlineOffline from '../use/online-offline';
+import useOnlineOffline from '@/use/online-offline';
 
 const git: {
   commitVersion?: string;

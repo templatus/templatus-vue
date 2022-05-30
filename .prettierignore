@@ -1,4 +1,4 @@
 db/schema.rb
 tsconfig.json
 coverage/*
-app/assets/builds/*
+public/*

@@ -107,10 +107,9 @@ const features: {
           'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
       },
       {
-        name: 'esbuild',
-        href: 'https://esbuild.github.io/',
-        description:
-          'An extremely fast JavaScript and CSS bundler and minifier',
+        name: 'Vite',
+        href: 'https://vitejs.dev/',
+        description: "Next generation frontend tooling. It's fast!",
       },
     ],
   },

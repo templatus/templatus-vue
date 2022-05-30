@@ -6,17 +6,8 @@ ruby '3.1.2'
 # Full-stack web application framework. (https://rubyonrails.org)
 gem 'rails', '~> 7.0.3'
 
-# Sprockets Rails integration (https://github.com/rails/sprockets-rails)
-gem 'sprockets-rails'
-
-# Adds multiple exporters to Sprockets (https://github.com/hansottowirtz/sprockets-exporters_pack)
-gem 'sprockets-exporters_pack'
-
-# Bundle and transpile JavaScript in Rails with esbuild, rollup.js, or Webpack. (https://github.com/rails/jsbundling-rails)
-gem 'jsbundling-rails'
-
-# Bundle and process CSS with Tailwind, Bootstrap, PostCSS, Sass in Rails via Node.js. (https://github.com/rails/cssbundling-rails)
-gem 'cssbundling-rails'
+# Use Vite in Rails and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
+gem 'vite_rails'
 
 # Pg is the Ruby interface to the PostgreSQL RDBMS (https://github.com/ged/ruby-pg)
 gem 'pg', '~> 1.1'
