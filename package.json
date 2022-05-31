@@ -50,7 +50,7 @@
     "jest-transform-stub": "^2.0.0",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.11",
-    "rollup": "^2.75.3",
+    "rollup": "^2.75.4",
     "rollup-plugin-gzip": "^3.0.1",
     "size-limit": "^7.0.8",
     "ts-jest": "^28.0.3",
