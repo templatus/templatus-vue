@@ -127,16 +127,6 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
               </svg>
-              <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://headlessui.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">HeadlessUI</a>
-                <!--v-if-->
-              </p>
-            </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.</dd>
-          </div>
-          <div class="relative">
-            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-              </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Heroicons</a>
                 <!--v-if-->
               </p>

@@ -95,12 +95,6 @@ const features: {
           'Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support',
       },
       {
-        name: 'HeadlessUI',
-        href: 'https://headlessui.dev/',
-        description:
-          'Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.',
-      },
-      {
         name: 'Heroicons',
         href: 'https://heroicons.com/',
         description:

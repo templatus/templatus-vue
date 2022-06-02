@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { TabGroup, TabList, Tab } from '@headlessui/vue';
 import logoPath from '../../images/logo.svg';
 
 const tabs: {
@@ -23,25 +22,22 @@ const tabs: {
       height="150"
     />
 
-    <TabGroup>
-      <TabList
-        class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-y-5 lg:space-x-0"
-        as="nav"
+    <nav
+      class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-y-5 lg:space-x-0"
+    >
+      <router-link
+        v-for="tab in tabs"
+        :key="tab.name"
+        :to="tab.href"
+        :class="[
+          tab.href == $route.path
+            ? 'bg-white text-rails-dark lg:bg-rails-dark lg:text-white'
+            : 'bg-transparent text-white hover:bg-slate-300 hover:text-rails-dark lg:bg-white lg:text-rails-dark',
+          'rounded-md px-2 py-1 lg:shadow',
+        ]"
       >
-        <Tab v-for="tab in tabs" :key="tab.name" as="template">
-          <router-link
-            :to="tab.href"
-            :class="[
-              tab.href == $route.path
-                ? 'bg-white text-rails-dark lg:bg-rails-dark lg:text-white'
-                : 'bg-transparent text-white hover:bg-slate-300 hover:text-rails-dark lg:bg-white lg:text-rails-dark',
-              'rounded-md px-2 py-1 lg:shadow',
-            ]"
-          >
-            {{ tab.name }}
-          </router-link>
-        </Tab>
-      </TabList>
-    </TabGroup>
+        {{ tab.name }}
+      </router-link>
+    </nav>
   </header>
 </template>

@@ -28,7 +28,6 @@ https://github.com/ledermann/templatus-hotwire/
 - [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
 - [Pinia](https://pinia.esm.dev/) for frontend state management
 - [Tailwind CSS 3](https://tailwindcss.com/) to not have to write CSS at all
-- [HeadlessUI](https://headlessui.dev/) unstyled, fully accessible UI components designed to integrate with Tailwind CSS
 - [Heroicons](https://heroicons.com/) for SVG icons as Vue components
 - [Rails Request.JS](https://github.com/rails/request.js) for AJAX requests with default headers
 
@@ -99,10 +98,9 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-150 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
+143 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (75 KB)
-- Headless UI (10 KB)
 - Honeybadger (23 KB)
 - ActionCable (9 KB)
 - Pinia (6 KB)
@@ -116,20 +114,20 @@ success Already up-to-date.
 Building with Vite ⚡️
 vite v2.9.9 building for production...
 transforming...
-✓ 334 modules transformed.
+✓ 294 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.22 KiB
 ../../public/vite/manifest.json                     0.20 KiB
 ../../public/vite/assets/application.ab5cb427.css   20.16 KiB / gzip: 4.70 KiB
-../../public/vite/assets/application.1990fd78.js    149.92 KiB / gzip: 56.15 KiB
-../../public/vite/assets/application.1990fd78.js.map 994.81 KiB
+../../public/vite/assets/application.a2479141.js    143.16 KiB / gzip: 53.83 KiB
+../../public/vite/assets/application.a2479141.js.map 986.78 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus/public/vite
 ```
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **65 KB** of data on the first visit.
+Small footprint: The demo application transfers only **62 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
