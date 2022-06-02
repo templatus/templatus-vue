@@ -29,7 +29,17 @@ defineProps({
         </span>
 
         <span class="ml-2 px-1 font-medium text-gray-900">
-          {{ new Date(Date.parse(click.created_at)).toUTCString() }}
+          {{
+            new Date(click.created_at).toLocaleString('en', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              hour: 'numeric',
+              minute: 'numeric',
+              second: 'numeric',
+              hour12: false,
+            })
+          }}
         </span>
       </p>
 

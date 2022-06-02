@@ -16,8 +16,8 @@ exports[`Home matches snapshot 1`] = `
 </div>
 <h2 class="mt-20 text-center text-xl font-medium uppercase tracking-wide text-rails-dark sm:text-left"> Latest clicks </h2>
 <transition-group-stub>
-  <li class="py-4">
-    <p><span class="rounded bg-gray-900 py-1 px-2 font-mono text-rose">1.2.3.4</span><span class="ml-2 px-1 font-medium text-gray-900">Sun, 23 May 2021 09:27:21 GMT</span></p><code class="mt-4 block font-extralight text-gray-500">Jest</code>
+  <li class="py-5">
+    <p><span class="rounded bg-gray-900 py-1 px-2 font-mono text-rose">1.2.3.4</span><span class="ml-2 px-1 font-medium text-gray-900">May 23, 2021, 09:27:21</span></p><code class="mt-4 block font-extralight text-gray-500">Jest</code>
   </li>
 </transition-group-stub>
 `;
