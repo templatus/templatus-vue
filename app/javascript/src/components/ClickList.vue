@@ -14,15 +14,15 @@ defineProps({
   <transition-group
     tag="ul"
     class="text-sm md:text-base"
-    enter-active-class="transition-all duration-500 ease-out"
-    enter-from-class="opacity-0 scale-y-50"
-    enter-to-class="opacity-100 scale-y-100"
-    leave-active-class="transition-all duration-500 ease-out"
-    leave-from-class="opacity-100 scale-y-100 absolute"
-    leave-to-class="opacity-0 scale-y-0 absolute"
-    move-class="duration-500 ease-out"
+    enter-active-class="transition duration-200 ease-in delay-200"
+    enter-from-class="scale-0 bg-rose"
+    enter-to-class="scale-100"
+    leave-active-class="transition duration-200 ease-out"
+    leave-from-class="opacity-100"
+    leave-to-class="opacity-0"
+    move-class="duration-200 ease-in"
   >
-    <li v-for="click in clicks" :key="click.id" class="py-4">
+    <li v-for="click in clicks" :key="click.id" class="py-5">
       <p>
         <span class="rounded bg-gray-900 py-1 px-2 font-mono text-rose">
           {{ click.ip }}
