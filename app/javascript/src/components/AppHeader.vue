@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { assetUrl } from '@/utils/metaContent';
 import logoPath from '../../images/logo.svg';
 
 const tabs: {
@@ -15,7 +16,7 @@ const tabs: {
     class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-y-36 lg:space-x-0 lg:p-0"
   >
     <img
-      :src="logoPath"
+      :src="assetUrl(logoPath)"
       alt="Logo"
       class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56"
       width="150"
