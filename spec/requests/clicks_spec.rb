@@ -15,7 +15,7 @@ describe 'Clicks' do
              ACCEPT: 'application/json',
            }
 
-      expect(response).to have_http_status(:success)
+      expect(response).to have_http_status(:no_content)
       expect(Click.last.user_agent).to eq(user_agent)
     end
 

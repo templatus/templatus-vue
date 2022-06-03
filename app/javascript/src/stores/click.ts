@@ -20,8 +20,8 @@ export const useClickStore = defineStore('click', {
   }),
 
   actions: {
-    async sendClick() {
-      await post('/clicks').catch((err: Error) => alert(err));
+    sendClick() {
+      post('/clicks');
     },
 
     async getClicks() {

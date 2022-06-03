@@ -15,8 +15,6 @@ class ClicksController < ApplicationController
       Click.create! user_agent: request.user_agent,
                     ip: anonymize(request.remote_ip)
     ActionCable.server.broadcast 'clicks_channel', click
-
-    head :ok
   end
 
   private
