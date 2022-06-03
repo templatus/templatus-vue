@@ -9,7 +9,7 @@
       <linearGradient id="grad1" x1="0" y1="0" x2="100%" y2="0">
         <stop offset="0%" class="gradient__rails-dark" />
         <stop offset="30%" class="gradient__rails-light" />
-        <stop offset="100%" class="gradient__rails-dark" />
+        <stop offset="100%" class="gradient__vue" />
       </linearGradient>
     </defs>
 
@@ -26,7 +26,7 @@
       <linearGradient id="grad2" x1="0" y1="0" x2="100%" y2="0">
         <stop offset="0%" class="gradient__rails-dark" />
         <stop offset="60%" class="gradient__rails-light" />
-        <stop offset="100%" class="gradient__rails-dark" />
+        <stop offset="100%" class="gradient__vue" />
       </linearGradient>
     </defs>
 

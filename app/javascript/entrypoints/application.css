@@ -5,6 +5,7 @@
 :root {
   --color-rails-light: theme('colors.rails.light');
   --color-rails-dark: theme('colors.rails.dark');
+  --color-vue: theme('colors.vue.DEFAULT');
 }
 
 .gradient__rails-light {
@@ -13,4 +14,8 @@
 
 .gradient__rails-dark {
   stop-color: var(--color-rails-dark);
+}
+
+.gradient__vue {
+  stop-color: var(--color-vue);
 }
