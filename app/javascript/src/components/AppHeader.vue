@@ -33,8 +33,8 @@ const tabs: {
         :class="[
           tab.href == $route.path
             ? 'bg-white text-rails-dark lg:bg-rails-dark lg:text-white'
-            : 'bg-transparent text-white hover:bg-slate-300 hover:text-rails-dark lg:bg-white lg:text-rails-dark',
-          'rounded-md px-2 py-1 lg:shadow',
+            : 'bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark',
+          'rounded-md px-2 py-1 transition lg:shadow',
         ]"
       >
         {{ tab.name }}

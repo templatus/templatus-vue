@@ -21,7 +21,7 @@ exports[`App matches snapshot 1`] = `
     <polygon fill="url(#grad2)" points="0,80 0,100 100,100 100,50"></polygon>
   </svg>
   <header class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-y-36 lg:space-x-0 lg:p-0 lg:fixed lg:top-10 lg:left-10"><img src="[object Object]" alt="Logo" class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56" width="150" height="150">
-    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-y-5 lg:space-x-0"><a href="/" class="router-link-active router-link-exact-active bg-white text-rails-dark lg:bg-rails-dark lg:text-white rounded-md px-2 py-1 lg:shadow" aria-current="page">Home</a><a href="/about" class="bg-transparent text-white hover:bg-slate-300 hover:text-rails-dark lg:bg-white lg:text-rails-dark rounded-md px-2 py-1 lg:shadow">About</a></nav>
+    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-y-5 lg:space-x-0"><a href="/" class="router-link-active router-link-exact-active bg-white text-rails-dark lg:bg-rails-dark lg:text-white rounded-md px-2 py-1 transition lg:shadow" aria-current="page">Home</a><a href="/about" class="bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark rounded-md px-2 py-1 transition lg:shadow">About</a></nav>
   </header>
   <main class="relative flex-1 bg-white py-5 px-4 shadow-md sm:px-6 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl lg:px-8">Home page</main>
   <footer class="flex flex-wrap items-end justify-between space-y-2 px-4 text-sm text-white sm:px-6 lg:px-0 relative mt-2 mb-6 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:px-0">
