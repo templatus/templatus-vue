@@ -4,6 +4,7 @@ import { metaContent } from '@/utils/metaContent';
 import router from '@/router';
 import App from '@/App.vue';
 import HoneybadgerVue from '@honeybadger-io/vue';
+import plausible from '@/plugins/plausible';
 import { register } from 'register-service-worker';
 
 register('/sw.js', {
@@ -49,5 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   app.use(router);
   app.use(createPinia());
+
+  const plausibleUrl = metaContent('plausible-url');
+  if (plausibleUrl)
+    app.use(plausible, {
+      domain: metaContent('app-host'),
+      hashMode: true,
+      apiHost: plausibleUrl,
+    });
+
   app.mount('#vue-app');
 });

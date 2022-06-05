@@ -165,6 +165,12 @@ const features: {
         href: 'https://www.docker.com/',
         description: 'Dockerized using an optimized base image.',
       },
+      {
+        name: 'Plausible',
+        href: 'https://plausible.io/',
+        description:
+          'Plausible is lightweight and open source web analytics. No cookies and fully compliant with GDPR, CCPA and PECR.',
+      },
     ],
   },
 ];

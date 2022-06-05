@@ -55,6 +55,7 @@ https://github.com/ledermann/templatus-hotwire/
 - [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) configuration for updating dependencies (with auto-merge)
 - Ready for serving assets via CDN like CloudFront
 - [Honeybadger](https://www.honeybadger.io/) for error tracking in Ruby and TypeScript
+- [Plausible](https://plausible.io/) for privacy friendly analytics
 
 ### Production
 
@@ -98,7 +99,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-143 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
+146 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (75 KB)
 - Honeybadger (23 KB)
@@ -114,14 +115,14 @@ success Already up-to-date.
 Building with Vite ⚡️
 vite v2.9.9 building for production...
 transforming...
-✓ 294 modules transformed.
+✓ 298 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.22 KiB
 ../../public/vite/manifest.json                     0.20 KiB
-../../public/vite/assets/application.86eba30c.css   19.43 KiB / gzip: 4.68 KiB
-../../public/vite/assets/application.089b454a.js    143.24 KiB / gzip: 53.89 KiB
-../../public/vite/assets/application.089b454a.js.map 987.04 KiB
+../../public/vite/assets/application.0b46753a.css   19.48 KiB / gzip: 4.67 KiB
+../../public/vite/assets/application.2265d2b7.js    146.19 KiB / gzip: 54.94 KiB
+../../public/vite/assets/application.2265d2b7.js.map 1004.07 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus/public/vite
 ```
 
