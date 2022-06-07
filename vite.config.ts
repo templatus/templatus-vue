@@ -2,8 +2,6 @@ import { defineConfig } from 'vite';
 import RubyPlugin from 'vite-plugin-ruby';
 import FullReload from 'vite-plugin-full-reload';
 import vue from '@vitejs/plugin-vue';
-import { brotliCompressSync } from 'zlib';
-import gzipPlugin from 'rollup-plugin-gzip';
 import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
@@ -11,13 +9,6 @@ export default defineConfig({
     RubyPlugin(),
     FullReload(['config/routes.rb', 'app/views/**/*']),
     vue(),
-    // Create gzip copies of relevant assets
-    gzipPlugin(),
-    // Create brotli copies of relevant assets
-    gzipPlugin({
-      customCompression: (content) => brotliCompressSync(Buffer.from(content)),
-      fileName: '.br',
-    }),
   ],
   resolve: {
     alias: {
