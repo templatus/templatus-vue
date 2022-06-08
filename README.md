@@ -121,8 +121,8 @@ rendering chunks...
 ../../public/vite/manifest-assets.json              0.22 KiB
 ../../public/vite/manifest.json                     0.20 KiB
 ../../public/vite/assets/application.0b46753a.css   19.48 KiB / gzip: 4.67 KiB
-../../public/vite/assets/application.5f6625e9.js    146.31 KiB / gzip: 54.99 KiB
-../../public/vite/assets/application.5f6625e9.js.map 1004.77 KiB
+../../public/vite/assets/application.f1d9eacd.js    146.24 KiB / gzip: 54.96 KiB
+../../public/vite/assets/application.f1d9eacd.js.map 1004.54 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus/public/vite
 ```
 
