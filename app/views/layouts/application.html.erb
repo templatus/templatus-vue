@@ -19,7 +19,10 @@
     <meta name="git-commit-version" content="<%= Rails.configuration.x.git.commit_version %>">
     <meta name="git-commit-time" content="<%= Rails.configuration.x.git.commit_time %>">
 
+    <% if Rails.configuration.x.honeybadger.api_key %>
     <meta name="honeybadger-api-key" content="<%= Rails.configuration.x.honeybadger.api_key %>">
+    <% end %>
+
     <% if Rails.configuration.x.plausible_url %>
     <meta name="plausible-url" content= "<%= Rails.configuration.x.plausible_url %>">
     <% end %>

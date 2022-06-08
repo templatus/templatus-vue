@@ -24,9 +24,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # A Ruby client library for Redis (https://github.com/redis/redis-rb)
 gem 'redis'
 
-# Error reports you can be happy about. (https://github.com/honeybadger-io/honeybadger-ruby)
-gem 'honeybadger'
-
 # Tame Rails' multi-line logging into a single line per request (https://github.com/roidrage/lograge)
 gem 'lograge'
 
@@ -93,4 +90,9 @@ end
 group :test do
   # Code coverage for Ruby (https://github.com/simplecov-ruby/simplecov)
   gem 'simplecov', require: false
+end
+
+group :production do
+  # Error reports you can be happy about. (https://github.com/honeybadger-io/honeybadger-ruby)
+  gem 'honeybadger'
 end
