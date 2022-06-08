@@ -99,7 +99,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-146 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
+147 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (75 KB)
 - Honeybadger (23 KB)
@@ -119,10 +119,12 @@ transforming...
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.22 KiB
-../../public/vite/manifest.json                     0.20 KiB
+../../public/vite/manifest.json                     0.32 KiB
+../../public/vite/assets/application.46f860cd.js    16.18 KiB / gzip: 6.58 KiB
+../../public/vite/assets/application.46f860cd.js.map 25.15 KiB
 ../../public/vite/assets/application.0b46753a.css   19.48 KiB / gzip: 4.67 KiB
-../../public/vite/assets/application.f1d9eacd.js    146.24 KiB / gzip: 54.96 KiB
-../../public/vite/assets/application.f1d9eacd.js.map 1004.54 KiB
+../../public/vite/assets/vendor.bc768583.js         130.42 KiB / gzip: 48.90 KiB
+../../public/vite/assets/vendor.bc768583.js.map     979.48 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus/public/vite
 ```
 
