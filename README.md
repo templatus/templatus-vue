@@ -1,14 +1,19 @@
-[![Build Status](https://github.com/ledermann/templatus/workflows/CI/badge.svg)](https://github.com/ledermann/templatus/actions)
+[![Build Status](https://github.com/templatus/templatus-vue/workflows/CI/badge.svg)](https://github.com/templatus/templatus-vue/actions)
 [![Cypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/5d6bqs&style=flat-square&logo=cypress)](https://dashboard.cypress.io/projects/5d6bqs/runs)
 
 # Templatus (Vue edition)
 
 Templatus is an opinionated template to build web applications with Ruby on Rails and Vue.js 3. It simplifies the process of setting up a new application while following best practices.
 
-Live demo available at https://templatus.ledermann.dev
+Live demo available at https://templatus-vue.ledermann.dev
 
-There is a sister repository that uses Hotwire instead of Vue.js:
-https://github.com/ledermann/templatus-hotwire/
+There are two sister repositories:
+
+Using Hotwire instead of Vue.js (the "DHH way"):
+https://github.com/templatus/templatus-hotwire/
+
+Using Inertia and Svelte.js instead of Vue.js;
+https://github.com/templatus/templatus-inertia/
 
 ## Features / Technology stack
 
@@ -111,20 +116,20 @@ $ RAILS_ENV=production bin/rails assets:precompile
 yarn install v1.22.19
 [1/5] 🔍  Resolving packages...
 success Already up-to-date.
-✨  Done in 0.14s.
+✨  Done in 0.12s.
 Building with Vite ⚡️
-vite v2.9.10 building for production...
+vite v2.9.11 building for production...
 transforming...
 ✓ 298 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.22 KiB
 ../../public/vite/manifest.json                     0.32 KiB
-../../public/vite/assets/application.46f860cd.js    16.18 KiB / gzip: 6.58 KiB
-../../public/vite/assets/application.46f860cd.js.map 25.15 KiB
-../../public/vite/assets/application.ef48f649.css   20.69 KiB / gzip: 4.73 KiB
-../../public/vite/assets/vendor.bc768583.js         130.42 KiB / gzip: 48.90 KiB
-../../public/vite/assets/vendor.bc768583.js.map     979.48 KiB
+../../public/vite/assets/application.e4bb6337.js    16.18 KiB / gzip: 6.58 KiB
+../../public/vite/assets/application.e4bb6337.js.map 25.15 KiB
+../../public/vite/assets/application.17efaf1b.css   21.65 KiB / gzip: 4.74 KiB
+../../public/vite/assets/vendor.3be165db.js         130.58 KiB / gzip: 48.97 KiB
+../../public/vite/assets/vendor.3be165db.js.map     980.28 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
@@ -136,20 +141,20 @@ Small footprint: The demo application transfers only **62 KB** of data on the fi
 
 ### Docker build time
 
-With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/ledermann/templatus/actions)
+With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/templatus/templatus-vue/actions)
 
 ### Docker image size
 
 The Docker image is based on Alpine Linux and is optimized for minimal size (currently **113 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
-$ container-diff analyze ghcr.io/ledermann/templatus -n
+$ container-diff analyze ghcr.io/templatus/templatus-vue -n
 
 -----Size-----
 
-Analysis for ghcr.io/ledermann/templatus:
+Analysis for ghcr.io/templatus/templatus-vue:
 IMAGE                              DIGEST     SIZE
-ghcr.io/ledermann/templatus        sha256:... 114.9M
+ghcr.io/templatus/templatus-vue        sha256:... 114.9M
 ```
 
 ## Getting started
@@ -159,7 +164,7 @@ ghcr.io/ledermann/templatus        sha256:... 114.9M
 1. Clone the repo locally:
 
 ```bash
-git clone git@github.com:ledermann/templatus.git
+git clone git@github.com:templatus/templatus-vue.git
 cd templatus
 ```
 

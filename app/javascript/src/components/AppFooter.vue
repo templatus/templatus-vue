@@ -23,7 +23,7 @@ const { online } = useOnlineOffline();
         class="hover:underline"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/ledermann/templatus"
+        href="https://github.com/templatus/templatus-vue"
       >
         <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor">
           <title>GitHub</title>
