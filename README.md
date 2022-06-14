@@ -81,26 +81,26 @@ This template is developed with optimized performance and security in mind. The 
 
 ### Security headers
 
-[![Security headers](docs/security-headers.png)](https://securityheaders.com/?q=templatus.ledermann.dev&followRedirects=on)
+[![Security headers](docs/security-headers.png)](https://securityheaders.com/?q=templatus-vue.ledermann.dev&followRedirects=on)
 
 What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the next Rails update:
 https://github.com/rails/rails/pull/41994
 
 ### Mozilla Observatory
 
-[![Mozilla Observatory](docs/mozilla-observatory.png)](https://observatory.mozilla.org/analyze/templatus.ledermann.dev)
+[![Mozilla Observatory](docs/mozilla-observatory.png)](https://observatory.mozilla.org/analyze/templatus-vue.ledermann.dev)
 
 ### WebPageTest
 
-[![WebPageTest](docs/web-page-test.png)](https://www.webpagetest.org/result/220603_AiDcD6_63C/)
+[![WebPageTest](docs/web-page-test.png)](https://www.webpagetest.org/result/220614_AiDcC1_27Y/)
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus.ledermann.dev/OsUlXu9V/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus-vue.ledermann.dev/s9xzDzap/)
 
 ### Check-your-website
 
-[![Check-your-website](docs/check-your-website.png)](https://check-your-website.server-daten.de/?q=templatus.ledermann.dev)
+[![Check-your-website](docs/check-your-website.png)](https://check-your-website.server-daten.de/?q=templatus-vue.ledermann.dev)
 
 ### JavaScript size
 
@@ -135,7 +135,7 @@ Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 
 ### Network transfer
 
-Small footprint: The demo application transfers only **62 KB** of data on the first visit.
+Small footprint: The demo application transfers only **69 KB** of data on the first visit.
 
 ![Network](docs/network.png)
 
@@ -154,7 +154,7 @@ $ container-diff analyze ghcr.io/templatus/templatus-vue -n
 
 Analysis for ghcr.io/templatus/templatus-vue:
 IMAGE                              DIGEST     SIZE
-ghcr.io/templatus/templatus-vue        sha256:... 114.9M
+ghcr.io/templatus/templatus-vue        sha256:... 114.8M
 ```
 
 ## Getting started
@@ -165,7 +165,7 @@ ghcr.io/templatus/templatus-vue        sha256:... 114.9M
 
 ```bash
 git clone git@github.com:templatus/templatus-vue.git
-cd templatus
+cd templatus-vue
 ```
 
 2. Install PostgreSQL, Redis, and puma-dev (if not already present). On a Mac with Homebrew, run this to install from the `Brewfile`:
@@ -183,7 +183,7 @@ puma-dev link
 
 # Use Vite via puma-dev proxy
 # Adopted from https://github.com/puma/puma-dev#webpack-dev-server
-echo 3036 > ~/.puma-dev/vite.templatus
+echo 3036 > ~/.puma-dev/vite.templatus-vue
 ```
 
 4. Setup the application to install gems and NPM packages and create the database:
@@ -198,7 +198,7 @@ bin/setup
 bin/dev
 ```
 
-Then open https://templatus.test in your browser.
+Then open https://templatus-vue.test in your browser.
 
 ### Running linters
 

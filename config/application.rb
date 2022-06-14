@@ -32,7 +32,7 @@ module Templatus
 
     config.time_zone = ENV.fetch('TIME_ZONE', 'Berlin')
 
-    config.x.app_host = ENV.fetch('APP_HOST', 'templatus.test')
+    config.x.app_host = ENV.fetch('APP_HOST', 'templatus-vue.test')
 
     config.x.git.commit_version =
       ENV.fetch('COMMIT_VERSION') { `git describe --always`.chomp }

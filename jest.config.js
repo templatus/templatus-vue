@@ -16,7 +16,7 @@ module.exports = {
   },
   testEnvironment: 'jsdom',
   testEnvironmentOptions: {
-    url: 'https://templatus.test/',
+    url: 'https://templatus-vue.test/',
     customExportConditions: ['node', 'node-addons'],
   },
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],

@@ -19,7 +19,7 @@ export default defineConfig({
   },
   server: {
     hmr: {
-      host: 'vite.templatus.test',
+      host: 'vite.templatus-vue.test',
       clientPort: 443,
     },
   },
