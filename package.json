@@ -30,7 +30,7 @@
     "@babel/core": "^7.18.5",
     "@prettier/plugin-ruby": "^3.1.2",
     "@size-limit/file": "^7.0.8",
-    "@types/jest": "^28.1.1",
+    "@types/jest": "^28.1.2",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "@vitejs/plugin-vue": "^2.3.3",
