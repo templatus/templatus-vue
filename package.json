@@ -55,7 +55,7 @@
     "size-limit": "^7.0.8",
     "ts-jest": "^28.0.5",
     "vite": "^2.9.13",
-    "vite-plugin-full-reload": "^1.0.0",
+    "vite-plugin-full-reload": "^1.0.1",
     "vite-plugin-ruby": "^3.0.12",
     "vue-tsc": "^0.38.2"
   },
