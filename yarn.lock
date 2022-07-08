@@ -351,19 +351,17 @@
   resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.6.tgz#d8b90734b436eb5a87f40cc300b64a0fb0031f7f"
   integrity sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==
 
-"@honeybadger-io/js@^4.0.1", "@honeybadger-io/js@^4.0.3":
+"@honeybadger-io/js@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@honeybadger-io/js/-/js-4.0.3.tgz#56eb7d26ee19aa5ff84942080a1cee0299ad784a"
   integrity sha512-v1NVtM+vGO6Xe8ZbHs45V8INCasuQK6xSjgPPVNvaL2xgcAKfJhfMnqIqQWtBeu9cGvfAJusiMUiIge68jkQAA==
   dependencies:
     stacktrace-parser "^0.1.10"
 
-"@honeybadger-io/vue@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-3.1.0.tgz#83e12d22e82a3eacc4b28df8731a4af235352f14"
-  integrity sha512-sSRrw6w64pwhDCTQwYPZl1plM3sFEBfGiDr3cwuNVCzquSZ5niRQI4MkMC+UH21+cO2S6H7ube8UUJ9gazbpTg==
-  dependencies:
-    "@honeybadger-io/js" "^4.0.1"
+"@honeybadger-io/vue@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-3.2.0.tgz#516445163f7b32be0d5af77935963275b4ae503b"
+  integrity sha512-2AjQhiVCaPDFwr6qF41LhGoSiZ68IirrfaO5yvMGw2rHaXm8ef5iq7Ht64mNdq8IzVktbfVb9Luvqs/uRIoLhw==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
