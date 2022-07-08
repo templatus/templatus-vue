@@ -1,5 +1,5 @@
 {
-  "name": "templatus",
+  "name": "templatus-vue",
   "private": true,
   "scripts": {
     "test": "TZ=UTC jest --coverage",
