@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
     "jest": "^28.1.3",
-    "jest-environment-jsdom": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.3",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
     "prettier": "^2.7.1",
