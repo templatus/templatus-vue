@@ -125,11 +125,11 @@ rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.10 KiB
 ../../public/vite/manifest.json                     0.56 KiB
-../../public/vite/assets/application.7dad208e.js    16.16 KiB / gzip: 6.56 KiB
-../../public/vite/assets/application.7dad208e.js.map 27.14 KiB
+../../public/vite/assets/application.5cc43766.js    16.16 KiB / gzip: 6.56 KiB
+../../public/vite/assets/application.5cc43766.js.map 27.14 KiB
 ../../public/vite/assets/application.d89f975f.css   21.47 KiB / gzip: 4.72 KiB
-../../public/vite/assets/vendor.dfb812b7.js         130.27 KiB / gzip: 48.93 KiB
-../../public/vite/assets/vendor.dfb812b7.js.map     986.73 KiB
+../../public/vite/assets/vendor.1ea6b08b.js         130.27 KiB / gzip: 48.93 KiB
+../../public/vite/assets/vendor.1ea6b08b.js.map     986.73 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
