@@ -35,7 +35,7 @@ yarn-error.log
 config/environments/test.rb
 config/environments/development.rb
 jest.config.js
-cypress.config.json
+cypress.config.ts
 spec
 README.md
 bin/bundle
