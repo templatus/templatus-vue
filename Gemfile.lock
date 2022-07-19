@@ -295,7 +295,7 @@ GEM
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.3.0)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.2.0)
     vite_rails (3.0.10)
