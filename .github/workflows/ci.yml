@@ -63,7 +63,7 @@ jobs:
         run: bin/rspec
 
       - name: Run JavaScript tests
-        run: bin/yarn test
+        run: bin/yarn test --coverage
 
       - name: End-to-end tests
         uses: cypress-io/github-action@v4

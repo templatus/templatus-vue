@@ -2,7 +2,7 @@
   "name": "templatus-vue",
   "private": true,
   "scripts": {
-    "test": "TZ=UTC jest --coverage",
+    "test": "TZ=UTC jest",
     "lint": "eslint --ext .js,.ts,.vue --cache .",
     "tsc": "vue-tsc --noEmit"
   },

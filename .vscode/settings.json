@@ -18,6 +18,8 @@
     "**/node_modules": true
   },
 
+  "jest.jestCommandLine": "yarn test",
+
   "eslint.validate": ["javascript", "vue"],
 
   "ruby.lint": {
