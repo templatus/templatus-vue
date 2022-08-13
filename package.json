@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@prettier/plugin-ruby": "^3.2.0",
-    "@size-limit/file": "^8.0.0",
+    "@size-limit/file": "^8.0.1",
     "@types/jest": "^28.1.6",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
@@ -52,7 +52,7 @@
     "prettier-plugin-tailwindcss": "^0.1.13",
     "rollup": "^2.77.2",
     "rollup-plugin-gzip": "^3.0.1",
-    "size-limit": "^8.0.0",
+    "size-limit": "^8.0.1",
     "ts-jest": "^28.0.7",
     "vite": "^3.0.6",
     "vite-plugin-full-reload": "^1.0.4",
