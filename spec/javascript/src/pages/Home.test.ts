@@ -42,8 +42,11 @@ describe('Home', () => {
     expect(title).toEqual('Hello, World!');
   });
 
-  test('matches snapshot', () => {
-    expect(wrapper.html()).toMatchSnapshot();
+  test('renders text', () => {
+    expect(wrapper.text()).toContain('Templatus is');
+    expect(wrapper.text()).toContain('Latest clicks');
+    expect(wrapper.text()).toContain('May 23, 2021');
+    expect(wrapper.text()).toContain('Click me!');
   });
 
   test('executes sendClick', () => {
