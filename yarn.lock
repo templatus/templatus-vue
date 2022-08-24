@@ -357,10 +357,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@heroicons/vue@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-1.0.6.tgz#d8b90734b436eb5a87f40cc300b64a0fb0031f7f"
-  integrity sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==
+"@heroicons/vue@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-2.0.1.tgz#4e69a6aa5d2bd1a1959f2b90d609a7c492712c25"
+  integrity sha512-BsL+W8fAgxml5X22otlZuEpnbJQFKJBokzjEKccGeir1U+acLzTQ4Pqg8J3lTPu0lfTsqJHdMxJUVXzqdDW9Uw==
 
 "@honeybadger-io/core@^4.1.1":
   version "4.1.1"

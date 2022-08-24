@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import * as Vue from 'vue';
-import { CheckIcon } from '@heroicons/vue/outline';
+import { CheckIcon } from '@heroicons/vue/24/outline';
 import { metaContent } from '@/utils/metaContent';
 
 import PageTitle from '@/components/PageTitle.vue';
