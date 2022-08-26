@@ -14,7 +14,7 @@ exports[`About matches snapshot 1`] = `
         <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://www.ruby-lang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby</a>
                 <!--v-if-->
@@ -24,7 +24,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://rubyonrails.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Ruby on Rails</a>
                 <!--v-if-->
@@ -34,7 +34,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://www.postgresql.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">PostgreSQL</a>
                 <!--v-if-->
@@ -44,7 +44,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://puma.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Puma</a>
                 <!--v-if-->
@@ -54,7 +54,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://redis.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Redis</a>
                 <!--v-if-->
@@ -64,7 +64,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://sidekiq.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Sidekiq</a>
                 <!--v-if-->
@@ -87,7 +87,7 @@ exports[`About matches snapshot 1`] = `
         <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://v3.vuejs.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vue</a><span class="ml-2 inline-flex items-center rounded-full bg-rose py-0.5 px-2.5 text-xs font-medium text-black">3.x.y</span></p>
             </dt>
@@ -95,7 +95,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://tailwindcss.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Tailwind CSS 3</a>
                 <!--v-if-->
@@ -105,7 +105,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://www.typescriptlang.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">TypeScript</a>
                 <!--v-if-->
@@ -115,7 +115,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://pinia.esm.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">Pinia</a>
                 <!--v-if-->
@@ -125,7 +125,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://heroicons.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Heroicons</a>
                 <!--v-if-->
@@ -135,7 +135,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://vitejs.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vite</a>
                 <!--v-if-->
@@ -157,7 +157,7 @@ exports[`About matches snapshot 1`] = `
         <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://github.com/features/actions" class="hover:underline" target="_blank" rel="noopener noreferrer">GitHub Actions</a>
                 <!--v-if-->
@@ -167,7 +167,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://rspec.info/" class="hover:underline" target="_blank" rel="noopener noreferrer">RSpec</a>
                 <!--v-if-->
@@ -177,7 +177,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://rubocop.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">RuboCop</a>
                 <!--v-if-->
@@ -187,7 +187,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://jestjs.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Jest</a>
                 <!--v-if-->
@@ -197,7 +197,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://eslint.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">ESLint</a>
                 <!--v-if-->
@@ -207,7 +207,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://cypress.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Cypress</a>
                 <!--v-if-->
@@ -229,7 +229,7 @@ exports[`About matches snapshot 1`] = `
         <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://alpinelinux.org/" class="hover:underline" target="_blank" rel="noopener noreferrer">Alpine Linux</a>
                 <!--v-if-->
@@ -239,7 +239,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://www.docker.com/" class="hover:underline" target="_blank" rel="noopener noreferrer">Docker</a>
                 <!--v-if-->
@@ -249,7 +249,7 @@ exports[`About matches snapshot 1`] = `
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="absolute h-6 w-6 text-vue">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.785 6.785A48.1 48.1 0 0121 4.143"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l6.75 6.75L21 4.5"></path>
               </svg>
               <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"><a href="https://plausible.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Plausible</a>
                 <!--v-if-->
