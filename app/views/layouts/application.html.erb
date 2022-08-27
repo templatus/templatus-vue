@@ -26,7 +26,9 @@
     <% if Rails.configuration.x.plausible_url %>
     <meta name="plausible-url" content= "<%= Rails.configuration.x.plausible_url %>">
     <% end %>
+    <% if Rails.configuration.x.app_host %>
     <meta name="app-host" content= "<%= Rails.configuration.x.app_host %>">
+    <% end %>
 
     <% if Rails.configuration.asset_host.present? %>
     <meta name="asset-host" content="<%= request.protocol %><%= Rails.configuration.asset_host %>">

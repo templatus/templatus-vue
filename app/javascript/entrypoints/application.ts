@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const plausibleUrl = metaContent('plausible-url');
   if (plausibleUrl)
     app.use(plausible, {
-      domain: metaContent('app-host'),
+      domain: metaContent('app-host') || window.location.host,
       hashMode: true,
       apiHost: plausibleUrl,
     });

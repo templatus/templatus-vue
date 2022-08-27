@@ -18,7 +18,11 @@ Rails.application.configure do
 
       policy.connect_src :self,
                          # Allow ActionCable connection
-                         "wss://#{ENV.fetch('APP_HOST', nil)}",
+                         (
+                           if Rails.configuration.x.app_host
+                             "wss://#{Rails.configuration.x.app_host}"
+                           end
+                         ),
                          # Allow @vite/client to hot reload CSS changes
                          "wss://#{ViteRuby.config.host}"
     else
@@ -42,7 +46,11 @@ Rails.application.configure do
       policy.connect_src(
         *[
           :self,
-          "wss://#{ENV.fetch('APP_HOST', nil)}",
+          (
+            if Rails.configuration.x.app_host
+              "wss://#{Rails.configuration.x.app_host}"
+            end
+          ),
           (
             if Rails.configuration.x.honeybadger.api_key
               'https://api.honeybadger.io'
