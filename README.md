@@ -120,16 +120,16 @@ success Already up-to-date.
 Building with Vite ⚡️
 vite v3.0.9 building for production...
 transforming...
-✓ 340 modules transformed.
+✓ 341 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.10 KiB
 ../../public/vite/manifest.json                     0.56 KiB
-../../public/vite/assets/application.b225ae96.js    16.16 KiB / gzip: 6.56 KiB
-../../public/vite/assets/application.b225ae96.js.map 27.93 KiB
+../../public/vite/assets/application.4b0d0f79.js    16.18 KiB / gzip: 6.57 KiB
+../../public/vite/assets/application.4b0d0f79.js.map 27.97 KiB
 ../../public/vite/assets/application.d89f975f.css   21.47 KiB / gzip: 4.72 KiB
-../../public/vite/assets/vendor.ca3adb15.js         147.97 KiB / gzip: 54.96 KiB
-../../public/vite/assets/vendor.ca3adb15.js.map     1068.39 KiB
+../../public/vite/assets/vendor.8759c8ce.js         131.74 KiB / gzip: 49.23 KiB
+../../public/vite/assets/vendor.8759c8ce.js.map     1047.63 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
