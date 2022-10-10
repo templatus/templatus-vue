@@ -55,7 +55,7 @@
     "rollup-plugin-gzip": "^3.0.1",
     "size-limit": "^8.1.0",
     "ts-jest": "^29.0.3",
-    "vite": "^3.1.6",
+    "vite": "^3.1.7",
     "vite-plugin-full-reload": "^1.0.4",
     "vite-plugin-ruby": "^3.1.2",
     "vue-tsc": "^1.0.3"
