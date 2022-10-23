@@ -15,6 +15,16 @@ class ClicksController < ApplicationController
       Click.create! user_agent: request.user_agent,
                     ip: anonymize(request.remote_ip)
     ActionCable.server.broadcast 'clicks_channel', click
+
+    render json: {
+             notice: 'Click was successfully recorded.',
+           },
+           status: :created
+  rescue StandardError
+    render json: {
+             alert: 'Click recording failed!',
+           },
+           status: :unprocessable_entity
   end
 
   private

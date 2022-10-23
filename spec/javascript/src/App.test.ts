@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils';
+import { setActivePinia, createPinia } from 'pinia';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import App from '@/App.vue';
-
-import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,13 +19,20 @@ const router = createRouter({
 });
 
 describe('App', () => {
-  const wrapper = mount(App, {
-    global: {
-      plugins: [router],
-    },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let wrapper: any;
+
+  beforeEach(() => {
+    setActivePinia(createPinia());
+
+    wrapper = mount(App, {
+      global: {
+        plugins: [router],
+      },
+    });
   });
 
-  afterAll(() => {
+  afterEach(() => {
     wrapper.unmount();
   });
 

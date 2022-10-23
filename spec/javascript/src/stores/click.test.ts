@@ -20,7 +20,7 @@ const mockGet = jest.fn().mockResolvedValue({
 
 const mockPost = jest.fn().mockResolvedValue(43);
 
-jest.mock('@rails/request.js', () => ({
+jest.mock('@/use/fetch', () => ({
   __esModule: true,
   get: mockGet,
   post: mockPost,

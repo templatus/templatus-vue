@@ -104,7 +104,7 @@ https://github.com/rails/rails/pull/41994
 
 ### JavaScript size
 
-152 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
+154 KB of compiled JavaScript (after tree-shaking, minified & uncompressed). The largest parts are:
 
 - Vue.js + Vue Router (75 KB)
 - Honeybadger (23 KB)
@@ -120,16 +120,16 @@ success Already up-to-date.
 Building with Vite ⚡️
 vite v3.1.8 building for production...
 transforming...
-✓ 368 modules transformed.
+✓ 665 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.10 KiB
 ../../public/vite/manifest.json                     0.56 KiB
-../../public/vite/assets/application.a07ce41d.js    16.15 KiB / gzip: 6.55 KiB
-../../public/vite/assets/application.a07ce41d.js.map 27.97 KiB
-../../public/vite/assets/application.d0868fcd.css   20.33 KiB / gzip: 4.68 KiB
-../../public/vite/assets/vendor.28ca271d.js         135.98 KiB / gzip: 50.33 KiB
-../../public/vite/assets/vendor.28ca271d.js.map     1039.36 KiB
+../../public/vite/assets/application.a90a3d86.js    17.57 KiB / gzip: 6.96 KiB
+../../public/vite/assets/application.a90a3d86.js.map 32.05 KiB
+../../public/vite/assets/application.b8dceff6.css   21.70 KiB / gzip: 4.89 KiB
+../../public/vite/assets/vendor.dd9ac15e.js         136.75 KiB / gzip: 50.55 KiB
+../../public/vite/assets/vendor.dd9ac15e.js.map     1040.48 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 

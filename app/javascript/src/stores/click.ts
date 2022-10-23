@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { createConsumer, Subscription } from '@rails/actioncable';
-import { get, post } from '@rails/request.js';
+import { get, post } from '@/use/fetch';
 
 export type Click = {
   id: number;
@@ -21,7 +21,7 @@ export const useClickStore = defineStore('click', {
 
   actions: {
     sendClick() {
-      post('/clicks');
+      post('/clicks', { responseKind: 'json' });
     },
 
     async getClicks() {

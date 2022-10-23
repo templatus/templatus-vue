@@ -14,9 +14,6 @@ describe 'Clicks' do
              REMOTE_ADDR: ip,
              ACCEPT: 'application/json',
            }
-
-      expect(response).to have_http_status(:no_content)
-      expect(Click.last.user_agent).to eq(user_agent)
     end
 
     context 'when IPv4' do
@@ -25,7 +22,12 @@ describe 'Clicks' do
       it 'saves click' do
         call(ipv4)
 
+        expect(response).to have_http_status(:created)
+        expect(JSON.parse(response.body)).to include(
+          { 'notice' => 'Click was successfully recorded.' },
+        )
         expect(Click.last.ip).to eq('1.2.3.0')
+        expect(Click.last.user_agent).to eq(user_agent)
       end
     end
 
@@ -35,7 +37,25 @@ describe 'Clicks' do
       it 'saves click' do
         call(ipv6)
 
+        expect(response).to have_http_status(:created)
+        expect(JSON.parse(response.body)).to include(
+          { 'notice' => 'Click was successfully recorded.' },
+        )
         expect(Click.last.ip).to eq('2001:0db8:0:0:0:0:0:0')
+        expect(Click.last.user_agent).to eq(user_agent)
+      end
+    end
+
+    context 'when saving fails' do
+      let(:ipv6) { 'invalid' }
+
+      it 'fails and returns http failure' do
+        call(ipv6)
+
+        expect(response).to have_http_status(:unprocessable_entity)
+        expect(JSON.parse(response.body)).to include(
+          { 'alert' => 'Click recording failed!' },
+        )
       end
     end
   end
