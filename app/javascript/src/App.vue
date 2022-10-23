@@ -2,6 +2,7 @@
 import AppBackground from '@/components/AppBackground.vue';
 import AppHeader from '@/components/AppHeader.vue';
 import AppFooter from '@/components/AppFooter.vue';
+import AppFlash from '@/components/AppFlash.vue';
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import AppFooter from '@/components/AppFooter.vue';
     <app-background />
 
     <app-header class="lg:fixed lg:top-10 lg:left-10" />
+
+    <app-flash></app-flash>
 
     <main
       class="relative flex-1 bg-white py-5 px-4 shadow-md sm:px-6 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl lg:px-8"
