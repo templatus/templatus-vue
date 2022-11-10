@@ -116,20 +116,20 @@ $ RAILS_ENV=production bin/rails assets:precompile
 yarn install v1.22.19
 [1/5] 🔍  Resolving packages...
 success Already up-to-date.
-✨  Done in 0.13s.
+✨  Done in 0.12s.
 Building with Vite ⚡️
-vite v3.1.8 building for production...
+vite v3.2.3 building for production...
 transforming...
 ✓ 665 modules transformed.
 rendering chunks...
 ../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
 ../../public/vite/manifest-assets.json              0.10 KiB
 ../../public/vite/manifest.json                     0.56 KiB
-../../public/vite/assets/application.a90a3d86.js    17.57 KiB / gzip: 6.96 KiB
-../../public/vite/assets/application.a90a3d86.js.map 32.05 KiB
-../../public/vite/assets/application.b8dceff6.css   21.70 KiB / gzip: 4.89 KiB
-../../public/vite/assets/vendor.dd9ac15e.js         136.75 KiB / gzip: 50.55 KiB
-../../public/vite/assets/vendor.dd9ac15e.js.map     1040.48 KiB
+../../public/vite/assets/application.740506d3.js    17.57 KiB / gzip: 6.96 KiB
+../../public/vite/assets/application.740506d3.js.map 32.05 KiB
+../../public/vite/assets/application.35f367e7.css   21.72 KiB / gzip: 4.90 KiB
+../../public/vite/assets/vendor.4eeb7447.js         137.16 KiB / gzip: 50.71 KiB
+../../public/vite/assets/vendor.4eeb7447.js.map     1042.62 KiB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
