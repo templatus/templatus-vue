@@ -1321,10 +1321,10 @@
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.0.4.tgz#70a3ca56809f7aaabb80af2f9c01ae51e1a8ed41"
   integrity sha512-tz4oM+Zn9CYsvtyicsa/AwzKZKL+ITHWkhiu7x+xF77clh2b4Rm+s6xnOgY/sGDWoFWZmtKsE95hxBPkgQQNnQ==
 
-"@rails/request.js@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.6.tgz#5f0347a9f363e50ec45118c7134080490cda81d8"
-  integrity sha512-dfFWaQXitYJ4kxrgGJNhDNXX54/v10YgoJqBMVe6lhqs6a4N9WD7goZJEvwin82TtK8MqUNhwfyisgKwM6dMdg==
+"@rails/request.js@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.7.tgz#d81582092da5dbf78f14745055ce41a0d87835f5"
+  integrity sha512-Eq165HebzkxFlQwyLyn31/X2VT1RP4hGZFOem1rATJehl09vHfMiHJOGZrE40bRcjuN6crIxDVw9G+XySqroOA==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"
