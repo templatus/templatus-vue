@@ -78,6 +78,9 @@ GEM
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
     crass (1.0.6)
+    debug (1.7.0)
+      irb (>= 1.5.0)
+      reline (>= 0.3.1)
     diff-lcs (1.5.0)
     docile (1.4.0)
     dotenv (2.8.1)
@@ -111,6 +114,9 @@ GEM
     honeybadger (5.0.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    io-console (0.5.11)
+    irb (1.5.1)
+      reline (>= 0.3.0)
     json (2.6.2)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -216,6 +222,8 @@ GEM
     redis-client (0.11.2)
       connection_pool
     regexp_parser (2.6.1)
+    reline (0.3.1)
+      io-console (~> 0.5)
     request_store (1.5.1)
       rack (>= 1.4)
     rexml (3.2.5)
@@ -314,6 +322,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  debug
   dotenv-rails
   guard-rspec
   honeybadger
