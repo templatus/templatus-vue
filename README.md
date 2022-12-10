@@ -118,18 +118,17 @@ yarn install v1.22.19
 success Already up-to-date.
 ✨  Done in 0.12s.
 Building with Vite ⚡️
-vite v3.2.5 building for production...
+vite v4.0.0 building for production...
 transforming...
 ✓ 665 modules transformed.
 rendering chunks...
-../../public/vite/assets/logo.44ced38d.svg          0.48 KiB
-../../public/vite/manifest-assets.json              0.10 KiB
-../../public/vite/manifest.json                     0.56 KiB
-../../public/vite/assets/application.c810b817.js    17.57 KiB / gzip: 6.96 KiB
-../../public/vite/assets/application.c810b817.js.map 32.05 KiB
-../../public/vite/assets/application.35f367e7.css   21.72 KiB / gzip: 4.90 KiB
-../../public/vite/assets/vendor.c954e333.js         137.49 KiB / gzip: 50.83 KiB
-../../public/vite/assets/vendor.c954e333.js.map     1044.91 KiB
+computing gzip size...
+../../public/vite/manifest-assets.json               0.10 kB
+../../public/vite/assets/logo.44ced38d.svg           0.50 kB
+../../public/vite/manifest.json                      0.57 kB
+../../public/vite/assets/application.35f367e7.css   22.25 kB │ gzip:  5.02 kB
+../../public/vite/assets/application.b6e08a17.js    18.03 kB │ gzip:  7.16 kB │ map:    32.82 kB
+../../public/vite/assets/vendor.e4fd5ebe.js        140.54 kB │ gzip: 52.02 kB │ map: 1,069.89 kB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
