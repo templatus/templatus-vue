@@ -7,7 +7,7 @@
     "tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.13",
+    "@heroicons/vue": "^2.0.14",
     "@honeybadger-io/js": "^4.9.3",
     "@honeybadger-io/vue": "^4.9.3",
     "@rails/actioncable": "^7.0.4",
