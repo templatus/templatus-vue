@@ -128,8 +128,8 @@ computing gzip size...
 ../../public/vite/assets/logo.44ced38d.svg           0.50 kB
 ../../public/vite/manifest.json                      0.57 kB
 ../../public/vite/assets/application.35f367e7.css   22.25 kB │ gzip:  5.02 kB
-../../public/vite/assets/application.d0c09be4.js    18.03 kB │ gzip:  7.17 kB │ map:    32.82 kB
-../../public/vite/assets/vendor.1dd74006.js        147.65 kB │ gzip: 54.29 kB │ map: 1,100.19 kB
+../../public/vite/assets/application.79d8577a.js    18.03 kB │ gzip:  7.17 kB │ map:    32.82 kB
+../../public/vite/assets/vendor.998b3492.js        147.65 kB │ gzip: 54.29 kB │ map: 1,100.19 kB
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
