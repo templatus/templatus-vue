@@ -23,7 +23,7 @@ describe 'Clicks' do
         call(ipv4)
 
         expect(response).to have_http_status(:created)
-        expect(JSON.parse(response.body)).to include(
+        expect(response.parsed_body).to include(
           { 'notice' => 'Click was successfully recorded.' },
         )
         expect(Click.last.ip).to eq('1.2.3.0')
@@ -38,7 +38,7 @@ describe 'Clicks' do
         call(ipv6)
 
         expect(response).to have_http_status(:created)
-        expect(JSON.parse(response.body)).to include(
+        expect(response.parsed_body).to include(
           { 'notice' => 'Click was successfully recorded.' },
         )
         expect(Click.last.ip).to eq('2001:0db8:0:0:0:0:0:0')
@@ -53,7 +53,7 @@ describe 'Clicks' do
         call(ipv6)
 
         expect(response).to have_http_status(:unprocessable_entity)
-        expect(JSON.parse(response.body)).to include(
+        expect(response.parsed_body).to include(
           { 'alert' => 'Click recording failed!' },
         )
       end
@@ -69,7 +69,7 @@ describe 'Clicks' do
       get '/clicks', headers: { ACCEPT: 'application/json' }
 
       expect(response).to have_http_status(:success)
-      expect(JSON.parse(response.body)).to match(
+      expect(response.parsed_body).to match(
         'total' => 1,
         'items' => [
           hash_including(
