@@ -43,7 +43,7 @@ const { online } = useOnlineOffline();
     <div class="w-full sm:w-auto">
       <span
         v-if="!online"
-        class="rounded bg-white py-px px-1 font-bold uppercase tracking-wide text-red-700"
+        class="rounded bg-white px-1 py-px font-bold uppercase tracking-wide text-red-700"
         >You are offline</span
       >
     </div>

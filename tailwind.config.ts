@@ -1,5 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: [
+    './app/**/*.{html,html.erb,rb}',
+    './app/javascript/**/*.{vue,js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -16,9 +21,5 @@ module.exports = {
       },
     },
   },
-  content: [
-    './app/**/*.{html,html.erb,rb}',
-    './app/javascript/**/*.{vue,js,ts}',
-  ],
   plugins: [require('@tailwindcss/forms')],
-};
+} satisfies Config;
