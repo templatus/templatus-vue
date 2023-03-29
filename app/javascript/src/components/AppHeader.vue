@@ -13,7 +13,7 @@ const tabs: {
 
 <template>
   <header
-    class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-y-36 lg:space-x-0 lg:p-0"
+    class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-x-0 lg:space-y-36 lg:p-0"
   >
     <img
       :src="assetUrl(logoPath)"
@@ -24,7 +24,7 @@ const tabs: {
     />
 
     <nav
-      class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-y-5 lg:space-x-0"
+      class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-x-0 lg:space-y-5"
     >
       <router-link
         v-for="tab in tabs"
@@ -32,8 +32,8 @@ const tabs: {
         :to="tab.href"
         :class="[
           tab.href == $route.path
-            ? 'bg-white text-rails-dark lg:bg-rails-dark lg:text-white'
-            : 'bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark',
+            ? 'text-rails-dark lg:bg-rails-dark bg-white lg:text-white'
+            : 'lg:text-rails-dark bg-transparent text-white hover:scale-105 lg:bg-white',
           'rounded-md px-2 py-1 transition lg:shadow',
         ]"
       >

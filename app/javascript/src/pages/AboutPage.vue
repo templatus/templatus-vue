@@ -189,7 +189,7 @@ const features: {
       <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
           <h2
-            class="text-base font-semibold uppercase tracking-wide text-rails-dark"
+            class="text-rails-dark text-base font-semibold uppercase tracking-wide"
           >
             {{ group.slogan }}
           </h2>
@@ -208,11 +208,11 @@ const features: {
             >
               <dt>
                 <CheckIcon
-                  class="absolute h-6 w-6 text-vue"
+                  class="text-vue absolute h-6 w-6"
                   aria-hidden="true"
                 />
                 <p
-                  class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"
+                  class="text-rails-dark ml-9 flex items-center text-lg font-medium leading-6"
                 >
                   <a
                     :href="feature.href"
@@ -225,14 +225,14 @@ const features: {
 
                   <span
                     v-if="feature.version"
-                    class="ml-2 inline-flex items-center rounded-full bg-rose py-0.5 px-2.5 text-xs font-medium text-black"
+                    class="bg-rose ml-2 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-black"
                   >
                     {{ feature.version }}
                   </span>
                 </p>
               </dt>
               <dd
-                class="mt-2 ml-9 text-base text-gray-600"
+                class="ml-9 mt-2 text-base text-gray-600"
                 v-html="feature.description"
               ></dd>
             </div>
