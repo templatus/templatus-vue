@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App matches snapshot 1`] = `
-<div class="from-rails-dark to-rails-light lg:bg-rose flex min-h-screen flex-col bg-gradient-to-br lg:from-inherit lg:to-inherit"><svg class="fixed inset-0 hidden h-96 w-full drop-shadow-xl lg:block" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">
+<div class="flex min-h-screen flex-col bg-gradient-to-br from-rails-dark to-rails-light lg:bg-rose lg:from-inherit lg:to-inherit"><svg class="fixed inset-0 hidden h-96 w-full drop-shadow-xl lg:block" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">
     <defs>
       <linearGradient id="grad1" x1="0" y1="0" x2="100%" y2="0">
         <stop offset="0%" class="gradient__rails-dark"></stop>
@@ -21,7 +21,7 @@ exports[`App matches snapshot 1`] = `
     <polygon fill="url(#grad2)" points="0,80 0,100 100,100 100,50"></polygon>
   </svg>
   <header class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-x-0 lg:space-y-36 lg:p-0 lg:fixed lg:left-10 lg:top-10"><img src="[object Object]" alt="Logo" class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56" width="150" height="150">
-    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-x-0 lg:space-y-5"><a href="/" class="text-rails-dark lg:bg-rails-dark bg-white lg:text-white rounded-md px-2 py-1 transition lg:shadow">Home</a><a href="/about" class="lg:text-rails-dark bg-transparent text-white hover:scale-105 lg:bg-white rounded-md px-2 py-1 transition lg:shadow">About</a></nav>
+    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-x-0 lg:space-y-5"><a href="/" class="bg-white text-rails-dark lg:bg-rails-dark lg:text-white rounded-md px-2 py-1 transition lg:shadow">Home</a><a href="/about" class="bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark rounded-md px-2 py-1 transition lg:shadow">About</a></nav>
   </header>
   <transition-stub mode="out-in" enteractiveclass="transition duration-500 ease-out" enterfromclass="translate-y-32" entertoclass="translate-y-0" leaveactiveclass="transition duration-500 ease-in" leavefromclass="translate-y-0" leavetoclass="translate-y-32" appear="false" persisted="false" css="true">
     <!--v-if-->

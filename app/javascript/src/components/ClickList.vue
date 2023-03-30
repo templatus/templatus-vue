@@ -24,7 +24,7 @@ defineProps({
   >
     <li v-for="click in clicks" :key="click.id" class="py-5">
       <p>
-        <span class="text-rose rounded bg-gray-900 px-2 py-1 font-mono">
+        <span class="rounded bg-gray-900 px-2 py-1 font-mono text-rose">
           {{ click.ip }}
         </span>
 

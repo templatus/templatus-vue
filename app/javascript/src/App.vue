@@ -7,7 +7,7 @@ import AppFlash from '@/components/AppFlash.vue';
 
 <template>
   <div
-    class="from-rails-dark to-rails-light lg:bg-rose flex min-h-screen flex-col bg-gradient-to-br lg:from-inherit lg:to-inherit"
+    class="flex min-h-screen flex-col bg-gradient-to-br from-rails-dark to-rails-light lg:bg-rose lg:from-inherit lg:to-inherit"
   >
     <app-background />
 
