@@ -23,7 +23,7 @@
     "timeago.js": "^4.0.2",
     "typescript": "^5.0.4",
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.1"
   },
   "version": "0.1.0",
   "devDependencies": {
