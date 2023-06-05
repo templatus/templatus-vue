@@ -113,7 +113,7 @@ GEM
       thor
       tilt
     honeybadger (5.2.1)
-    i18n (1.14.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
     irb (1.6.4)
