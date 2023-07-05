@@ -21,14 +21,12 @@ exports[`App matches snapshot 1`] = `
     <polygon fill="url(#grad2)" points="0,80 0,100 100,100 100,50"></polygon>
   </svg>
   <header class="flex items-end justify-between space-x-5 p-5 lg:flex-col lg:items-stretch lg:space-x-0 lg:space-y-36 lg:p-0 lg:fixed lg:left-10 lg:top-10"><img src="[object Object]" alt="Logo" class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56" width="150" height="150">
-    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-x-0 lg:space-y-5"><a href="/" class="bg-white text-rails-dark lg:bg-rails-dark lg:text-white rounded-md px-2 py-1 transition lg:shadow">Home</a><a href="/about" class="bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark rounded-md px-2 py-1 transition lg:shadow">About</a></nav>
+    <nav class="flex space-x-5 text-center text-lg font-medium uppercase lg:flex-col lg:space-x-0 lg:space-y-5"><a href="/" class="router-link-active router-link-exact-active bg-white text-rails-dark lg:bg-rails-dark lg:text-white rounded-md px-2 py-1 transition lg:shadow" aria-current="page">Home</a><a href="/about" class="bg-transparent text-white hover:scale-105 lg:bg-white lg:text-rails-dark rounded-md px-2 py-1 transition lg:shadow">About</a></nav>
   </header>
   <transition-stub mode="out-in" enteractiveclass="transition duration-500 ease-out" enterfromclass="translate-y-32" entertoclass="translate-y-0" leaveactiveclass="transition duration-500 ease-in" leavefromclass="translate-y-0" leavetoclass="translate-y-32" appear="false" persisted="false" css="true">
     <!--v-if-->
   </transition-stub>
-  <main class="relative flex-1 bg-white px-4 py-5 shadow-md sm:px-6 lg:ml-96 lg:mr-16 lg:mt-10 lg:max-w-5xl lg:rounded-xl lg:px-8">
-    <!---->
-  </main>
+  <main class="relative flex-1 bg-white px-4 py-5 shadow-md sm:px-6 lg:ml-96 lg:mr-16 lg:mt-10 lg:max-w-5xl lg:rounded-xl lg:px-8">Home page</main>
   <footer class="flex flex-wrap items-end justify-between space-y-2 px-4 text-sm text-white sm:px-6 lg:px-0 relative mb-6 mt-2 lg:ml-96 lg:mr-16 lg:max-w-5xl lg:px-0">
     <div class="flex w-full items-end space-x-2 sm:w-auto"><a class="hover:underline" target="_blank" rel="noopener noreferrer" href="https://github.com/templatus/templatus-vue"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor">
           <title>GitHub</title>
