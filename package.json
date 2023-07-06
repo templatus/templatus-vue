@@ -53,7 +53,7 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "size-limit": "^8.2.6",
     "ts-jest": "^29.1.1",
-    "vite": "^4.3.9",
+    "vite": "^4.4.0",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-ruby": "^3.2.2",
     "vue-tsc": "^1.8.4"
