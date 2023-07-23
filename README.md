@@ -42,7 +42,8 @@ https://github.com/templatus/templatus-inertia/
 - [Foreman](https://github.com/ddollar/foreman) for starting up the application locally
 - [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
 - [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
-- [Prettier](https://prettier.io/) for auto-formatting TypeScript and Ruby code in Visual Studio Code
+- [Prettier](https://prettier.io/) for auto-formatting TypeScript code in Visual Studio Code
+- [SyntaxTree](https://github.com/ruby-syntax-tree/syntax_tree) for auto-formatting Ruby code in Visual Studio Code
 
 ### Linting and testing
 
