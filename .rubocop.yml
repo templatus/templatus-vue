@@ -1,3 +1,6 @@
+inherit_from:
+  - node_modules/@prettier/plugin-ruby/rubocop.yml
+
 require:
   - rubocop-performance
   - rubocop-rails
@@ -23,6 +26,12 @@ AllCops:
 
 ### Rails
 
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/SaveBang:
+  Enabled: false
+
 Rails/FilePath:
   EnforcedStyle: arguments
 
@@ -32,9 +41,6 @@ Rails/ApplicationController:
 Rails/SchemaComment:
   Enabled: false
 
-Rails/DefaultScope:
-  Enabled: false
-
 ### Bundler
 
 Bundler/OrderedGems:
@@ -42,32 +48,6 @@ Bundler/OrderedGems:
 
 Bundler/GemVersion:
   Enabled: false
-
-### Metrics
-
-Metrics/AbcSize:
-  Max: 35
-
-Metrics/MethodLength:
-  Max: 50
-
-Metrics/BlockLength:
-  Max: 100
-
-Metrics/ClassLength:
-  Max: 150
-
-Metrics/ParameterLists:
-  Max: 6
-
-### Layout
-
-Layout:
-  Enabled: false
-
-Layout/LineLength:
-  Max: 190
-  AllowedPatterns: ['\A#'] # Allow long comments
 
 ### Style
 
@@ -105,58 +85,43 @@ Style/IfUnlessModifier:
 Style/IpAddresses:
   Enabled: false
 
-Style/DisableCopsWithinSourceCodeDirective:
-  Enabled: false
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-
-Style/MethodCalledOnDoEndBlock:
-  Enabled: false
-
 Style/StringLiterals:
   EnforcedStyle: single_quotes
 
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: single_quotes
 
-Style/QuotedSymbols:
-  EnforcedStyle: single_quotes
-
-Style/FormatStringToken:
-  Exclude:
-    - config/routes.rb
-
 Style/RequireOrder:
   Enabled: false
 
-Style/TrailingCommaInArrayLiteral:
-  Enabled: false
+### Metrics
 
-Style/TrailingCommaInArguments:
-  Enabled: false
+Metrics/BlockLength:
+  Max: 100
 
-Style/TrailingCommaInHashLiteral:
-  Enabled: false
-
-Style/EmptyMethod:
-  EnforcedStyle: expanded
-
-Style/Lambda:
-  Enabled: false
+Metrics/MethodLength:
+  Max: 15
 
 # Lint
 
 Lint/ConstantResolution:
   Enabled: false
 
-# RSpec
-
-RSpec/ExampleLength:
+Lint/NumberConversion:
   Enabled: false
+
+# Performance
+
+Performance/ChainArrayAllocation:
+  Enabled: false
+
+# RSpec
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/ExampleLength:
+  Max: 20
 
 RSpec/AlignLeftLetBrace:
   Enabled: false

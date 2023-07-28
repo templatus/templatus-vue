@@ -71,6 +71,9 @@ group :development do
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false
+
+  # prettier plugin for the Ruby programming language (https://github.com/prettier/plugin-ruby#readme)
+  gem 'prettier'
 end
 
 group :test do

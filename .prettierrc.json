@@ -1,6 +1,8 @@
 {
+  "plugins": ["@prettier/plugin-ruby", "prettier-plugin-tailwindcss"],
   "trailingComma": "all",
   "singleQuote": true,
+  "rubyPlugins": "plugin/single_quotes,plugin/trailing_comma",
   "printWidth": 80,
   "tabWidth": 2
 }
