@@ -63,9 +63,6 @@ group :development, :test do
 end
 
 group :development do
-  # A debugging tool for your Ruby on Rails applications. (https://github.com/rails/web-console)
-  gem 'web-console'
-
   # Profiles loading speed for rack applications. (https://miniprofiler.com)
   # gem 'rack-mini-profiler'
 
