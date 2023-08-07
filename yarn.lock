@@ -2056,10 +2056,10 @@
     "@volar/typescript" "~1.10.0"
     "@vue/language-core" "1.8.8"
 
-"@vue/vue3-jest@^29.2.4":
-  version "29.2.4"
-  resolved "https://registry.yarnpkg.com/@vue/vue3-jest/-/vue3-jest-29.2.4.tgz#6f25d7e03f4ee0c41a6d2b3a2a5995a8be645fde"
-  integrity sha512-mS3sJR4p/qTZKsNdws9DBDJHm7NQDco0tWal89WhA41oosO2VvnrJvDJ1gZaEz5A/OXDj1ouDpEczkSQP4o8eQ==
+"@vue/vue3-jest@^29.2.5":
+  version "29.2.5"
+  resolved "https://registry.yarnpkg.com/@vue/vue3-jest/-/vue3-jest-29.2.5.tgz#9e2570fc3235d50f1511e4936bf2941aa96a23a0"
+  integrity sha512-CyRVpP30t1q0DS4yai5WXNfS/I8T4l3Ln6vdst1MsnlbuBGTAJM/YgnlSkip3v+2Z5NHMfFgEB50D4ZFQMxAjQ==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
     chalk "^2.1.0"
