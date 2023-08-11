@@ -43,6 +43,7 @@ https://github.com/templatus/templatus-inertia/
 - [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
 - [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
 - [Prettier](https://prettier.io/) for auto-formatting TypeScript and Ruby code in Visual Studio Code
+- [annotate](https://github.com/ctran/annotate_models) for annotating models and routes
 
 ### Linting and testing
 

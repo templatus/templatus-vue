@@ -94,6 +94,12 @@ Style/StringLiteralsInInterpolation:
 Style/RequireOrder:
   Enabled: false
 
+### Layout
+
+Layout/LineLength:
+  Max: 190
+  AllowedPatterns: ['\A#'] # Allow long comments
+
 ### Metrics
 
 Metrics/BlockLength:
