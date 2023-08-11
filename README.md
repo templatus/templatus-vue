@@ -39,7 +39,7 @@ https://github.com/templatus/templatus-inertia/
 ### Development
 
 - [Puma-dev](https://github.com/puma/puma-dev) for using `.test` TLD (instead of `localhost:3000`) and `https` in development
-- [Foreman](https://github.com/ddollar/foreman) for starting up the application locally
+- [Overmind](https://github.com/DarthSim/overmind) for starting up the application locally (Procfile handling like Foreman)
 - [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from .env into ENV
 - [TypeScript](https://www.typescriptlang.org/) for writing strongly-typed JavaScript
 - [Prettier](https://prettier.io/) for auto-formatting TypeScript and Ruby code in Visual Studio Code
