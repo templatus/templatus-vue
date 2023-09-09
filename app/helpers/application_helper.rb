@@ -14,7 +14,7 @@ module ApplicationHelper
   private
 
   def alpine_version
-    return unless RUBY_PLATFORM.include?('linux')
+    return if RUBY_PLATFORM.exclude?('linux')
 
     `cat /etc/alpine-release 2>/dev/null`.chomp
   end
