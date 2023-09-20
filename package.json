@@ -14,7 +14,7 @@
     "@rails/request.js": "^0.0.8",
     "@tailwindcss/forms": "^0.5.6",
     "@types/rails__actioncable": "^6.1.6",
-    "autoprefixer": "^10.4.15",
+    "autoprefixer": "^10.4.16",
     "pinia": "^2.1.6",
     "plausible-tracker": "^0.3.8",
     "postcss": "^8.4.30",
