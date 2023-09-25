@@ -1178,10 +1178,10 @@
     "@types/aws-lambda" "^8.10.89"
     "@types/express" "^4.17.13"
 
-"@honeybadger-io/vue@^6.1.6":
-  version "6.1.6"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-6.1.6.tgz#956e806ca3df78885b0dfb446adb55dc1b9345a0"
-  integrity sha512-1I1sTb9CrwW3+Eex4Njj7zRVVyzir73NKw501QeItfEZRzmMyvYmPwp29GzGmn3PHeNTDrQhZ+3fEm4bwIeyFg==
+"@honeybadger-io/vue@^6.1.7":
+  version "6.1.7"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-6.1.7.tgz#fe96c8644fcfaa7c43941b65d1fdb1855eb3e528"
+  integrity sha512-GYRc6GqPD0Zm64X3vfJ/z6JNcOXK8YO/g7ZGve69fiePywEI7FbUZzt+S+2UTKvoUa9xJD1ctYkQjoyJPDJPcw==
 
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"
