@@ -15,7 +15,7 @@
     "@tailwindcss/forms": "^0.5.6",
     "@types/rails__actioncable": "^6.1.7",
     "autoprefixer": "^10.4.16",
-    "pinia": "^2.1.6",
+    "pinia": "^2.1.7",
     "plausible-tracker": "^0.3.8",
     "postcss": "^8.4.31",
     "register-service-worker": "^1.7.2",
