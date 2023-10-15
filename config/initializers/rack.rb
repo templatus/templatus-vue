@@ -5,9 +5,8 @@ Rails.application.config.middleware.delete(Rack::Runtime)
 # list of defaults: https://github.com/rack/rack/blob/master/lib/rack/mime.rb
 Rack::Mime::MIME_TYPES['.webmanifest'] = 'application/manifest+json'
 
-# Enable gzip and brotli compression
+# Enable gzip compression
 Rails.application.config.middleware.use Rack::Deflater
-Rails.application.config.middleware.use Rack::Brotli
 
 if Rails.application.config.x.app_host
   # Allow serving of images, stylesheets, and JavaScripts from the app_host only
