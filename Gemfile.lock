@@ -246,8 +246,8 @@ GEM
     rbs (3.2.2)
     rdoc (6.5.0)
       psych (>= 4.0.0)
-    redis (5.0.7)
-      redis-client (>= 0.9.0)
+    redis (5.0.8)
+      redis-client (>= 0.17.0)
     redis-client (0.17.1)
       connection_pool
     regexp_parser (2.8.2)
