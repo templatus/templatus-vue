@@ -1970,10 +1970,10 @@
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.5.1.tgz#7f71f31e40973eeee65b9a64382b13593fdbd697"
   integrity sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==
 
-"@vue/language-core@1.8.21":
-  version "1.8.21"
-  resolved "https://registry.yarnpkg.com/@vue/language-core/-/language-core-1.8.21.tgz#109d890b341eaefd0c0140b2d7d0fb7ba88093a8"
-  integrity sha512-dKQJc1xfWIZfv6BeXyxz3SSNrC7npJpDIN/VOb1rodAm4o247TElrXOHYAJdV9x1KilaEUo3YbnQE+WA3vQwMw==
+"@vue/language-core@1.8.22":
+  version "1.8.22"
+  resolved "https://registry.yarnpkg.com/@vue/language-core/-/language-core-1.8.22.tgz#1ef62645fb9b1f830c6c84a5586e49e74727b1e3"
+  integrity sha512-bsMoJzCrXZqGsxawtUea1cLjUT9dZnDsy5TuZ+l1fxRMzUGQUG9+Ypq4w//CqpWmrx7nIAJpw2JVF/t258miRw==
   dependencies:
     "@volar/language-core" "~1.10.5"
     "@volar/source-map" "~1.10.5"
@@ -5985,13 +5985,13 @@ vue-template-compiler@^2.7.14:
     de-indent "^1.0.2"
     he "^1.2.0"
 
-vue-tsc@^1.8.21:
-  version "1.8.21"
-  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-1.8.21.tgz#5561fbfca560c0811ffd58340c75943051be44f0"
-  integrity sha512-gc9e+opdeF0zKixaadXT5v2s+x+77oqpuza/vwqDhdDyEeLZUOmZaVeb9noZpkdhFaLq7t7ils/7lFU8E/Hgew==
+vue-tsc@^1.8.22:
+  version "1.8.22"
+  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-1.8.22.tgz#421e73c38b50802a6716ca32ed87b5970c867323"
+  integrity sha512-j9P4kHtW6eEE08aS5McFZE/ivmipXy0JzrnTgbomfABMaVKx37kNBw//irL3+LlE3kOo63XpnRigyPC3w7+z+A==
   dependencies:
     "@volar/typescript" "~1.10.5"
-    "@vue/language-core" "1.8.21"
+    "@vue/language-core" "1.8.22"
     semver "^7.5.4"
 
 vue@^3.3.7:
