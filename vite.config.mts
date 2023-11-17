@@ -5,6 +5,9 @@ import vue from '@vitejs/plugin-vue';
 import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
+  build: {
+    assetsInlineLimit: 0,
+  },
   plugins: [
     splitVendorChunkPlugin(),
     RubyPlugin(),

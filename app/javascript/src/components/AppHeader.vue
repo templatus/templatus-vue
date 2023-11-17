@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { assetUrl } from '@/utils/metaContent';
-import logoPath from '../../images/logo.svg';
+import logoPath from '/images/logo.svg';
 
 const tabs: {
   name: string;
