@@ -1162,21 +1162,22 @@
   resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-2.0.18.tgz#cd55074dfb1915870b680e2757ca4dad6ab3326a"
   integrity sha512-BcTC9nq2TkwNSfQuqo96J7ehx4etezypc2YeTq7KsXWxrcrerhkgjLrxGRBnStN0wrXo0Gv4BInybqz5uBG6Cw==
 
-"@honeybadger-io/core@^6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/core/-/core-6.3.1.tgz#370fbfc91e342febced42de41a0909e4b08c5f99"
-  integrity sha512-kdjZTdFZQViWdzoWGiZuWxivAaCqe4SDHup0Ds5zM6V9ovUWCkdGLpBqKO3av4d+J31ATnYMb23r2gPXfr2sVw==
+"@honeybadger-io/core@^6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/core/-/core-6.4.0.tgz#94955877137ccbfef4df9d8131ae3f45c6978dca"
+  integrity sha512-DTAjqNsdiDv1ilMQMGNQTEZyaNoqSJyW42HN1fW7p3i703czo6G6CT1tMiAUb5hnj/RMztaQK0GFSRUC9KMepw==
   dependencies:
     stacktrace-parser "^0.1.10"
 
-"@honeybadger-io/js@^6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/js/-/js-6.5.3.tgz#f5c2bc4af550bc7812e598be6010ca992aac52a5"
-  integrity sha512-mAg9QsluyYVkVjLOmYQfvIgJZral3C9nrkVBjYJ7iQoGHu/Xk2uabk5BrPzcJpyr9YipqbMmCufRQcsXocDwvg==
+"@honeybadger-io/js@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/js/-/js-6.6.0.tgz#9fed2ca8c6bcba920e97d91b0fbbf4407182989e"
+  integrity sha512-Xf+B/dkxVP3A9lw4MNjYFSpQi9zXbyuoLR5bQEY6lL5XXvhDrVgs12M531yfL7IkE+n+dEp3JR5OvhFU0/gtQQ==
   dependencies:
-    "@honeybadger-io/core" "^6.3.1"
+    "@honeybadger-io/core" "^6.4.0"
     "@types/aws-lambda" "^8.10.89"
     "@types/express" "^4.17.13"
+    cosmiconfig "^8.3.6"
 
 "@honeybadger-io/vue@^6.1.10":
   version "6.1.10"
@@ -2772,6 +2773,16 @@ core-util-is@1.0.2:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==
 
+cosmiconfig@^8.3.6:
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.6.tgz#060a2b871d66dba6c8538ea1118ba1ac16f5fae3"
+  integrity sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==
+  dependencies:
+    import-fresh "^3.3.0"
+    js-yaml "^4.1.0"
+    parse-json "^5.2.0"
+    path-type "^4.0.0"
+
 create-jest@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/create-jest/-/create-jest-29.7.0.tgz#a355c5b3cb1e1af02ba177fe7afd7feee49a5320"
@@ -3830,7 +3841,7 @@ ignore@^5.2.0, ignore@^5.2.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.4.tgz#a291c0c6178ff1b960befe47fcdec301674a6324"
   integrity sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==
 
-import-fresh@^3.2.1:
+import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.3.0.tgz#37162c25fcb9ebaa2e6e53d5b4d88ce17d9e0c2b"
   integrity sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==
