@@ -31,7 +31,7 @@
     "@babel/preset-env": "^7.23.3",
     "@prettier/plugin-ruby": "^4.0.2",
     "@size-limit/file": "^11.0.0",
-    "@types/jest": "^29.5.8",
+    "@types/jest": "^29.5.9",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "@vitejs/plugin-vue": "^4.5.0",
