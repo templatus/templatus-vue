@@ -114,23 +114,23 @@ https://github.com/rails/rails/pull/41994
 
 ```
 $ RAILS_ENV=production bin/rails assets:precompile
-yarn install v1.22.19
+yarn install v1.22.21
 [1/5] 🔍  Resolving packages...
 success Already up-to-date.
-✨  Done in 0.12s.
+✨  Done in 0.13s.
 Building with Vite ⚡️
-vite v4.5.0 building for production...
+vite v5.0.2 building for production...
 transforming...
 ✓ 665 modules transformed.
 rendering chunks...
 computing gzip size...
-../../public/vite/manifest-assets.json               0.10 kB │ gzip:  0.09 kB
-../../public/vite/assets/logo-44ced38d.svg           0.50 kB │ gzip:  0.30 kB
-../../public/vite/manifest.json                      0.57 kB │ gzip:  0.22 kB
-../../public/vite/assets/application-d006e5dc.css   23.05 kB │ gzip:  5.12 kB
-../../public/vite/assets/application-8b7b87c5.js    18.03 kB │ gzip:  7.17 kB │ map:    32.82 kB
-../../public/vite/assets/vendor-f6d0049e.js        152.28 kB │ gzip: 55.32 kB │ map: 1,002.83 kB
-✓ built in 1.35s
+../../public/vite/.vite/manifest-assets.json         0.10 kB │ gzip:  0.09 kB
+../../public/vite/assets/logo-yKKzxvdz.svg           0.50 kB │ gzip:  0.30 kB
+../../public/vite/.vite/manifest.json                0.57 kB │ gzip:  0.23 kB
+../../public/vite/assets/application-nrIkq1EU.css   23.41 kB │ gzip:  5.17 kB
+../../public/vite/assets/application-Pl61D_-O.js    18.03 kB │ gzip:  7.18 kB │ map:    32.82 kB
+../../public/vite/assets/vendor-mRmjA4BJ.js        152.43 kB │ gzip: 55.36 kB │ map: 1,003.84 kB
+✓ built in 1.07s
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
