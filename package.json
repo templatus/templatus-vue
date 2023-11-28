@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
-    "@prettier/plugin-ruby": "^4.0.2",
+    "@prettier/plugin-ruby": "^4.0.3",
     "@size-limit/file": "^11.0.0",
     "@types/jest": "^29.5.10",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
