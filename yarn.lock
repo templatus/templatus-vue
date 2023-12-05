@@ -1180,10 +1180,10 @@
     "@types/express" "^4.17.13"
     cosmiconfig "^8.3.6"
 
-"@honeybadger-io/vue@^6.1.13":
-  version "6.1.13"
-  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-6.1.13.tgz#a2ea3759e3bbdad9b1d304c40ac22cb1a13191a6"
-  integrity sha512-xt66Sr9aLxrLvgbL7YIlM1YZ04ajShNghxxr+fSswill0ytUllwQI4czAHmZy6cawOFyBJu9/9m4cJDGA6d0Bw==
+"@honeybadger-io/vue@^6.1.14":
+  version "6.1.14"
+  resolved "https://registry.yarnpkg.com/@honeybadger-io/vue/-/vue-6.1.14.tgz#7dfa6a9c6c28af435bf929be58c19ae091370f45"
+  integrity sha512-tzyyCKpK7WzHeM6tneFGIzw+dfGB5/qzqTxUUaZxE3vLP5BW9J2JVAZ0SCL1BLxnvx6bXZ4uYcX6tl/43patZw==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
