@@ -113,13 +113,13 @@ https://github.com/rails/rails/pull/41994
 - Pinia (6 KB)
 
 ```
-$ RAILS_ENV=production bin/rails assets:precompile
+$ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 yarn install v1.22.21
 [1/5] 🔍  Resolving packages...
 success Already up-to-date.
 ✨  Done in 0.13s.
 Building with Vite ⚡️
-vite v5.0.2 building for production...
+vite v5.0.10 building for production...
 transforming...
 ✓ 665 modules transformed.
 rendering chunks...
@@ -127,10 +127,10 @@ computing gzip size...
 ../../public/vite/.vite/manifest-assets.json         0.10 kB │ gzip:  0.09 kB
 ../../public/vite/assets/logo-yKKzxvdz.svg           0.50 kB │ gzip:  0.30 kB
 ../../public/vite/.vite/manifest.json                0.57 kB │ gzip:  0.23 kB
-../../public/vite/assets/application-nrIkq1EU.css   23.41 kB │ gzip:  5.17 kB
-../../public/vite/assets/application-Pl61D_-O.js    18.03 kB │ gzip:  7.18 kB │ map:    32.82 kB
-../../public/vite/assets/vendor-mRmjA4BJ.js        152.43 kB │ gzip: 55.36 kB │ map: 1,003.84 kB
-✓ built in 1.07s
+../../public/vite/assets/application-BZMCwCdA.css   23.47 kB │ gzip:  5.17 kB
+../../public/vite/assets/application-z0MwXQAo.js    18.03 kB │ gzip:  7.18 kB │ map:    32.82 kB
+../../public/vite/assets/vendor-r4IEyKOQ.js        157.76 kB │ gzip: 56.51 kB │ map: 1,024.84 kB
+✓ built in 1.06s
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
