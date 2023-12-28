@@ -1639,9 +1639,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@honeybadger-io/js@npm:^6.7.2":
-  version: 6.7.2
-  resolution: "@honeybadger-io/js@npm:6.7.2"
+"@honeybadger-io/js@npm:^6.8.0":
+  version: 6.8.0
+  resolution: "@honeybadger-io/js@npm:6.8.0"
   dependencies:
     "@honeybadger-io/core": "npm:^6.5.1"
     "@types/aws-lambda": "npm:^8.10.89"
@@ -1649,7 +1649,7 @@ __metadata:
     cosmiconfig: "npm:^8.3.6"
   bin:
     honeybadger-checkins-sync: dist/server/check-ins-sync-exec.js
-  checksum: 00f3d158809779dce2418f9a342a3218366f104472748b2827c30abe2ff6cd5ea12ca310611e503a7710fd814b3f484f072fda6d475dd87560d6491935964a65
+  checksum: 2aa1a5f9b70159202364f448b9cdabaaab845b84bbc533156b80319d6063e00c18a25ba2c48bc8b42e24a27a5f7aff8850d674d61975385f77cf031e4d44dba5
   languageName: node
   linkType: hard
 
@@ -8437,7 +8437,7 @@ __metadata:
     "@babel/core": "npm:^7.23.6"
     "@babel/preset-env": "npm:^7.23.6"
     "@heroicons/vue": "npm:^2.1.1"
-    "@honeybadger-io/js": "npm:^6.7.2"
+    "@honeybadger-io/js": "npm:^6.8.0"
     "@honeybadger-io/vue": "npm:^6.1.16"
     "@prettier/plugin-ruby": "npm:^4.0.4"
     "@rails/actioncable": "npm:^7.1.2"
