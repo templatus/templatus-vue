@@ -114,22 +114,18 @@ https://github.com/rails/rails/pull/41994
 
 ```
 $ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
-yarn install v1.22.21
-[1/5] 🔍  Resolving packages...
-success Already up-to-date.
-✨  Done in 0.13s.
 Building with Vite ⚡️
 vite v5.0.10 building for production...
 transforming...
-✓ 665 modules transformed.
+✓ 673 modules transformed.
 rendering chunks...
 computing gzip size...
 ../../public/vite/.vite/manifest-assets.json         0.10 kB │ gzip:  0.09 kB
 ../../public/vite/assets/logo-yKKzxvdz.svg           0.50 kB │ gzip:  0.30 kB
 ../../public/vite/.vite/manifest.json                0.57 kB │ gzip:  0.23 kB
-../../public/vite/assets/application-BZMCwCdA.css   23.47 kB │ gzip:  5.17 kB
-../../public/vite/assets/application-z0MwXQAo.js    18.03 kB │ gzip:  7.18 kB │ map:    32.82 kB
-../../public/vite/assets/vendor-r4IEyKOQ.js        157.76 kB │ gzip: 56.51 kB │ map: 1,024.84 kB
+../../public/vite/assets/application-LxZJa7zo.css   23.43 kB │ gzip:  5.14 kB
+../../public/vite/assets/application-WryeC5Eh.js    18.03 kB │ gzip:  7.18 kB │ map:    32.80 kB
+../../public/vite/assets/vendor-Q4xbXwKi.js        159.21 kB │ gzip: 56.99 kB │ map: 1,036.84 kB
 ✓ built in 1.06s
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
