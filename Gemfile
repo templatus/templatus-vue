@@ -35,6 +35,9 @@ gem 'rack-canonical-host'
 # Simple, efficient background processing for Ruby (https://sidekiq.org)
 gem 'sidekiq'
 
+# Ruby on Rails applications monitoring (https://www.rorvswild.com)
+gem 'rorvswild'
+
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', platforms: %i[mri windows]

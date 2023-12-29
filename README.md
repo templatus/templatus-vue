@@ -61,6 +61,7 @@ https://github.com/templatus/templatus-inertia/
 - [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) configuration for updating dependencies (with auto-merge)
 - Ready for serving assets via CDN like CloudFront
 - [Honeybadger](https://www.honeybadger.io/) for error tracking in Ruby and TypeScript
+- [RorVsWild](https://www.rorvswild.com/) for performance monitoring
 - [Plausible](https://plausible.io/) for privacy friendly analytics
 
 ### Production
