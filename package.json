@@ -29,7 +29,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "@babel/core": "^7.23.6",
-    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-env": "^7.23.7",
     "@prettier/plugin-ruby": "^4.0.4",
     "@size-limit/file": "^11.0.1",
     "@types/jest": "^29.5.11",
