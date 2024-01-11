@@ -4485,20 +4485,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.19.2":
-  version: 9.19.2
-  resolution: "eslint-plugin-vue@npm:9.19.2"
+"eslint-plugin-vue@npm:^9.20.0":
+  version: 9.20.0
+  resolution: "eslint-plugin-vue@npm:9.20.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     natural-compare: "npm:^1.4.0"
     nth-check: "npm:^2.1.1"
     postcss-selector-parser: "npm:^6.0.13"
     semver: "npm:^7.5.4"
-    vue-eslint-parser: "npm:^9.3.1"
+    vue-eslint-parser: "npm:^9.4.0"
     xml-name-validator: "npm:^4.0.0"
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-  checksum: b48c24c6aedcc690b4cf2432df08da62fba6f7f24f3a561d7a2592329c2c947d01ba51b49b2a256f65735dcea4f73b44cbffc0c373fec461f49f5a02a078561e
+  checksum: 9361ef2e2058717d7b79d2b78b300c70022469ff0e91c6181ee2243d0769c68cbd78bf72ffe25c93cc49373cef61f2ad2e6ac42cb8a7e6af9d54c21911eea7a5
   languageName: node
   linkType: hard
 
@@ -8293,7 +8293,7 @@ __metadata:
     eslint-plugin-cypress: "npm:^2.15.1"
     eslint-plugin-jest: "npm:^27.6.1"
     eslint-plugin-prettier: "npm:^5.1.2"
-    eslint-plugin-vue: "npm:^9.19.2"
+    eslint-plugin-vue: "npm:^9.20.0"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     jest-serializer-vue: "npm:^3.1.0"
@@ -8828,7 +8828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-eslint-parser@npm:^9.3.1":
+"vue-eslint-parser@npm:^9.4.0":
   version: 9.4.0
   resolution: "vue-eslint-parser@npm:9.4.0"
   dependencies:
