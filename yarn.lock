@@ -1638,17 +1638,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@honeybadger-io/js@npm:^6.8.2":
-  version: 6.8.2
-  resolution: "@honeybadger-io/js@npm:6.8.2"
+"@honeybadger-io/js@npm:^6.8.3":
+  version: 6.8.3
+  resolution: "@honeybadger-io/js@npm:6.8.3"
   dependencies:
     "@honeybadger-io/core": "npm:^6.5.1"
     "@types/aws-lambda": "npm:^8.10.89"
     "@types/express": "npm:^4.17.13"
-    cosmiconfig: "npm:^8.3.6"
   bin:
     honeybadger-checkins-sync: dist/server/check-ins-sync-exec.js
-  checksum: fa84a61ee8d0f43166599267cf1541643abfa46672d2e0e39949a60dcfe96553a422b4a9cfbd3eac2982f7869a12e61b013f2a9837b9dfd971179da3bd82cf11
+  checksum: b0e74b88b92ab6f80047e666033d76c3d442386f926feb42d2e5e8b1454c08b4f41db1b0abde4c0e22994e158de916cb6f2512ac78f6aa4f7fdb876a30fff551
   languageName: node
   linkType: hard
 
@@ -3872,23 +3871,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^8.3.6":
-  version: 8.3.6
-  resolution: "cosmiconfig@npm:8.3.6"
-  dependencies:
-    import-fresh: "npm:^3.3.0"
-    js-yaml: "npm:^4.1.0"
-    parse-json: "npm:^5.2.0"
-    path-type: "npm:^4.0.0"
-  peerDependencies:
-    typescript: ">=4.9.5"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 0382a9ed13208f8bfc22ca2f62b364855207dffdb73dc26e150ade78c3093f1cf56172df2dd460c8caf2afa91c0ed4ec8a88c62f8f9cd1cf423d26506aa8797a
-  languageName: node
-  linkType: hard
-
 "create-jest@npm:^29.7.0":
   version: 29.7.0
   resolution: "create-jest@npm:29.7.0"
@@ -5364,7 +5346,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.2.1, import-fresh@npm:^3.3.0":
+"import-fresh@npm:^3.2.1":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
   dependencies:
@@ -8268,7 +8250,7 @@ __metadata:
     "@babel/core": "npm:^7.23.7"
     "@babel/preset-env": "npm:^7.23.8"
     "@heroicons/vue": "npm:^2.1.1"
-    "@honeybadger-io/js": "npm:^6.8.2"
+    "@honeybadger-io/js": "npm:^6.8.3"
     "@honeybadger-io/vue": "npm:^6.1.19"
     "@prettier/plugin-ruby": "npm:^4.0.4"
     "@rails/actioncable": "npm:^7.1.3"
