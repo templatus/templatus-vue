@@ -1652,13 +1652,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@honeybadger-io/vue@npm:^6.1.18":
-  version: 6.1.18
-  resolution: "@honeybadger-io/vue@npm:6.1.18"
+"@honeybadger-io/vue@npm:^6.1.19":
+  version: 6.1.19
+  resolution: "@honeybadger-io/vue@npm:6.1.19"
   peerDependencies:
     "@honeybadger-io/js": ^6.2.0
     vue: 2.x || 3.x
-  checksum: b407be41aba7a3f11c588bdeba274e1ada1e33a7f21cfa4532b5d6b087f7705f3da08038347b2a438dc4042db4a42ca5106560034d4950969a5250650654f9a5
+  checksum: 6b19f6120a292eb1d41fe143b1904a8818dd80567fedb929c7596abf6738737f1a43d51425e6a200ceef9b91df9e23edad6d9570ad17ac07e6f20d57a2156f17
   languageName: node
   linkType: hard
 
@@ -8269,7 +8269,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.23.8"
     "@heroicons/vue": "npm:^2.1.1"
     "@honeybadger-io/js": "npm:^6.8.2"
-    "@honeybadger-io/vue": "npm:^6.1.18"
+    "@honeybadger-io/vue": "npm:^6.1.19"
     "@prettier/plugin-ruby": "npm:^4.0.4"
     "@rails/actioncable": "npm:^7.1.3"
     "@rails/request.js": "npm:^0.0.9"
