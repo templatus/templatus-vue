@@ -40,6 +40,9 @@ Rails/ApplicationController:
 Rails/SchemaComment:
   Enabled: false
 
+Rails/EnvironmentVariableAccess:
+  AllowReads: true
+
 ### Bundler
 
 Bundler/OrderedGems:
