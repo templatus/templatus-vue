@@ -24,7 +24,7 @@ class ClicksController < ApplicationController
     render json: {
              alert: 'Click recording failed!',
            },
-           status: :unprocessable_entity
+           status: :unprocessable_content
   end
 
   private
