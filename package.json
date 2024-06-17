@@ -51,7 +51,7 @@
     "jest-serializer-vue": "^3.1.0",
     "jest-transform-stub": "^2.0.0",
     "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.4",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "rollup": "^4.18.0",
     "size-limit": "^11.1.4",
     "ts-jest": "^29.1.5",
