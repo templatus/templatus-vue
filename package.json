@@ -33,7 +33,7 @@
     "@prettier/plugin-ruby": "^4.0.4",
     "@size-limit/file": "^11.1.4",
     "@types/jest": "^29.5.12",
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/test-utils": "^2.4.6",
