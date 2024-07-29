@@ -370,7 +370,6 @@ DEPENDENCIES
   pg (~> 1.1)
   prettier
   puma (>= 5.0)
-  rack (!= 3.1.5)
   rack-canonical-host
   rack-cors
   rails (~> 7.1.1)
@@ -392,4 +391,4 @@ RUBY VERSION
    ruby 3.3.4p94
 
 BUNDLED WITH
-   2.5.15
+   2.5.16

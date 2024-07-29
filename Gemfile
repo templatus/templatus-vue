@@ -38,10 +38,6 @@ gem 'sidekiq'
 # Ruby on Rails applications monitoring (https://www.rorvswild.com)
 gem 'rorvswild'
 
-# A modular Ruby webserver interface. (https://github.com/rack/rack)
-# https://github.com/rack/rack/issues/2225
-gem 'rack', '!= 3.1.5'
-
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', platforms: %i[mri windows]
