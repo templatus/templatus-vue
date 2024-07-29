@@ -116,18 +116,18 @@ https://github.com/rails/rails/pull/41994
 ```
 $ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 Building with Vite ⚡️
-vite v5.0.12 building for production...
+vite v5.3.5 building for production...
 transforming...
-✓ 673 modules transformed.
+✓ 729 modules transformed.
 rendering chunks...
 computing gzip size...
 ../../public/vite/.vite/manifest-assets.json         0.10 kB │ gzip:  0.09 kB
-../../public/vite/assets/logo-yKKzxvdz.svg           0.50 kB │ gzip:  0.30 kB
-../../public/vite/.vite/manifest.json                0.57 kB │ gzip:  0.23 kB
-../../public/vite/assets/application-LxZJa7zo.css   23.43 kB │ gzip:  5.14 kB
-../../public/vite/assets/application-1-XGCBUU.js    18.03 kB │ gzip:  7.18 kB │ map:    32.80 kB
-../../public/vite/assets/vendor-31fm4735.js        160.00 kB │ gzip: 57.36 kB │ map: 1,042.66 kB
-✓ built in 1.07s
+../../public/vite/assets/logo-DIorPG93.svg           0.50 kB │ gzip:  0.30 kB
+../../public/vite/.vite/manifest.json                0.64 kB │ gzip:  0.24 kB
+../../public/vite/assets/application-BjNGR1tl.css   23.63 kB │ gzip:  5.17 kB
+../../public/vite/assets/application-DJSll1-N.js    18.03 kB │ gzip:  7.18 kB │ map:    32.80 kB
+../../public/vite/assets/vendor-xWmBVXGr.js        162.37 kB │ gzip: 58.18 kB │ map: 1,062.85 kB
+✓ built in 1.06s
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
