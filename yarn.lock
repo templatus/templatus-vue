@@ -8468,7 +8468,7 @@ __metadata:
     vite-plugin-full-reload: "npm:^1.2.0"
     vite-plugin-ruby: "npm:^5.0.0"
     vue: "npm:^3.4.35"
-    vue-router: "npm:^4.4.1"
+    vue-router: "npm:^4.4.2"
     vue-tsc: "npm:^2.0.29"
   languageName: unknown
   linkType: soft
@@ -8990,14 +8990,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "vue-router@npm:4.4.1"
+"vue-router@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "vue-router@npm:4.4.2"
   dependencies:
     "@vue/devtools-api": "npm:^6.6.3"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 10c0/da45022ae4435b7e4b011cc4951e01f6f80ea6d3d0a69653712a932230c7f1e37db5ab010fb28c7caf6dfe881406da548d053abf5c66e6f2b0dda3a84a107af9
+  checksum: 10c0/dbb95005481ed94e70aa6d14d1ce78b578fcedeb2aaf4fe85cff69a63e0218f1f8cd1d13f883fb45dbab6e31f82053a4a62627401deb2b5b15a98afbe4689b37
   languageName: node
   linkType: hard
 
