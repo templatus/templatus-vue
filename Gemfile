@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby file: '.ruby-version'
 
 # Full-stack web application framework. (https://rubyonrails.org)
-gem 'rails', '~> 7.1.1'
+gem 'rails', '~> 7.2.0'
 
 # Use Vite in Rails and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
 gem 'vite_rails'
@@ -40,7 +40,10 @@ gem 'rorvswild'
 
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
-  gem 'debug', platforms: %i[mri windows]
+  gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
+
+  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
+  gem 'brakeman', require: false
 
   # Loads environment variables from `.env`. (https://github.com/bkeepers/dotenv)
   gem 'dotenv'
@@ -68,9 +71,6 @@ group :development, :test do
 end
 
 group :development do
-  # Profiles loading speed for rack applications. (https://miniprofiler.com)
-  # gem 'rack-mini-profiler'
-
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   gem 'guard-rspec', require: false
 
