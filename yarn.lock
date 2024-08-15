@@ -7157,9 +7157,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "pinia@npm:2.2.1"
+"pinia@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "pinia@npm:2.2.2"
   dependencies:
     "@vue/devtools-api": "npm:^6.6.3"
     vue-demi: "npm:^0.14.10"
@@ -7172,7 +7172,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10c0/983a96b5a487c07743b8617e3a8cb6e491c0b4b44db4c28891cae00249cc6c51451bea62c26ab14bee910fa38af00cd117663669fe4ad5afeff5ac71cd4ccf42
+  checksum: 10c0/6c30a6e355be294f87a0256d4b2c266d3315d4fc1451c0a17847d03c0e7879faab4d58df2496e0c2b34a54743807bf65b27f8e80e400883d8bb46682f7af3b5f
   languageName: node
   linkType: hard
 
@@ -8298,7 +8298,7 @@ __metadata:
     jest-environment-jsdom: "npm:^29.7.0"
     jest-serializer-vue: "npm:^3.1.0"
     jest-transform-stub: "npm:^2.0.0"
-    pinia: "npm:^2.2.1"
+    pinia: "npm:^2.2.2"
     plausible-tracker: "npm:^0.3.9"
     postcss: "npm:^8.4.41"
     prettier: "npm:^3.3.3"
