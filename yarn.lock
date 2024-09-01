@@ -7195,18 +7195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.40, postcss@npm:^8.4.41":
-  version: 8.4.41
-  resolution: "postcss@npm:8.4.41"
-  dependencies:
-    nanoid: "npm:^3.3.7"
-    picocolors: "npm:^1.0.1"
-    source-map-js: "npm:^1.2.0"
-  checksum: 10c0/c1828fc59e7ec1a3bf52b3a42f615dba53c67960ed82a81df6441b485fe43c20aba7f4e7c55425762fd99c594ecabbaaba8cf5b30fd79dfec5b52a9f63a2d690
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.42":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.40, postcss@npm:^8.4.41, postcss@npm:^8.4.42":
   version: 8.4.42
   resolution: "postcss@npm:8.4.42"
   dependencies:
@@ -8737,9 +8726,9 @@ __metadata:
   linkType: hard
 
 "vue-component-type-helpers@npm:^2.0.0":
-  version: 2.1.2
-  resolution: "vue-component-type-helpers@npm:2.1.2"
-  checksum: 10c0/5b80c8998a664b2a22626cd6c1ebe8e77fa4b21a8d5e60cd444e1a60c6582d03a86fb823e509d7b82b11a00e5736b8f3b491a878140afe956e28e96039d4a154
+  version: 2.1.4
+  resolution: "vue-component-type-helpers@npm:2.1.4"
+  checksum: 10c0/b8c3eb24a5dfc90317dbc10a148bf46c687e1e0e74dd36b37d28199c9535b79c2847213a4e287b9b42da09c08231c404b7856a22990da254f6763934bacd7448
   languageName: node
   linkType: hard
 
