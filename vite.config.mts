@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
-import RubyPlugin from 'vite-plugin-ruby';
-import FullReload from 'vite-plugin-full-reload';
+import ViteRails from 'vite-plugin-rails';
 import vue from '@vitejs/plugin-vue';
-import { fileURLToPath, URL } from 'url';
+import { resolve } from 'path';
 
 export default defineConfig({
   build: {
@@ -18,13 +17,16 @@ export default defineConfig({
     },
   },
   plugins: [
-    RubyPlugin(),
-    FullReload(['config/routes.rb', 'app/views/**/*']),
+    ViteRails({
+      fullReload: {
+        additionalPaths: ['config/routes.rb', 'app/views/**/*'],
+      },
+    }),
     vue(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./app/javascript/src', import.meta.url)),
+      '@': resolve(__dirname, 'app/javascript/src'),
     },
   },
   server: {
