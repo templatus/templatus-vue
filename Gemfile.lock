@@ -122,7 +122,8 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
-    honeybadger (5.15.6)
+    honeybadger (5.16.0)
+      logger
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
