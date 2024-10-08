@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   verbose: true,
   roots: ['spec/javascript'],
   moduleNameMapper: {
