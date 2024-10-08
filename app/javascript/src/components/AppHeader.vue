@@ -18,7 +18,7 @@ const tabs: {
     <img
       :src="assetUrl(logoPath)"
       alt="Logo"
-      class="h-20 w-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:h-56 lg:w-56"
+      class="size-20 rounded bg-gradient-to-br from-slate-200 to-white p-3 lg:size-56"
       width="150"
       height="150"
     />

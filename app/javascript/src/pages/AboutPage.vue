@@ -208,7 +208,7 @@ const features: {
             >
               <dt>
                 <CheckIcon
-                  class="absolute h-6 w-6 text-vue"
+                  class="absolute size-6 text-vue"
                   aria-hidden="true"
                 />
                 <p

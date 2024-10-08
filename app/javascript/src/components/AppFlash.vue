@@ -69,7 +69,7 @@ function iconClass() {
       <div class="mx-auto flex items-center justify-center">
         <component
           :is="icon()"
-          class="h-8 w-8"
+          class="size-8"
           :class="iconClass()"
           aria-hidden="true"
         ></component>
