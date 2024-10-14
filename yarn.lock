@@ -2630,7 +2630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:8.8.1, @typescript-eslint/parser@npm:^8.8.1":
+"@typescript-eslint/parser@npm:8.8.1":
   version: 8.8.1
   resolution: "@typescript-eslint/parser@npm:8.8.1"
   dependencies:
@@ -2645,6 +2645,24 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/2afd147ccec6754316d6837d6108a5d822eb6071e1a7355073288c232530bc3e49901d3f08755ce02d497110c531f3b3658eb46d0ff875a69d4f360b5f938cb4
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^8.9.0":
+  version: 8.9.0
+  resolution: "@typescript-eslint/parser@npm:8.9.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": "npm:8.9.0"
+    "@typescript-eslint/types": "npm:8.9.0"
+    "@typescript-eslint/typescript-estree": "npm:8.9.0"
+    "@typescript-eslint/visitor-keys": "npm:8.9.0"
+    debug: "npm:^4.3.4"
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/aca7c838de85fb700ecf5682dc6f8f90a0fbfe09a3044a176c0dc3ffd9c5e7105beb0919a30824f46b02223a74119b4f5a9834a0663328987f066cb359b5dbed
   languageName: node
   linkType: hard
 
@@ -8456,7 +8474,7 @@ __metadata:
     "@types/jest": "npm:^29.5.13"
     "@types/rails__actioncable": "npm:^6.1.11"
     "@typescript-eslint/eslint-plugin": "npm:^8.9.0"
-    "@typescript-eslint/parser": "npm:^8.8.1"
+    "@typescript-eslint/parser": "npm:^8.9.0"
     "@vitejs/plugin-vue": "npm:^5.1.4"
     "@vue/eslint-config-prettier": "npm:^10.0.0"
     "@vue/eslint-config-typescript": "npm:^14.1.0"
