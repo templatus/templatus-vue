@@ -2607,7 +2607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.9.0":
+"@typescript-eslint/eslint-plugin@npm:8.9.0, @typescript-eslint/eslint-plugin@npm:^8.9.0":
   version: 8.9.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.9.0"
   dependencies:
@@ -2648,7 +2648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.9.0":
+"@typescript-eslint/parser@npm:8.9.0, @typescript-eslint/parser@npm:^8.9.0":
   version: 8.9.0
   resolution: "@typescript-eslint/parser@npm:8.9.0"
   dependencies:
@@ -8506,7 +8506,7 @@ __metadata:
     timeago.js: "npm:^4.0.2"
     ts-jest: "npm:^29.2.5"
     typescript: "npm:^5.6.3"
-    typescript-eslint: "npm:^8.8.1"
+    typescript-eslint: "npm:^8.9.0"
     vite: "npm:^5.4.9"
     vite-plugin-full-reload: "npm:^1.2.0"
     vite-plugin-rails: "npm:^0.5.0"
@@ -8770,6 +8770,20 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/d6793697fce239ef8838ced6e1e59940c30579c8f62c49bc605fdeda9f3f7a5c24bfddd997b142f8c411859dc0b9985ecdae569814dd4f8e6775e1899d55e9cc
+  languageName: node
+  linkType: hard
+
+"typescript-eslint@npm:^8.9.0":
+  version: 8.9.0
+  resolution: "typescript-eslint@npm:8.9.0"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": "npm:8.9.0"
+    "@typescript-eslint/parser": "npm:8.9.0"
+    "@typescript-eslint/utils": "npm:8.9.0"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/96bef4f5d1da9561078fa234642cfa2d024979917b8282b82f63956789bc566bdd5806ff2b414697f3dfdee314e9c9fec05911a7502550d763a496e2ef3af2fd
   languageName: node
   linkType: hard
 
