@@ -2994,9 +2994,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/eslint-config-typescript@npm:^14.1.2":
-  version: 14.1.2
-  resolution: "@vue/eslint-config-typescript@npm:14.1.2"
+"@vue/eslint-config-typescript@npm:^14.1.3":
+  version: 14.1.3
+  resolution: "@vue/eslint-config-typescript@npm:14.1.3"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:^8.8.1"
     fast-glob: "npm:^3.3.2"
@@ -3009,7 +3009,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/c7a1d4e5f27ca819b71df0f03bd5b6059d326fde5df38968bc4ecc69646e483face5eca1d07df3b986296fcd13647c7b6fae9893e27cee845827100ccfc446e8
+  checksum: 10c0/48e4b2a6ba812d3346ade386aaa2d1e9ce8b9f2e8b4944d3e4aa54826ec7ed8a6f860a6f378d9c13fe0aa07de9bab6cde6ac3091317c5f1e78a4dd8b35a482fb
   languageName: node
   linkType: hard
 
@@ -8508,7 +8508,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.11.0"
     "@vitejs/plugin-vue": "npm:^5.1.4"
     "@vue/eslint-config-prettier": "npm:^10.0.0"
-    "@vue/eslint-config-typescript": "npm:^14.1.2"
+    "@vue/eslint-config-typescript": "npm:^14.1.3"
     "@vue/test-utils": "npm:^2.4.6"
     "@vue/vue3-jest": "npm:^29.2.6"
     autoprefixer: "npm:^10.4.20"
