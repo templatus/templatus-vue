@@ -28,7 +28,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "@babel/core": "^7.25.9",
+    "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@prettier/plugin-ruby": "^4.0.4",
     "@size-limit/file": "^11.1.6",
