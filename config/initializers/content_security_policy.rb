@@ -66,17 +66,13 @@ Rails.application.configure do
     policy.form_action :self
 
     # Specify URI for violation reports
-    # if Rails.configuration.x.honeybadger.api_key
-    #   policy.report_uri(
-    #     "https://api.honeybadger.io/v1/browser/csp?api_key=#{Rails.configuration.x.honeybadger.api_key}&report_only=true",
-    #   )
-    # end
+    # policy.report_uri "/csp-violation-report-endpoint"
 
-    # Generate session nonces for permitted importmap and inline scripts
-    #   config.content_security_policy_nonce_generator = ->(request) { request.session.id.to_s }
-    #   config.content_security_policy_nonce_directives = %w(script-src)
-    #
-    #   # Report violations without enforcing the policy.
-    #   # config.content_security_policy_report_only = true
+    # Generate session nonces for permitted importmap, inline scripts, and inline styles.
+    # config.content_security_policy_nonce_generator = ->(request) { request.session.id.to_s }
+    # config.content_security_policy_nonce_directives = %w(script-src style-src)
+
+    # Report violations without enforcing the policy.
+    # config.content_security_policy_report_only = true
   end
 end
