@@ -80,8 +80,8 @@ group :development do
   # prettier plugin for the Ruby programming language (https://github.com/prettier/plugin-ruby#readme)
   gem 'prettier'
 
-  # Annotates Rails Models, routes, fixtures, and others based on the database schema. (https://github.com/ctran/annotate_models)
-  gem 'annotate'
+  # A gem for generating annotations for Rails projects. (https://github.com/drwl/annotaterb)
+  gem 'annotaterb'
 end
 
 group :test do
