@@ -1592,12 +1592,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/vue@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@heroicons/vue@npm:2.1.5"
+"@heroicons/vue@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@heroicons/vue@npm:2.2.0"
   peerDependencies:
     vue: ">= 3"
-  checksum: 10c0/64037ec72c2b43f69cd4ce6ac15e6a6f7ffc9d3bdf41eb2f40bfd4cde17882e19f8a89259a05c067ad33be3d7c59581d51f8b8c0c8e2053ab5e557223211952c
+  checksum: 10c0/8872f89cd033ce21363b5457adb7ea6cb9631cfbe85006b4131f9078c75c1c9701fd6d9d727d49c739b8716f4a46ccdd2ffae8c6635fc2528efaf0982759edb3
   languageName: node
   linkType: hard
 
@@ -8613,7 +8613,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.26.0"
     "@babel/preset-env": "npm:^7.26.0"
-    "@heroicons/vue": "npm:^2.1.5"
+    "@heroicons/vue": "npm:^2.2.0"
     "@honeybadger-io/js": "npm:^6.10.1"
     "@honeybadger-io/vue": "npm:^6.2.0"
     "@prettier/plugin-ruby": "npm:^4.0.4"
