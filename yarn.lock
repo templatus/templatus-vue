@@ -2667,7 +2667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:8.15.0, @typescript-eslint/eslint-plugin@npm:^8.8.1":
+"@typescript-eslint/eslint-plugin@npm:8.15.0":
   version: 8.15.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.15.0"
   dependencies:
@@ -2690,7 +2690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.16.0":
+"@typescript-eslint/eslint-plugin@npm:^8.15.0, @typescript-eslint/eslint-plugin@npm:^8.16.0":
   version: 8.16.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.16.0"
   dependencies:
@@ -3026,13 +3026,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/eslint-config-typescript@npm:^14.1.3":
-  version: 14.1.3
-  resolution: "@vue/eslint-config-typescript@npm:14.1.3"
+"@vue/eslint-config-typescript@npm:^14.1.4":
+  version: 14.1.4
+  resolution: "@vue/eslint-config-typescript@npm:14.1.4"
   dependencies:
-    "@typescript-eslint/eslint-plugin": "npm:^8.8.1"
+    "@typescript-eslint/eslint-plugin": "npm:^8.15.0"
     fast-glob: "npm:^3.3.2"
-    typescript-eslint: "npm:^8.8.1"
+    typescript-eslint: "npm:^8.15.0"
     vue-eslint-parser: "npm:^9.4.3"
   peerDependencies:
     eslint: ^9.10.0
@@ -3041,7 +3041,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/48e4b2a6ba812d3346ade386aaa2d1e9ce8b9f2e8b4944d3e4aa54826ec7ed8a6f860a6f378d9c13fe0aa07de9bab6cde6ac3091317c5f1e78a4dd8b35a482fb
+  checksum: 10c0/8b8c0222af930606557b19dc8e938fdfdd44ab9a6fa815fc0206dafc5be7e4e2723472891a43fd4563834c061b9462098c8fc6beaa6f7145fd9484fe5ca101a3
   languageName: node
   linkType: hard
 
@@ -8613,7 +8613,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.16.0"
     "@vitejs/plugin-vue": "npm:^5.2.0"
     "@vue/eslint-config-prettier": "npm:^10.1.0"
-    "@vue/eslint-config-typescript": "npm:^14.1.3"
+    "@vue/eslint-config-typescript": "npm:^14.1.4"
     "@vue/test-utils": "npm:^2.4.6"
     "@vue/vue3-jest": "npm:^29.2.6"
     autoprefixer: "npm:^10.4.20"
@@ -8917,7 +8917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.15.0, typescript-eslint@npm:^8.8.1":
+"typescript-eslint@npm:^8.15.0":
   version: 8.15.0
   resolution: "typescript-eslint@npm:8.15.0"
   dependencies:
