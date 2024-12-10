@@ -8434,7 +8434,6 @@ __metadata:
     timeago.js: "npm:^4.0.2"
     ts-jest: "npm:^29.2.5"
     typescript: "npm:^5.6.3"
-    typescript-eslint: "npm:^8.18.0"
     vite: "npm:^6.0.3"
     vite-plugin-full-reload: "npm:^1.2.0"
     vite-plugin-rails: "npm:^0.5.0"
@@ -8709,7 +8708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.15.0, typescript-eslint@npm:^8.18.0":
+"typescript-eslint@npm:^8.15.0":
   version: 8.18.0
   resolution: "typescript-eslint@npm:8.18.0"
   dependencies:
