@@ -2053,10 +2053,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/actioncable@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@rails/actioncable@npm:8.0.1"
-  checksum: 10c0/1b6933ef583b1743108c9198fafea6b7c9cbc5e9c250853a26346773af1966e5c334e15421623aeb7bb203d5a500726f644aa7dd0f050c0c9f6521ac177b9323
+"@rails/actioncable@npm:^8.0.100":
+  version: 8.0.100
+  resolution: "@rails/actioncable@npm:8.0.100"
+  checksum: 10c0/ae8870083e5c48448bd1d77268d28a16d7eee6d213dac8a6e20888c47d89ac959c4e835a613beaaa71b13b9aaaea14c4fb6d67120f972d174f1f899dd5a37e45
   languageName: node
   linkType: hard
 
@@ -8292,7 +8292,7 @@ __metadata:
     "@honeybadger-io/js": "npm:^6.10.1"
     "@honeybadger-io/vue": "npm:^6.2.0"
     "@prettier/plugin-ruby": "npm:^4.0.4"
-    "@rails/actioncable": "npm:^8.0.1"
+    "@rails/actioncable": "npm:^8.0.100"
     "@rails/request.js": "npm:^0.0.11"
     "@size-limit/file": "npm:^11.1.6"
     "@tailwindcss/forms": "npm:^0.5.9"
