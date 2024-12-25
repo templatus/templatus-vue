@@ -2544,7 +2544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:8.18.2, @typescript-eslint/eslint-plugin@npm:^8.15.0, @typescript-eslint/eslint-plugin@npm:^8.18.2":
+"@typescript-eslint/eslint-plugin@npm:8.18.2, @typescript-eslint/eslint-plugin@npm:^8.18.2":
   version: 8.18.2
   resolution: "@typescript-eslint/eslint-plugin@npm:8.18.2"
   dependencies:
@@ -2773,13 +2773,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/eslint-config-typescript@npm:^14.1.4":
-  version: 14.1.4
-  resolution: "@vue/eslint-config-typescript@npm:14.1.4"
+"@vue/eslint-config-typescript@npm:^14.2.0":
+  version: 14.2.0
+  resolution: "@vue/eslint-config-typescript@npm:14.2.0"
   dependencies:
-    "@typescript-eslint/eslint-plugin": "npm:^8.15.0"
     fast-glob: "npm:^3.3.2"
-    typescript-eslint: "npm:^8.15.0"
+    typescript-eslint: "npm:^8.18.1"
     vue-eslint-parser: "npm:^9.4.3"
   peerDependencies:
     eslint: ^9.10.0
@@ -2788,7 +2787,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/8b8c0222af930606557b19dc8e938fdfdd44ab9a6fa815fc0206dafc5be7e4e2723472891a43fd4563834c061b9462098c8fc6beaa6f7145fd9484fe5ca101a3
+  checksum: 10c0/c93da57f5f4fe051004dbdd55e9b4d424e791c917c55becc0cf247de0c7f81ebf1e01764d8b90fcd098f981c851028965576e2a1c37c802e9ba2dce48f49a058
   languageName: node
   linkType: hard
 
@@ -8329,7 +8328,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.18.2"
     "@vitejs/plugin-vue": "npm:^5.2.1"
     "@vue/eslint-config-prettier": "npm:^10.1.0"
-    "@vue/eslint-config-typescript": "npm:^14.1.4"
+    "@vue/eslint-config-typescript": "npm:^14.2.0"
     "@vue/test-utils": "npm:^2.4.6"
     "@vue/vue3-jest": "npm:^29.2.6"
     autoprefixer: "npm:^10.4.20"
@@ -8632,7 +8631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.15.0":
+"typescript-eslint@npm:^8.18.1":
   version: 8.18.2
   resolution: "typescript-eslint@npm:8.18.2"
   dependencies:
