@@ -4436,6 +4436,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-prettier@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "eslint-plugin-prettier@npm:5.2.2"
+  dependencies:
+    prettier-linter-helpers: "npm:^1.0.0"
+    synckit: "npm:^0.9.1"
+  peerDependencies:
+    "@types/eslint": ">=8.0.0"
+    eslint: ">=8.0.0"
+    eslint-config-prettier: "*"
+    prettier: ">=3.0.0"
+  peerDependenciesMeta:
+    "@types/eslint":
+      optional: true
+    eslint-config-prettier:
+      optional: true
+  checksum: 10c0/c2522d573d7682c7e23c8598e16abfaae6d9b9b79e9aa70b902eb75122b503cc0d3c9934db6d22862e90c58910004ce9386a177b2fd4e69884e0e63de964e253
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-tailwindcss@npm:^3.17.5":
   version: 3.17.5
   resolution: "eslint-plugin-tailwindcss@npm:3.17.5"
@@ -8371,7 +8391,7 @@ __metadata:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-cypress: "npm:^4.1.0"
     eslint-plugin-jest: "npm:^28.11.0"
-    eslint-plugin-prettier: "npm:^5.2.1"
+    eslint-plugin-prettier: "npm:^5.2.2"
     eslint-plugin-tailwindcss: "npm:^3.17.5"
     eslint-plugin-vue: "npm:^9.32.0"
     jest: "npm:^29.7.0"
