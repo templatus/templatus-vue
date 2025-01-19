@@ -8573,7 +8573,7 @@ __metadata:
     babel-jest: "npm:^29.7.0"
     cypress: "npm:^14.0.0"
     eslint: "npm:^9.18.0"
-    eslint-config-prettier: "npm:^9.1.0"
+    eslint-config-prettier: "npm:^10.0.1"
     eslint-plugin-cypress: "npm:^4.1.0"
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-prettier: "npm:^5.2.3"
