@@ -16,7 +16,7 @@
     "@tailwindcss/forms": "^0.5.10",
     "@types/rails__actioncable": "^6.1.11",
     "autoprefixer": "^10.4.20",
-    "pinia": "^2.3.1",
+    "pinia": "^3.0.0",
     "plausible-tracker": "^0.3.9",
     "postcss": "^8.5.2",
     "register-service-worker": "^1.7.2",
@@ -65,7 +65,7 @@
   },
   "size-limit": [
     {
-      "limit": "75 kB",
+      "limit": "80 kB",
       "path": "public/{vite,vite-dev,vite-test}/assets/*.js"
     }
   ],
