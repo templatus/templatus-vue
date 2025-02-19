@@ -1,21 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@source '../../../app/**/*.{html,erb.html,rb}';
+@source '../../../app/javascript/**/*.{vue,js,ts}';
+@plugin '@tailwindcss/forms';
 
-:root {
-  --color-rails-light: theme('colors.rails.light');
-  --color-rails-dark: theme('colors.rails.dark');
-  --color-vue: theme('colors.vue.DEFAULT');
+@theme {
+  --color-rails-light: oklch(54.44% 0.2233 29.15);
+  --color-rails-dark: oklch(32.7% 0.1342 29.23);
+  --color-vue: oklch(70.25% 0.132 160.37);
+  --color-rose: oklch(93.56% 0.0101 1.99);
 }
 
-.gradient__rails-light {
-  stop-color: var(--color-rails-light);
-}
+@layer base {
+  .gradient__rails-light {
+    stop-color: var(--color-rails-light);
+  }
 
-.gradient__rails-dark {
-  stop-color: var(--color-rails-dark);
-}
+  .gradient__rails-dark {
+    stop-color: var(--color-rails-dark);
+  }
 
-.gradient__vue {
-  stop-color: var(--color-vue);
+  .gradient__vue {
+    stop-color: var(--color-vue);
+  }
 }

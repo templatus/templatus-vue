@@ -32,7 +32,7 @@ https://github.com/templatus/templatus-inertia/
 - [Vue 3](https://v3.vuejs.org/) as frontend framework
 - [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
 - [Pinia](https://pinia.esm.dev/) for frontend state management
-- [Tailwind CSS 3](https://tailwindcss.com/) to not have to write CSS at all
+- [Tailwind CSS 4](https://tailwindcss.com/) to not have to write CSS at all
 - [Heroicons](https://heroicons.com/) for SVG icons as Vue components
 - [Rails Request.JS](https://github.com/rails/request.js) for AJAX requests with default headers
 

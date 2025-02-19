@@ -77,7 +77,7 @@ const features: {
           'Vue is a progressive framework for building user interfaces.',
       },
       {
-        name: 'Tailwind CSS 3',
+        name: 'Tailwind CSS 4',
         href: 'https://tailwindcss.com/',
         description:
           'A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.',
@@ -189,7 +189,7 @@ const features: {
       <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
           <h2
-            class="text-base font-semibold uppercase tracking-wide text-rails-dark"
+            class="text-rails-dark text-base font-semibold tracking-wide uppercase"
           >
             {{ group.slogan }}
           </h2>
@@ -199,7 +199,7 @@ const features: {
         </div>
         <div class="mt-12 lg:col-span-2 lg:mt-0">
           <dl
-            class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8"
+            class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-0 sm:gap-y-10 lg:gap-x-8"
           >
             <div
               v-for="feature in group.items"
@@ -208,11 +208,11 @@ const features: {
             >
               <dt>
                 <CheckIcon
-                  class="absolute size-6 text-vue"
+                  class="text-vue absolute size-6"
                   aria-hidden="true"
                 />
                 <p
-                  class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"
+                  class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"
                 >
                   <a
                     :href="feature.href"
@@ -225,14 +225,14 @@ const features: {
 
                   <span
                     v-if="feature.version"
-                    class="ml-2 inline-flex items-center rounded-full bg-rose px-2.5 py-0.5 text-xs font-medium text-black"
+                    class="bg-rose ml-2 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-black"
                   >
                     {{ feature.version }}
                   </span>
                 </p>
               </dt>
               <dd
-                class="ml-9 mt-2 text-base text-gray-600"
+                class="mt-2 ml-9 text-base text-gray-600"
                 v-html="feature.description"
               ></dd>
             </div>
