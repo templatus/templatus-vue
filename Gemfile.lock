@@ -124,7 +124,7 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
-    honeybadger (5.26.3)
+    honeybadger (5.26.4)
       logger
       ostruct
     i18n (1.14.7)
@@ -172,11 +172,11 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.2-arm64-darwin)
+    nokogiri (1.18.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-gnu)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-musl)
+    nokogiri (1.18.3-x86_64-linux-musl)
       racc (~> 1.4)
     notiffany (0.1.3)
       nenv (~> 0.1)
@@ -370,7 +370,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.7.1)
+    zeitwerk (2.7.2)
 
 PLATFORMS
   arm64-darwin-24
@@ -411,4 +411,4 @@ RUBY VERSION
    ruby 3.4.2p28
 
 BUNDLED WITH
-   2.6.3
+   2.6.4
