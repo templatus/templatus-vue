@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.26.9",
     "@prettier/plugin-ruby": "^4.0.4",
     "@size-limit/file": "^11.2.0",
-    "@tailwindcss/vite": "^4.0.8",
+    "@tailwindcss/vite": "^4.0.9",
     "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.25.0",
