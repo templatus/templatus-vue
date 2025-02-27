@@ -11,7 +11,7 @@ exports[`About matches snapshot 1`] = `
         <p class="mt-2 text-3xl font-extrabold text-gray-900">The backend</p>
       </div>
       <div class="mt-12 lg:col-span-2 lg:mt-0">
-        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-0 sm:gap-y-10 lg:gap-x-8">
+        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
@@ -84,7 +84,7 @@ exports[`About matches snapshot 1`] = `
         <p class="mt-2 text-3xl font-extrabold text-gray-900">The frontend</p>
       </div>
       <div class="mt-12 lg:col-span-2 lg:mt-0">
-        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-0 sm:gap-y-10 lg:gap-x-8">
+        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
@@ -154,7 +154,7 @@ exports[`About matches snapshot 1`] = `
         <p class="mt-2 text-3xl font-extrabold text-gray-900">Continuous integration</p>
       </div>
       <div class="mt-12 lg:col-span-2 lg:mt-0">
-        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-0 sm:gap-y-10 lg:gap-x-8">
+        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
@@ -226,7 +226,7 @@ exports[`About matches snapshot 1`] = `
         <p class="mt-2 text-3xl font-extrabold text-gray-900">Deployment</p>
       </div>
       <div class="mt-12 lg:col-span-2 lg:mt-0">
-        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-0 sm:gap-y-10 lg:gap-x-8">
+        <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
