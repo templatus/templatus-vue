@@ -37,7 +37,6 @@ export default [
       ],
       '@typescript-eslint/no-var-requires': 'off',
       'vue/no-v-html': 'off',
-      'vue/script-setup-uses-vars': 'error',
     },
   },
   {
