@@ -4678,27 +4678,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.2.2":
-  version: 5.2.4
-  resolution: "eslint-plugin-prettier@npm:5.2.4"
-  dependencies:
-    prettier-linter-helpers: "npm:^1.0.0"
-    synckit: "npm:^0.10.2"
-  peerDependencies:
-    "@types/eslint": ">=8.0.0"
-    eslint: ">=8.0.0"
-    eslint-config-prettier: "*"
-    prettier: ">=3.0.0"
-  peerDependenciesMeta:
-    "@types/eslint":
-      optional: true
-    eslint-config-prettier:
-      optional: true
-  checksum: 10c0/054cff3e4e94f1972e77dbac14052c2e7dba1cb907d08c773b3b08a281c608c48f9f9692c8dcbcbb8bcef0c680b54ff70fcc76c68212f97f3b60b60717796764
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-prettier@npm:^5.2.5":
+"eslint-plugin-prettier@npm:^5.2.2, eslint-plugin-prettier@npm:^5.2.5":
   version: 5.2.5
   resolution: "eslint-plugin-prettier@npm:5.2.5"
   dependencies:
