@@ -97,6 +97,7 @@ GEM
     dotenv (3.1.8)
     drb (2.2.1)
     dry-cli (1.2.0)
+    erb (5.0.1)
     erubi (1.13.1)
     ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
@@ -258,7 +259,8 @@ GEM
       ffi (~> 1.0)
     rbs (3.9.4)
       logger
-    rdoc (6.13.1)
+    rdoc (6.14.0)
+      erb
       psych (>= 4.0.0)
     redis (5.4.0)
       redis-client (>= 0.22.0)
