@@ -66,6 +66,13 @@ updates:
           - '@tailwindcss/*'
           - 'tailwindcss'
           - 'prettier-plugin-tailwindcss'
+      jest:
+        patterns:
+          - 'jest*'
+          - 'ts-jest'
+          - 'babel-jest'
+          - 'eslint-plugin-jest'
+          - 'vue/vue3-jest'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
