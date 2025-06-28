@@ -51,7 +51,7 @@
     "jest-environment-jsdom": "^30.0.2",
     "jest-serializer-vue": "^3.1.0",
     "jest-transform-stub": "^2.0.0",
-    "prettier": "^3.6.1",
+    "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "rollup": "^4.44.1",
     "size-limit": "^11.2.0",
