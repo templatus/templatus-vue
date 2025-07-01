@@ -127,7 +127,7 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
-    honeybadger (5.28.0)
+    honeybadger (5.29.0)
       logger
       ostruct
     i18n (1.14.7)
