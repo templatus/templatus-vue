@@ -73,6 +73,13 @@ updates:
           - 'babel-jest'
           - 'eslint-plugin-jest'
           - 'vue/vue3-jest'
+      eslint:
+        patterns:
+          - 'eslint*'
+      typescript-eslint:
+        patterns:
+          - '@typescript-eslint/*'
+          - 'typescript-eslint'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
