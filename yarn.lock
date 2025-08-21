@@ -283,7 +283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.20.7, @babel/parser@npm:^7.23.9, @babel/parser@npm:^7.27.2, @babel/parser@npm:^7.28.0, @babel/parser@npm:^7.28.3":
+"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.20.7, @babel/parser@npm:^7.23.9, @babel/parser@npm:^7.27.2, @babel/parser@npm:^7.28.3":
   version: 7.28.3
   resolution: "@babel/parser@npm:7.28.3"
   dependencies:
@@ -3349,19 +3349,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-core@npm:3.5.18":
-  version: 3.5.18
-  resolution: "@vue/compiler-core@npm:3.5.18"
-  dependencies:
-    "@babel/parser": "npm:^7.28.0"
-    "@vue/shared": "npm:3.5.18"
-    entities: "npm:^4.5.0"
-    estree-walker: "npm:^2.0.2"
-    source-map-js: "npm:^1.2.1"
-  checksum: 10c0/943cd3736e981b451aa85ccc08d446844e1a2dbf193e630cef708995110f12c3b8c8e3b2c4581ee2e3ecf7ea2388574e2d5f68b4f11bcd01cc5bab6c9177b448
-  languageName: node
-  linkType: hard
-
 "@vue/compiler-core@npm:3.5.19":
   version: 3.5.19
   resolution: "@vue/compiler-core@npm:3.5.19"
@@ -3375,23 +3362,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-dom@npm:3.5.19":
+"@vue/compiler-dom@npm:3.5.19, @vue/compiler-dom@npm:^3.5.0":
   version: 3.5.19
   resolution: "@vue/compiler-dom@npm:3.5.19"
   dependencies:
     "@vue/compiler-core": "npm:3.5.19"
     "@vue/shared": "npm:3.5.19"
   checksum: 10c0/79a37ec7125cfa7f051978acae364f33586327154101fb40b2c497b1255db23f7becd84288afd9e2129f8f646a735a7b1c31500d3583198acd80b1bbd2380c1a
-  languageName: node
-  linkType: hard
-
-"@vue/compiler-dom@npm:^3.5.0":
-  version: 3.5.18
-  resolution: "@vue/compiler-dom@npm:3.5.18"
-  dependencies:
-    "@vue/compiler-core": "npm:3.5.18"
-    "@vue/shared": "npm:3.5.18"
-  checksum: 10c0/f7f3dec1fea33e8b46b34d71fa24a8608dba4bdab786d4114747ed0897816760450617951f7ea3f59380e5ecfaeb84d94dd1bfabed88792cc03476da91e6f7fd
   languageName: node
   linkType: hard
 
@@ -3568,14 +3545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/shared@npm:3.5.18, @vue/shared@npm:^3.5.0":
-  version: 3.5.18
-  resolution: "@vue/shared@npm:3.5.18"
-  checksum: 10c0/9764e31bfcd13a2f5369554d0abbfd06e391d72b0065b4cbd36be94ffdd4d845b2d38a37d56b35714c7a2100c512c9b74de2fa1a19ee2e920ecf098d9035518d
-  languageName: node
-  linkType: hard
-
-"@vue/shared@npm:3.5.19":
+"@vue/shared@npm:3.5.19, @vue/shared@npm:^3.5.0":
   version: 3.5.19
   resolution: "@vue/shared@npm:3.5.19"
   checksum: 10c0/7580ad76d38e802c12879b5d6fc349f22357a5c723e759dc422781adbbe796f1286695701b5c0066331dfbc7dcf3e43869065cadb7f2b1561f635fb1d50e9c21
