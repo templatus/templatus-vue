@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`App matches snapshot 1`] = `
 <div class="from-rails-dark to-rails-light lg:bg-rose flex min-h-screen flex-col bg-linear-to-br lg:from-inherit lg:to-inherit"><svg class="fixed inset-0 hidden h-96 w-full drop-shadow-xl lg:block" fill="none" preserveAspectRatio="none" viewBox="0 0 100 100">

@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`About matches snapshot 1`] = `
 <h1 class="text-rails-dark text-4xl font-extrabold tracking-tight break-words sm:text-5xl lg:text-6xl">About</h1>
