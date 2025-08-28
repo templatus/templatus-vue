@@ -1905,15 +1905,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/expect-utils@npm:30.1.0":
-  version: 30.1.0
-  resolution: "@jest/expect-utils@npm:30.1.0"
-  dependencies:
-    "@jest/get-type": "npm:30.1.0"
-  checksum: 10c0/d8f91261b43397edda9d016076f6b662dde685509a5286c5b0420bf4ebe7a71d0847d2463290754c5ff0175d4bfea9556c391b18660b3dd6bfce8946fcd12194
-  languageName: node
-  linkType: hard
-
 "@jest/expect-utils@npm:30.1.1":
   version: 30.1.1
   resolution: "@jest/expect-utils@npm:30.1.1"
@@ -5066,7 +5057,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:30.1.1":
+"expect@npm:30.1.1, expect@npm:^30.0.0":
   version: 30.1.1
   resolution: "expect@npm:30.1.1"
   dependencies:
@@ -5077,20 +5068,6 @@ __metadata:
     jest-mock: "npm:30.0.5"
     jest-util: "npm:30.0.5"
   checksum: 10c0/ab0585e0b98e9db8cdf3f73e25337c3a106ce6ed0ae27a3c33931d47e664ce9f86b80e0a633aa80a64b518590f2a207fbc4be6b7f96d7b468836d99ee67314a6
-  languageName: node
-  linkType: hard
-
-"expect@npm:^30.0.0":
-  version: 30.1.0
-  resolution: "expect@npm:30.1.0"
-  dependencies:
-    "@jest/expect-utils": "npm:30.1.0"
-    "@jest/get-type": "npm:30.1.0"
-    jest-matcher-utils: "npm:30.1.0"
-    jest-message-util: "npm:30.1.0"
-    jest-mock: "npm:30.0.5"
-    jest-util: "npm:30.0.5"
-  checksum: 10c0/a7ec55701b8aec3b9d5996562cda4a5d29e301fad4e3bf5e434e055cd4911185503a4aba13c9e213c62fa3d9c70bb37598b90d0ace7a1e6cf3270ac0cfab0b82
   languageName: node
   linkType: hard
 
@@ -6125,18 +6102,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:30.1.0":
-  version: 30.1.0
-  resolution: "jest-diff@npm:30.1.0"
-  dependencies:
-    "@jest/diff-sequences": "npm:30.0.1"
-    "@jest/get-type": "npm:30.1.0"
-    chalk: "npm:^4.1.2"
-    pretty-format: "npm:30.0.5"
-  checksum: 10c0/b7939b204ede584e07d69381cb4f4e2268cae9ef1526e0dd1f144bf09807c4758f915e883fad24dc6eae8605a0082c4c9cf2093eb43b2a387868826f6382345a
-  languageName: node
-  linkType: hard
-
 "jest-diff@npm:30.1.1":
   version: 30.1.1
   resolution: "jest-diff@npm:30.1.1"
@@ -6233,18 +6198,6 @@ __metadata:
     "@jest/get-type": "npm:30.1.0"
     pretty-format: "npm:30.0.5"
   checksum: 10c0/a0b0c30988abab2efdf99fe8e00120c0b57406072efe2b1380270d0df4866812efe85903155682e2ec773164d8d0213e5ff59df1d8b343245dd4522d332c2853
-  languageName: node
-  linkType: hard
-
-"jest-matcher-utils@npm:30.1.0":
-  version: 30.1.0
-  resolution: "jest-matcher-utils@npm:30.1.0"
-  dependencies:
-    "@jest/get-type": "npm:30.1.0"
-    chalk: "npm:^4.1.2"
-    jest-diff: "npm:30.1.0"
-    pretty-format: "npm:30.0.5"
-  checksum: 10c0/b003ae0d831e3135dd344a81ee86c6820948b9a4c26d130e588f87fca12516c1d7c4c3224d9ced534936460e319d4dab9724082c015eef4190211a33bed0b553
   languageName: node
   linkType: hard
 
