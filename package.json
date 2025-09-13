@@ -59,7 +59,7 @@
     "vite": "^7.1.5",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-rails": "^0.5.0",
-    "vue-tsc": "^3.0.6"
+    "vue-tsc": "^3.0.7"
   },
   "size-limit": [
     {
