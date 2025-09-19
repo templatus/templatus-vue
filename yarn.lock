@@ -8628,6 +8628,15 @@ __metadata:
     vue: "npm:^3.5.21"
     vue-router: "npm:^4.5.1"
     vue-tsc: "npm:^3.0.7"
+  dependenciesMeta:
+    "@tailwindcss/oxide":
+      built: true
+    cypress:
+      built: true
+    esbuild:
+      built: true
+    vite:
+      built: true
   languageName: unknown
   linkType: soft
 
