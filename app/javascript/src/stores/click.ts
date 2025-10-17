@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
-import { createConsumer, Subscription } from '@rails/actioncable';
+import type { Subscription } from '@rails/actioncable';
+import consumer from '../../channels/consumer';
 import { get, post } from '@/use/fetch';
 
 export type Click = {
@@ -36,7 +37,7 @@ export const useClickStore = defineStore('click', {
     },
 
     subscribe() {
-      channel = createConsumer().subscriptions.create(
+      channel = consumer.subscriptions.create(
         {
           channel: 'ClicksChannel',
         },
@@ -53,7 +54,6 @@ export const useClickStore = defineStore('click', {
     unsubscribe() {
       if (channel) {
         channel.unsubscribe();
-        channel.consumer.disconnect();
       }
       this.subscribed = false;
     },
