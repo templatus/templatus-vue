@@ -2807,10 +2807,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/rails__actioncable@npm:^8.0.2":
-  version: 8.0.2
-  resolution: "@types/rails__actioncable@npm:8.0.2"
-  checksum: 10c0/7e213fef8d5f675c25e7ac0177f73eaaef937f4e5472daf3e4afc334a37293aabe1b3f9d0a10662928b5d2c8f088a0bc2ddbe8972eb9c5241351f5d86db8a2c9
+"@types/rails__actioncable@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@types/rails__actioncable@npm:8.0.3"
+  checksum: 10c0/088ed3180b4b7544c246f654d52ab9b8d27f35f0c015e959f1d702eb3703276339f9646fb2f0b752debf33218affb826dd2cae5ebe48e92b994e68ec03eecdc1
   languageName: node
   linkType: hard
 
@@ -8596,7 +8596,7 @@ __metadata:
     "@tailwindcss/forms": "npm:^0.5.10"
     "@tailwindcss/vite": "npm:^4.1.16"
     "@types/jest": "npm:^30.0.0"
-    "@types/rails__actioncable": "npm:^8.0.2"
+    "@types/rails__actioncable": "npm:^8.0.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.46.2"
     "@typescript-eslint/parser": "npm:^8.46.2"
     "@vitejs/plugin-vue": "npm:^6.0.1"
