@@ -48,6 +48,9 @@ group :development, :test do
   # Security vulnerability scanner for Ruby on Rails. (https://brakemanscanner.org)
   gem 'brakeman', require: false
 
+  # Patch-level verification for Bundler (https://github.com/rubysec/bundler-audit)
+  gem 'bundler-audit', require: false
+
   # Loads environment variables from `.env`. (https://github.com/bkeepers/dotenv)
   gem 'dotenv'
 
