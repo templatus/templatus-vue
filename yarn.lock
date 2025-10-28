@@ -2218,6 +2218,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@plausible-analytics/tracker@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "@plausible-analytics/tracker@npm:0.4.3"
+  checksum: 10c0/2958454b9f01db5c64aec1d74e820de2cb9645cbadf109c591b33521a62fa1118de5a6b7358a421e61f118ce18c4b699a4d836a3386b020e6983c245e741870d
+  languageName: node
+  linkType: hard
+
 "@prettier/plugin-ruby@npm:^4.0.4":
   version: 4.0.4
   resolution: "@prettier/plugin-ruby@npm:4.0.4"
@@ -7607,13 +7614,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plausible-tracker@npm:^0.3.9":
-  version: 0.3.9
-  resolution: "plausible-tracker@npm:0.3.9"
-  checksum: 10c0/750018ad255119f7a5e6d108b35c1c7e4dd04ad9b0e950951812658b02b464865fdcb22a72f8a29881bcf3e5a4da7653ff881d333362ee6c319e63fae03153fb
-  languageName: node
-  linkType: hard
-
 "postcss-selector-parser@npm:^6.0.15":
   version: 6.1.2
   resolution: "postcss-selector-parser@npm:6.1.2"
@@ -8588,6 +8588,7 @@ __metadata:
     "@heroicons/vue": "npm:^2.2.0"
     "@honeybadger-io/js": "npm:^6.12.3"
     "@honeybadger-io/vue": "npm:^6.2.9"
+    "@plausible-analytics/tracker": "npm:^0.4.3"
     "@prettier/plugin-ruby": "npm:^4.0.4"
     "@rails/actioncable": "npm:^8.1.0"
     "@rails/request.js": "npm:^0.0.12"
@@ -8616,7 +8617,6 @@ __metadata:
     jest-serializer-vue: "npm:^3.1.0"
     jest-transform-stub: "npm:^2.0.0"
     pinia: "npm:^3.0.3"
-    plausible-tracker: "npm:^0.3.9"
     prettier: "npm:^3.6.2"
     prettier-plugin-tailwindcss: "npm:^0.7.1"
     register-service-worker: "npm:^1.7.2"

@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (plausibleUrl)
     app.use(plausible, {
       domain: metaContent('app-host') || window.location.host,
-      hashMode: true,
-      apiHost: plausibleUrl,
+      hashBasedRouting: true,
+      endpoint: plausibleUrl,
     });
 
   app.mount('#vue-app');

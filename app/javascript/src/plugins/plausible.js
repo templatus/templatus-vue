@@ -1,12 +1,12 @@
-import Plausible from 'plausible-tracker';
+import { init } from '@plausible-analytics/tracker';
 
 export default {
   install: (app, options) => {
-    const { enableAutoPageviews, enableAutoOutboundTracking } =
-      Plausible(options);
-
-    enableAutoPageviews();
-    enableAutoOutboundTracking();
+    init({
+      ...options,
+      autoCapturePageviews: true,
+      outboundLinks: true,
+    });
 
     app.provide('plausible');
   },
