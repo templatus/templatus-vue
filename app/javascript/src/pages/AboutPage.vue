@@ -141,10 +141,16 @@ const features: {
           'ESLint statically analyzes your code to quickly find problems',
       },
       {
-        name: 'Cypress',
-        href: 'https://cypress.io/',
+        name: 'Capybara',
+        href: 'https://github.com/teamcapybara/capybara',
         description:
-          'Fast, easy and reliable testing for anything that runs in a browser.',
+          'Capybara helps you test web applications by simulating how a real user would interact with your app.',
+      },
+      {
+        name: 'Playwright',
+        href: 'https://playwright.dev/',
+        description:
+          'Playwright enables reliable end-to-end testing for modern web apps.',
       },
     ],
   },

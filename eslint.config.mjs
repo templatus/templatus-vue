@@ -3,7 +3,6 @@ import tseslint from 'typescript-eslint';
 
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginVue from 'eslint-plugin-vue';
-import pluginCypress from 'eslint-plugin-cypress/flat';
 import pluginJest from 'eslint-plugin-jest';
 
 import vueTsEslintConfig from '@vue/eslint-config-typescript';
@@ -22,10 +21,6 @@ export default [
       ...pluginJest.configs['flat/recommended'].rules,
       'jest/prefer-expect-assertions': 'off',
     },
-  },
-  {
-    files: ['spec/cypress/**'],
-    ...pluginCypress.configs.recommended,
   },
   {
     rules: {

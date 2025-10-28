@@ -34,11 +34,9 @@ yarn-error.log
 config/environments/test.rb
 config/environments/development.rb
 jest.config.mjs
-cypress.config.ts
 spec
 README.md
 bin/bundle
-bin/cypress
 bin/dev
 bin/rspec
 bin/rubocop

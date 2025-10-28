@@ -209,11 +209,21 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
               </svg>
-              <p class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"><a href="https://cypress.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Cypress</a>
+              <p class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"><a href="https://github.com/teamcapybara/capybara" class="hover:underline" target="_blank" rel="noopener noreferrer">Capybara</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Fast, easy and reliable testing for anything that runs in a browser.</dd>
+            <dd class="mt-2 ml-9 text-base text-gray-600">Capybara helps you test web applications by simulating how a real user would interact with your app.</dd>
+          </div>
+          <div class="relative">
+            <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
+              </svg>
+              <p class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"><a href="https://playwright.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">Playwright</a>
+                <!--v-if-->
+              </p>
+            </dt>
+            <dd class="mt-2 ml-9 text-base text-gray-600">Playwright enables reliable end-to-end testing for modern web apps.</dd>
           </div>
         </dl>
       </div>

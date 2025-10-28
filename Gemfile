@@ -90,6 +90,12 @@ end
 group :test do
   # Code coverage for Ruby (https://github.com/simplecov-ruby/simplecov)
   gem 'simplecov', require: false
+
+  # Integration testing for Rack applications (https://github.com/teamcapybara/capybara)
+  gem 'capybara'
+
+  # Playwright driver for Capybara (https://github.com/YusukeIwaki/capybara-playwright-driver)
+  gem 'capybara-playwright-driver'
 end
 
 group :production do
