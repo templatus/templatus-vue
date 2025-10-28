@@ -12,6 +12,7 @@ CI.run do
   step 'Security: Gem audit', 'bin/bundler-audit'
   step 'Security: Yarn vulnerability audit', 'bin/yarn npm audit'
 
+  step 'Tests: JavaScript', 'bin/yarn test'
   step 'Tests: Rails', 'bin/rspec'
   # step 'Tests: System', 'bin/rails test:system'
   step 'Tests: Seeds', 'env RAILS_ENV=test bin/rails db:seed:replant'
