@@ -59,7 +59,7 @@
     "vite": "^7.2.4",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-rails": "^0.5.0",
-    "vue-tsc": "^3.1.4"
+    "vue-tsc": "^3.1.5"
   },
   "dependenciesMeta": {
     "@tailwindcss/oxide": {
