@@ -49,7 +49,7 @@
     "jest-environment-jsdom": "^30.2.0",
     "jest-serializer-vue": "^3.1.0",
     "jest-transform-stub": "^2.0.0",
-    "playwright": "^1.56.1",
+    "playwright": "^1.57.0",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "rollup": "^4.53.3",
