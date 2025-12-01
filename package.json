@@ -50,7 +50,7 @@
     "jest-serializer-vue": "^3.1.0",
     "jest-transform-stub": "^2.0.0",
     "playwright": "^1.57.0",
-    "prettier": "^3.7.2",
+    "prettier": "^3.7.3",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "rollup": "^4.53.3",
     "size-limit": "^12.0.0",
