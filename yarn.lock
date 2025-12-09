@@ -3450,9 +3450,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/language-core@npm:3.1.6":
-  version: 3.1.6
-  resolution: "@vue/language-core@npm:3.1.6"
+"@vue/language-core@npm:3.1.7":
+  version: 3.1.7
+  resolution: "@vue/language-core@npm:3.1.7"
   dependencies:
     "@volar/language-core": "npm:2.4.26"
     "@vue/compiler-dom": "npm:^3.5.0"
@@ -3466,7 +3466,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/db73dd9b822dd9920973ddc4a1e41e5e24c884fbe50ecb6d7c1d8dbd359f320fa8f0dd057be38cce7e1879fb161cd90ec27082781f8ada8f79c068f55b773d80
+  checksum: 10c0/9e5faf55d51572e04ab44443f7de770f5ec551bb55206d90edd7eef5f51e2b250b4a0de44e9ec86eed94023225256b7249c331a67f86a348dcb96f95a281e56c
   languageName: node
   linkType: hard
 
@@ -7723,7 +7723,7 @@ __metadata:
     vite-plugin-rails: "npm:^0.5.0"
     vue: "npm:^3.5.25"
     vue-router: "npm:^4.6.3"
-    vue-tsc: "npm:^3.1.6"
+    vue-tsc: "npm:^3.1.7"
   dependenciesMeta:
     "@tailwindcss/oxide":
       built: true
@@ -8287,17 +8287,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^3.1.6":
-  version: 3.1.6
-  resolution: "vue-tsc@npm:3.1.6"
+"vue-tsc@npm:^3.1.7":
+  version: 3.1.7
+  resolution: "vue-tsc@npm:3.1.7"
   dependencies:
     "@volar/typescript": "npm:2.4.26"
-    "@vue/language-core": "npm:3.1.6"
+    "@vue/language-core": "npm:3.1.7"
   peerDependencies:
     typescript: ">=5.0.0"
   bin:
     vue-tsc: ./bin/vue-tsc.js
-  checksum: 10c0/049aa4e6e437a0f4fe5c97f4a9509f4cf33e7a1de2f0aca49557667db9c389a24019fb3db93c52e0c1d75a9b39b5b55354896d48732611a22797db2a6fe317e9
+  checksum: 10c0/7c9470110b0b93b38dcd88810ef21630b4e83f8d8b0363f035016b6bd572eb6daffa1029768f0f57ee69cc2d872099bb5ebb1f35a99c55f105913654b517451d
   languageName: node
   linkType: hard
 
