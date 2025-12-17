@@ -33,7 +33,11 @@ Rails.application.configure do
     ActiveModel::Type::Boolean.new.cast ENV.fetch('FORCE_SSL', true)
 
   # Skip http-to-https redirect for the default health check endpoint.
-  # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
+  config.ssl_options = {
+    redirect: {
+      exclude: ->(request) { request.path == '/up' },
+    },
+  }
 
   # Log to STDOUT with the current request id and remote_ip as a default log tag.
   config.log_tags = %i[remote_ip request_id]
@@ -87,7 +91,7 @@ Rails.application.configure do
   #   "example.com",     # Allow requests from example.com
   #   /.*\.example\.com/ # Allow requests from subdomains like `www.example.com`
   # ]
-  config.hosts = [ENV.fetch('APP_HOST', nil)]
+  config.hosts = [ENV.fetch('APP_HOST', nil), 'localhost', '127.0.0.1']
 
   # Skip DNS rebinding protection for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == '/up' } }
