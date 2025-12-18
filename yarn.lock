@@ -3657,11 +3657,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.0":
-  version: 2.9.8
-  resolution: "baseline-browser-mapping@npm:2.9.8"
+  version: 2.9.9
+  resolution: "baseline-browser-mapping@npm:2.9.9"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/73d8e4aa80345833c5c73d43d8fff87dca67883ad3f8edb8ed13cf0da60a5210816fea868b532016d60ac9f8734946cbe5fcce867113a73c9b2f8b0dbfd1e33e
+  checksum: 10c0/0671f176b69672a25ac7036b9fa4cf9968125c8daa8eda916f2db6c602e17f755cb6cc6c4546a70924301630f6a95f1d12ee80c92432c1a232b4f4419510b467
   languageName: node
   linkType: hard
 
@@ -4051,14 +4051,14 @@ __metadata:
   linkType: hard
 
 "dedent@npm:^1.6.0":
-  version: 1.7.0
-  resolution: "dedent@npm:1.7.0"
+  version: 1.7.1
+  resolution: "dedent@npm:1.7.1"
   peerDependencies:
     babel-plugin-macros: ^3.1.0
   peerDependenciesMeta:
     babel-plugin-macros:
       optional: true
-  checksum: 10c0/c5e8a8beb5072bd5e520cb64b27a82d7ec3c2a63ee5ce47dbc2a05d5b7700cefd77a992a752cd0a8b1d979c1db06b14fb9486e805f3ad6088eda6e07cd9bf2d5
+  checksum: 10c0/ae29ec1c5bd5216c698c9f23acaa5b720260fd4cef3c8b5af887eb5f8c9e6fdd5fed8668767437b4efea35e2991bd798987717633411a1734807c28255769b78
   languageName: node
   linkType: hard
 
