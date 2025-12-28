@@ -18,7 +18,7 @@ https://github.com/templatus/templatus-inertia/
 
 ### Backend
 
-- [Ruby](https://www.ruby-lang.org/de/) 3.4
+- [Ruby](https://www.ruby-lang.org/de/) 4.0
 - [Ruby on Rails](https://rubyonrails.org/) 8.1
 - [ActionCable](https://guides.rubyonrails.org/action_cable_overview.html) for WebSocket communication
 - [PostgreSQL](https://www.postgresql.org/) for using as SQL database
