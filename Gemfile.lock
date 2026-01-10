@@ -392,7 +392,7 @@ GEM
       syntax_tree (>= 2.0.1)
     temple (0.10.4)
     thor (1.5.0)
-    tilt (2.6.1)
+    tilt (2.7.0)
     timeout (0.6.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
