@@ -13,7 +13,12 @@ export default {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.vue$': '@vue/vue3-jest',
+    '^.+\\.mjs$': [
+      'babel-jest',
+      { plugins: ['@babel/plugin-transform-modules-commonjs'] },
+    ],
   },
+  transformIgnorePatterns: ['node_modules/(?!.*perfect-debounce)'],
   testEnvironment: 'jsdom',
   testEnvironmentOptions: {
     url: 'https://templatus-vue.test/',
