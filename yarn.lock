@@ -2610,9 +2610,9 @@ __metadata:
   linkType: hard
 
 "@types/aws-lambda@npm:^8.10.89":
-  version: 8.10.160
-  resolution: "@types/aws-lambda@npm:8.10.160"
-  checksum: 10c0/0f524cbcab95108b9ef4876a0458fec11b948baa43741874bc5f10e6ba66bdde5245185adc33838fc057c6a2610a23ae610d3059ae90961eb8fdd126c042ebea
+  version: 8.10.161
+  resolution: "@types/aws-lambda@npm:8.10.161"
+  checksum: 10c0/5a779901bb29a1989fe0ef30e4a515522af8fc66c237e0eedc954ab650651920540196b4629df25068c130a05a2a6142f661db7e26c7fbacc17ce11338367eb1
   languageName: node
   linkType: hard
 
@@ -2774,11 +2774,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.3.0
-  resolution: "@types/node@npm:25.3.0"
+  version: 25.3.2
+  resolution: "@types/node@npm:25.3.2"
   dependencies:
     undici-types: "npm:~7.18.0"
-  checksum: 10c0/7b2b18c9d68047157367fc2f786d4f166d22dc0ad9f82331ca02fb16f2f391854123dbe604dcb938cda119c87051e4bb71dcb9ece44a579f483a6f96d4bd41de
+  checksum: 10c0/946c8758668762d3c3b475281b420e580d0ce828c6847534a822b92be791e23e5879b53001ea928e5352dec8908082d854b8076b7bcfc69549e23ad54b1f98ab
   languageName: node
   linkType: hard
 
@@ -3520,7 +3520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-regex@npm:^6.0.1":
+"ansi-regex@npm:^6.2.2":
   version: 6.2.2
   resolution: "ansi-regex@npm:6.2.2"
   checksum: 10c0/05d4acb1d2f59ab2cf4b794339c7b168890d44dda4bf0ce01152a8da0213aca207802f930442ce8cd22d7a92f44907664aac6508904e75e038fa944d2601b30f
@@ -3757,7 +3757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"brace-expansion@npm:^2.0.1":
+"brace-expansion@npm:^2.0.1, brace-expansion@npm:^2.0.2":
   version: 2.0.2
   resolution: "brace-expansion@npm:2.0.2"
   dependencies:
@@ -6273,29 +6273,29 @@ __metadata:
   linkType: hard
 
 "minimatch@npm:^10.2.1, minimatch@npm:^10.2.2":
-  version: 10.2.3
-  resolution: "minimatch@npm:10.2.3"
+  version: 10.2.4
+  resolution: "minimatch@npm:10.2.4"
   dependencies:
     brace-expansion: "npm:^5.0.2"
-  checksum: 10c0/d9ae5f355e8bb77a42dd8c20b950141cec8773ef8716a2bb6df7a6840cc44a00ed828883884e4f1c7b5cb505fa06a17e3ea9ca2edb18fd1dec865ea7f9fcf0e5
+  checksum: 10c0/35f3dfb7b99b51efd46afd378486889f590e7efb10e0f6a10ba6800428cf65c9a8dedb74427d0570b318d749b543dc4e85f06d46d2858bc8cac7e1eb49a95945
   languageName: node
   linkType: hard
 
 "minimatch@npm:^3.0.4, minimatch@npm:^3.1.1":
-  version: 3.1.4
-  resolution: "minimatch@npm:3.1.4"
+  version: 3.1.5
+  resolution: "minimatch@npm:3.1.5"
   dependencies:
     brace-expansion: "npm:^1.1.7"
-  checksum: 10c0/868aab7e5f52570107eb283f021383be111cfeee0817a615f2a9ffe61fdc8fb86d535b9bf169fb8882261e7cb9da22b4d7b6f8b3402037f63558bab173f82212
+  checksum: 10c0/2ecbdc0d33f07bddb0315a8b5afbcb761307a8778b48f0b312418ccbced99f104a2d17d8aca7573433c70e8ccd1c56823a441897a45e384ea76ef401a26ace70
   languageName: node
   linkType: hard
 
 "minimatch@npm:^9.0.4":
-  version: 9.0.7
-  resolution: "minimatch@npm:9.0.7"
+  version: 9.0.9
+  resolution: "minimatch@npm:9.0.9"
   dependencies:
-    brace-expansion: "npm:^5.0.2"
-  checksum: 10c0/e90f8d8dd1dd3e1257b29c8cb31f554e74e2b89d52391b3903b566a28a287b59e2077a25552bc90a31bbbb79113a59e7422c7783ed9f968fe21c2ccb3c67bdef
+    brace-expansion: "npm:^2.0.2"
+  checksum: 10c0/0b6a58530dbb00361745aa6c8cffaba4c90f551afe7c734830bd95fd88ebf469dd7355a027824ea1d09e37181cfeb0a797fb17df60c15ac174303ac110eb7e86
   languageName: node
   linkType: hard
 
@@ -7504,11 +7504,11 @@ __metadata:
   linkType: hard
 
 "strip-ansi@npm:^7.0.1":
-  version: 7.1.2
-  resolution: "strip-ansi@npm:7.1.2"
+  version: 7.2.0
+  resolution: "strip-ansi@npm:7.2.0"
   dependencies:
-    ansi-regex: "npm:^6.0.1"
-  checksum: 10c0/0d6d7a023de33368fd042aab0bf48f4f4077abdfd60e5393e73c7c411e85e1b3a83507c11af2e656188511475776215df9ca589b4da2295c9455cc399ce1858b
+    ansi-regex: "npm:^6.2.2"
+  checksum: 10c0/544d13b7582f8254811ea97db202f519e189e59d35740c46095897e254e4f1aa9fe1524a83ad6bc5ad67d4dd6c0281d2e0219ed62b880a6238a16a17d375f221
   languageName: node
   linkType: hard
 
