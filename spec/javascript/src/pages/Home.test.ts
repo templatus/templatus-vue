@@ -1,10 +1,9 @@
-const mockSendClick = jest.fn();
-const mockUnsubscribe = jest.fn();
-const mockGetClicks = jest.fn();
-const mockSubscribe = jest.fn();
+const mockSendClick = vi.fn();
+const mockUnsubscribe = vi.fn();
+const mockGetClicks = vi.fn();
+const mockSubscribe = vi.fn();
 
-jest.mock('@/stores/click', () => ({
-  __esModule: true,
+vi.mock('@/stores/click', () => ({
   useClickStore: () => ({
     loaded: true,
     total: 42,
@@ -12,7 +11,7 @@ jest.mock('@/stores/click', () => ({
       {
         created_at: '2021-05-23T09:27:21.497Z',
         ip: '1.2.3.4',
-        user_agent: 'Jest',
+        user_agent: 'Vitest',
       },
     ],
     getClicks: mockGetClicks,

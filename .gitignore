@@ -29,14 +29,14 @@
 /config/master.key
 
 public/assets
-/node_modules
+node_modules
 .eslintcache
 
 # dotenv
 .env
 
-# SimpleCoverage report
-/coverage/*
+# Coverage reports
+coverage
 
 # Docker volumes
 /docker-volumes

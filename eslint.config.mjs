@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginVue from 'eslint-plugin-vue';
-import pluginJest from 'eslint-plugin-jest';
+import vitest from '@vitest/eslint-plugin';
 
 import vueTsEslintConfig from '@vue/eslint-config-typescript';
 import prettierConfig from '@vue/eslint-config-prettier';
@@ -16,10 +16,9 @@ export default [
   ...vueTsEslintConfig(),
   {
     files: ['spec/javascript/**'],
-    ...pluginJest.configs['flat/recommended'],
+    plugins: { vitest },
     rules: {
-      ...pluginJest.configs['flat/recommended'].rules,
-      'jest/prefer-expect-assertions': 'off',
+      ...vitest.configs.recommended.rules,
     },
   },
   {

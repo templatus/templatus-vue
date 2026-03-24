@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`NotFound matches snapshot 1`] = `
-<h1 class="text-rails-dark text-4xl font-extrabold tracking-tight break-words sm:text-5xl lg:text-6xl">Error 404</h1>
+exports[`NotFound > matches snapshot 1`] = `
+"<h1 class="text-rails-dark text-4xl font-extrabold tracking-tight break-words sm:text-5xl lg:text-6xl">Error 404</h1>
 <div class="mt-6 mb-20 inline-block rounded-sm bg-yellow-200 p-5 text-3xl">
   <p>Page not found</p>
-</div>
+</div>"
 `;

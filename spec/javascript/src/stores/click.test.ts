@@ -1,33 +1,29 @@
-const mockGet = jest.fn().mockResolvedValue({
-  json: {
-    total: 500,
-    items: [
-      {
-        id: 1,
-        created_at: '1990-12-25',
-        ip: '1.2.3.4',
-        user_agent: 'World Wide Web',
-      },
-      {
-        id: 2,
-        created_at: '1994-12-15',
-        ip: '5.6.7.8',
-        user_agent: 'Netscape Navigator',
-      },
-    ],
-  },
-});
-
-const mockPost = jest.fn().mockResolvedValue(43);
-
-jest.mock('@/use/fetch', () => ({
-  __esModule: true,
-  get: mockGet,
-  post: mockPost,
+vi.mock('@/use/fetch', () => ({
+  get: vi.fn().mockResolvedValue({
+    json: {
+      total: 500,
+      items: [
+        {
+          id: 1,
+          created_at: '1990-12-25',
+          ip: '1.2.3.4',
+          user_agent: 'World Wide Web',
+        },
+        {
+          id: 2,
+          created_at: '1994-12-15',
+          ip: '5.6.7.8',
+          user_agent: 'Netscape Navigator',
+        },
+      ],
+    },
+  }),
+  post: vi.fn().mockResolvedValue(43),
 }));
 
 import { setActivePinia, createPinia } from 'pinia';
 import { useClickStore } from '@/stores/click';
+import { post } from '@/use/fetch';
 
 describe('CounterStore', () => {
   beforeEach(() => setActivePinia(createPinia()));
@@ -36,7 +32,7 @@ describe('CounterStore', () => {
     const store = useClickStore();
     await store.sendClick();
 
-    expect(mockPost).toHaveBeenCalled();
+    expect(post).toHaveBeenCalled();
   });
 
   it('can get clicks', async () => {

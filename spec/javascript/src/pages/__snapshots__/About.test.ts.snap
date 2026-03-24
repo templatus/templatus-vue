@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`About matches snapshot 1`] = `
-<h1 class="text-rails-dark text-4xl font-extrabold tracking-tight break-words sm:text-5xl lg:text-6xl">About</h1>
+exports[`About > matches snapshot 1`] = `
+"<h1 class="text-rails-dark text-4xl font-extrabold tracking-tight break-words sm:text-5xl lg:text-6xl">About</h1>
 <p class="mt-6 max-w-4xl text-base lg:text-xl"> Templatus is an opinionated template for web applications with <b>Ruby on Rails</b> and <b>Vue.js 3</b></p>
 <div class="mt-20 space-y-24">
   <div>
@@ -189,11 +189,11 @@ exports[`About matches snapshot 1`] = `
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
               </svg>
-              <p class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"><a href="https://jestjs.io/" class="hover:underline" target="_blank" rel="noopener noreferrer">Jest</a>
+              <p class="text-rails-dark ml-9 flex items-center text-lg leading-6 font-medium"><a href="https://vitest.dev/" class="hover:underline" target="_blank" rel="noopener noreferrer">Vitest</a>
                 <!--v-if-->
               </p>
             </dt>
-            <dd class="mt-2 ml-9 text-base text-gray-600">Jest is a delightful JavaScript Testing Framework with a focus on simplicity</dd>
+            <dd class="mt-2 ml-9 text-base text-gray-600">Next generation testing framework powered by Vite</dd>
           </div>
           <div class="relative">
             <dt><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="text-vue absolute size-6">
@@ -271,5 +271,5 @@ exports[`About matches snapshot 1`] = `
       </div>
     </div>
   </div>
-</div>
+</div>"
 `;
