@@ -29,7 +29,7 @@
 /config/master.key
 
 public/assets
-/node_modules
+node_modules
 .eslintcache
 
 # dotenv

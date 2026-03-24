@@ -66,13 +66,10 @@ updates:
           - '@tailwindcss/*'
           - 'tailwindcss'
           - 'prettier-plugin-tailwindcss'
-      jest:
+      vitest:
         patterns:
-          - 'jest*'
-          - 'ts-jest'
-          - 'babel-jest'
-          - 'eslint-plugin-jest'
-          - 'vue/vue3-jest'
+          - 'vitest'
+          - '@vitest/*'
       eslint:
         patterns:
           - 'eslint*'

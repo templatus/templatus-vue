@@ -49,7 +49,7 @@ https://github.com/templatus/templatus-inertia/
 - [RuboCop](https://rubocop.org/) for Ruby static code analysis
 - [RSpec](https://rspec.info/) for Ruby testing
 - [ESLint](https://eslint.org/) for TypeScript static code analysis
-- [Jest](https://jestjs.io/) for TypeScript unit testing
+- [Vitest](https://vitest.dev/) for TypeScript unit testing
 - [Capybara](https://github.com/teamcapybara/capybara) with [Playwright](https://playwright.dev/) for system testing
 
 ### Deployment
