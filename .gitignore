@@ -35,8 +35,8 @@ node_modules
 # dotenv
 .env
 
-# SimpleCoverage report
-/coverage/*
+# Coverage reports
+coverage
 
 # Docker volumes
 /docker-volumes
