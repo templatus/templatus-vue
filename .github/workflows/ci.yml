@@ -155,7 +155,7 @@ jobs:
             COMMIT_TIME=${{ env.COMMIT_TIME }}
             COMMIT_VERSION=${{ env.COMMIT_VERSION }}
             COMMIT_BRANCH=${{ github.head_ref || github.ref_name }}
-          cache-from: type=gha
+          cache-from: type=gha,ignore-error=true
           cache-to: type=gha,mode=max
 
       - name: Send webhook to start deployment
