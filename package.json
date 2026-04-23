@@ -21,7 +21,7 @@
     "tailwindcss": "^4.2.4",
     "timeago.js": "^4.0.2",
     "typescript": "^6.0.3",
-    "vue": "^3.5.32",
+    "vue": "^3.5.33",
     "vue-router": "^5.0.6"
   },
   "version": "0.1.0",
