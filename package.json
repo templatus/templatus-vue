@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
-    "@honeybadger-io/js": "^6.12.3",
+    "@honeybadger-io/js": "^6.14.0",
     "@honeybadger-io/vue": "^6.2.9",
     "@plausible-analytics/tracker": "^0.4.5",
     "@rails/actioncable": "^8.1.300",
