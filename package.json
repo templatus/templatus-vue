@@ -10,7 +10,7 @@
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
     "@honeybadger-io/js": "^6.14.0",
-    "@honeybadger-io/vue": "^6.2.9",
+    "@honeybadger-io/vue": "^6.2.11",
     "@plausible-analytics/tracker": "^0.4.5",
     "@rails/actioncable": "^8.1.300",
     "@rails/request.js": "^0.0.13",

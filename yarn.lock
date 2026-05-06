@@ -317,13 +317,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@honeybadger-io/vue@npm:^6.2.9":
-  version: 6.2.9
-  resolution: "@honeybadger-io/vue@npm:6.2.9"
+"@honeybadger-io/vue@npm:^6.2.11":
+  version: 6.2.11
+  resolution: "@honeybadger-io/vue@npm:6.2.11"
   peerDependencies:
     "@honeybadger-io/js": ^6.2.0
     vue: 2.x || 3.x
-  checksum: 10c0/40cfc18760002a9e727285d33ad55840f4df8c2d1a424a6949269e9686bcdad12a4bc5850b56994a4aa146a57c45f4e842a8f44dc0479c619467ea30180b0c30
+  checksum: 10c0/3e1cd3e7460e0cb2cbca9a4c8e5c0efaa793b99168b8ba3f341cd43bbc9c3c80287ae540351a726a585dfee57e0e69f54171e0c2e26bdccd66a84ac42a9ce561
   languageName: node
   linkType: hard
 
@@ -3856,7 +3856,7 @@ __metadata:
     "@eslint/js": "npm:^10.0.1"
     "@heroicons/vue": "npm:^2.2.0"
     "@honeybadger-io/js": "npm:^6.14.0"
-    "@honeybadger-io/vue": "npm:^6.2.9"
+    "@honeybadger-io/vue": "npm:^6.2.11"
     "@plausible-analytics/tracker": "npm:^0.4.5"
     "@prettier/plugin-ruby": "npm:^4.0.4"
     "@rails/actioncable": "npm:^8.1.300"
