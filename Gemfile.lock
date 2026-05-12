@@ -424,6 +424,7 @@ GEM
     zeitwerk (2.7.5)
 
 PLATFORMS
+  arm64-darwin-23
   arm64-darwin-25
   x86_64-linux
   x86_64-linux-musl
@@ -462,7 +463,7 @@ DEPENDENCIES
   vite_rails
 
 RUBY VERSION
-  ruby 4.0.3
+  ruby 4.0.4
 
 BUNDLED WITH
   4.0.11
