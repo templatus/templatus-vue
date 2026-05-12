@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^8.59.2",
     "@typescript-eslint/parser": "^8.59.2",
     "@vitejs/plugin-vue": "^6.0.6",
-    "@vitest/coverage-v8": "^4.1.5",
+    "@vitest/coverage-v8": "^4.1.6",
     "@vitest/eslint-plugin": "^1.6.17",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.7.0",
@@ -51,7 +51,7 @@
     "vite": "^8.0.11",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-rails": "^0.6.0",
-    "vitest": "^4.1.5",
+    "vitest": "^4.1.6",
     "vue-tsc": "^3.2.8"
   },
   "dependenciesMeta": {
