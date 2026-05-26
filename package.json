@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "^8.59.4",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vitest/coverage-v8": "^4.1.7",
-    "@vitest/eslint-plugin": "^1.6.17",
+    "@vitest/eslint-plugin": "^1.6.18",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.7.0",
     "@vue/test-utils": "^2.4.10",
