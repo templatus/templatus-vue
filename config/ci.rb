@@ -4,15 +4,15 @@ CI.run do
   step 'Setup', 'bin/setup --skip-server'
 
   step 'Style: Ruby', 'bin/rubocop'
-  step 'Style: JavaScript', 'bin/yarn lint'
-  step 'Style: TypeScript', 'bin/yarn tsc'
+  step 'Style: JavaScript', 'bun run lint'
+  step 'Style: TypeScript', 'bun run tsc'
 
   step 'Security: Brakeman code analysis',
        'bin/brakeman --quiet --no-pager --exit-on-warn --exit-on-error'
   step 'Security: Gem audit', 'bin/bundler-audit'
-  step 'Security: Yarn vulnerability audit', 'bin/yarn npm audit'
+  step 'Security: JavaScript vulnerability audit', 'bun audit'
 
-  step 'Tests: JavaScript', 'bin/yarn test'
+  step 'Tests: JavaScript', 'bun run test'
   step 'Tests: Rails', 'PLAYWRIGHT_HEADLESS=true bin/rspec'
   step 'Tests: Seeds', 'env RAILS_ENV=test bin/rails db:seed:replant'
 

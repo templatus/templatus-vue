@@ -37,18 +37,15 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          cache: yarn
-          node-version-file: 'package.json'
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
-      - name: Install Yarn packages
-        run: bin/yarn install --immutable
+      - name: Install JavaScript packages
+        run: bun install --frozen-lockfile
 
       - name: Get Playwright version
         id: playwright-version
-        run: echo "version=$(node -p "require('./node_modules/playwright/package.json').version")" >> $GITHUB_OUTPUT
+        run: echo "version=$(bun -e "console.log(require('./node_modules/playwright/package.json').version)")" >> $GITHUB_OUTPUT
 
       - name: Cache Playwright browsers
         uses: actions/cache@v5
@@ -59,7 +56,7 @@ jobs:
 
       - name: Install Playwright browsers
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: yarn playwright install --with-deps chromium
+        run: bunx playwright install --with-deps chromium
 
       - name: Lint with RuboCop
         run: bin/rubocop --parallel
@@ -68,10 +65,10 @@ jobs:
         run: bin/brakeman --no-pager
 
       - name: Run ESLint
-        run: bin/yarn lint
+        run: bun run lint
 
       - name: Check for TypeScript errors
-        run: bin/yarn tsc
+        run: bun run tsc
 
       - name: Setup PostgreSQL
         run: bin/rails db:create
@@ -83,10 +80,10 @@ jobs:
         run: bin/rspec
 
       - name: Run JavaScript tests
-        run: bin/yarn test --coverage
+        run: bun run test --coverage
 
       - name: Check JS size limit
-        run: yarn size-limit
+        run: bun run size
 
       - uses: actions/upload-artifact@v7
         if: failure()

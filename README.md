@@ -28,6 +28,7 @@ https://github.com/templatus/templatus-inertia/
 ### Frontend
 
 - [Vite](https://vitejs.dev/) for bundling JavaScript and CSS with Hot Module Replacement (HMR) in development
+- [Bun](https://bun.sh/) as package manager for JavaScript dependencies
 - [Vue 3](https://v3.vuejs.org/) as frontend framework
 - [Vue Router 4](https://next.router.vuejs.org/) for frontend routing
 - [Pinia](https://pinia.esm.dev/) for frontend state management
@@ -114,19 +115,23 @@ https://github.com/rails/rails/pull/41994
 
 ```
 $ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
+bun install v1.3.14 (0d9b296a)
+
+Checked 397 installs across 429 packages (no changes) [36.00ms]
 Building with Vite ⚡️
-vite v5.4.3 building for production...
-transforming...
-✓ 729 modules transformed.
+vite v8.0.16 building client environment for production...
+transforming...✓ 724 modules transformed.
 rendering chunks...
 computing gzip size...
-../../public/vite/.vite/manifest-assets.json         0.10 kB │ gzip:  0.09 kB
-../../public/vite/assets/logo-DIorPG93.svg           0.50 kB │ gzip:  0.30 kB
-../../public/vite/.vite/manifest.json                0.64 kB │ gzip:  0.24 kB
-../../public/vite/assets/application-BzEOTfLU.css   23.65 kB │ gzip:  5.18 kB
-../../public/vite/assets/application-CI1loYrW.js    18.12 kB │ gzip:  7.19 kB │ map:    31.58 kB
-../../public/vite/assets/vendor-C8Gi253Q.js        168.57 kB │ gzip: 60.16 kB │ map: 1,103.22 kB
-✓ built in 1.33s
+public/vite/.vite/manifest-assets.json             0.09 kB │ gzip:  0.09 kB
+public/vite/assets/logo-DIorPG93.svg               0.49 kB │ gzip:  0.30 kB
+public/vite/.vite/manifest.json                    0.96 kB │ gzip:  0.29 kB
+public/vite/assets/application-DzMGqEr5.css       31.88 kB │ gzip:  6.43 kB
+public/vite/assets/rolldown-runtime-Bh1tDfsg.js    0.56 kB │ gzip:  0.36 kB
+public/vite/assets/application-ByQV_ixG.js        18.19 kB │ gzip:  7.30 kB │ map:    59.78 kB
+public/vite/assets/vendor-D-8jSNJ6.js            174.62 kB │ gzip: 60.60 kB │ map: 1,025.54 kB
+
+✓ built in 515ms
 Build with Vite complete: /Users/ledermann/Projects/templatus-vue/public/vite
 ```
 
@@ -183,7 +188,7 @@ puma-dev link
 echo 3036 > ~/.puma-dev/vite.templatus-vue
 ```
 
-4. Setup the application to install gems and NPM packages and create the database:
+4. Setup the application to install gems and JavaScript packages and create the database:
 
 ```bash
 bin/setup
@@ -208,13 +213,13 @@ bin/rubocop
 ESLint:
 
 ```
-bin/yarn lint
+bun run lint
 ```
 
 TypeScript compiler:
 
 ```
-bin/yarn tsc
+bun run tsc
 ```
 
 ### Running tests locally
@@ -229,7 +234,7 @@ open coverage/index.html
 JavaScript unit tests:
 
 ```
-bin/yarn test
+bun run test
 ```
 
 System tests with Capybara and Playwright:

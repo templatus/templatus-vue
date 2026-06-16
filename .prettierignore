@@ -3,5 +3,4 @@ tsconfig.json
 coverage/*
 public/*
 tmp/*
-.yarn/*
 .ruby-lsp/*
