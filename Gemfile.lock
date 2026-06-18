@@ -148,7 +148,7 @@ GEM
     honeybadger (6.9.0)
       logger
       ostruct
-    i18n (1.15.0)
+    i18n (1.15.1)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
     irb (1.18.0)
