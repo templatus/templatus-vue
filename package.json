@@ -45,7 +45,7 @@
     "eslint-plugin-vue": "^10.9.2",
     "jsdom": "^29.1.1",
     "playwright": "^1.61.1",
-    "prettier": "^3.8.5",
+    "prettier": "^3.9.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "size-limit": "^12.1.0",
     "tslib": "^2.8.1",
