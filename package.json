@@ -53,7 +53,7 @@
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-rails": "^0.6.0",
     "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.6"
+    "vue-tsc": "^3.3.7"
   },
   "trustedDependencies": ["@tailwindcss/oxide", "vite"],
   "size-limit": [
