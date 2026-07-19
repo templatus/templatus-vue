@@ -7,7 +7,7 @@
       "dependencies": {
         "@heroicons/vue": "^2.2.0",
         "@honeybadger-io/js": "^6.14.0",
-        "@honeybadger-io/vue": "^6.2.11",
+        "@honeybadger-io/vue": "^6.2.12",
         "@plausible-analytics/tracker": "^0.4.5",
         "@rails/actioncable": "^8.1.300",
         "@rails/request.js": "^0.0.13",
@@ -121,7 +121,7 @@
 
     "@honeybadger-io/js": ["@honeybadger-io/js@6.14.0", "", { "dependencies": { "@honeybadger-io/core": "^6.9.0", "@types/aws-lambda": "^8.10.89", "@types/express": "^5.0.3" }, "bin": { "honeybadger-checkins-sync": "scripts/check-ins-sync-bin.js" } }, "sha512-ZQGop/Ik7vyRJzW/wzE1CL4611fz9+5arrMdS0ivrzDmm/4BQeK4OKZlwfMZqEZtODwfnl32ngh0ayW/jahoSg=="],
 
-    "@honeybadger-io/vue": ["@honeybadger-io/vue@6.2.11", "", { "peerDependencies": { "@honeybadger-io/js": "^6.2.0", "vue": "2.x || 3.x" } }, "sha512-kcptJLbXKrAGr+sDs+/TBItlYnmQq30lgVTs01AG5SRlAQEJJ7sog1hBhYFfHwiF5rnhD1Y5I515rAXhaJtRKw=="],
+    "@honeybadger-io/vue": ["@honeybadger-io/vue@6.2.12", "", { "peerDependencies": { "@honeybadger-io/js": "^6.2.0", "vue": "2.x || 3.x" } }, "sha512-5+Ge1FWyC+9MiIzz5Z/KDNYU/7/Yhs/+A4c7foUCjj4zwcmMhiihsGq2LgxwngoizVknvdc1wzDwYVYUbOI+/A=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.2", "", { "dependencies": { "@humanfs/types": "^0.15.0" } }, "sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA=="],
 
@@ -886,8 +886,6 @@
     "@vue/compiler-sfc/@vue/compiler-ssr": ["@vue/compiler-ssr@3.5.40", "", { "dependencies": { "@vue/compiler-dom": "3.5.40", "@vue/shared": "3.5.40" } }, "sha512-rrE5xiXG663+vHCHa3J9p2z5OcBRjXmoqenprJxAFQxg5pSshzeBiCE6pu46axapRJ2Adk0YDA2BRZVjiHXnhg=="],
 
     "@vue/compiler-sfc/estree-walker": ["estree-walker@2.0.2", "", {}, "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w=="],
-
-    "@vue/compiler-sfc/postcss": ["postcss@8.5.19", "", { "dependencies": { "nanoid": "^3.3.12", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-Mz8SaolMd8nB+G13WkORcxQKHZ/NE4xXevtkJHVuG+guo9/wYKlIMTKAqGdEmYOXR2ijPjTYNHssizdaVSUNdQ=="],
 
     "@vue/compiler-ssr/@vue/shared": ["@vue/shared@3.5.38", "", {}, "sha512-FTW0AFZNaK5/mOqvGBwVfUlNLU38TiQn4+DQgIFUnrBBJQ1crMJ82yeGQLV5jyKFsO8yRukpbuP7x+nRbH6aug=="],
 
