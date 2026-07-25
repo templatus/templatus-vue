@@ -24,7 +24,7 @@
       "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@prettier/plugin-ruby": "^4.0.4",
-        "@size-limit/file": "^12.1.0",
+        "@size-limit/file": "^13.0.1",
         "@tailwindcss/vite": "^4.3.3",
         "@typescript-eslint/eslint-plugin": "^8.65.0",
         "@typescript-eslint/parser": "^8.65.0",
@@ -201,7 +201,7 @@
 
     "@rolldown/pluginutils": ["@rolldown/pluginutils@1.0.1", "", {}, "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw=="],
 
-    "@size-limit/file": ["@size-limit/file@12.1.0", "", { "peerDependencies": { "size-limit": "12.1.0" } }, "sha512-eGwDcIufnNnvJRzv3liDOn6MAOGgmOTUdpeGQ2KuRTlgIgO54AJH1ilvktlJc6PIjNfwpYY0dOGyap1QgM1swQ=="],
+    "@size-limit/file": ["@size-limit/file@13.0.1", "", { "peerDependencies": { "size-limit": "13.0.1" } }, "sha512-qdbGUxRAjym5gnkYEjsNsdOfmkDUvDX06FLhLGUxQ0oJtIWDd2lsOmTMwh5JuAV1XmJCplbqpMJ2b5eIhHl7Lg=="],
 
     "@standard-schema/spec": ["@standard-schema/spec@1.1.0", "", {}, "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="],
 
