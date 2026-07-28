@@ -42,7 +42,7 @@
         "playwright": "^1.62.0",
         "prettier": "^3.9.5",
         "prettier-plugin-tailwindcss": "^0.8.1",
-        "size-limit": "^13.0.1",
+        "size-limit": "^13.0.2",
         "tslib": "^2.8.1",
         "vite": "^8.1.5",
         "vite-plugin-full-reload": "^1.2.0",
@@ -711,7 +711,7 @@
 
     "signal-exit": ["signal-exit@4.1.0", "", {}, "sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw=="],
 
-    "size-limit": ["size-limit@13.0.1", "", { "dependencies": { "bytes-iec": "^3.1.1", "lilconfig": "^3.1.3", "nanospinner": "^1.2.2", "picocolors": "^1.1.1" }, "bin": { "size-limit": "bin.js" } }, "sha512-LKWgnVUfw79W5gcKGIHqjEqBMoZ+YgfYYzlDheYwbRJq1DaaRgOjotFm61YOI/4hbgh4V1Es0uGGp6HLktI3Vw=="],
+    "size-limit": ["size-limit@13.0.2", "", { "dependencies": { "bytes-iec": "^3.1.1", "lilconfig": "^3.1.3", "nanospinner": "^1.2.2", "picocolors": "^1.1.1" }, "bin": { "size-limit": "bin.js" } }, "sha512-bB8Hv6g7nBtmWW+mB9Y1lkyJoDOxk6pO6p7xPsK8Y6t9CyKvBWhzTRXLlhhv1H2Ru9HIyLKbCaVswXGHwVXiwg=="],
 
     "source-map-js": ["source-map-js@1.2.1", "", {}, "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="],
 
