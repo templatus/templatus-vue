@@ -57,6 +57,8 @@ updates:
       timezone: Europe/Berlin
     open-pull-requests-limit: 10
     versioning-strategy: auto
+    cooldown:
+      default-days: 1
     labels:
       - 'dependencies'
       - 'javascript'
