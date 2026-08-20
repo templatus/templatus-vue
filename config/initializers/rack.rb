@@ -5,6 +5,13 @@ Rails.application.config.middleware.delete(Rack::Runtime)
 # list of defaults: https://github.com/rack/rack/blob/master/lib/rack/mime.rb
 Rack::Mime::MIME_TYPES['.webmanifest'] = 'application/manifest+json'
 
+# Drop the client-provided `Client-IP` header before Rails inspects it,
+# otherwise a forged header raises ActionDispatch::RemoteIp::IpSpoofAttackError
+require './app/middleware/client_ip_scrubber'
+
+Rails.application.config.middleware.insert_before ActionDispatch::RemoteIp,
+                          ClientIpScrubber
+
 unless Rails.env.development?
   # Enable gzip compression
   Rails.application.config.middleware.use Rack::Deflater
