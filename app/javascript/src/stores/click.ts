@@ -26,10 +26,10 @@ export const useClickStore = defineStore('click', {
     },
 
     async getClicks() {
-      const response = await get('/clicks', {
+      const json = await get('/clicks', {
         responseKind: 'json',
       });
-      const json = await response.json;
+      if (!json) return;
 
       this.total = json.total;
       this.items = json.items;
