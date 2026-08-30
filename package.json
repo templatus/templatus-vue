@@ -23,7 +23,7 @@
     "timeago.js": "^4.0.2",
     "typescript": "^6.0.3",
     "vue": "^3.5.41",
-    "vue-router": "^5.2.0"
+    "vue-router": "^5.3.0"
   },
   "resolutions": {
     "typescript": "^6"
