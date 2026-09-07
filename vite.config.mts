@@ -8,9 +8,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    include: [resolve(__dirname, 'spec/javascript/**/*.test.ts')],
+    include: [resolve(import.meta.dirname, 'spec/javascript/**/*.test.ts')],
     alias: {
-      '@test': resolve(__dirname, 'spec/javascript/src'),
+      '@test': resolve(import.meta.dirname, 'spec/javascript/src'),
     },
   },
   build: {
@@ -36,7 +36,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'app/javascript/src'),
+      '@': resolve(import.meta.dirname, 'app/javascript/src'),
     },
   },
   server: {

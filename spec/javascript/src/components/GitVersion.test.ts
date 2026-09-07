@@ -10,7 +10,11 @@ describe('GitVersion', () => {
       },
     });
 
-    expect(wrapper.html()).toMatchSnapshot();
+    // timeago.js tags the element with the id of its internal timer, which
+    // depends on how many timers ran before. Normalize it to keep the
+    // snapshot stable.
+    const html = wrapper.html().replace(/timeago-id="\d+"/, 'timeago-id="1"');
+    expect(html).toMatchSnapshot();
 
     wrapper.unmount();
   });
