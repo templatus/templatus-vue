@@ -21,14 +21,24 @@ vi.mock('@/stores/click', () => ({
   }),
 }));
 
-import { mount } from '@vue/test-utils';
+import { mount, type VueWrapper } from '@vue/test-utils';
 import Home from '@/pages/HomePage.vue';
 
 describe('Home', () => {
-  const wrapper = mount(Home, {
-    props: {
-      name: 'World',
-    },
+  let wrapper: VueWrapper;
+
+  // Mount per test, because Vitest clears the recorded mock calls before
+  // every test.
+  beforeEach(() => {
+    wrapper = mount(Home, {
+      props: {
+        name: 'World',
+      },
+    });
+  });
+
+  afterEach(() => {
+    wrapper.unmount();
   });
 
   test('load clicks and subscribes', () => {
