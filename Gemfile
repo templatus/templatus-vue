@@ -43,6 +43,10 @@ gem 'rorvswild'
 # Class to build custom data structures, similar to a Hash. (https://github.com/ruby/ostruct)
 gem 'ostruct'
 
+# JSON Implementation for Ruby (https://ruby.github.io/json)
+# Pinned below 3.0 until the ecosystem has caught up with its breaking changes
+gem 'json', '< 3'
+
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
