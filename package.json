@@ -22,7 +22,7 @@
     "tailwindcss": "^4.3.3",
     "timeago.js": "^4.0.2",
     "typescript": "^6.0.3",
-    "vue": "^3.5.42",
+    "vue": "^3.5.43",
     "vue-router": "^5.3.1"
   },
   "resolutions": {
