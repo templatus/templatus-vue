@@ -8,7 +8,7 @@
         "@heroicons/vue": "^2.2.0",
         "@honeybadger-io/js": "^6.17.0",
         "@honeybadger-io/vue": "^6.2.24",
-        "@plausible-analytics/tracker": "^0.4.6",
+        "@plausible-analytics/tracker": "^0.4.7",
         "@rails/actioncable": "^8.1.400",
         "@rails/request.js": "^0.0.13",
         "@tailwindcss/forms": "^0.5.11",
@@ -156,7 +156,7 @@
 
     "@pkgr/core": ["@pkgr/core@0.3.6", "", {}, "sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA=="],
 
-    "@plausible-analytics/tracker": ["@plausible-analytics/tracker@0.4.6", "", {}, "sha512-nbu6xGgSP6jeYuoVklZBzucUnIpo75tVu3Kr+R0EDycVKaMC/jF5Q/YCaM/8gR4fPZ1IDcXt6FdBJFZ1uZwEPA=="],
+    "@plausible-analytics/tracker": ["@plausible-analytics/tracker@0.4.7", "", {}, "sha512-majmq1uion4uLo88Tr0eMCMfi7TY00okp3I0Vql9egFaAz6DYCW4bJaV3t5LB3BfcvW5exJpmqzROU0a1b6nAA=="],
 
     "@prettier/plugin-ruby": ["@prettier/plugin-ruby@4.0.4", "", { "peerDependencies": { "prettier": "^3.0.0" } }, "sha512-lCpvfS/dQU5WrwN3AQ5vR8qrvj2h5gE41X08NNzAAXvHdM4zwwGRcP2sHSxfu6n6No+ljWCVx95NvJPFTTjCTg=="],
 
