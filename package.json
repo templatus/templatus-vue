@@ -13,7 +13,7 @@
     "@honeybadger-io/js": "^6.17.0",
     "@honeybadger-io/vue": "^6.2.24",
     "@plausible-analytics/tracker": "^0.4.7",
-    "@rails/actioncable": "^8.1.400",
+    "@rails/actioncable": "^8.1.401",
     "@rails/request.js": "^0.0.13",
     "@tailwindcss/forms": "^0.5.11",
     "@types/rails__actioncable": "^8.0.3",
