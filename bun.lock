@@ -9,7 +9,7 @@
         "@honeybadger-io/js": "^6.17.0",
         "@honeybadger-io/vue": "^6.2.24",
         "@plausible-analytics/tracker": "^0.4.7",
-        "@rails/actioncable": "^8.1.400",
+        "@rails/actioncable": "^8.1.401",
         "@rails/request.js": "^0.0.13",
         "@tailwindcss/forms": "^0.5.11",
         "@types/rails__actioncable": "^8.0.3",
@@ -160,7 +160,7 @@
 
     "@prettier/plugin-ruby": ["@prettier/plugin-ruby@4.0.4", "", { "peerDependencies": { "prettier": "^3.0.0" } }, "sha512-lCpvfS/dQU5WrwN3AQ5vR8qrvj2h5gE41X08NNzAAXvHdM4zwwGRcP2sHSxfu6n6No+ljWCVx95NvJPFTTjCTg=="],
 
-    "@rails/actioncable": ["@rails/actioncable@8.1.400", "", {}, "sha512-Qffc3/I9xcpeaal12hmi9EPRV3hz9FvakUHBR7kL0jpZviWwO9dyaG8F1ltcjkHIdFxQ5QqzRyequAWHMq17xQ=="],
+    "@rails/actioncable": ["@rails/actioncable@8.1.401", "", {}, "sha512-eZdEy9UmnsaeDHr5G5nFhdgsaMo9EZVq2JMAjqtNmVDqnKWHwvTMt0Ah1CWBf7g7BDLR3WCDgHS2aOhbpjqkWw=="],
 
     "@rails/request.js": ["@rails/request.js@0.0.13", "", {}, "sha512-7MXmjFOPuaxpjG8brqKJG0EfIe9ak6R0wRnjCBtRuADNFbdlRxETdKx1T5NVU4Ato3iZOkEpeSUEuLboL3tCGA=="],
 
