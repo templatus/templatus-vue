@@ -6,7 +6,7 @@
       "name": "templatus-vue",
       "dependencies": {
         "@heroicons/vue": "^2.2.0",
-        "@honeybadger-io/js": "^6.17.2",
+        "@honeybadger-io/js": "^6.17.4",
         "@honeybadger-io/vue": "^6.2.28",
         "@plausible-analytics/tracker": "^0.4.7",
         "@rails/actioncable": "^8.1.401",
@@ -96,9 +96,9 @@
 
     "@heroicons/vue": ["@heroicons/vue@2.2.0", "", { "peerDependencies": { "vue": ">= 3" } }, "sha512-G3dbSxoeEKqbi/DFalhRxJU4mTXJn7GwZ7ae8NuEQzd1bqdd0jAbdaBZlHPcvPD2xI1iGzNVB4k20Un2AguYPw=="],
 
-    "@honeybadger-io/core": ["@honeybadger-io/core@6.12.2", "", { "dependencies": { "json-nd": "^1.0.0", "stacktrace-parser": "^0.1.10" } }, "sha512-GMa49Dn5tKKjAjkYq/IhFwBnwQh3rsjK8ysIU8o6XsGmcWrqC0hmAcH41npaX1KVlUK/1zjTfjVFLIvS5Sn3Bg=="],
+    "@honeybadger-io/core": ["@honeybadger-io/core@6.12.3", "", { "dependencies": { "json-nd": "^1.0.0", "stacktrace-parser": "^0.1.10" } }, "sha512-vM1eOU1aCu8j4MY5F9Ou5/t15WPkVjrvgMMsEWnWAfSlJ1ro5cpNH1tIVzcorCF7MAihY3gbdhOxM8QMXzKnXQ=="],
 
-    "@honeybadger-io/js": ["@honeybadger-io/js@6.17.2", "", { "dependencies": { "@honeybadger-io/core": "^6.12.2", "@types/aws-lambda": "^8.10.89", "@types/express": "^5.0.3" }, "peerDependencies": { "fastify": ">=4", "fastify-plugin": ">=4" }, "optionalPeers": ["fastify", "fastify-plugin"], "bin": { "honeybadger-checkins-sync": "scripts/check-ins-sync-bin.js" } }, "sha512-Uxcyl94+km1T8JflgEVJtkXCFuhUfS2g1VvHkTHuBe/q5JJsXmt+NbajgZYXlitz5kzFhgBvDYcxl15V0bcBPw=="],
+    "@honeybadger-io/js": ["@honeybadger-io/js@6.17.4", "", { "dependencies": { "@honeybadger-io/core": "^6.12.3", "@types/aws-lambda": "^8.10.89", "@types/express": "^5.0.3" }, "peerDependencies": { "fastify": ">=4", "fastify-plugin": ">=4" }, "optionalPeers": ["fastify", "fastify-plugin"], "bin": { "honeybadger-checkins-sync": "scripts/check-ins-sync-bin.js" } }, "sha512-RAOjE7XRMMd3TX5ZInjQR7zlAvPWDOU7BSrZ5MjFj4O87HaMz45dxtB5MGyDoZCYiOGolmIkRN/UmRbk18lsAA=="],
 
     "@honeybadger-io/vue": ["@honeybadger-io/vue@6.2.28", "", { "peerDependencies": { "@honeybadger-io/js": "^6.2.0", "vue": "2.x || 3.x" } }, "sha512-xhgXzq892tSdN3LOHI3GPmvL1lX5UabrFHGn1l5diEL+LxXn0IHtnyCa09dZ372Qr3x4Ej4/YU2zVbm5tC+hgg=="],
 
