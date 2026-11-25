@@ -7,7 +7,7 @@
       "dependencies": {
         "@heroicons/vue": "^2.2.0",
         "@honeybadger-io/js": "^6.17.2",
-        "@honeybadger-io/vue": "^6.2.26",
+        "@honeybadger-io/vue": "^6.2.28",
         "@plausible-analytics/tracker": "^0.4.7",
         "@rails/actioncable": "^8.1.401",
         "@rails/request.js": "^0.0.13",
@@ -100,7 +100,7 @@
 
     "@honeybadger-io/js": ["@honeybadger-io/js@6.17.2", "", { "dependencies": { "@honeybadger-io/core": "^6.12.2", "@types/aws-lambda": "^8.10.89", "@types/express": "^5.0.3" }, "peerDependencies": { "fastify": ">=4", "fastify-plugin": ">=4" }, "optionalPeers": ["fastify", "fastify-plugin"], "bin": { "honeybadger-checkins-sync": "scripts/check-ins-sync-bin.js" } }, "sha512-Uxcyl94+km1T8JflgEVJtkXCFuhUfS2g1VvHkTHuBe/q5JJsXmt+NbajgZYXlitz5kzFhgBvDYcxl15V0bcBPw=="],
 
-    "@honeybadger-io/vue": ["@honeybadger-io/vue@6.2.26", "", { "peerDependencies": { "@honeybadger-io/js": "^6.2.0", "vue": "2.x || 3.x" } }, "sha512-RP2OtSnn0KnDSgo2/YqNh7wmbmqZBySiRh8ndH/8XNsfArYsLdmdZrcgZPETuPJpa5ol4hqrIclHBhxdHEAQEg=="],
+    "@honeybadger-io/vue": ["@honeybadger-io/vue@6.2.28", "", { "peerDependencies": { "@honeybadger-io/js": "^6.2.0", "vue": "2.x || 3.x" } }, "sha512-xhgXzq892tSdN3LOHI3GPmvL1lX5UabrFHGn1l5diEL+LxXn0IHtnyCa09dZ372Qr3x4Ej4/YU2zVbm5tC+hgg=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.2", "", { "dependencies": { "@humanfs/types": "^0.15.0" } }, "sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA=="],
 
